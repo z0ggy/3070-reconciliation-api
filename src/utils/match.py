@@ -14,8 +14,10 @@ def load_file() -> dict:
         return json.load(file)
 
 
-def normalize_text(text: str):
+def normalize_text(text: str) -> str:
     """
     Normalize text
     """
-    return text.lower().strip()
+    text = text.replace("-", " ")
+    text = text.lower().strip()
+    return text
