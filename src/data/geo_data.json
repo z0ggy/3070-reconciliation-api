@@ -1,7 +1,25 @@
-{
+[
+  {
     "id": "IE-CITY-DUBLIN",
     "name": "Dublin City",
     "type": "city",
     "country": "Ireland",
-    "aliases": ["Dublin", "Baile Átha Cliath", "Dublin City Council"]
-}
+    "aliases": [
+      "Dublin",
+      "Baile Átha Cliath",
+      "Dublin City Council"
+    ]
+  },
+  {
+    "id": "IE-LA-DLR",
+    "name": "Dún Laoghaire-Rathdown",
+    "type": "local_authority",
+    "country": "Ireland",
+    "aliases": [
+      "Dun Laoghaire Rathdown",
+      "Dún Laoghaire Rathdown",
+      "DLR",
+      "Dun Laoghaire"
+    ]
+  }
+]
