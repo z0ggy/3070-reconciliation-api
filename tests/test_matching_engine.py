@@ -1,4 +1,4 @@
-from src.utils.match import load_file, normalize_text, similarity_score
+from src.utils.match import load_file, normalize_text, similarity_score, match_data
 
 
 def test_exact_city_match():
@@ -16,13 +16,53 @@ def test_extat_dash_match():
     assert normalize_text(city) == "dún laoghaire rathdown"
 
 
-def test_match_data_from_file():
-    data = load_file()
-    print(data)
-
-
-def test_score():
+def test_basic_score():
     query = "  Dublin--  "
     candidate = "dUblin  - "
     score = similarity_score(query, candidate)
     assert score == 1.0
+
+
+def test_city_with_county():
+    query = "County Dublin -- "
+    candidate = "dUblin  - "
+    score = similarity_score(query, candidate)
+    assert score == 0.9
+
+
+def test_city():
+    query = "City"
+    candidate = "dUblin  - "
+    score = similarity_score(query, candidate)
+    print(score)
+    # assert score == 0.9
+
+
+def test_match_data_perfect_match():
+    result = match_data("Dublin")
+    print(f"result: {result}")
+    assert result == [
+        {
+            "id": "IE-CITY-DUBLIN",
+            "name": "Dublin City",
+            "type": "city",
+            "country": "Ireland",
+            "score": 1.0,
+            "matched_on": "alias",
+        }
+    ]
+
+
+def test_match_data_by_aliases():
+    result = match_data("Baile Átha Cliath")
+    print(f"result: {result}")
+    assert result == [
+        {
+            "id": "IE-CITY-DUBLIN",
+            "name": "Dublin City",
+            "type": "city",
+            "country": "Ireland",
+            "score": 1.0,
+            "matched_on": "alias",
+        }
+    ]
