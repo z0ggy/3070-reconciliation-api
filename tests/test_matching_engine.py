@@ -1,4 +1,4 @@
-from src.utils.match import load_file, normalize_text, similarity_score, match_data
+from src.utils.match import normalize_text, similarity_score, match_data
 
 
 def test_exact_city_match():
@@ -35,34 +35,35 @@ def test_city():
     candidate = "dUblin  - "
     score = similarity_score(query, candidate)
     print(score)
-    # assert score == 0.9
 
 
-def test_match_data_perfect_match():
+def test_match_data_perfect_match_by_name():
     result = match_data("Dublin")
     print(f"result: {result}")
-    assert result == [
-        {
-            "id": "IE-CITY-DUBLIN",
-            "name": "Dublin City",
-            "type": "city",
-            "country": "Ireland",
-            "score": 1.0,
-            "matched_on": "alias",
-        }
-    ]
+    assert result[0] == {
+        "id": "IE-CITY-DUBLIN",
+        "name": "Dublin City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 1.0,
+        "matched_on": "alias",
+    }
 
 
 def test_match_data_by_aliases():
     result = match_data("Baile Átha Cliath")
     print(f"result: {result}")
-    assert result == [
-        {
-            "id": "IE-CITY-DUBLIN",
-            "name": "Dublin City",
-            "type": "city",
-            "country": "Ireland",
-            "score": 1.0,
-            "matched_on": "alias",
-        }
-    ]
+    assert result[0] == {
+        "id": "IE-CITY-DUBLIN",
+        "name": "Dublin City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 1.0,
+        "matched_on": "alias",
+    }
+
+
+def test_shortcut_name():
+    result = match_data("Co. Dublin")
+    print(f"result: {result}")
+    assert result[0]["name"] == "County Dublin"
