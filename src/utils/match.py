@@ -1,6 +1,7 @@
 from pathlib import Path
 from difflib import SequenceMatcher as sm
 import json
+import re
 from icecream import ic
 
 """
@@ -8,6 +9,7 @@ References:
     - https://stackoverflow.com/questions/10018679/python-find-closest-string-from-a-list-to-another-string
     - https://docs.python.org/3/library/difflib.html
     - https://docs.python.org/3/library/difflib.html#sequencematcher-objects
+    - https://www.geeksforgeeks.org/python/sort-in-python/
 """
 DATA_PATH = Path(__file__).resolve().parent.parent / "data" / "geo_data.json"
 
@@ -21,6 +23,11 @@ def normalize_text(text: str) -> str:
     """
     Normalize text
     """
+    ic("before normaliz", text)
+    text = text.lower().strip()
+    text = re.sub(r"\bco\.?\s+", "county ", text, flags=re.IGNORECASE)
+
+    ic("county", text)
     text = text.replace("-", " ")
     text = text.lower().strip()
     return text
@@ -50,7 +57,8 @@ def similarity_score(query: str, candidate: str) -> float:
     return sm(None, normalized_query, normalized_candidate).ratio()
 
 
-def match_data(query: str, type: str | None = None) -> list[dict]:
+# def match_data(query: str, entity_type: str | None = None) -> list[dict]:
+def match_data(query: str, entity_type: str | None = None) -> list[dict]:
     """
     Search data set and return best matches.
     """
@@ -62,11 +70,11 @@ def match_data(query: str, type: str | None = None) -> list[dict]:
 
     for match in dataset:
         # if one type requested skip rest of the type
-        if type and match["type"] != type:
+        if entity_type and match["type"] != entity_type:
             continue
 
         # store name and aliases
-        names_to_check = [match["name"]] + match.get("aliases", "")
+        names_to_check = [match["name"]] + match.get("aliases", [])
         ic(names_to_check)
 
         # store strongest match (name or aliases)
@@ -96,5 +104,8 @@ def match_data(query: str, type: str | None = None) -> list[dict]:
                     "matched_on": matched_on,
                 }
             )
-    # return a list of candidates
+    # sort candidates descending (highest first)
+    candidates.sort(key=lambda item: item["score"], reverse=True)
+
+    # return a list of candidates highest first
     return candidates

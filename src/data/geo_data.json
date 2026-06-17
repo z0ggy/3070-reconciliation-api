@@ -1,5 +1,16 @@
 [
   {
+    "id": "IE-COUNTY-DUBLIN",
+    "name": "County Dublin",
+    "type": "county",
+    "country": "Ireland",
+    "aliases": [
+      "Co. Dublin",
+      "Dublin County",
+      "Dublin Co"
+    ]
+  },
+  {
     "id": "IE-CITY-DUBLIN",
     "name": "Dublin City",
     "type": "city",
