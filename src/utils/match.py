@@ -1,8 +1,7 @@
-from pathlib import Path
-from difflib import SequenceMatcher as sm
 import json
 import re
-from icecream import ic
+from difflib import SequenceMatcher as sm
+from pathlib import Path
 
 """
 References:
@@ -23,11 +22,9 @@ def normalize_text(text: str) -> str:
     """
     Normalize text
     """
-    ic("before normaliz", text)
     text = text.lower().strip()
     text = re.sub(r"\bco\.?\s+", "county ", text, flags=re.IGNORECASE)
 
-    ic("county", text)
     text = text.replace("-", " ")
     text = text.lower().strip()
     return text
@@ -75,7 +72,6 @@ def match_data(query: str, entity_type: str | None = None) -> list[dict]:
 
         # store name and aliases
         names_to_check = [match["name"]] + match.get("aliases", [])
-        ic(names_to_check)
 
         # store strongest match (name or aliases)
         best_score = 0.0
@@ -85,12 +81,10 @@ def match_data(query: str, entity_type: str | None = None) -> list[dict]:
 
         for i, candidate_name in enumerate(names_to_check):
             score = similarity_score(query, candidate_name)
-            ic(score)
 
             if score > best_score:
                 best_score = score
                 matched_on = "name" if i == 0 else "alias"
-                ic(matched_on)
 
         # filter for weak candidates
         if best_score > 0.45:

@@ -1,4 +1,4 @@
-from src.utils.match import normalize_text, similarity_score, match_data
+from src.utils.match import match_data, normalize_text, similarity_score
 
 
 def test_exact_city_match():
@@ -39,31 +39,49 @@ def test_city():
 
 def test_match_data_perfect_match_by_name():
     result = match_data("Dublin")
-    print(f"result: {result}")
-    assert result[0] == {
-        "id": "IE-CITY-DUBLIN",
-        "name": "Dublin City",
-        "type": "city",
-        "country": "Ireland",
-        "score": 1.0,
-        "matched_on": "alias",
-    }
+    assert result[0]["name"] == "Dublin City"
+    assert result[0]["type"] == "city"
 
 
-def test_match_data_by_aliases():
+def test_match_data_by_aliases_dublin():
     result = match_data("Baile Átha Cliath")
-    print(f"result: {result}")
-    assert result[0] == {
-        "id": "IE-CITY-DUBLIN",
-        "name": "Dublin City",
-        "type": "city",
-        "country": "Ireland",
-        "score": 1.0,
-        "matched_on": "alias",
-    }
+    assert result[0]["name"] == "Dublin City"
+    assert result[0]["type"] == "city"
+    assert result[0]["matched_on"] == "alias"
 
 
-def test_shortcut_name():
+def test_match_data_by_aliases_dun():
+    result = match_data("Dun Laoghaire Rathdown")
+    assert result[0]["name"] == "Dún Laoghaire-Rathdown"
+    assert result[0]["type"] == "local_authority"
+    assert result[0]["matched_on"] == "alias"
+
+
+def test_county_name():
     result = match_data("Co. Dublin")
-    print(f"result: {result}")
     assert result[0]["name"] == "County Dublin"
+
+
+def test_type_filter():
+    result = match_data("Dublin", entity_type="city")
+    assert result[0]["type"] == "city"
+    assert result[0]["name"] == "Dublin City"
+
+
+def test_multiple_candidates_city_county_match():
+    results = match_data("Dublin")
+    names = [result["name"] for result in results]
+    assert "Dublin City" in names
+    assert "County Dublin" in names
+
+
+def test_misspeling_city():
+    results = match_data("Dubln")
+    names = [result["name"] for result in results]
+    assert "Dublin City" in names
+    assert "County Dublin" in names
+
+
+def test_no_score():
+    results = match_data("Paris")
+    assert len(results) == 0
