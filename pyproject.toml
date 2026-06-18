@@ -4,10 +4,10 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = ["pytest>=9.0.3", "fastapi"]
 
 [dependency-groups]
-dev = ["pytest>=9.0.3", "icecream>=2.2.0"]
+dev = ["icecream>=2.2.0"]
 
 [tool.pytest.ini_options]
 pythonpath = ["."]
