@@ -19,7 +19,7 @@ def read_root():
     return {"Hello": "World"}
 
 
-@app.get("/reconcile/{q}")
-def reconcile(q: str):
-    candidates = match_data(query=q)
-    return candidates
+@app.get("/reconcile")
+def reconcile(q: str, t: str | None = None):
+    candidates = match_data(query=q, entity_type=t)
+    return {"query": q, "type": t, "candidates": candidates}

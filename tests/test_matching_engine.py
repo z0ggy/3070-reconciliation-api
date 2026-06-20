@@ -66,6 +66,7 @@ def test_type_filter():
     result = match_data("Dublin", entity_type="city")
     assert result[0]["type"] == "city"
     assert result[0]["name"] == "Dublin City"
+    assert result[0]["score"] == 1.0
 
 
 def test_multiple_candidates_city_county_match():
