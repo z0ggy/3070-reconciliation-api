@@ -9,7 +9,7 @@ References:
 """
 app = FastAPI(
     title="Reconciliation API prototype",
-    description="Prototype API for matching messy geographic names standarised Irish geographic entities.",
+    description="Prototype API for matching messy geographic names standardise Irish geographic entities.",
     version="0.1.0",
 )
 

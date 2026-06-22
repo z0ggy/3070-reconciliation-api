@@ -18,7 +18,7 @@ def load_file() -> list[dict]:
         return json.load(file)
 
 
-def normalize_text(text: str) -> str:
+def normalise_text(text: str) -> str:
     """
     Normalize text
     """
@@ -37,8 +37,8 @@ def similarity_score(query: str, candidate: str) -> float:
     candidate: str represent official name from dataset.
     """
     # normalize strings
-    normalized_query = normalize_text(query)
-    normalized_candidate = normalize_text(candidate)
+    normalized_query = normalise_text(query)
+    normalized_candidate = normalise_text(candidate)
 
     # perfect match
     if normalized_query == normalized_candidate:
@@ -76,7 +76,7 @@ def match_data(query: str, entity_type: str | None = None) -> list[dict]:
         # store strongest match (name or aliases)
         best_score = 0.0
 
-        # represnt a match 'source' (name or alias)
+        # represent a match 'source' (name or alias)
         matched_on = "name"
 
         for i, candidate_name in enumerate(names_to_check):
