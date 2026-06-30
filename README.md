@@ -6,3 +6,4 @@ http://127.0.0.1:8000
 
 ## example query url 
 http://127.0.0.1:8000/reconcile?q=Dublin
+http://127.0.0.1:8000/reconcile?q=Co.%20Dublin

@@ -1,11 +1,13 @@
 import json
 import re
+import unicodedata
 from difflib import SequenceMatcher as sm
 from pathlib import Path
 
 """
 References:
     - https://stackoverflow.com/questions/10018679/python-find-closest-string-from-a-list-to-another-string
+    - https://stackoverflow.com/questions/51710082/what-does-unicodedata-normalize-do-in-python
     - https://docs.python.org/3/library/difflib.html
     - https://docs.python.org/3/library/difflib.html#sequencematcher-objects
     - https://www.geeksforgeeks.org/python/sort-in-python/
@@ -22,9 +24,21 @@ def normalise_text(text: str) -> str:
     """
     Normalize text
     """
+    # Split accent letters example: "ú" is split into "u" + accent mark.
+    text = unicodedata.normalize("NFKD", text)
+
+    # remove any accent marks
+    text = "".join(char for char in text if not unicodedata.combining(char))
+
     text = text.lower().strip()
+
+    # handle county abbreviation example: 'Co Dublin', 'Co. Dublin' -> 'county dublin'
     text = re.sub(r"\bco\.?\s+", "county ", text, flags=re.IGNORECASE)
 
+    # remove punctuation symbols
+    text = re.sub(r"[^a-z0-9\s-]", " ", text)
+
+    # replace dash
     text = text.replace("-", " ")
     text = text.lower().strip()
     return text

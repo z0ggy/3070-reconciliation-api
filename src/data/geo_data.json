@@ -4,22 +4,14 @@
     "name": "County Dublin",
     "type": "county",
     "country": "Ireland",
-    "aliases": [
-      "Co. Dublin",
-      "Dublin County",
-      "Dublin Co"
-    ]
+    "aliases": ["Co. Dublin", "Dublin County", "Dublin Co"]
   },
   {
     "id": "IE-CITY-DUBLIN",
     "name": "Dublin City",
     "type": "city",
     "country": "Ireland",
-    "aliases": [
-      "Dublin",
-      "Baile Átha Cliath",
-      "Dublin City Council"
-    ]
+    "aliases": ["Dublin", "Baile Átha Cliath", "Dublin City Council"]
   },
   {
     "id": "IE-LA-DLR",
@@ -32,5 +24,33 @@
       "DLR",
       "Dun Laoghaire"
     ]
+  },
+  {
+    "id": "IE-COUNTY-CORK",
+    "name": "County Cork",
+    "type": "county",
+    "country": "Ireland",
+    "aliases": ["Co. Cork", "Cork County", "Cork Co"]
+  },
+  {
+    "id": "IE-CITY-CORK",
+    "name": "Cork City",
+    "type": "city",
+    "country": "Ireland",
+    "aliases": ["Cork", "Cork City Council"]
+  },
+  {
+    "id": "IE-COUNTY-GALWAY",
+    "name": "County Galway",
+    "type": "county",
+    "country": "Ireland",
+    "aliases": ["Co. Galway", "Galway County", "Galway Co"]
+  },
+  {
+    "id": "IE-CITY-GALWAY",
+    "name": "Galway City",
+    "type": "city",
+    "country": "Ireland",
+    "aliases": ["Galway", "Galway City Council"]
   }
 ]

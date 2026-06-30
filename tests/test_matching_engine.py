@@ -6,14 +6,15 @@ def test_exact_city_match():
     assert normalise_text(city) == "dublin"
 
 
-def test_not_normalised_exact_city_match():
+def test_unnormalized_exact_city_match():
     city = "  DUblin  "
     assert normalise_text(city) == "dublin"
 
 
 def test_exact_dash_match():
     city = "Dún Laoghaire-Rathdown "
-    assert normalise_text(city) == "dún laoghaire rathdown"
+    assert normalise_text(city) != "dún laoghaire rathdown"
+    assert normalise_text(city) == "dun laoghaire rathdown"
 
 
 def test_basic_score():
@@ -30,13 +31,6 @@ def test_city_with_county():
     assert score == 0.9
 
 
-def test_city():
-    query = "City"
-    candidate = "dUblin  - "
-    score = similarity_score(query, candidate)
-    print(score)
-
-
 def test_match_data_perfect_match_by_name():
     result = match_data("Dublin")
     assert result[0]["name"] == "Dublin City"
@@ -50,11 +44,11 @@ def test_match_data_by_aliases_dublin():
     assert result[0]["matched_on"] == "alias"
 
 
-def test_match_data_by_aliases_dun():
+def test_match_data_by_normalized_official_name():
     result = match_data("Dun Laoghaire Rathdown")
     assert result[0]["name"] == "Dún Laoghaire-Rathdown"
     assert result[0]["type"] == "local_authority"
-    assert result[0]["matched_on"] == "alias"
+    assert result[0]["matched_on"] == "name"
 
 
 def test_county_name():

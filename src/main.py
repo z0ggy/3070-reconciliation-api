@@ -15,11 +15,12 @@ app = FastAPI(
 
 
 @app.get("/")
-def read_root():
-    return {"Hello": "World"}
+def check_server():
+    return {"server_status": "works"}
 
 
 @app.get("/reconcile")
-def reconcile(q: str, t: str | None = None):
-    candidates = match_data(query=q, entity_type=t)
-    return {"query": q, "type": t, "candidates": candidates}
+#  entity type default = None
+def reconcile(q: str, entity_type: str | None = None):
+    candidates = match_data(query=q, entity_type=entity_type)
+    return {"query": q, "entity_type": entity_type, "candidates": candidates}
