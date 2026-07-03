@@ -1,8 +1,8 @@
 import json
-import re
-import unicodedata
-from difflib import SequenceMatcher as sm
 from pathlib import Path
+
+from src.place_normaliser import PlaceNameNormaliser
+from src.similarity_score import SimilarityScore
 
 """
 References:
@@ -20,56 +20,19 @@ def load_file() -> list[dict]:
         return json.load(file)
 
 
-def normalise_text(text: str) -> str:
-    """
-    Normalize text
-    """
-    # Split accent letters example: "ú" is split into "u" + accent mark.
-    text = unicodedata.normalize("NFKD", text)
+# initialise instance of normaliser
+place_normaliser = PlaceNameNormaliser()
 
-    # remove any accent marks
-    text = "".join(char for char in text if not unicodedata.combining(char))
+# create shortcut for normaliser
+normaliser = place_normaliser.normalise
 
-    text = text.lower().strip()
-
-    # handle county abbreviation example: 'Co Dublin', 'Co. Dublin' -> 'county dublin'
-    text = re.sub(r"\bco\.?\s+", "county ", text, flags=re.IGNORECASE)
-
-    # remove punctuation symbols
-    text = re.sub(r"[^a-z0-9\s-]", " ", text)
-
-    # replace dash
-    text = text.replace("-", " ")
-    text = text.lower().strip()
-    return text
+# initialise instance of similarity score
+similarity_score = SimilarityScore()
 
 
-def similarity_score(query: str, candidate: str) -> float:
-    """
-    compare two normalized strings and return similarity score.
-    query: str represent input query.
-    candidate: str represent official name from dataset.
-    """
-    # normalize strings
-    normalized_query = normalise_text(query)
-    normalized_candidate = normalise_text(candidate)
-
-    # perfect match
-    if normalized_query == normalized_candidate:
-        return 1.0
-
-    # nearly perfect matches when string contains string
-    elif normalized_query in normalized_candidate:
-        return 0.9
-    elif normalized_candidate in normalized_query:
-        return 0.9
-
-    # similarity score based on how similar query and candidate are
-    return sm(None, normalized_query, normalized_candidate).ratio()
-
-
-# def match_data(query: str, entity_type: str | None = None) -> list[dict]:
-def match_data(query: str, entity_type: str | None = None) -> list[dict]:
+def match_data(
+    query: str, entity_type: str | None = None, limit: int = 10
+) -> list[dict]:
     """
     Search data set and return best matches.
     """
@@ -78,6 +41,13 @@ def match_data(query: str, entity_type: str | None = None) -> list[dict]:
 
     # store candidates
     candidates = []
+
+    # normalise query
+    normalised_query = normaliser(query)
+
+    # Return empty list (input checking)
+    if not normalised_query:
+        return []
 
     for match in dataset:
         # if one type requested skip rest of the type
@@ -93,12 +63,20 @@ def match_data(query: str, entity_type: str | None = None) -> list[dict]:
         # represent a match 'source' (name or alias)
         matched_on = "name"
 
+        # actual name or alias (what was matched)
+        matched_value = match["name"]
+
         for i, candidate_name in enumerate(names_to_check):
-            score = similarity_score(query, candidate_name)
+            # score = similarity_score(query, candidate_name)
+
+            normalised_candidate = normaliser(candidate_name)
+
+            score = similarity_score.score(normalised_query, normalised_candidate)
 
             if score > best_score:
                 best_score = score
                 matched_on = "name" if i == 0 else "alias"
+                matched_value = candidate_name
 
         # filter for weak candidates
         if best_score > 0.45:
@@ -110,10 +88,11 @@ def match_data(query: str, entity_type: str | None = None) -> list[dict]:
                     "country": match["country"],
                     "score": round(best_score, 3),
                     "matched_on": matched_on,
+                    "matched_value": matched_value,
                 }
             )
     # sort candidates descending (highest first)
     candidates.sort(key=lambda item: item["score"], reverse=True)
 
-    # return a list of candidates highest first
-    return candidates
+    # return a list of candidates highest first up to limit
+    return candidates[:limit]

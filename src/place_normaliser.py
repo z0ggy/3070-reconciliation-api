@@ -1,6 +1,11 @@
 import re
 import unicodedata
 
+"""
+References:
+    - https://stackoverflow.com/questions/51710082/what-does-unicodedata-normalize-do-in-python
+"""
+
 
 class PlaceNameNormaliser:
     def remove_accents(self, text: str) -> str:
