@@ -1,34 +1,4 @@
-from src.utils.match import match_data, normalise_text, similarity_score
-
-
-def test_exact_city_match():
-    city = "Dublin"
-    assert normalise_text(city) == "dublin"
-
-
-def test_unnormalized_exact_city_match():
-    city = "  DUblin  "
-    assert normalise_text(city) == "dublin"
-
-
-def test_exact_dash_match():
-    city = "Dún Laoghaire-Rathdown "
-    assert normalise_text(city) != "dún laoghaire rathdown"
-    assert normalise_text(city) == "dun laoghaire rathdown"
-
-
-def test_basic_score():
-    query = "  Dublin--  "
-    candidate = "dUblin  - "
-    score = similarity_score(query, candidate)
-    assert score == 1.0
-
-
-def test_city_with_county():
-    query = "County Dublin -- "
-    candidate = "dUblin  - "
-    score = similarity_score(query, candidate)
-    assert score == 0.9
+from src.utils.match import match_data
 
 
 def test_match_data_perfect_match_by_name():

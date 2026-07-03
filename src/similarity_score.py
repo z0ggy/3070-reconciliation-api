@@ -16,7 +16,7 @@ class SimilarityScore:
     candidate: str represent normalised official name from dataset.
     """
 
-    def score(self, query: str, candidate: str) -> float:
+    def calculate_score(self, query: str, candidate: str) -> float:
         if not query or not candidate:
             return 0.0
 

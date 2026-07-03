@@ -71,7 +71,9 @@ def match_data(
 
             normalised_candidate = normaliser(candidate_name)
 
-            score = similarity_score.score(normalised_query, normalised_candidate)
+            score = similarity_score.calculate_score(
+                normalised_query, normalised_candidate
+            )
 
             if score > best_score:
                 best_score = score

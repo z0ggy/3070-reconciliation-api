@@ -51,7 +51,7 @@ def test_remove_accent(city, expected):
 @pytest.mark.parametrize("city, expected", dash_data)
 def test_dash_replace(city, expected):
     # found bug "Galway-Co." become "galway co" instead "galway county"
-    # fix by re-arrange normalisation pipeline
+    # fixed by re-arrange normalisation pipeline
     assert normaliser(city) == expected
 
 
