@@ -65,7 +65,7 @@ class Matcher:
                     matched_value = candidate_name
 
             # filter for weak candidates
-            if best_score > 0.45:
+            if best_score > self.min_score:
                 candidates.append(
                     {
                         "id": place["id"],
