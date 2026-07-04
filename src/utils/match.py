@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 
+from src.matcher import Matcher
 from src.place_normaliser import PlaceNameNormaliser
 from src.similarity_score import SimilarityScore
 
@@ -23,78 +24,17 @@ def load_file() -> list[dict]:
 # initialise instance of normaliser
 place_normaliser = PlaceNameNormaliser()
 
-# create shortcut for normaliser
-normaliser = place_normaliser.normalise
-
 # initialise instance of similarity score
 similarity_score = SimilarityScore()
 
+matcher = Matcher(place_normaliser, similarity_score)
+
 
 def match_data(
-    query: str, entity_type: str | None = None, limit: int = 10
+    query: str,
+    entity_type: str | None = None,
+    limit: int = 10,
 ) -> list[dict]:
-    """
-    Search data set and return best matches.
-    """
-    # load dataset
-    dataset = load_file()
+    dataset: list[dict] = load_file()
 
-    # store candidates
-    candidates = []
-
-    # normalise query
-    normalised_query = normaliser(query)
-
-    # Return empty list (input checking)
-    if not normalised_query:
-        return []
-
-    for match in dataset:
-        # if one type requested skip rest of the type
-        if entity_type and match["type"] != entity_type:
-            continue
-
-        # store name and aliases
-        names_to_check = [match["name"]] + match.get("aliases", [])
-
-        # store strongest match (name or aliases)
-        best_score = 0.0
-
-        # represent a match 'source' (name or alias)
-        matched_on = "name"
-
-        # actual name or alias (what was matched)
-        matched_value = match["name"]
-
-        for i, candidate_name in enumerate(names_to_check):
-            # score = similarity_score(query, candidate_name)
-
-            normalised_candidate = normaliser(candidate_name)
-
-            score = similarity_score.calculate_score(
-                normalised_query, normalised_candidate
-            )
-
-            if score > best_score:
-                best_score = score
-                matched_on = "name" if i == 0 else "alias"
-                matched_value = candidate_name
-
-        # filter for weak candidates
-        if best_score > 0.45:
-            candidates.append(
-                {
-                    "id": match["id"],
-                    "name": match["name"],
-                    "type": match["type"],
-                    "country": match["country"],
-                    "score": round(best_score, 3),
-                    "matched_on": matched_on,
-                    "matched_value": matched_value,
-                }
-            )
-    # sort candidates descending (highest first)
-    candidates.sort(key=lambda item: item["score"], reverse=True)
-
-    # return a list of candidates highest first up to limit
-    return candidates[:limit]
+    return matcher.match(query, dataset, entity_type, limit)
