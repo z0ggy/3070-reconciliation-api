@@ -8,6 +8,8 @@ References:
 
 
 class PlaceNameNormaliser:
+    """Normalise query string"""
+
     def remove_accents(self, text: str) -> str:
         """Remove accent letters from entity name"""
 
