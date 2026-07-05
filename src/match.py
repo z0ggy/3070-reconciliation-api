@@ -1,6 +1,5 @@
-import json
-from pathlib import Path
-
+from src.config import GEO_DATA_PATH
+from src.data_loader import load_json_file
 from src.matcher import Matcher
 from src.place_normaliser import PlaceNameNormaliser
 from src.similarity_score import SimilarityScore
@@ -10,13 +9,8 @@ References:
     - https://www.geeksforgeeks.org/python/sort-in-python/
 """
 
-DATA_PATH = Path(__file__).resolve().parent.parent / "data" / "geo_data.json"
-
-
-def load_file() -> list[dict]:
-    with DATA_PATH.open("r", encoding="utf-8") as file:
-        return json.load(file)
-
+# load dataset
+DATASET = load_json_file(GEO_DATA_PATH)
 
 # initialise instance of normaliser
 place_normaliser = PlaceNameNormaliser()
@@ -34,6 +28,6 @@ def match_data(
     entity_type: str | None = None,
     limit: int = 10,
 ) -> list[dict]:
-    dataset: list[dict] = load_file()
+    dataset: list[dict] = DATASET
 
     return matcher.match(query, dataset, entity_type, limit)

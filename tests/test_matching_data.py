@@ -1,4 +1,4 @@
-from src.utils.match import match_data
+from src.match import match_data
 
 
 def test_match_data_perfect_match_by_name():
