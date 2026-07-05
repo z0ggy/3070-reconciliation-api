@@ -1,5 +1,12 @@
+from typing import Any
+
 from src.place_normaliser import PlaceNameNormaliser
 from src.similarity_score import SimilarityScore
+
+"""
+References:
+    - https://www.geeksforgeeks.org/python/sort-in-python/
+"""
 
 
 class Matcher:
@@ -30,7 +37,7 @@ class Matcher:
         if not normalised_query:
             return []
 
-        candidates: list[dict] = []
+        candidates: list[dict[str, Any]] = []
 
         for place in dataset:
             # if one type requested skip rest of the type
@@ -45,9 +52,11 @@ class Matcher:
                 place, names_to_check, normalised_query
             )
             # assign and filter weak candidates
-            candidates = self.filter_weak_candidate(
+            candidate = self.filter_weak_candidate(
                 place, best_score, matched_on, matched_value
             )
+            if candidate:
+                candidates.append(candidate)
 
         # sort candidates descending (highest first)
         candidates.sort(key=lambda item: item["score"], reverse=True)
@@ -93,24 +102,23 @@ class Matcher:
         return best_score, matched_on, matched_value
 
     def filter_weak_candidate(
-        self, place, best_score, matched_on, matched_value
-    ) -> list[dict]:
-        """Weak candidate filter"""
+        self,
+        place: dict[str, Any],
+        best_score: float,
+        matched_on: str,
+        matched_value: str,
+    ) -> dict[str, Any] | None:
+        """Build a candidate result only if the score passes the minimum threshold."""
 
-        # store candidates
-        candidates: list[dict] = []
+        if best_score <= self.min_score:
+            return None
 
-        # filter for weak candidates logic
-        if best_score > self.min_score:
-            candidates.append(
-                {
-                    "id": place["id"],
-                    "name": place["name"],
-                    "type": place["type"],
-                    "country": place["country"],
-                    "score": round(best_score, 3),
-                    "matched_on": matched_on,
-                    "matched_value": matched_value,
-                }
-            )
-        return candidates
+        return {
+            "id": place["id"],
+            "name": place["name"],
+            "type": place["type"],
+            "country": place["country"],
+            "score": round(best_score, 3),
+            "matched_on": matched_on,
+            "matched_value": matched_value,
+        }

@@ -7,12 +7,9 @@ from src.similarity_score import SimilarityScore
 
 """
 References:
-    - https://stackoverflow.com/questions/10018679/python-find-closest-string-from-a-list-to-another-string
-    - https://stackoverflow.com/questions/51710082/what-does-unicodedata-normalize-do-in-python
-    - https://docs.python.org/3/library/difflib.html
-    - https://docs.python.org/3/library/difflib.html#sequencematcher-objects
     - https://www.geeksforgeeks.org/python/sort-in-python/
 """
+
 DATA_PATH = Path(__file__).resolve().parent.parent / "data" / "geo_data.json"
 
 
@@ -27,9 +24,11 @@ place_normaliser = PlaceNameNormaliser()
 # initialise instance of similarity score
 similarity_score = SimilarityScore()
 
+# initialise instance of matcher
 matcher = Matcher(place_normaliser, similarity_score)
 
 
+# wrapper to run matcher with parameters
 def match_data(
     query: str,
     entity_type: str | None = None,
