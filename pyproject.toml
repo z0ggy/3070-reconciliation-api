@@ -16,3 +16,4 @@ dev = ["icecream>=2.2.0"]
 [tool.pytest.ini_options]
 pythonpath = ["."]
 testpaths = ["tests"]
+addopts = "-s -v"
