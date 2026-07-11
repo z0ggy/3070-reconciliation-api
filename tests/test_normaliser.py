@@ -1,4 +1,12 @@
 import pytest
+from test_data.test_data import (
+    accent_data,
+    country_suffix_data,
+    county_data,
+    dash_data,
+    punctuation_data,
+    space_data,
+)
 
 from src.place_normaliser import PlaceNameNormaliser
 
@@ -8,30 +16,6 @@ References:
     - https://docs.pytest.org/en/stable/
 """
 
-punctuation_data = [
-    ("Dublin, Ireland", "dublin"),
-    ("Dublin. Ireland!?", "dublin"),
-]
-
-accent_data = [
-    ("Dún-Laoghaire", "dun laoghaire"),
-    ("Cill Chomáin Mhór Theas ", "cill chomain mhor theas"),
-]
-
-dash_data = [
-    ("Dublin-City", "dublin city"),
-    ("Galway-Co.", "galway county"),
-]
-
-space_data = [
-    ("   Dublin   !!!", "dublin"),
-    ("!!@    Cork ", "cork"),
-]
-
-county_data = [
-    ("Co.!!! Dublin city", "county dublin city"),
-    ("Galway  !!! Co.", "galway county"),
-]
 
 # initialise instance of normaliser
 place_normaliser = PlaceNameNormaliser()
@@ -79,4 +63,9 @@ def test_remove_extra_spaces(city, expected):
 
 @pytest.mark.parametrize("city, expected", county_data)
 def test_convert_county(city, expected):
+    assert normaliser(city) == expected
+
+
+@pytest.mark.parametrize("city, expected", country_suffix_data)
+def test_remove_country_suffix(city, expected):
     assert normaliser(city) == expected
