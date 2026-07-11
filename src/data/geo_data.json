@@ -4,14 +4,32 @@
     "name": "County Dublin",
     "type": "county",
     "country": "Ireland",
-    "aliases": ["Co. Dublin", "Dublin County", "Dublin Co"]
+    "aliases": [
+      "County Dublin",
+      "County of Dublin",
+      "Co. Dublin",
+      "Co Dublin",
+      "Dublin County",
+      "Dublin Co.",
+      "Dublin Co"
+    ]
   },
   {
     "id": "IE-CITY-DUBLIN",
     "name": "Dublin City",
     "type": "city",
     "country": "Ireland",
-    "aliases": ["Dublin", "Baile Átha Cliath", "Dublin City Council"]
+    "aliases": [
+      "Dublin",
+      "Dublin City",
+      "City of Dublin",
+      "Dublin, Ireland",
+      "Dublin City Council",
+      "Baile Átha Cliath",
+      "Baile Atha Cliath",
+      "BÁC",
+      "BAC"
+    ]
   },
   {
     "id": "IE-LA-DLR",
@@ -19,9 +37,20 @@
     "type": "local_authority",
     "country": "Ireland",
     "aliases": [
-      "Dun Laoghaire Rathdown",
+      "Dún Laoghaire-Rathdown",
+      "Dun Laoghaire-Rathdown",
       "Dún Laoghaire Rathdown",
+      "Dun Laoghaire Rathdown",
+      "Dún Laoghaire/Rathdown",
+      "Dun Laoghaire/Rathdown",
+      "Dún Laoghaire and Rathdown",
+      "Dun Laoghaire and Rathdown",
+      "Dún Laoghaire-Rathdown County Council",
+      "Dun Laoghaire Rathdown County Council",
       "DLR",
+      "D.L.R.",
+      "DLR County Council",
+      "Dún Laoghaire",
       "Dun Laoghaire"
     ]
   },
@@ -30,27 +59,61 @@
     "name": "County Cork",
     "type": "county",
     "country": "Ireland",
-    "aliases": ["Co. Cork", "Cork County", "Cork Co"]
+    "aliases": [
+      "County Cork",
+      "County of Cork",
+      "Co. Cork",
+      "Co Cork",
+      "Cork County",
+      "Cork Co.",
+      "Cork Co",
+      "Contae Chorcaí",
+      "Contae Chorcai"
+    ]
   },
   {
     "id": "IE-CITY-CORK",
     "name": "Cork City",
     "type": "city",
     "country": "Ireland",
-    "aliases": ["Cork", "Cork City Council"]
+    "aliases": [
+      "Cork",
+      "Cork City",
+      "City of Cork",
+      "Cork, Ireland",
+      "Cork City Council",
+      "Corcaigh"
+    ]
   },
   {
     "id": "IE-COUNTY-GALWAY",
     "name": "County Galway",
     "type": "county",
     "country": "Ireland",
-    "aliases": ["Co. Galway", "Galway County", "Galway Co"]
+    "aliases": [
+      "County Galway",
+      "County of Galway",
+      "Co. Galway",
+      "Co Galway",
+      "Galway County",
+      "Galway Co.",
+      "Galway Co",
+      "Contae na Gaillimhe"
+    ]
   },
   {
     "id": "IE-CITY-GALWAY",
     "name": "Galway City",
     "type": "city",
     "country": "Ireland",
-    "aliases": ["Galway", "Galway City Council"]
+    "aliases": [
+      "Galway",
+      "Galway City",
+      "City of Galway",
+      "Galway, Ireland",
+      "Galway City Council",
+      "Gaillimh",
+      "Cathair na Gaillimhe"
+    ]
   }
 ]
