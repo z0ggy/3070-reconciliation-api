@@ -23,4 +23,6 @@ def check_server():
 #  entity type default = None
 def reconcile(q: str, entity_type: str | None = None):
     candidates = match_data(query=q, entity_type=entity_type)
+    if not candidates:
+        candidates = "Bad data"
     return {"query": q, "entity_type": entity_type, "candidates": candidates}

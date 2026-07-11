@@ -51,22 +51,28 @@ class PlaceNameNormaliser:
     def remove_punctuation(self, text: str) -> str:
         """Remove punctuation symbols"""
 
-        # Remove non letters characters
-        return re.sub(r"[^a-z0-9\s-]", " ", text)
+        # Remove non letters characters except dashes
+        return re.sub(r"[^a-z0-9\s/-]", " ", text)
 
-    def replace_dash(self, text: str) -> str:
-        """Replace '-' (dash) symbol"""
-        return text.replace("-", " ")
+    def replace_separators(self, text: str) -> str:
+        """Replace dash and slash separators with spaces."""
+
+        text = text.replace("-", " ")
+        text = text.replace("/", " ")
+        return text
 
     def normalise_whitespace(self, text: str) -> str:
         return re.sub(r"\s+", " ", text).strip()
 
     def normalise(self, text: str) -> str:
         """Pipeline/wrapper for normalise text functions"""
+        if not text:
+            return ""
         text = self.remove_accents(text)
         text = self.lower_case_and_strip(text)
         text = self.remove_punctuation(text)
-        text = self.replace_dash(text)
+        text = self.replace_separators(text)
         text = self.convert_official_abbreviation(text)
+        text = self.convert_county_abbreviation(text)
         text = self.normalise_whitespace(text)
         return text
