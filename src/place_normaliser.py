@@ -44,6 +44,10 @@ class PlaceNameNormaliser:
 
         return text
 
+    def convert_county_of(self, text: str) -> str:
+        """Convert 'county of dublin' to 'county dublin'."""
+        return re.sub(r"\bcounty\s+of\s+", "county ", text, flags=re.IGNORECASE)
+
     def remove_punctuation(self, text: str) -> str:
         """Remove punctuation symbols"""
 
