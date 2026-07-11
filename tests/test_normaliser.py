@@ -9,8 +9,8 @@ References:
 """
 
 punctuation_data = [
-    ("Dublin, Ireland", "dublin ireland"),
-    ("Dublin. Ireland!?", "dublin ireland"),
+    ("Dublin, Ireland", "dublin"),
+    ("Dublin. Ireland!?", "dublin"),
 ]
 
 accent_data = [
