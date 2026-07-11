@@ -23,11 +23,26 @@ class PlaceNameNormaliser:
         """Convert entity to lower case and strip empty spaces."""
         return text.lower().strip()
 
-    def convert_abbreviation(self, text: str) -> str:
-        """handle county abbreviation example: 'Co Dublin', 'Co. Dublin' -> 'county dublin'"""
+    def convert_official_abbreviation(self, text: str) -> str:
+        """Convert known Irish geographic abbreviation. Example: D.L.R. / DLR / D L R -> 'dlr'"""
 
         # Search regex pattern and replace abbreviation
-        return re.sub(r"\bco\.?\s+", "county ", text, flags=re.IGNORECASE)
+        return re.sub(r"\bd\.?\s*l\.?\s*r\.?\b", "dlr", text, flags=re.IGNORECASE)
+
+    def convert_county_abbreviation(self, text: str) -> str:
+        """
+        Convert county abbreviation examples:
+        'Co Dublin', 'Co. Dublin' -> 'county dublin'
+        'Dublin Co', 'Dublin Co.' -> 'dublin county'
+        """
+
+        # Co Dublin / Co. Dublin -> county dublin
+        text = re.sub(r"\bco\.?\s+", "county ", text, flags=re.IGNORECASE)
+
+        # Dublin Co / Dublin Co. -> dublin county
+        text = re.sub(r"\s+co\.?$", " county", text, flags=re.IGNORECASE)
+
+        return text
 
     def remove_punctuation(self, text: str) -> str:
         """Remove punctuation symbols"""
@@ -48,6 +63,6 @@ class PlaceNameNormaliser:
         text = self.lower_case_and_strip(text)
         text = self.remove_punctuation(text)
         text = self.replace_dash(text)
-        text = self.convert_abbreviation(text)
+        text = self.convert_official_abbreviation(text)
         text = self.normalise_whitespace(text)
         return text
