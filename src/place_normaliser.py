@@ -48,10 +48,24 @@ class PlaceNameNormaliser:
         """Convert 'county of dublin' to 'county dublin'."""
         return re.sub(r"\bcounty\s+of\s+", "county ", text, flags=re.IGNORECASE)
 
+    def remove_country_suffix(self, text: str) -> str:
+        """
+        Remove broad country suffixes.
+
+        Example:
+        'Dublin, Ireland' -> 'dublin'
+        'Dublin Ireland' -> 'dublin'
+        """
+
+        text = re.sub(r"\bireland\b", " ", text, flags=re.IGNORECASE)
+        text = re.sub(r"\beire\b", " ", text, flags=re.IGNORECASE)
+
+        return text
+
     def remove_punctuation(self, text: str) -> str:
         """Remove punctuation symbols"""
 
-        # Remove non letters characters except dashes
+        # Remove non letters characters except: dashes, spaces, slashes
         return re.sub(r"[^a-z0-9\s/-]", " ", text)
 
     def replace_separators(self, text: str) -> str:
@@ -70,9 +84,22 @@ class PlaceNameNormaliser:
             return ""
         text = self.remove_accents(text)
         text = self.lower_case_and_strip(text)
+
+        # Handle special abbreviations
+        text = self.convert_official_abbreviation(text)
+
+        # clean punctuation and separators
         text = self.remove_punctuation(text)
         text = self.replace_separators(text)
-        text = self.convert_official_abbreviation(text)
+        text = self.normalise_whitespace(text)
+
+        # words handling
+        text = self.convert_county_of(text)
         text = self.convert_county_abbreviation(text)
+
+        # remove country suffix
+        text = self.remove_country_suffix(text)
+
+        # make sure no space left
         text = self.normalise_whitespace(text)
         return text
