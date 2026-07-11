@@ -38,6 +38,23 @@ place_normaliser = PlaceNameNormaliser()
 normaliser = place_normaliser.normalise
 
 
+def test_sprint2():
+    assert normaliser("Co. Dublin") == "county dublin"
+    assert normaliser("Co Dublin") == "county dublin"
+    assert normaliser("Dublin Co.") == "dublin county"
+
+    assert normaliser("County of Dublin") == "county dublin"
+
+    assert normaliser("Baile Átha Cliath") == "baile atha cliath"
+    assert normaliser("Dún Laoghaire-Rathdown") == "dun laoghaire rathdown"
+
+    assert normaliser("D.L.R.") == "dlr"
+    assert normaliser("D L R") == "dlr"
+
+    assert normaliser("Dublin, Ireland") == "dublin"
+    assert normaliser("Dublin / Ireland") == "dublin"
+
+
 @pytest.mark.parametrize("city, expected", punctuation_data)
 def test_punctuation(city, expected):
     assert normaliser(city) == expected

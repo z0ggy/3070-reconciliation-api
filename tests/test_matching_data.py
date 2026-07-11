@@ -50,3 +50,11 @@ def test_misspelling_city():
 def test_no_score():
     results = match_data("Paris")
     assert len(results) == 0
+
+
+##############SPRINT2 tests
+def test_match_data_by_extended_aliases_dublin():
+    result = match_data("City of Dublin")
+    assert result[0]["name"] == "Dublin City"
+    assert result[0]["type"] == "city"
+    assert result[0]["matched_on"] == "alias"
