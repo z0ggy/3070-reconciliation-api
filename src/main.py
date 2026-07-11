@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from src.utils.match import match_data
+from src.match import match_data
 
 """
 References:

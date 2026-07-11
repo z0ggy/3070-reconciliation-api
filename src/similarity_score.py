@@ -1,4 +1,4 @@
-from difflib import SequenceMatcher as sm
+from difflib import SequenceMatcher
 
 """
 References:
@@ -30,4 +30,4 @@ class SimilarityScore:
             return 0.9
 
         else:
-            return sm(None, query, candidate).ratio()
+            return SequenceMatcher(None, query, candidate).ratio()
