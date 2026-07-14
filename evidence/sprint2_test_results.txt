@@ -1,0 +1,44 @@
+#run command
+pytest -v | tee evidence/sprint2_test_results.txt:w
+
+============================= test session starts ==============================
+platform darwin -- Python 3.14.3, pytest-9.0.3, pluggy-1.6.0 -- /Users/z0ggy/Developer/uol-project/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/z0ggy/Developer/uol-project
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.14.0
+collecting ... collected 30 items
+
+tests/test_matcher.py::test_matcher_returns_ranked_candidates PASSED
+tests/test_matching_data.py::test_match_data_perfect_match_by_name PASSED
+tests/test_matching_data.py::test_match_data_by_aliases_dublin PASSED
+tests/test_matching_data.py::test_match_data_by_normalized_official_name PASSED
+tests/test_matching_data.py::test_county_name PASSED
+tests/test_matching_data.py::test_type_filter PASSED
+tests/test_matching_data.py::test_multiple_candidates_city_county_match PASSED
+tests/test_matching_data.py::test_misspelling_city PASSED
+tests/test_matching_data.py::test_no_score PASSED
+tests/test_matching_data.py::test_match_data_by_extended_aliases_dublin PASSED
+tests/test_normaliser.py::test_sprint2 PASSED
+tests/test_normaliser.py::test_punctuation[Dublin!!!-dublin] PASSED
+tests/test_normaliser.py::test_punctuation[Cork???-cork] PASSED
+tests/test_normaliser.py::test_punctuation[Galway, City-galway city] PASSED
+tests/test_normaliser.py::test_remove_accent[D\xfan-Laoghaire-dun laoghaire] PASSED
+tests/test_normaliser.py::test_remove_accent[Cill Chom\xe1in Mh\xf3r Theas -cill chomain mhor theas] PASSED
+tests/test_normaliser.py::test_dash_replace[Dublin-City-dublin city] PASSED
+tests/test_normaliser.py::test_dash_replace[Galway-Co.-galway county] PASSED
+tests/test_normaliser.py::test_remove_extra_spaces[   Dublin   !!!-dublin] PASSED
+tests/test_normaliser.py::test_remove_extra_spaces[!!@    Cork -cork] PASSED
+tests/test_normaliser.py::test_convert_county[Co.!!! Dublin city-county dublin city] PASSED
+tests/test_normaliser.py::test_convert_county[Galway  !!! Co.-galway county] PASSED
+tests/test_normaliser.py::test_remove_country_suffix[Dublin, Ireland-dublin] PASSED
+tests/test_normaliser.py::test_remove_country_suffix[Dublin. Ireland!?-dublin] PASSED
+tests/test_normaliser.py::test_remove_country_suffix[Dublin Ireland-dublin] PASSED
+tests/test_normaliser.py::test_remove_country_suffix[Dublin / Ireland-dublin] PASSED
+tests/test_similarity_score.py::test_empty_query PASSED
+tests/test_similarity_score.py::test_exact_match PASSED
+tests/test_similarity_score.py::test_high_score_match PASSED
+tests/test_similarity_score.py::test_fuzzy_match PASSED
+
+============================== 30 passed in 0.02s ==============================

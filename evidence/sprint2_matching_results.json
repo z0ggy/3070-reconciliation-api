@@ -1,0 +1,461 @@
+[
+  {
+    "query": "Dublin",
+    "entity_type": null,
+    "candidates": [
+      {
+        "id": "IE-CITY-DUBLIN",
+        "name": "Dublin City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Dublin",
+        "rank": 1
+      },
+      {
+        "id": "IE-COUNTY-DUBLIN",
+        "name": "County Dublin",
+        "type": "county",
+        "country": "Ireland",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "County Dublin",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "query": "Dublinn",
+    "entity_type": null,
+    "candidates": [
+      {
+        "id": "IE-CITY-DUBLIN",
+        "name": "Dublin City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 0.9,
+        "matched_on": "alias",
+        "matched_value": "Dublin",
+        "rank": 1
+      },
+      {
+        "id": "IE-COUNTY-DUBLIN",
+        "name": "County Dublin",
+        "type": "county",
+        "country": "Ireland",
+        "score": 0.7,
+        "matched_on": "alias",
+        "matched_value": "Dublin County",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "query": "Dublin City",
+    "entity_type": null,
+    "candidates": [
+      {
+        "id": "IE-CITY-DUBLIN",
+        "name": "Dublin City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 1.0,
+        "matched_on": "name",
+        "matched_value": "Dublin City",
+        "rank": 1
+      },
+      {
+        "id": "IE-COUNTY-DUBLIN",
+        "name": "County Dublin",
+        "type": "county",
+        "country": "Ireland",
+        "score": 0.833,
+        "matched_on": "alias",
+        "matched_value": "Dublin County",
+        "rank": 2
+      },
+      {
+        "id": "IE-CITY-GALWAY",
+        "name": "Galway City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 0.545,
+        "matched_on": "name",
+        "matched_value": "Galway City",
+        "rank": 3
+      },
+      {
+        "id": "IE-CITY-CORK",
+        "name": "Cork City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 0.5,
+        "matched_on": "name",
+        "matched_value": "Cork City",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "query": "County Dublin",
+    "entity_type": null,
+    "candidates": [
+      {
+        "id": "IE-COUNTY-DUBLIN",
+        "name": "County Dublin",
+        "type": "county",
+        "country": "Ireland",
+        "score": 1.0,
+        "matched_on": "name",
+        "matched_value": "County Dublin",
+        "rank": 1
+      },
+      {
+        "id": "IE-CITY-DUBLIN",
+        "name": "Dublin City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 0.9,
+        "matched_on": "alias",
+        "matched_value": "Dublin",
+        "rank": 2
+      },
+      {
+        "id": "IE-COUNTY-GALWAY",
+        "name": "County Galway",
+        "type": "county",
+        "country": "Ireland",
+        "score": 0.615,
+        "matched_on": "name",
+        "matched_value": "County Galway",
+        "rank": 3
+      },
+      {
+        "id": "IE-COUNTY-CORK",
+        "name": "County Cork",
+        "type": "county",
+        "country": "Ireland",
+        "score": 0.583,
+        "matched_on": "name",
+        "matched_value": "County Cork",
+        "rank": 4
+      },
+      {
+        "id": "IE-LA-DLR",
+        "name": "Dún Laoghaire-Rathdown",
+        "type": "local_authority",
+        "country": "Ireland",
+        "score": 0.581,
+        "matched_on": "alias",
+        "matched_value": "DLR County Council",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "query": "Co. Dublin",
+    "entity_type": null,
+    "candidates": [
+      {
+        "id": "IE-COUNTY-DUBLIN",
+        "name": "County Dublin",
+        "type": "county",
+        "country": "Ireland",
+        "score": 1.0,
+        "matched_on": "name",
+        "matched_value": "County Dublin",
+        "rank": 1
+      },
+      {
+        "id": "IE-CITY-DUBLIN",
+        "name": "Dublin City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 0.9,
+        "matched_on": "alias",
+        "matched_value": "Dublin",
+        "rank": 2
+      },
+      {
+        "id": "IE-COUNTY-GALWAY",
+        "name": "County Galway",
+        "type": "county",
+        "country": "Ireland",
+        "score": 0.615,
+        "matched_on": "name",
+        "matched_value": "County Galway",
+        "rank": 3
+      },
+      {
+        "id": "IE-COUNTY-CORK",
+        "name": "County Cork",
+        "type": "county",
+        "country": "Ireland",
+        "score": 0.583,
+        "matched_on": "name",
+        "matched_value": "County Cork",
+        "rank": 4
+      },
+      {
+        "id": "IE-LA-DLR",
+        "name": "Dún Laoghaire-Rathdown",
+        "type": "local_authority",
+        "country": "Ireland",
+        "score": 0.581,
+        "matched_on": "alias",
+        "matched_value": "DLR County Council",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "query": "Dublin City Council",
+    "entity_type": null,
+    "candidates": [
+      {
+        "id": "IE-CITY-DUBLIN",
+        "name": "Dublin City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Dublin City Council",
+        "rank": 1
+      },
+      {
+        "id": "IE-LA-DLR",
+        "name": "Dún Laoghaire-Rathdown",
+        "type": "local_authority",
+        "country": "Ireland",
+        "score": 0.757,
+        "matched_on": "alias",
+        "matched_value": "DLR County Council",
+        "rank": 2
+      },
+      {
+        "id": "IE-CITY-GALWAY",
+        "name": "Galway City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 0.737,
+        "matched_on": "alias",
+        "matched_value": "Galway City Council",
+        "rank": 3
+      },
+      {
+        "id": "IE-CITY-CORK",
+        "name": "Cork City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 0.722,
+        "matched_on": "alias",
+        "matched_value": "Cork City Council",
+        "rank": 4
+      },
+      {
+        "id": "IE-COUNTY-DUBLIN",
+        "name": "County Dublin",
+        "type": "county",
+        "country": "Ireland",
+        "score": 0.688,
+        "matched_on": "alias",
+        "matched_value": "Dublin County",
+        "rank": 5
+      },
+      {
+        "id": "IE-COUNTY-CORK",
+        "name": "County Cork",
+        "type": "county",
+        "country": "Ireland",
+        "score": 0.467,
+        "matched_on": "name",
+        "matched_value": "County Cork",
+        "rank": 6
+      }
+    ]
+  },
+  {
+    "query": "Baile Atha Cliath",
+    "entity_type": null,
+    "candidates": [
+      {
+        "id": "IE-CITY-DUBLIN",
+        "name": "Dublin City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Baile Átha Cliath",
+        "rank": 1
+      },
+      {
+        "id": "IE-CITY-GALWAY",
+        "name": "Galway City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 0.5,
+        "matched_on": "name",
+        "matched_value": "Galway City",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "query": "Dún Laoghaire-Rathdown",
+    "entity_type": null,
+    "candidates": [
+      {
+        "id": "IE-LA-DLR",
+        "name": "Dún Laoghaire-Rathdown",
+        "type": "local_authority",
+        "country": "Ireland",
+        "score": 1.0,
+        "matched_on": "name",
+        "matched_value": "Dún Laoghaire-Rathdown",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "query": "DLR",
+    "entity_type": null,
+    "candidates": [
+      {
+        "id": "IE-LA-DLR",
+        "name": "Dún Laoghaire-Rathdown",
+        "type": "local_authority",
+        "country": "Ireland",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "DLR",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "query": "Cork",
+    "entity_type": null,
+    "candidates": [
+      {
+        "id": "IE-CITY-CORK",
+        "name": "Cork City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Cork",
+        "rank": 1
+      },
+      {
+        "id": "IE-COUNTY-CORK",
+        "name": "County Cork",
+        "type": "county",
+        "country": "Ireland",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "County Cork",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "query": "Galway City",
+    "entity_type": null,
+    "candidates": [
+      {
+        "id": "IE-CITY-GALWAY",
+        "name": "Galway City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 1.0,
+        "matched_on": "name",
+        "matched_value": "Galway City",
+        "rank": 1
+      },
+      {
+        "id": "IE-COUNTY-GALWAY",
+        "name": "County Galway",
+        "type": "county",
+        "country": "Ireland",
+        "score": 0.833,
+        "matched_on": "alias",
+        "matched_value": "Galway County",
+        "rank": 2
+      },
+      {
+        "id": "IE-CITY-DUBLIN",
+        "name": "Dublin City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 0.545,
+        "matched_on": "name",
+        "matched_value": "Dublin City",
+        "rank": 3
+      },
+      {
+        "id": "IE-CITY-CORK",
+        "name": "Cork City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 0.5,
+        "matched_on": "name",
+        "matched_value": "Cork City",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "query": "Unknown Place",
+    "entity_type": null,
+    "candidates": [
+      {
+        "id": "IE-LA-DLR",
+        "name": "Dún Laoghaire-Rathdown",
+        "type": "local_authority",
+        "country": "Ireland",
+        "score": 0.462,
+        "matched_on": "alias",
+        "matched_value": "Dún Laoghaire",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "query": "Dublin",
+    "entity_type": "city",
+    "candidates": [
+      {
+        "id": "IE-CITY-DUBLIN",
+        "name": "Dublin City",
+        "type": "city",
+        "country": "Ireland",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Dublin",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "query": "Dublin",
+    "entity_type": "county",
+    "candidates": [
+      {
+        "id": "IE-COUNTY-DUBLIN",
+        "name": "County Dublin",
+        "type": "county",
+        "country": "Ireland",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "County Dublin",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "query": "Dublin",
+    "entity_type": "local_authority",
+    "candidates": []
+  }
+]
