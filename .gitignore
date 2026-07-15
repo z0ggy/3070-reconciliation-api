@@ -11,3 +11,8 @@ wheels/
 .venv
 codebook.toml
 src/save_records.py
+
+# IDE
+.zed
+.vscode
+.pycharm

@@ -1,0 +1,138 @@
+[
+  {
+    "case_id": "exact-dublin-city",
+    "category": "exact_official_name",
+    "query": "Dublin City",
+    "entity_type": null,
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city"
+  },
+  {
+    "case_id": "exact-county-dublin",
+    "category": "exact_official_name",
+    "query": "County Dublin",
+    "entity_type": null,
+    "expected_id": "IE-COUNTY-DUBLIN",
+    "expected_type": "county"
+  },
+  {
+    "case_id": "exact-cork-city",
+    "category": "exact_official_name",
+    "query": "Cork City",
+    "entity_type": null,
+    "expected_id": "IE-CITY-CORK",
+    "expected_type": "city"
+  },
+  {
+    "case_id": "exact-county-cork",
+    "category": "exact_official_name",
+    "query": "County Cork",
+    "entity_type": null,
+    "expected_id": "IE-COUNTY-CORK",
+    "expected_type": "county"
+  },
+  {
+    "case_id": "exact-galway-city",
+    "category": "exact_official_name",
+    "query": "Galway City",
+    "entity_type": null,
+    "expected_id": "IE-CITY-GALWAY",
+    "expected_type": "city"
+  },
+  {
+    "case_id": "exact-county-galway",
+    "category": "exact_official_name",
+    "query": "County Galway",
+    "entity_type": null,
+    "expected_id": "IE-COUNTY-GALWAY",
+    "expected_type": "county"
+  },
+  {
+    "case_id": "exact-dlr",
+    "category": "exact_official_name",
+    "query": "Dún Laoghaire-Rathdown",
+    "entity_type": null,
+    "expected_id": "IE-LA-DLR",
+    "expected_type": "local_authority"
+  },
+  {
+    "case_id": "alias-dublin",
+    "category": "alias",
+    "query": "Dublin",
+    "entity_type": null,
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city"
+  },
+  {
+    "case_id": "alias-cork",
+    "category": "alias",
+    "query": "Cork",
+    "entity_type": null,
+    "expected_id": "IE-CITY-CORK",
+    "expected_type": "city"
+  },
+  {
+    "case_id": "alias-galway",
+    "category": "alias",
+    "query": "Galway",
+    "entity_type": null,
+    "expected_id": "IE-CITY-GALWAY",
+    "expected_type": "city"
+  },
+  {
+    "case_id": "irish-dublin-accented",
+    "category": "irish_language_name",
+    "query": "Baile Átha Cliath",
+    "entity_type": null,
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city"
+  },
+  {
+    "case_id": "irish-dublin-unaccented",
+    "category": "irish_language_name",
+    "query": "Baile Atha Cliath",
+    "entity_type": null,
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city"
+  },
+  {
+    "case_id": "alias-dlr",
+    "category": "abbreviation",
+    "query": "DLR",
+    "entity_type": null,
+    "expected_id": "IE-LA-DLR",
+    "expected_type": "local_authority"
+  },
+  {
+    "case_id": "alias-dlr-county-council",
+    "category": "local_authority",
+    "query": "DLR County Council",
+    "entity_type": null,
+    "expected_id": "IE-LA-DLR",
+    "expected_type": "local_authority"
+  },
+  {
+    "case_id": "typo-dublin",
+    "category": "spelling_mistake",
+    "query": "Dublinn",
+    "entity_type": null,
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city"
+  },
+  {
+    "case_id": "typo-cork",
+    "category": "spelling_mistake",
+    "query": "Corck",
+    "entity_type": null,
+    "expected_id": "IE-CITY-CORK",
+    "expected_type": "city"
+  },
+  {
+    "case_id": "typo-galway",
+    "category": "spelling_mistake",
+    "query": "Gallway",
+    "entity_type": null,
+    "expected_id": "IE-CITY-GALWAY",
+    "expected_type": "city"
+  }
+]
