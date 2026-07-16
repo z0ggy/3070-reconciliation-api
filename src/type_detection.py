@@ -20,6 +20,10 @@ def type_detection(normalised_query: str) -> EntityType | None:
     if "council" in words or ("local" in words and "authority" in words):
         return "local_authority"
 
+    # Handle conflicted type like "dublin city county"
+    if "city" in words and "county" in words:
+        return None
+
     if "city" in words:
         return "city"
 
