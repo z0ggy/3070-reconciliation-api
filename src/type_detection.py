@@ -13,12 +13,31 @@ def type_detection(normalised_query: str) -> EntityType | None:
     if not normalised_query:
         return None
 
+    # Check whole word instead of just substring in normalised_query
+    words = normalised_query.split()
+
     # Prioritise "council" and "local authority" over "city" or "county."
-    if "council" in normalised_query or "local authority" in normalised_query:
+    if "council" in words or "local authority" in words:
         return "local_authority"
 
-    if "city" in normalised_query:
+    if "city" in words:
         return "city"
 
-    if "county" in normalised_query:
+    if "county" in words:
         return "county"
+
+    return None
+
+
+def resolve_type(
+    normalised_query: str,
+    entity_type: str | None = None,
+) -> str | None:
+    """
+    Use the specified type if provided. Otherwise, get it from the query.
+    """
+
+    if entity_type is not None:
+        return entity_type
+
+    return type_detection(normalised_query)
