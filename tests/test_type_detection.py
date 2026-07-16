@@ -6,3 +6,5 @@ def test_type_detection():
     assert type_detection(normalised_query) == "city"
     normalised_query = "dublin county"
     assert type_detection(normalised_query) == "county"
+    normalised_query = "dublin council"
+    assert type_detection(normalised_query) == "local_authority"
