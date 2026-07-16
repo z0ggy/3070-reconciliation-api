@@ -31,3 +31,15 @@ country_suffix_data = [
     ("Dublin Ireland", "dublin"),
     ("Dublin / Ireland", "dublin"),
 ]
+
+place_type_data = [
+    ("dublin city", "city"),
+    ("city of dublin", "city"),
+    ("county dublin", "county"),
+    ("dublin county", "county"),
+    ("dublin city council", "local_authority"),
+    ("galway county council", "local_authority"),
+    ("dublin local authority", "local_authority"),
+    ("dublin", None),
+    ("baile atha cliath", None),
+]
