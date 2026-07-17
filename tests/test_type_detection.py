@@ -2,7 +2,7 @@ import pytest
 from test_data.test_data import place_type_data
 
 from src.place_normaliser import PlaceNameNormaliser
-from src.type_detection import type_detection
+from src.type_detection import resolve_type, type_detection
 
 # initialise instance of normaliser
 place_normaliser = PlaceNameNormaliser()
@@ -38,3 +38,19 @@ def test_council_has_priority_over_county():
 
 def test_detect_city_and_county_conflict():
     assert type_detection("dublin city county") is None
+
+
+def test_passed_entity_type_in_query_overrides_type_detection():
+    normalised_query = "county dublin"
+    entity_type = "city"
+    result = resolve_type(normalised_query, entity_type)
+
+    assert result == "city"
+
+
+def test_type_detection_used_without_entity_type():
+    normalised_query = "county dublin"
+    entity_type = None
+    result = resolve_type(normalised_query, entity_type)
+
+    assert result == "county"

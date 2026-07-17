@@ -31,3 +31,17 @@ def type_detection(normalised_query: str) -> EntityType | None:
         return "county"
 
     return None
+
+
+def resolve_type(
+    normalised_query: str,
+    explicit_entity_type: str | None = None,
+) -> str | None:
+    """
+    Use the specified type if provided. Otherwise, get it from the query.
+    """
+
+    if explicit_entity_type is not None:
+        return explicit_entity_type
+
+    return type_detection(normalised_query)
