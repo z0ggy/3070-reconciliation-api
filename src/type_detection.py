@@ -35,8 +35,8 @@ def type_detection(normalised_query: str) -> EntityType | None:
 
 def resolve_type(
     normalised_query: str,
-    explicit_entity_type: str | None = None,
-) -> str | None:
+    explicit_entity_type: EntityType | None = None,
+) -> EntityType | None:
     """
     Use the specified type if provided. Otherwise, get it from the query.
     """

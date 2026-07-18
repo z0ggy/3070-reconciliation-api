@@ -2,7 +2,7 @@ from typing import Any
 
 from src.place_normaliser import PlaceNameNormaliser
 from src.similarity_score import SimilarityScore
-from src.type_detection import resolve_type
+from src.type_detection import EntityType, resolve_type
 
 """
 References:
@@ -18,31 +18,35 @@ class Matcher:
         normaliser: PlaceNameNormaliser,
         scorer: SimilarityScore,
         min_score: float = 0.45,
+        type_bonus: float = 0.05,
+        type_penalty: float = 0.04,
     ) -> None:
         self.normaliser = normaliser
         self.scorer = scorer
         self.min_score = min_score
+        self.type_bonus = type_bonus
+        self.type_penalty = type_penalty
 
     def match(
         self,
         query: str,
         dataset: list[dict],
-        entity_type: str | None = None,
+        entity_type: EntityType | None = None,
         limit: int = 10,
     ) -> list:
 
         # normalise query
         normalised_query = self.normaliser.normalise(query)
 
-        # Return empty list (input checking)
+        # Return empty list (input checking) for an empty query
         if not normalised_query:
             return []
 
-        # Explicit entity_type in query has priority over type detection.
-        priority_entity_type = resolve_type(
-            normalised_query=normalised_query,
-            explicit_entity_type=entity_type,
-        )
+        # Infer type only without an explicit type in the query.
+        inferred_type = resolve_type(normalised_query) if entity_type is None else None
+
+        # Used as a secondary ranking rule when final scores are equal.
+        priority_entity_type = entity_type or inferred_type
 
         candidates: list[dict[str, Any]] = []
 
@@ -58,9 +62,20 @@ class Matcher:
             best_score, matched_on, matched_value = self.find_best_score(
                 place, names_to_check, normalised_query
             )
-            # assign and filter weak candidates
+
+            # Apply an inferred-type bonus or penalty to the best text score.
+            final_score = self.apply_type_updater(
+                base_score=best_score,
+                candidate_type=place["type"],
+                detection_type=inferred_type,
+            )
+
+            # Filter using the final adjusted score.
             candidate = self.filter_weak_candidate(
-                place, best_score, matched_on, matched_value
+                place,
+                final_score,
+                matched_on,
+                matched_value,
             )
             if candidate:
                 candidates.append(candidate)
@@ -81,39 +96,42 @@ class Matcher:
         # return a list of candidates highest first up to limit
         return candidates[:limit]
 
-    def find_best_score(self, place: dict, names_to_check: list, normalised_query: str):
-        """Find the best score for place using calculate_score logic
-        place
+    def find_best_score(
+        self,
+        place: dict[str, Any],
+        names_to_check: list[str],
+        normalised_query: str,
+    ) -> tuple[float, str, str]:
         """
+        Find the highest similarity score considering: place, name and aliases.
+
+        Returns the best score, the source of the match, and the matched value.
+        """
+
         if not place:
-            raise ValueError("Place should be not empty")
+            raise ValueError("Place should not be empty")
 
         if not names_to_check:
-            raise ValueError("Names to check should be not empty")
+            raise ValueError("Names to check should not be empty")
 
         if not normalised_query:
-            raise ValueError("Normalised query should be not empty")
+            raise ValueError("Normalised query should not be empty")
 
-        # store strongest match (name or aliases)
         best_score = 0.0
-
-        # represent a match 'source' (name or alias)
         matched_on = "name"
-
-        # actual name or alias (what was matched)
         matched_value = place["name"]
 
-        for i, candidate_name in enumerate(names_to_check):
-            # normalise each candidate
+        for index, candidate_name in enumerate(names_to_check):
             normalised_candidate = self.normaliser.normalise(candidate_name)
 
-            # calculate score
-            score = self.scorer.calculate_score(normalised_query, normalised_candidate)
+            score = self.scorer.calculate_score(
+                normalised_query,
+                normalised_candidate,
+            )
 
-            # logic for score result
             if score > best_score:
                 best_score = score
-                matched_on = "name" if i == 0 else "alias"
+                matched_on = "name" if index == 0 else "alias"
                 matched_value = candidate_name
 
         return best_score, matched_on, matched_value
@@ -139,3 +157,25 @@ class Matcher:
             "matched_on": matched_on,
             "matched_value": matched_value,
         }
+
+    def apply_type_updater(
+        self,
+        base_score: float,
+        candidate_type: str,
+        detection_type: EntityType | None,
+    ) -> float:
+        """
+        Adjust a similarity score using a detection type.
+        returns the updated final score between 0.0 and 1.0
+        """
+
+        if detection_type is None:
+            return base_score
+
+        if candidate_type == detection_type:
+            updated_score = base_score + self.type_bonus
+        else:
+            updated_score = base_score - self.type_penalty
+
+        # Keep the final score within the (0.0, 1.0) range.
+        return max(0.0, min(1.0, updated_score))
