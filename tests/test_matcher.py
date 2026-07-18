@@ -91,6 +91,10 @@ def test_explicit_type_filter_overrides_type_detection():
 
 
 def test_matching_type_get_bonus():
+    """
+    Both records have the same name.
+    adding a county to the query, record with county is ranked first.
+    """
     dataset = [
         {
             "id": "IE-COUNTY-DUBLIN",
@@ -113,3 +117,65 @@ def test_matching_type_get_bonus():
     assert results[0]["id"] == "IE-COUNTY-DUBLIN"
     assert results[0]["type"] == "county"
     assert results[0]["score"] > results[1]["score"]
+
+
+def test_matching_type_get_penalty():
+    """
+    Both records have the same name.
+    adding a city to the query, record with city get bonus,
+    record with count get penalty score.
+    """
+    dataset = [
+        {
+            "id": "IE-COUNTY-DUBLIN",
+            "name": "Dublin",
+            "type": "county",
+            "country": "Ireland",
+            "aliases": [],
+        },
+        {
+            "id": "IE-CITY-DUBLIN",
+            "name": "Dublin",
+            "type": "city",
+            "country": "Ireland",
+            "aliases": [],
+        },
+    ]
+
+    results = matcher.match("Dublin City", dataset)
+
+    city_result = None
+    county_result = None
+
+    for result in results:
+        if result["type"] == "city":
+            city_result = result
+        elif result["type"] == "county":
+            county_result = result
+
+    assert city_result is not None
+    assert county_result is not None
+    assert city_result["score"] > county_result["score"]
+
+
+def test_no_explicit_type_skip_adjust_scores():
+    dataset = [
+        {
+            "id": "IE-COUNTY-DUBLIN",
+            "name": "Dublin",
+            "type": "county",
+            "country": "Ireland",
+            "aliases": [],
+        },
+        {
+            "id": "IE-CITY-DUBLIN",
+            "name": "Dublin",
+            "type": "city",
+            "country": "Ireland",
+            "aliases": [],
+        },
+    ]
+
+    results = matcher.match("Dublin", dataset)
+
+    assert results[0]["score"] == results[1]["score"]
