@@ -179,3 +179,80 @@ def test_no_explicit_type_skip_adjust_scores():
     results = matcher.match("Dublin", dataset)
 
     assert results[0]["score"] == results[1]["score"]
+
+
+def test_type_bonus_is_not_bigger_than_one():
+    """Adding `0.05` to perfect match (1.0) must return `1.0`."""
+    dataset = [
+        {
+            "id": "IE-COUNTY-DUBLIN",
+            "name": "County Dublin",
+            "type": "county",
+            "country": "Ireland",
+            "aliases": [],
+        },
+    ]
+
+    results = matcher.match("County Dublin", dataset)
+
+    assert results[0]["score"] == 1.0
+
+
+def test_type_adjustment_favourite_exact_name_match():
+    """
+    Query detect "local_authority", city gets penalty,
+    "local_authority" gets bonus. Exact match rank should be above
+    unrelated "Cork" candidate.
+    """
+    dataset = [
+        {
+            "id": "IE-CITY-DUBLIN",
+            "name": "Dublin City Council",
+            "type": "city",
+            "country": "Ireland",
+            "aliases": [],
+        },
+        {
+            "id": "IE-LA-CORK",
+            "name": "Cork County Council",
+            "type": "local_authority",
+            "country": "Ireland",
+            "aliases": [],
+        },
+    ]
+
+    results = matcher.match("Dublin City Council", dataset)
+
+    assert results[0]["id"] == "IE-CITY-DUBLIN"
+
+
+def test_explicit_type_filter_skip_conflicting_names():
+    """
+    The query contain word "city", entity_type="county".
+    The county should win.
+    """
+    dataset = [
+        {
+            "id": "IE-COUNTY-DUBLIN",
+            "name": "Dublin",
+            "type": "county",
+            "country": "Ireland",
+            "aliases": [],
+        },
+        {
+            "id": "IE-CITY-DUBLIN",
+            "name": "Dublin",
+            "type": "city",
+            "country": "Ireland",
+            "aliases": [],
+        },
+    ]
+
+    results = matcher.match(
+        "Dublin City",
+        dataset,
+        entity_type="county",
+    )
+
+    assert len(results) == 1
+    assert results[0]["id"] == "IE-COUNTY-DUBLIN"
