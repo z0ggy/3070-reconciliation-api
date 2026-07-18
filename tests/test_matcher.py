@@ -88,3 +88,28 @@ def test_explicit_type_filter_overrides_type_detection():
     assert len(results) == 1
     assert results[0]["type"] == "county"
     assert results[0]["id"] == "IE-COUNTY-DUBLIN"
+
+
+def test_matching_type_get_bonus():
+    dataset = [
+        {
+            "id": "IE-COUNTY-DUBLIN",
+            "name": "Dublin",
+            "type": "county",
+            "country": "Ireland",
+            "aliases": [],
+        },
+        {
+            "id": "IE-CITY-DUBLIN",
+            "name": "Dublin",
+            "type": "city",
+            "country": "Ireland",
+            "aliases": [],
+        },
+    ]
+
+    results = matcher.match("County Dublin", dataset)
+
+    assert results[0]["id"] == "IE-COUNTY-DUBLIN"
+    assert results[0]["type"] == "county"
+    assert results[0]["score"] > results[1]["score"]
