@@ -2,6 +2,7 @@ from typing import Any
 
 from src.place_normaliser import PlaceNameNormaliser
 from src.similarity_score import SimilarityScore
+from src.type_detection import resolve_type
 
 """
 References:
@@ -37,6 +38,12 @@ class Matcher:
         if not normalised_query:
             return []
 
+        # Explicit entity_type in query has priority over type detection.
+        priority_entity_type = resolve_type(
+            normalised_query=normalised_query,
+            explicit_entity_type=entity_type,
+        )
+
         candidates: list[dict[str, Any]] = []
 
         for place in dataset:
@@ -59,7 +66,17 @@ class Matcher:
                 candidates.append(candidate)
 
         # sort candidates descending (highest first)
-        candidates.sort(key=lambda item: item["score"], reverse=True)
+        # candidates.sort(key=lambda item: item["score"], reverse=True)
+        candidates.sort(
+            key=lambda item: (
+                item["score"],
+                (
+                    priority_entity_type is not None
+                    and item["type"] == priority_entity_type
+                ),
+            ),
+            reverse=True,
+        )
 
         # return a list of candidates highest first up to limit
         return candidates[:limit]
