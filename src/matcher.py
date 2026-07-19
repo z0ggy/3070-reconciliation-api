@@ -7,6 +7,8 @@ from src.type_detection import EntityType, resolve_type
 """
 References:
     - https://www.geeksforgeeks.org/python/sort-in-python/
+    - https://www.w3schools.com/python/ref_string_casefold.asp
+    - https://stackoverflow.com/questions/45745661/lower-vs-casefold-in-string-matching-and-converting-to-lowercase
 """
 
 
@@ -51,26 +53,26 @@ class Matcher:
         candidates: list[dict[str, Any]] = []
 
         for place in dataset:
-            # if one type requested skip rest of the type
+            # If one type requested skip rest of the type
             if entity_type and place["type"] != entity_type:
                 continue
 
-            # store name and aliases
+            # Check and store name and aliases
             names_to_check = [place["name"]] + place.get("aliases", [])
 
-            # find best score
+            # Find best score
             best_score, matched_on, matched_value = self.find_best_score(
                 place, names_to_check, normalised_query
             )
 
-            # Apply an inferred-type bonus or penalty to the best text score.
+            # Apply an inferred type bonus or penalty to the best text score.
             final_score = self.apply_type_updater(
                 base_score=best_score,
                 candidate_type=place["type"],
                 detection_type=inferred_type,
             )
 
-            # Filter using the final adjusted score.
+            # Filter weak candidates.
             candidate = self.filter_weak_candidate(
                 place,
                 final_score,
@@ -84,13 +86,19 @@ class Matcher:
         # candidates.sort(key=lambda item: item["score"], reverse=True)
         candidates.sort(
             key=lambda item: (
-                item["score"],
-                (
+                # Preferred entity type first when scores are equal
+                -item["score"],  # Highest score first
+                0  # Candidate matches the preferred type
+                if (
                     priority_entity_type is not None
                     and item["type"] == priority_entity_type
-                ),
-            ),
-            reverse=True,
+                )
+                else 1,  # candidate does not match the preferred type
+                # Sort equal candidates alphabetically by name
+                item["name"].casefold(),
+                # If candidate have the same: score, type priority, name finally sort by 'id'
+                item["id"],
+            )
         )
 
         # return a list of candidates highest first up to limit
@@ -121,6 +129,7 @@ class Matcher:
         matched_on = "name"
         matched_value = place["name"]
 
+        # Loops through the official name and aliases and update best_score
         for index, candidate_name in enumerate(names_to_check):
             normalised_candidate = self.normaliser.normalise(candidate_name)
 
