@@ -1,0 +1,252 @@
+[
+  {
+    "case_id": "unclear-dublin",
+    "category": "city_county_unclear_context",
+    "query": "Dublin",
+    "entity_type": null,
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city",
+    "expected_unclear": true,
+    "expected_alternative_ids": [
+      "IE-COUNTY-DUBLIN"
+    ]
+  },
+  {
+    "case_id": "unclear-cork",
+    "category": "city_county_unclear_context",
+    "query": "Cork",
+    "entity_type": null,
+    "expected_id": "IE-CITY-CORK",
+    "expected_type": "city",
+    "expected_unclear": true,
+    "expected_alternative_ids": [
+      "IE-COUNTY-CORK"
+    ]
+  },
+  {
+    "case_id": "unclear-galway",
+    "category": "city_county_unclear_context",
+    "query": "Galway",
+    "entity_type": null,
+    "expected_id": "IE-CITY-GALWAY",
+    "expected_type": "city",
+    "expected_unclear": true,
+    "expected_alternative_ids": [
+      "IE-COUNTY-GALWAY"
+    ]
+  },
+  {
+    "case_id": "country-context-does-not-resolve-dublin",
+    "category": "country_context",
+    "query": "Dublin, Ireland",
+    "entity_type": null,
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city",
+    "expected_unclear": true,
+    "expected_alternative_ids": [
+      "IE-COUNTY-DUBLIN"
+    ]
+  },
+  {
+    "case_id": "resolved-dublin-city-hint",
+    "category": "type_context",
+    "query": "Dublin City",
+    "entity_type": null,
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city",
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  },
+  {
+    "case_id": "resolved-dublin-county-hint",
+    "category": "type_context",
+    "query": "County Dublin",
+    "entity_type": null,
+    "expected_id": "IE-COUNTY-DUBLIN",
+    "expected_type": "county",
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  },
+  {
+    "case_id": "resolved-cork-city-hint",
+    "category": "type_context",
+    "query": "Cork City",
+    "entity_type": null,
+    "expected_id": "IE-CITY-CORK",
+    "expected_type": "city",
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  },
+  {
+    "case_id": "resolved-cork-county-hint",
+    "category": "type_context",
+    "query": "County Cork",
+    "entity_type": null,
+    "expected_id": "IE-COUNTY-CORK",
+    "expected_type": "county",
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  },
+  {
+    "case_id": "resolved-galway-city-hint",
+    "category": "type_context",
+    "query": "Galway City",
+    "entity_type": null,
+    "expected_id": "IE-CITY-GALWAY",
+    "expected_type": "city",
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  },
+  {
+    "case_id": "resolved-galway-county-hint",
+    "category": "type_context",
+    "query": "County Galway",
+    "entity_type": null,
+    "expected_id": "IE-COUNTY-GALWAY",
+    "expected_type": "county",
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  },
+  {
+    "case_id": "dublin-city-council-context",
+    "category": "council_context",
+    "query": "Dublin City Council",
+    "entity_type": null,
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city",
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  },
+  {
+    "case_id": "dublin-county-council-context",
+    "category": "council_context",
+    "query": "Dublin County Council",
+    "entity_type": null,
+    "expected_id": "IE-COUNTY-DUBLIN",
+    "expected_type": "county",
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  },
+  {
+    "case_id": "cork-city-council-context",
+    "category": "council_context",
+    "query": "Cork City Council",
+    "entity_type": null,
+    "expected_id": "IE-CITY-CORK",
+    "expected_type": "city",
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  },
+  {
+    "case_id": "cork-county-council-context",
+    "category": "council_context",
+    "query": "Cork County Council",
+    "entity_type": null,
+    "expected_id": "IE-COUNTY-CORK",
+    "expected_type": "county",
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  },
+  {
+    "case_id": "galway-city-council-context",
+    "category": "council_context",
+    "query": "Galway City Council",
+    "entity_type": null,
+    "expected_id": "IE-CITY-GALWAY",
+    "expected_type": "city",
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  },
+  {
+    "case_id": "galway-county-council-context",
+    "category": "council_context",
+    "query": "Galway County Council",
+    "entity_type": null,
+    "expected_id": "IE-COUNTY-GALWAY",
+    "expected_type": "county",
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  },
+  {
+    "case_id": "dlr-county-council-context",
+    "category": "local_authority_context",
+    "query": "DLR County Council",
+    "entity_type": null,
+    "expected_id": "IE-LA-DLR",
+    "expected_type": "local_authority",
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  },
+  {
+    "case_id": "dlr-local-authority-context",
+    "category": "local_authority_context",
+    "query": "Dún Laoghaire-Rathdown Local Authority",
+    "entity_type": null,
+    "expected_id": "IE-LA-DLR",
+    "expected_type": "local_authority",
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  },
+  {
+    "case_id": "explicit-dublin-city-resolution",
+    "category": "explicit_type_resolution",
+    "query": "Dublin",
+    "entity_type": "city",
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city",
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  },
+  {
+    "case_id": "explicit-dublin-county-resolution",
+    "category": "explicit_type_resolution",
+    "query": "Dublin",
+    "entity_type": "county",
+    "expected_id": "IE-COUNTY-DUBLIN",
+    "expected_type": "county",
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  },
+  {
+    "case_id": "explicit-county-overrides-city-cue",
+    "category": "explicit_type_override",
+    "query": "Dublin City",
+    "entity_type": "county",
+    "expected_id": "IE-COUNTY-DUBLIN",
+    "expected_type": "county",
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  },
+  {
+    "case_id": "explicit-city-overrides-county-cue",
+    "category": "explicit_type_override",
+    "query": "County Dublin",
+    "entity_type": "city",
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city",
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  },
+  {
+    "case_id": "conflicting-dublin-city-county-cues",
+    "category": "conflicting_type_context",
+    "query": "Dublin City County",
+    "entity_type": null,
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city",
+    "expected_unclear": true,
+    "expected_alternative_ids": [
+      "IE-COUNTY-DUBLIN"
+    ]
+  },
+  {
+    "case_id": "no-match-with-country-context",
+    "category": "weak_unrelated",
+    "query": "Unknown Geographic Area, Ireland",
+    "entity_type": null,
+    "expected_id": null,
+    "expected_type": null,
+    "expected_unclear": false,
+    "expected_alternative_ids": []
+  }
+]
