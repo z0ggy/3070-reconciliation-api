@@ -83,7 +83,7 @@ def test_normalise_with_context_retains_country(
     assert normaliser_with_context(query) == expected
 
 
-def test_normalise_base_presrerve_country_context() -> None:
+def test_normalise_base_preserve_country_context() -> None:
     result = normaliser_base(" Co. Dún-Laoghaire / Éire ")
 
     assert result == "county dun laoghaire eire"
