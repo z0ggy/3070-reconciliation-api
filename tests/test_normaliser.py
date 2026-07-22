@@ -1,6 +1,7 @@
 import pytest
 from test_data.test_data import (
     accent_data,
+    country_context_data,
     country_suffix_data,
     county_data,
     dash_data,
@@ -20,6 +21,8 @@ References:
 # initialise instance of normaliser
 place_normaliser = PlaceNameNormaliser()
 normaliser = place_normaliser.normalise
+normaliser_base = place_normaliser.normalise_base
+normaliser_with_context = place_normaliser.normalise_with_context
 
 
 def test_sprint2():
@@ -68,4 +71,25 @@ def test_convert_county(city, expected):
 
 @pytest.mark.parametrize("city, expected", country_suffix_data)
 def test_remove_country_suffix(city, expected):
+    """Obsolete remove country is replaced with context normaliser"""
     assert normaliser(city) == expected
+
+
+@pytest.mark.parametrize("query, expected", country_context_data)
+def test_normalise_with_context_retains_country(
+    query: str,
+    expected: str,
+) -> None:
+    assert normaliser_with_context(query) == expected
+
+
+def test_normalise_base_presrerve_country_context() -> None:
+    result = normaliser_base(" Co. Dún-Laoghaire / Éire ")
+
+    assert result == "county dun laoghaire eire"
+
+
+def test_normalise_methods_return_empty_string() -> None:
+    assert normaliser_base("") == ""
+    assert normaliser("") == ""
+    assert normaliser_with_context("") == ""

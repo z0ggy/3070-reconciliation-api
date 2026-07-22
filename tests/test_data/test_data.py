@@ -43,3 +43,15 @@ place_type_data = [
     ("dublin", None),
     ("baile atha cliath", None),
 ]
+
+
+country_context_data = [
+    ("Dublin, Ireland", "dublin ireland"),
+    ("Dublin / Ireland", "dublin ireland"),
+    ("Dublin, Éire", "dublin eire"),
+    ("County Cork, Ireland", "county cork ireland"),
+    (
+        "Dún Laoghaire-Rathdown / Ireland",
+        "dun laoghaire rathdown ireland",
+    ),
+]
