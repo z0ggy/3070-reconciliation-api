@@ -15,10 +15,15 @@ def type_detection(normalised_query: str) -> EntityType | None:
         return None
 
     # Check whole word instead of just substring in normalised_query
-    words = set(normalised_query.split())
+    words = normalised_query.split()
 
     # Return True/False if all items in set x are present in set y
-    is_local_authority = {"local", "authority"}.issubset(words)
+    # is_local_authority = {"local", "authority"}.issubset(words)
+    is_local_authority = False
+    for index in range(len(words) - 1):
+        if words[index] == "local" and words[index + 1] == "authority":
+            is_local_authority = True
+            break
 
     # Prioritise "council" and "local authority" over "city" or "county."
     # if "council" in words or ("local" in words and "authority" in words):
