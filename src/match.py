@@ -3,6 +3,7 @@ from src.data_loader import load_json_file
 from src.matcher import Matcher
 from src.place_normaliser import PlaceNameNormaliser
 from src.similarity_score import SimilarityScore
+from src.type_detection import EntityType
 
 """
 References:
@@ -25,7 +26,7 @@ matcher = Matcher(place_normaliser, similarity_score)
 # wrapper to run matcher with parameters
 def match_data(
     query: str,
-    entity_type: str | None = None,
+    entity_type: EntityType | None = None,
     limit: int = 10,
 ) -> list[dict]:
     dataset: list[dict] = DATASET
