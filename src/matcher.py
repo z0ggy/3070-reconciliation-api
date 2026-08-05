@@ -22,12 +22,16 @@ class Matcher:
         min_score: float = 0.45,
         type_bonus: float = 0.05,
         type_penalty: float = 0.04,
+        country_bonus: float = 0.04,
+        country_penalty: float = 0.03,
     ) -> None:
         self.normaliser = normaliser
         self.scorer = scorer
         self.min_score = min_score
         self.type_bonus = type_bonus
         self.type_penalty = type_penalty
+        self.country_bonus = country_bonus
+        self.country_penalty = country_penalty
 
     def match(
         self,
@@ -35,27 +39,55 @@ class Matcher:
         dataset: list[dict],
         entity_type: EntityType | None = None,
         limit: int = 10,
-    ) -> list:
+        country: str | None = None,
+    ) -> list[dict[str, Any]]:
+        """Match a query against the dataset and return ranked candidates."""
 
-        # normalise query
+        # Normalise query, remove country words ("Ireland").
         normalised_query = self.normaliser.normalise(query)
+
+        # Normalise query, keeps country words ("Ireland"), for use as context.
+        normalised_context_query = self.normaliser.normalise_with_context(query)
 
         # Return empty list (input checking) for an empty query
         if not normalised_query:
             return []
 
-        # Infer type only without an explicit type in the query.
+        # Inferred type if no explicit type in the query is provided.
         inferred_type = resolve_type(normalised_query) if entity_type is None else None
 
         # Used as a secondary ranking rule when final scores are equal.
         priority_entity_type = entity_type or inferred_type
 
+        # Explicit country is used as a hard filter.
+        explicit_country = self.parse_country(country) if country else None
+
+        # Use country if is in the query for ranking only,
+        # Or ignore if an explicit country parameter is already provided.
+        detected_country = None
+
+        if explicit_country is None:
+            detected_country = self.detect_country_context(
+                normalised_context_query,
+                dataset,
+            )
+
         candidates: list[dict[str, Any]] = []
 
         for place in dataset:
-            # If one type requested skip rest of the type
+            # Explicit entity type filters records before scoring.
             if entity_type and place["type"] != entity_type:
                 continue
+
+            place_country = place.get("country")
+
+            # Explicit country filters records before scoring.
+            if explicit_country is not None:
+                if not isinstance(place_country, str):
+                    continue
+
+                if self.parse_country(place_country) != explicit_country:
+                    continue
 
             # Check and store name and aliases
             names_to_check = [place["name"]] + place.get("aliases", [])
@@ -70,6 +102,13 @@ class Matcher:
                 base_score=best_score,
                 candidate_type=place["type"],
                 detection_type=inferred_type,
+            )
+
+            # Apply a small country bonus or penalty when country context is in the query
+            final_score = self.add_country_adjustment(
+                score=final_score,
+                place_country=place_country if isinstance(place_country, str) else None,
+                detected_country=detected_country,
             )
 
             # Filter weak candidates.
@@ -188,3 +227,112 @@ class Matcher:
 
         # Keep the final score within the (0.0, 1.0) range.
         return max(0.0, min(1.0, updated_score))
+
+    def parse_country(self, country: str) -> str:
+        """
+        Allows 'Ireland' and 'Éire' to represent the same country:
+        """
+        normalised_country = self.normaliser.normalise_with_context(country)
+
+        country_aliases = {
+            "eire": "ireland",
+            "ireland": "ireland",
+        }
+
+        return country_aliases.get(
+            normalised_country,
+            normalised_country,
+        )
+
+    def contains_phrase(
+        self,
+        query_words: list[str],
+        phrase_words: list[str],
+    ) -> bool:
+        """
+        Detect single word ("Ireland" and multi word ("United States") inputs.
+        Example:
+            query_words = ["dublin", "united", "states"]
+            phrase_words = ["united", "states"]
+        return True if detect country or False otherwise.
+        """
+        if not phrase_words:
+            return False
+
+        if len(phrase_words) > len(query_words):
+            return False
+
+        number_of_positions = len(query_words) - len(phrase_words) + 1
+
+        for index in range(number_of_positions):
+            if query_words[index : index + len(phrase_words)] == phrase_words:
+                return True
+
+        return False
+
+    def detect_country_context(
+        self,
+        normalised_context_query: str,
+        dataset: list[dict],
+    ) -> str | None:
+        """
+        Detect country in the normalised query.
+        Returns a country only when exactly one country is detected.
+        """
+        query_words = normalised_context_query.split()
+
+        # A set prevents duplicate country values.
+        detected_countries: set[str] = set()
+
+        for place in dataset:
+            place_country = place.get("country")
+
+            # Skip records missing a valid country.
+            if not isinstance(place_country, str):
+                continue
+
+            canonical_country = self.parse_country(place_country)
+            country_words = canonical_country.split()
+
+            # Add the country when name is in the query.
+            if self.contains_phrase(query_words, country_words):
+                detected_countries.add(canonical_country)
+
+        # Handle Irish country name, "Éire" map to 'ireland'
+        if "eire" in query_words:  # "eire" accent removal applied.
+            detected_countries.add("ireland")
+
+        # Return None when the query not contains country,
+        # or contains conflicting countries.
+        if len(detected_countries) != 1:
+            return None
+
+        return detected_countries.pop()
+
+    def add_country_adjustment(
+        self,
+        score: float,
+        place_country: str | None,
+        detected_country: str | None,
+    ) -> float:
+        """
+        Apply a small score adjustment using country context from the query.
+        A matching country get bonus. A different country get penalty.
+        """
+
+        # Keep original score without detected country
+        if detected_country is None:
+            return score
+
+        # Not apply penalty for candidate when its country is missing.
+        if not place_country:
+            return score
+
+        canonical_place_country = self.parse_country(place_country)
+
+        if canonical_place_country == detected_country:
+            score += self.country_bonus
+        else:
+            score -= self.country_penalty
+
+        return max(0.0, min(1.0, score))

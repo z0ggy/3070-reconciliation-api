@@ -28,7 +28,8 @@ def match_data(
     query: str,
     entity_type: EntityType | None = None,
     limit: int = 10,
+    country: str | None = None,
 ) -> list[dict]:
     dataset: list[dict] = DATASET
 
-    return matcher.match(query, dataset, entity_type, limit)
+    return matcher.match(query, dataset, entity_type, limit, country)
