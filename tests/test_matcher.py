@@ -1,3 +1,5 @@
+from test_data.test_data import country_context_two_identical_records_dataset
+
 from src.matcher import Matcher
 from src.place_normaliser import PlaceNameNormaliser
 from src.similarity_score import SimilarityScore
@@ -256,3 +258,65 @@ def test_explicit_type_filter_skip_conflicting_names():
 
     assert len(results) == 1
     assert results[0]["id"] == "IE-COUNTY-DUBLIN"
+
+
+def test_explicit_country_filters_candidates():
+    # Two identically named records
+    dataset = country_context_two_identical_records_dataset
+    results = matcher.match(
+        query="Dublin",
+        dataset=dataset,
+        country="Ireland",
+    )
+
+    assert len(results) == 1
+    assert results[0]["id"] == "IE-CITY-DUBLIN"
+
+
+def test_unknown_explicit_country_returns_no_candidates():
+    dataset = country_context_two_identical_records_dataset
+    results = matcher.match(
+        query="Dublin",
+        dataset=dataset,
+        country="France",
+    )
+
+    assert results == []
+
+
+def test_country_in_query_score_top():
+    """Query country get bonus"""
+    dataset = country_context_two_identical_records_dataset
+    results = matcher.match(
+        query="Dublin, Ireland",
+        dataset=dataset,
+    )
+
+    assert len(results) == 2
+    assert results[0]["id"] == "IE-CITY-DUBLIN"
+    assert results[1]["id"] == "US-CITY-DUBLIN"
+    assert results[0]["score"] > results[1]["score"]
+
+
+def test_eire_context_matches_ireland():
+    """Éire (Irish name) maps to Ireland"""
+    dataset = country_context_two_identical_records_dataset
+    results = matcher.match(
+        query="Dublin, Éire",
+        dataset=dataset,
+    )
+
+    assert results[0]["id"] == "IE-CITY-DUBLIN"
+
+
+def test_explicit_country_overrides_detected_country():
+    """Explicit country overrides query context"""
+    dataset = country_context_two_identical_records_dataset
+    results = matcher.match(
+        query="Dublin, Ireland",
+        dataset=dataset,
+        country="USA",
+    )
+
+    assert len(results) == 1
+    assert results[0]["id"] == "US-CITY-DUBLIN"

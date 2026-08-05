@@ -55,3 +55,20 @@ country_context_data = [
         "dun laoghaire rathdown ireland",
     ),
 ]
+
+country_context_two_identical_records_dataset = [
+    {
+        "id": "IE-CITY-DUBLIN",
+        "name": "Dublin",
+        "type": "city",
+        "country": "Ireland",
+        "aliases": ["Dublin City"],
+    },
+    {
+        "id": "US-CITY-DUBLIN",
+        "name": "Dublin",
+        "type": "city",
+        "country": "USA",
+        "aliases": ["Dublin Ohio"],
+    },
+]
