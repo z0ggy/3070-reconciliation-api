@@ -80,32 +80,6 @@ class PlaceNameNormaliser:
     def normalise_whitespace(self, text: str) -> str:
         return re.sub(r"\s+", " ", text).strip()
 
-    # def normalise(self, text: str) -> str:
-    #     """Pipeline/wrapper for normalise text functions"""
-    #     if not text:
-    #         return ""
-    #     text = self.remove_accents(text)
-    #     text = self.lower_case_and_strip(text)
-
-    #     # Handle special abbreviations.
-    #     text = self.convert_official_abbreviation(text)
-
-    #     # clean punctuation and separators
-    #     text = self.remove_punctuation(text)
-    #     text = self.replace_separators(text)
-    #     text = self.normalise_whitespace(text)
-
-    #     # words handling
-    #     text = self.convert_county_of(text)
-    #     text = self.convert_county_abbreviation(text)
-
-    #     # remove country suffix
-    #     text = self.remove_country_suffix(text)
-
-    #     # make sure no space left
-    #     text = self.normalise_whitespace(text)
-    #     return text
-
     def normalise_base(self, text: str) -> str:
         """
         Base normaliser, country context ('Ireland' or 'Éire') is preserved.

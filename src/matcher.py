@@ -24,6 +24,7 @@ class Matcher:
         type_penalty: float = 0.04,
         country_bonus: float = 0.04,
         country_penalty: float = 0.03,
+        ambiguity_threshold: float = 0.10,
     ) -> None:
         self.normaliser = normaliser
         self.scorer = scorer
@@ -32,6 +33,7 @@ class Matcher:
         self.type_penalty = type_penalty
         self.country_bonus = country_bonus
         self.country_penalty = country_penalty
+        self.ambiguity_threshold = ambiguity_threshold
 
     def match(
         self,
@@ -336,3 +338,21 @@ class Matcher:
             score -= self.country_penalty
 
         return max(0.0, min(1.0, score))
+
+    def detect_ambiguity(
+        self,
+        candidates: list[dict[str, Any]],
+    ) -> bool:
+        """
+        Return True when the two best ranked candidates have similar score.
+        Similar score respect the threshold
+        """
+        if len(candidates) < 2:
+            return False
+
+        first_score = candidates[0]["score"]
+        second_score = candidates[1]["score"]
+
+        score_difference = first_score - second_score
+
+        return score_difference <= self.ambiguity_threshold

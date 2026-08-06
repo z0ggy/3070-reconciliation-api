@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 
-from src.match import match_data
+from src.match import detect_ambiguity, match_data
+from src.type_detection import EntityType
 
 """
 References:
@@ -21,6 +22,11 @@ def check_server():
 
 @app.get("/reconcile")
 #  entity type default = None
-def reconcile(q: str, entity_type: str | None = None):
+def reconcile(q: str, entity_type: EntityType | None = None):
     candidates = match_data(query=q, entity_type=entity_type)
-    return {"query": q, "entity_type": entity_type, "candidates": candidates}
+    return {
+        "query": q,
+        "entity_type": entity_type,
+        "ambiguous": detect_ambiguity(candidates),
+        "candidates": candidates,
+    }

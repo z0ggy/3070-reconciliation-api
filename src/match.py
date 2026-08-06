@@ -1,3 +1,5 @@
+from typing import Any
+
 from src.config import GEO_DATA_PATH
 from src.data_loader import load_json_file
 from src.matcher import Matcher
@@ -33,3 +35,7 @@ def match_data(
     dataset: list[dict] = DATASET
 
     return matcher.match(query, dataset, entity_type, limit, country)
+
+
+def detect_ambiguity(candidates: list[dict[str, Any]]) -> bool:
+    return matcher.detect_ambiguity(candidates)
