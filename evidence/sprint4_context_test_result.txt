@@ -1,0 +1,26 @@
+collected 24 items
+
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[unclear-dublin] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[unclear-cork] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[unclear-galway] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[country-context-does-not-resolve-dublin] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[resolved-dublin-city-hint] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[resolved-dublin-county-hint] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[resolved-cork-city-hint] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[resolved-cork-county-hint] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[resolved-galway-city-hint] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[resolved-galway-county-hint] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[dublin-city-council-context] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[dublin-county-council-context] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[cork-city-council-context] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[cork-county-council-context] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[galway-city-council-context] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[galway-county-council-context] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[dlr-county-council-context] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[dlr-local-authority-context] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[explicit-dublin-city-resolution] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[explicit-dublin-county-resolution] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[explicit-county-overrides-city-cue] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[explicit-city-overrides-county-cue] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[conflicting-dublin-city-county-cues] PASSED
+tests/test_sprint4_context.py::test_expected_candidate_is_ranked_first[no-match-with-country-context] FAILED

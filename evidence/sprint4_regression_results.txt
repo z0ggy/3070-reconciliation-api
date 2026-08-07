@@ -1,0 +1,121 @@
+collected 116 items
+
+tests/test_ambiguity.py::test_detected_ambiguity PASSED
+tests/test_matcher.py::test_matcher_returns_ranked_candidates PASSED
+tests/test_matcher.py::test_detection_type_prioritise_score PASSED
+tests/test_matcher.py::test_explicit_type_filter_overrides_type_detection PASSED
+tests/test_matcher.py::test_matching_type_get_bonus PASSED
+tests/test_matcher.py::test_matching_type_get_penalty PASSED
+tests/test_matcher.py::test_no_explicit_type_skip_adjust_scores PASSED
+tests/test_matcher.py::test_type_bonus_is_not_bigger_than_one PASSED
+tests/test_matcher.py::test_type_adjustment_favourite_exact_name_match PASSED
+tests/test_matcher.py::test_explicit_type_filter_skip_conflicting_names PASSED
+tests/test_matcher.py::test_explicit_country_filters_candidates PASSED
+tests/test_matcher.py::test_unknown_explicit_country_returns_no_candidates PASSED
+tests/test_matcher.py::test_country_in_query_score_top PASSED
+tests/test_matcher.py::test_eire_context_matches_ireland PASSED
+tests/test_matcher.py::test_explicit_country_overrides_detected_country PASSED
+tests/test_matcher_ranking.py::test_exact_official_name_outranks_fuzzy_alternative PASSED
+tests/test_matcher_ranking.py::test_exact_alias_outranks_weak_official_name_similarity PASSED
+tests/test_matcher_ranking.py::test_correctly_spelled_candidate_outranks_close_typo_candidate PASSED
+tests/test_matcher_ranking.py::test_county_query_ranks_county_above_city PASSED
+tests/test_matcher_ranking.py::test_city_query_ranks_city_above_county PASSED
+tests/test_matcher_ranking.py::test_council_query_ranks_local_authority_above_city_and_county PASSED
+tests/test_matcher_ranking.py::test_equal_scores_are_sorted_deterministically PASSED
+tests/test_matcher_ranking.py::test_record_is_not_duplicated_when_multiple_aliases_match PASSED
+tests/test_matcher_ranking.py::test_limit_is_applied_after_ranking PASSED
+tests/test_matching_data.py::test_match_data_perfect_match_by_name PASSED
+tests/test_matching_data.py::test_match_data_by_aliases_dublin PASSED
+tests/test_matching_data.py::test_match_data_by_normalized_official_name PASSED
+tests/test_matching_data.py::test_county_name PASSED
+tests/test_matching_data.py::test_type_filter PASSED
+tests/test_matching_data.py::test_multiple_candidates_city_county_match PASSED
+tests/test_matching_data.py::test_misspelling_city PASSED
+tests/test_matching_data.py::test_no_score PASSED
+tests/test_matching_data.py::test_match_data_by_extended_aliases_dublin PASSED
+tests/test_normaliser.py::test_sprint2 PASSED
+tests/test_normaliser.py::test_punctuation[Dublin!!!-dublin] PASSED
+tests/test_normaliser.py::test_punctuation[Cork???-cork] PASSED
+tests/test_normaliser.py::test_punctuation[Galway, City-galway city] PASSED
+tests/test_normaliser.py::test_remove_accent[D\xfan-Laoghaire-dun laoghaire] PASSED
+tests/test_normaliser.py::test_remove_accent[Cill Chom\xe1in Mh\xf3r Theas -cill chomain mhor theas] PASSED
+tests/test_normaliser.py::test_dash_replace[Dublin-City-dublin city] PASSED
+tests/test_normaliser.py::test_dash_replace[Galway-Co.-galway county] PASSED
+tests/test_normaliser.py::test_remove_extra_spaces[   Dublin   !!!-dublin] PASSED
+tests/test_normaliser.py::test_remove_extra_spaces[!!@    Cork -cork] PASSED
+tests/test_normaliser.py::test_convert_county[Co.!!! Dublin city-county dublin city] PASSED
+tests/test_normaliser.py::test_convert_county[Galway  !!! Co.-galway county] PASSED
+tests/test_normaliser.py::test_remove_country_suffix[Dublin, Ireland-dublin] PASSED
+tests/test_normaliser.py::test_remove_country_suffix[Dublin. Ireland!?-dublin] PASSED
+tests/test_normaliser.py::test_remove_country_suffix[Dublin Ireland-dublin] PASSED
+tests/test_normaliser.py::test_remove_country_suffix[Dublin / Ireland-dublin] PASSED
+tests/test_similarity_score.py::test_empty_query PASSED
+tests/test_similarity_score.py::test_exact_match PASSED
+tests/test_similarity_score.py::test_high_score_match PASSED
+tests/test_similarity_score.py::test_fuzzy_match PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[exact-dublin-city] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[exact-county-dublin] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[exact-cork-city] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[exact-county-cork] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[exact-galway-city] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[exact-county-galway] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[exact-dlr] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[alias-dublin] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[alias-cork] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[alias-galway] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[irish-dublin-accented] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[irish-dublin-unaccented] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[alias-dlr] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[alias-dlr-county-council] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[typo-dublin] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[typo-cork] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[typo-galway] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[typo-dlr] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[context-dublin-ireland] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[context-county-cork-ireland] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[context-dlr-ireland] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[filter-dublin-county] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[filter-dublin-city] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[filter-cork-county] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[council-current-model] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[abbreviation-county-dublin] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[abbreviation-galway-county] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[punctuated-dlr] PASSED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[no-match-unknown] FAILED
+tests/test_sprint3_ranking.py::test_expected_candidate_is_ranked_first[no-match-belfast] PASSED
+tests/test_type_detection.py::test_type_detection[dublin city-city] PASSED
+tests/test_type_detection.py::test_type_detection[city of dublin-city] PASSED
+tests/test_type_detection.py::test_type_detection[county dublin-county] PASSED
+tests/test_type_detection.py::test_type_detection[dublin county-county] PASSED
+tests/test_type_detection.py::test_type_detection[dublin city council-city] PASSED
+tests/test_type_detection.py::test_type_detection[galway county council-county] PASSED
+tests/test_type_detection.py::test_type_detection[dublin local authority-local_authority] PASSED
+tests/test_type_detection.py::test_type_detection[dublin-None] PASSED
+tests/test_type_detection.py::test_type_detection[baile atha cliath-None] PASSED
+tests/test_type_detection.py::test_detect_county_abbreviation_after_normalisation PASSED
+tests/test_type_detection.py::test_detect_county_suffix_after_normalisation PASSED
+tests/test_type_detection.py::test_city_has_priority_over_council PASSED
+tests/test_type_detection.py::test_county_has_priority_over_council PASSED
+tests/test_type_detection.py::test_detect_city_and_county_conflict PASSED
+tests/test_type_detection.py::test_passed_entity_type_in_query_overrides_type_detection PASSED
+tests/test_type_detection.py::test_type_detection_used_without_entity_type PASSED
+tests/test_type_detection.py::test_type_detection_priority[dublin local authority-local_authority] PASSED
+tests/test_type_detection.py::test_type_detection_priority[dublin city local authority-local_authority] PASSED
+tests/test_type_detection.py::test_type_detection_priority[dublin county local authority-local_authority] PASSED
+tests/test_type_detection.py::test_type_detection_priority[dublin city county local authority-local_authority] PASSED
+tests/test_type_detection.py::test_type_detection_priority[dublin city county-None] PASSED
+tests/test_type_detection.py::test_type_detection_priority[dublin city council-city] PASSED
+tests/test_type_detection.py::test_type_detection_priority[dublin county council-county] PASSED
+tests/test_type_detection.py::test_type_detection_priority[dublin city-city] PASSED
+tests/test_type_detection.py::test_type_detection_priority[county dublin-county] PASSED
+tests/test_type_detection.py::test_type_detection_priority[dublin council-local_authority] PASSED
+tests/test_type_detection.py::test_type_detection_priority[council dublin-local_authority] PASSED
+tests/test_type_detection.py::test_type_detection_priority[dublin-None] PASSED
+tests/test_type_detection.py::test_type_detection_priority[-None] PASSED
+tests/test_type_detection.py::test_type_detection_matches_exact_words[countywide dublin] PASSED
+tests/test_type_detection.py::test_type_detection_matches_exact_words[councillor dublin] PASSED
+tests/test_type_detection.py::test_type_detection_matches_exact_words[local dublin authority] PASSED
+tests/test_type_detection.py::test_type_detection_matches_exact_words[local authorities dublin] PASSED
+
+=============================================================== FAILURES ===============================================================
+______________________________________ test_expected_candidate_is_ranked_first[no-match-unknown] ______
