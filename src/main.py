@@ -22,11 +22,20 @@ def check_server():
 
 @app.get("/reconcile")
 #  entity type default = None
-def reconcile(q: str, entity_type: EntityType | None = None):
-    candidates = match_data(query=q, entity_type=entity_type)
+def reconcile(
+    q: str,
+    entity_type: EntityType | None = None,
+    country: str | None = None,
+):
+    candidates = match_data(
+        query=q,
+        entity_type=entity_type,
+        country=country,
+    )
     return {
         "query": q,
         "entity_type": entity_type,
+        "country": country,
         "ambiguous": detect_ambiguity(candidates),
         "candidates": candidates,
     }
