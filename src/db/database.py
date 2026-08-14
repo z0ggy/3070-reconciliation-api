@@ -1,3 +1,4 @@
+import json
 import sqlite3
 from pathlib import Path
 
@@ -10,6 +11,8 @@ References:
 
 
 def create_database(db_path: Path) -> None:
+
+    # Open connection and open/create database file if not exists.
     with sqlite3.connect(db_path) as connection:
         connection.execute("PRAGMA foreign_keys = ON")
 
@@ -34,7 +37,7 @@ def create_database(db_path: Path) -> None:
         )
 
         # Store the aliases for each place.
-        #  UNIQUE: Prevent the same alias from being added twice.
+        #  UNIQUE: prevents duplicate aliases for one place..
         connection.execute(
             """
             CREATE TABLE IF NOT EXISTS aliases (
@@ -57,3 +60,56 @@ def create_database(db_path: Path) -> None:
             ON aliases(place_id)
             """
         )
+
+
+def import_json_data(
+    json_path: Path,
+    db_path: Path,
+) -> None:
+    with json_path.open("r", encoding="utf-8") as file:
+        records = json.load(file)
+
+    with sqlite3.connect(db_path) as connection:
+        connection.execute("PRAGMA foreign_keys = ON")
+
+        for record in records:
+            connection.execute(
+                """
+                INSERT OR REPLACE INTO places (
+                    id,
+                    official_name,
+                    entity_type,
+                    country
+                )
+                VALUES (?, ?, ?, ?)
+                """,
+                (
+                    record["id"],
+                    record["name"],
+                    record["type"],
+                    record["country"],
+                ),
+            )
+
+            for alias in record.get("aliases", []):
+                connection.execute(
+                    """
+                    INSERT OR IGNORE INTO aliases (
+                        place_id,
+                        alias
+                    )
+                    VALUES (?, ?)
+                    """,
+                    (
+                        record["id"],
+                        alias,
+                    ),
+                )
+
+
+def initialise_database(
+    json_path: Path,
+    db_path: Path,
+) -> None:
+    create_database(db_path)
+    import_json_data(json_path, db_path)
