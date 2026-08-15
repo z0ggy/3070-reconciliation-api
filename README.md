@@ -15,6 +15,9 @@ http://127.0.0.1:8000/reconcile?q=Co.%20Dublin
 the fixture provides stable repeatable ranking tests for sprint 2 and 3 scoring algorithm.
 
 
+### initialise database
+uv run -m src.scripts.init_db
+
 ## structure
 ├── README.md
 ├── evidence # help save project progression milestones

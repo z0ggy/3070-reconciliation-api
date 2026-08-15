@@ -14,11 +14,11 @@ def create_database(db_path: Path) -> None:
 
     # Open connection and open/create database file if not exists.
     with sqlite3.connect(db_path) as connection:
-        connection.execute("PRAGMA foreign_keys = ON")
+        _ = connection.execute("PRAGMA foreign_keys = ON")
 
         # Store the official record for each place.
         # CHECK: constraint restricts values to (city, county, local_authority)
-        connection.execute(
+        _ = connection.execute(
             """
             CREATE TABLE IF NOT EXISTS places (
                 id TEXT PRIMARY KEY,
@@ -38,7 +38,7 @@ def create_database(db_path: Path) -> None:
 
         # Store the aliases for each place.
         #  UNIQUE: prevents duplicate aliases for one place..
-        connection.execute(
+        _ = connection.execute(
             """
             CREATE TABLE IF NOT EXISTS aliases (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -54,7 +54,7 @@ def create_database(db_path: Path) -> None:
             """
         )
 
-        connection.execute(
+        _ = connection.execute(
             """
             CREATE INDEX IF NOT EXISTS idx_aliases_place_id
             ON aliases(place_id)
@@ -70,10 +70,10 @@ def import_json_data(
         records = json.load(file)
 
     with sqlite3.connect(db_path) as connection:
-        connection.execute("PRAGMA foreign_keys = ON")
+        _ = connection.execute("PRAGMA foreign_keys = ON")
 
-        for record in records:
-            connection.execute(
+        for record in records:  # pyright: ignore[reportAny]
+            _ = connection.execute(
                 """
                 INSERT OR REPLACE INTO places (
                     id,
@@ -92,7 +92,7 @@ def import_json_data(
             )
 
             for alias in record.get("aliases", []):
-                connection.execute(
+                _ = connection.execute(
                     """
                     INSERT OR IGNORE INTO aliases (
                         place_id,

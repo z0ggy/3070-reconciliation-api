@@ -1,5 +1,4 @@
-from typing import Any
-
+from src.geo_types import MatchCandidate, PlaceRecord
 from src.place_normaliser import PlaceNameNormaliser
 from src.similarity_score import SimilarityScore
 from src.type_detection import EntityType, resolve_type
@@ -26,23 +25,23 @@ class Matcher:
         country_penalty: float = 0.03,
         ambiguity_threshold: float = 0.10,
     ) -> None:
-        self.normaliser = normaliser
-        self.scorer = scorer
-        self.min_score = min_score
-        self.type_bonus = type_bonus
-        self.type_penalty = type_penalty
-        self.country_bonus = country_bonus
-        self.country_penalty = country_penalty
-        self.ambiguity_threshold = ambiguity_threshold
+        self.normaliser: PlaceNameNormaliser = normaliser
+        self.scorer: SimilarityScore = scorer
+        self.min_score: float = min_score
+        self.type_bonus: float = type_bonus
+        self.type_penalty: float = type_penalty
+        self.country_bonus: float = country_bonus
+        self.country_penalty: float = country_penalty
+        self.ambiguity_threshold: float = ambiguity_threshold
 
     def match(
         self,
         query: str,
-        dataset: list[dict],
+        dataset: list[PlaceRecord],
         entity_type: EntityType | None = None,
         limit: int = 10,
         country: str | None = None,
-    ) -> list[dict[str, Any]]:
+    ) -> list[MatchCandidate]:
         """Match a query against the dataset and return ranked candidates."""
 
         # Normalise query, remove country words ("Ireland").
@@ -74,22 +73,21 @@ class Matcher:
                 dataset,
             )
 
-        candidates: list[dict[str, Any]] = []
+        candidates: list[MatchCandidate] = []
 
         for place in dataset:
             # Explicit entity type filters records before scoring.
             if entity_type and place["type"] != entity_type:
                 continue
 
-            place_country = place.get("country")
+            place_country = place["country"]
 
             # Explicit country filters records before scoring.
-            if explicit_country is not None:
-                if not isinstance(place_country, str):
-                    continue
-
-                if self.parse_country(place_country) != explicit_country:
-                    continue
+            if (
+                explicit_country is not None
+                and self.parse_country(place_country) != explicit_country
+            ):
+                continue
 
             # Check and store name and aliases
             names_to_check = [place["name"]] + place.get("aliases", [])
@@ -109,7 +107,7 @@ class Matcher:
             # Apply a small country bonus or penalty when country context is in the query
             final_score = self.add_country_adjustment(
                 score=final_score,
-                place_country=place_country if isinstance(place_country, str) else None,
+                place_country=place_country,
                 detected_country=detected_country,
             )
 
@@ -147,7 +145,7 @@ class Matcher:
 
     def find_best_score(
         self,
-        place: dict[str, Any],
+        place: PlaceRecord,
         names_to_check: list[str],
         normalised_query: str,
     ) -> tuple[float, str, str]:
@@ -157,7 +155,7 @@ class Matcher:
         Returns the best score, the source of the match, and the matched value.
         """
 
-        if not place:
+        if not place or place == "":
             raise ValueError("Place should not be empty")
 
         if not names_to_check:
@@ -188,11 +186,11 @@ class Matcher:
 
     def filter_weak_candidate(
         self,
-        place: dict[str, Any],
+        place: PlaceRecord,
         best_score: float,
         matched_on: str,
         matched_value: str,
-    ) -> dict[str, Any] | None:
+    ) -> MatchCandidate | None:
         """Build a candidate result only if the score passes the minimum threshold."""
 
         if best_score <= self.min_score:
@@ -275,7 +273,7 @@ class Matcher:
     def detect_country_context(
         self,
         normalised_context_query: str,
-        dataset: list[dict],
+        dataset: list[PlaceRecord],
     ) -> str | None:
         """
         Detect country in the normalised query.
@@ -287,10 +285,10 @@ class Matcher:
         detected_countries: set[str] = set()
 
         for place in dataset:
-            place_country = place.get("country")
+            place_country = place["country"]
 
             # Skip records missing a valid country.
-            if not isinstance(place_country, str):
+            if not place:
                 continue
 
             canonical_country = self.parse_country(place_country)
@@ -341,7 +339,7 @@ class Matcher:
 
     def detect_ambiguity(
         self,
-        candidates: list[dict[str, Any]],
+        candidates: list[MatchCandidate],
     ) -> bool:
         """
         Return True when the two best ranked candidates have similar score.

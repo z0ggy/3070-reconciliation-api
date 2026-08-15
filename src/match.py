@@ -1,7 +1,6 @@
-from typing import Any
-
 from src.config import GEO_DATA_PATH
 from src.data_loader import load_json_file
+from src.geo_types import MatchCandidate, PlaceRecord
 from src.matcher import Matcher
 from src.place_normaliser import PlaceNameNormaliser
 from src.similarity_score import SimilarityScore
@@ -31,11 +30,11 @@ def match_data(
     entity_type: EntityType | None = None,
     limit: int = 10,
     country: str | None = None,
-) -> list[dict]:
-    dataset: list[dict] = DATASET
+) -> list[MatchCandidate]:
+    dataset: list[PlaceRecord] = DATASET
 
     return matcher.match(query, dataset, entity_type, limit, country)
 
 
-def detect_ambiguity(candidates: list[dict[str, Any]]) -> bool:
+def detect_ambiguity(candidates: list[MatchCandidate]) -> bool:
     return matcher.detect_ambiguity(candidates)
