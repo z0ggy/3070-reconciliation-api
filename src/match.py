@@ -1,9 +1,9 @@
-from src.config import GEO_DATA_PATH
-from src.data_loader import load_json_file
+from src.config import GEO_DB_PATH
 from src.geo_types import MatchCandidate, PlaceRecord
 from src.matcher import Matcher
 from src.place_normaliser import PlaceNameNormaliser
 from src.similarity_score import SimilarityScore
+from src.store import PlaceStore
 from src.type_detection import EntityType
 
 """
@@ -12,16 +12,19 @@ References:
 """
 
 # load dataset
-DATASET = load_json_file(GEO_DATA_PATH)
+# DATASET: list[PlaceRecord] = load_json_file(GEO_DATA_PATH)
+# Load data from SQLite through.
+store: PlaceStore = PlaceStore(GEO_DB_PATH)
+DATASET: list[PlaceRecord] = store.get_all_places()
 
 # initialise instance of normaliser
-place_normaliser = PlaceNameNormaliser()
+place_normaliser: PlaceNameNormaliser = PlaceNameNormaliser()
 
 # initialise instance of similarity score
-similarity_score = SimilarityScore()
+similarity_score: SimilarityScore = SimilarityScore()
 
 # initialise instance of matcher
-matcher = Matcher(place_normaliser, similarity_score)
+matcher: Matcher = Matcher(place_normaliser, similarity_score)
 
 
 # wrapper to run matcher with parameters
