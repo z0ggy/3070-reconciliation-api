@@ -1,4 +1,5 @@
 import sqlite3
+from pathlib import Path
 
 from src.db.database import create_database
 
@@ -9,7 +10,7 @@ References:
 """
 
 
-def test_create_database_creates_expected_tables(tmp_path):
+def test_create_database_creates_expected_tables(tmp_path: Path):
     """
     Test migration from JSON to SQLite
     tmp_path: pytest built-in fixture for temporary directory destroyed after tests

@@ -1,6 +1,9 @@
 import json
 import sqlite3
 from pathlib import Path
+from typing import cast
+
+from src.geo_types import PlaceRecord
 
 """
 References:
@@ -67,12 +70,12 @@ def import_json_data(
     db_path: Path,
 ) -> None:
     with json_path.open("r", encoding="utf-8") as file:
-        records = json.load(file)
+        records: list[PlaceRecord] = cast(list[PlaceRecord], json.load(file))
 
     with sqlite3.connect(db_path) as connection:
         _ = connection.execute("PRAGMA foreign_keys = ON")
 
-        for record in records:  # pyright: ignore[reportAny]
+        for record in records:
             _ = connection.execute(
                 """
                 INSERT OR REPLACE INTO places (
