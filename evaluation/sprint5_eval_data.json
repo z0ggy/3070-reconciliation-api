@@ -1,0 +1,362 @@
+[
+  {
+    "case_id": "001",
+    "category": "spelling-typo",
+    "query": "Dubln Cty",
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city",
+    "expected_match": true
+  },
+  {
+    "case_id": "002",
+    "category": "word-order",
+    "query": "City Dublin",
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city",
+    "expected_match": true
+  },
+  {
+    "case_id": "003",
+    "category": "irish-name-typo",
+    "query": "Baile Atha Cliathh",
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city",
+    "expected_match": true
+  },
+  {
+    "case_id": "004",
+    "category": "punctuation-country",
+    "query": "Dublin-City, Éire",
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city",
+    "expected_match": true
+  },
+  {
+    "case_id": "005",
+    "category": "spelling-typo",
+    "query": "Dublin citty",
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city",
+    "expected_match": true
+  },
+  {
+    "case_id": "006",
+    "category": "abbreviation-typo",
+    "query": "Cnty Dublin",
+    "expected_id": "IE-COUNTY-DUBLIN",
+    "expected_type": "county",
+    "expected_match": true
+  },
+  {
+    "case_id": "007",
+    "category": "spelling-typo",
+    "query": "Dublin Countyy",
+    "expected_id": "IE-COUNTY-DUBLIN",
+    "expected_type": "county",
+    "expected_match": true
+  },
+  {
+    "case_id": "008",
+    "category": "abbreviation-country",
+    "query": "Co Dublin Ireland",
+    "expected_id": "IE-COUNTY-DUBLIN",
+    "expected_type": "county",
+    "expected_match": true
+  },
+  {
+    "case_id": "009",
+    "category": "spelling-typo",
+    "query": "County of Dublinn",
+    "expected_id": "IE-COUNTY-DUBLIN",
+    "expected_type": "county",
+    "expected_match": true
+  },
+  {
+    "case_id": "010",
+    "category": "abbreviation-country",
+    "query": "Dublin Co, Eire",
+    "expected_id": "IE-COUNTY-DUBLIN",
+    "expected_type": "county",
+    "expected_match": true
+  },
+  {
+    "case_id": "011",
+    "category": "spelling-typo",
+    "query": "Crok City",
+    "expected_id": "IE-CITY-CORK",
+    "expected_type": "city",
+    "expected_match": true
+  },
+  {
+    "case_id": "012",
+    "category": "word-order",
+    "query": "City Cork",
+    "expected_id": "IE-CITY-CORK",
+    "expected_type": "city",
+    "expected_match": true
+  },
+  {
+    "case_id": "013",
+    "category": "irish-name-typo",
+    "query": "Corcaig",
+    "expected_id": "IE-CITY-CORK",
+    "expected_type": "city",
+    "expected_match": true
+  },
+  {
+    "case_id": "014",
+    "category": "punctuation-country",
+    "query": "Cork-City, Éire",
+    "expected_id": "IE-CITY-CORK",
+    "expected_type": "city",
+    "expected_match": true
+  },
+  {
+    "case_id": "015",
+    "category": "spelling-typo",
+    "query": "Cork citty",
+    "expected_id": "IE-CITY-CORK",
+    "expected_type": "city",
+    "expected_match": true
+  },
+  {
+    "case_id": "016",
+    "category": "abbreviation-typo",
+    "query": "Cnty Cork",
+    "expected_id": "IE-COUNTY-CORK",
+    "expected_type": "county",
+    "expected_match": true
+  },
+  {
+    "case_id": "017",
+    "category": "spelling-typo",
+    "query": "Cork Countyy",
+    "expected_id": "IE-COUNTY-CORK",
+    "expected_type": "county",
+    "expected_match": true
+  },
+  {
+    "case_id": "018",
+    "category": "abbreviation-country",
+    "query": "Co Cork Ireland",
+    "expected_id": "IE-COUNTY-CORK",
+    "expected_type": "county",
+    "expected_match": true
+  },
+  {
+    "case_id": "019",
+    "category": "spelling-typo",
+    "query": "County of Corck",
+    "expected_id": "IE-COUNTY-CORK",
+    "expected_type": "county",
+    "expected_match": true
+  },
+  {
+    "case_id": "020",
+    "category": "irish-name-typo",
+    "query": "Contae Chorcaii",
+    "expected_id": "IE-COUNTY-CORK",
+    "expected_type": "county",
+    "expected_match": true
+  },
+  {
+    "case_id": "021",
+    "category": "spelling-typo",
+    "query": "Galwy City",
+    "expected_id": "IE-CITY-GALWAY",
+    "expected_type": "city",
+    "expected_match": true
+  },
+  {
+    "case_id": "022",
+    "category": "word-order",
+    "query": "City Galway",
+    "expected_id": "IE-CITY-GALWAY",
+    "expected_type": "city",
+    "expected_match": true
+  },
+  {
+    "case_id": "023",
+    "category": "irish-name-typo",
+    "query": "Gaillim",
+    "expected_id": "IE-CITY-GALWAY",
+    "expected_type": "city",
+    "expected_match": true
+  },
+  {
+    "case_id": "024",
+    "category": "punctuation-country",
+    "query": "Galway-City, Éire",
+    "expected_id": "IE-CITY-GALWAY",
+    "expected_type": "city",
+    "expected_match": true
+  },
+  {
+    "case_id": "025",
+    "category": "spelling-typo",
+    "query": "Galway citty",
+    "expected_id": "IE-CITY-GALWAY",
+    "expected_type": "city",
+    "expected_match": true
+  },
+  {
+    "case_id": "026",
+    "category": "abbreviation-typo",
+    "query": "Cnty Galway",
+    "expected_id": "IE-COUNTY-GALWAY",
+    "expected_type": "county",
+    "expected_match": true
+  },
+  {
+    "case_id": "027",
+    "category": "spelling-typo",
+    "query": "Galway Countyy",
+    "expected_id": "IE-COUNTY-GALWAY",
+    "expected_type": "county",
+    "expected_match": true
+  },
+  {
+    "case_id": "028",
+    "category": "abbreviation-country",
+    "query": "Co Galway Ireland",
+    "expected_id": "IE-COUNTY-GALWAY",
+    "expected_type": "county",
+    "expected_match": true
+  },
+  {
+    "case_id": "029",
+    "category": "spelling-typo",
+    "query": "County of Galwy",
+    "expected_id": "IE-COUNTY-GALWAY",
+    "expected_type": "county",
+    "expected_match": true
+  },
+  {
+    "case_id": "030",
+    "category": "irish-name-typo",
+    "query": "Contae na Gaillimhee",
+    "expected_id": "IE-COUNTY-GALWAY",
+    "expected_type": "county",
+    "expected_match": true
+  },
+  {
+    "case_id": "031",
+    "category": "spelling-typo",
+    "query": "Dun Laoghaire Rathdownn",
+    "expected_id": "IE-LA-DLR",
+    "expected_type": "local_authority",
+    "expected_match": true
+  },
+  {
+    "case_id": "032",
+    "category": "context-type-cue",
+    "query": "Dun Laoghaire-Rathdown council",
+    "expected_id": "IE-LA-DLR",
+    "expected_type": "local_authority",
+    "expected_match": true
+  },
+  {
+    "case_id": "033",
+    "category": "spelling-typo",
+    "query": "Dun Laoghaire and Rathdwon",
+    "expected_id": "IE-LA-DLR",
+    "expected_type": "local_authority",
+    "expected_match": true
+  },
+  {
+    "case_id": "034",
+    "category": "abbreviation-spacing",
+    "query": "D L R",
+    "expected_id": "IE-LA-DLR",
+    "expected_type": "local_authority",
+    "expected_match": true
+  },
+  {
+    "case_id": "035",
+    "category": "country-context",
+    "query": "Dun Laoghaire, Eire",
+    "expected_id": "IE-LA-DLR",
+    "expected_type": "local_authority",
+    "expected_match": true
+  },
+  {
+    "case_id": "036",
+    "category": "non-irish-place",
+    "query": "Manchester",
+    "expected_id": null,
+    "expected_type": null,
+    "expected_match": false
+  },
+  {
+    "case_id": "037",
+    "category": "non-irish-place",
+    "query": "Berlin",
+    "expected_id": null,
+    "expected_type": null,
+    "expected_match": false
+  },
+  {
+    "case_id": "038",
+    "category": "non-irish-place",
+    "query": "Warsaw",
+    "expected_id": null,
+    "expected_type": null,
+    "expected_match": false
+  },
+  {
+    "case_id": "039",
+    "category": "non-irish-place",
+    "query": "Toronto",
+    "expected_id": null,
+    "expected_type": null,
+    "expected_match": false
+  },
+  {
+    "case_id": "040",
+    "category": "non-irish-place",
+    "query": "Sydney",
+    "expected_id": null,
+    "expected_type": null,
+    "expected_match": false
+  },
+  {
+    "case_id": "041",
+    "category": "no-match-random",
+    "query": "Exampletown",
+    "expected_id": null,
+    "expected_type": null,
+    "expected_match": false
+  },
+  {
+    "case_id": "042",
+    "category": "no-match-random",
+    "query": "Qwertyville",
+    "expected_id": null,
+    "expected_type": null,
+    "expected_match": false
+  },
+  {
+    "case_id": "043",
+    "category": "no-match-random",
+    "query": "Test Place 123",
+    "expected_id": null,
+    "expected_type": null,
+    "expected_match": false
+  },
+  {
+    "case_id": "044",
+    "category": "no-match-random",
+    "query": "Unknown Random Place XYZ",
+    "expected_id": null,
+    "expected_type": null,
+    "expected_match": false
+  },
+  {
+    "case_id": "045",
+    "category": "no-match-random",
+    "query": "Not A Real Place XYZ",
+    "expected_id": null,
+    "expected_type": null,
+    "expected_match": false
+  }
+]
