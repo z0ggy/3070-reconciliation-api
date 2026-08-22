@@ -66,6 +66,7 @@ class PlaceImport:
     official_name: str
     entity_type: str
     country: str
+    aliases: list[str]
 
 
 def load_logainm_counties() -> list[LogainmRecord]:
@@ -122,6 +123,25 @@ def get_main_placename(
     return None
 
 
+def clear_aliases(values: list[str | None]) -> list[str]:
+    """
+    Drop empty and duplicate aliases,
+    Return list of unique aliases.
+    """
+    aliases: list[str] = []
+
+    for value in values:
+        if not value:
+            continue
+
+        value = value.strip()
+
+        if value and value not in aliases:
+            aliases.append(value)
+
+    return aliases
+
+
 def transform_counties(records: list[LogainmRecord]) -> list[PlaceImport]:
     """
     Build county places from load_logainm_counties().
@@ -140,17 +160,32 @@ def transform_counties(records: list[LogainmRecord]) -> list[PlaceImport]:
             record,
             "en",
         )
+
+        irish_name = get_main_placename(
+            record,
+            "ga",
+        )
+
         if not english_name:
             continue
 
+        # Append PlaceImport
         places.append(
             PlaceImport(
                 official_name=(f"County {english_name}"),
                 entity_type="county",
                 country="IRELAND",
-            ),
+                aliases=clear_aliases(
+                    [
+                        english_name,
+                        irish_name,
+                    ]
+                ),
+            )
         )
-    print("LEN-PLACES: ", len(places) == 26)
+    # Check 26 ROI counties
+    if len(places) != 26:
+        raise RuntimeError(f"Expected 26 ROI counties: {len(places)}.")
 
     return places
 
