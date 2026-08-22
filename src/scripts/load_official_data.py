@@ -18,12 +18,19 @@ sys.path.insert(0, str(BASE_DIR))
 
 LOGAINM_DIR: Path = BASE_DIR / "data" / "official" / "logainm"
 
+
 # ---------------------------------------------------------
 # Logainm official Irish dataset (counties, cities)
 # ---------------------------------------------------------
+class LogainmType(TypedDict):
+    totalCount: int
+    totalPages: int
+    currentPage: int
+    countPerPage: int
+    results: list[dict[str, object]]
 
 
-def load_logainm_counties() -> list[dict]:  # pyright: ignore[reportUnknownParameterType, reportReturnType, reportMissingTypeArgument]
+def load_logainm_counties() -> list[dict[str, object]]:
     """
     load counties from 4 files/pages counties*.json
     "totalCount": 32,
@@ -32,13 +39,6 @@ def load_logainm_counties() -> list[dict]:  # pyright: ignore[reportUnknownParam
     "countPerPage": 10,
     "results": [
     """
-
-    class LogainmType(TypedDict):
-        totalCount: int
-        totalPages: int
-        currentPage: int
-        countPerPage: int
-        results: list[dict[str, object]]
 
     files: list[Path] = sorted(LOGAINM_DIR.glob("counties*.json"))
 
@@ -53,14 +53,19 @@ def load_logainm_counties() -> list[dict]:  # pyright: ignore[reportUnknownParam
 
         page_number: int = int(data["currentPage"])
 
-        print(page_number)
-
         # Assign data to pages dict
         pages[page_number] = data
 
+    records: list[dict[str, object]] = []
+
+    for page_number in sorted(pages):
+        records.extend(pages[page_number]["results"])
+
+    return records
+
 
 def main() -> None:
-    counties = load_logainm_counties()  # pyright: ignore[reportUnknownVariableType]
+    counties = load_logainm_counties()
     print(f" COUNTY-REC: {counties}")
 
 
