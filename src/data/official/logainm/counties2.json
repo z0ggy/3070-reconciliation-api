@@ -1,0 +1,4900 @@
+{
+  "totalCount": 32,
+  "totalPages": 4,
+  "currentPage": 2,
+  "countPerPage": 10,
+  "results": [
+    {
+      "id": 100010,
+      "dateCreated": "2007-07-27T10:34:28.687",
+      "dateModified": "2025-01-10T10:17:51.103",
+      "permalink": "https://www.logainm.ie/100010.aspx",
+      "featured": [],
+      "cluster": {
+        "focusID": 100010,
+        "members": [
+          {
+            "placeID": 100010,
+            "category": {
+              "id": "CON",
+              "nameEN": "county",
+              "nameGA": "contae"
+            }
+          },
+          {
+            "placeID": 40,
+            "category": {
+              "id": "BAR",
+              "nameEN": "barony",
+              "nameGA": "barúntacht"
+            }
+          },
+          {
+            "placeID": 1385574,
+            "category": {
+              "id": "CTH",
+              "nameEN": "city",
+              "nameGA": "cathair"
+            }
+          }
+        ]
+      },
+      "placenames": [
+        {
+          "id": 808800,
+          "language": "ga",
+          "wording": "Corcaigh",
+          "genitive": "Chorcaí",
+          "main": true,
+          "acceptability": {
+            "id": 9,
+            "textEN": "validated name",
+            "textGA": "ainm deimhnithe"
+          },
+          "audio": {
+            "fileName": "100010g.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/100010g.mp3"
+          }
+        },
+        {
+          "id": 808799,
+          "language": "en",
+          "wording": "Cork",
+          "main": true,
+          "audio": {
+            "fileName": "100010b.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/100010b.mp3"
+          }
+        }
+      ],
+      "glossary": [],
+      "categories": [
+        {
+          "id": "CON",
+          "nameEN": "county",
+          "nameGA": "contae",
+          "namePluralEN": "counties",
+          "namePluralGA": "contaetha"
+        }
+      ],
+      "includedIn": [],
+      "includes": [
+        {
+          "id": "CTH",
+          "nameEN": "city",
+          "nameGA": "cathair",
+          "namePluralEN": "cities",
+          "namePluralGA": "cathracha",
+          "count": 1
+        },
+        {
+          "id": "DEOISE",
+          "nameEN": "diocese",
+          "nameGA": "deoise",
+          "namePluralEN": "dioceses",
+          "namePluralGA": "deoisí",
+          "count": 1
+        },
+        {
+          "id": "SRUTHAN",
+          "nameEN": "stream",
+          "nameGA": "sruthán",
+          "namePluralEN": "streams",
+          "namePluralGA": "srutháin",
+          "count": 2
+        },
+        {
+          "id": "CAOL",
+          "nameEN": "channel, sound",
+          "nameGA": "caol, sunda",
+          "namePluralEN": "channels, sounds",
+          "namePluralGA": "caoil, sundaí",
+          "count": 3
+        },
+        {
+          "id": "BEAR",
+          "nameEN": "pass",
+          "nameGA": "bearnas",
+          "namePluralEN": "passes",
+          "namePluralGA": "bearnais",
+          "count": 4
+        },
+        {
+          "id": "IN",
+          "nameEN": "estuary",
+          "nameGA": "inbhear",
+          "namePluralEN": "estuaries",
+          "namePluralGA": "inbhir",
+          "count": 4
+        },
+        {
+          "id": "BOTHAR",
+          "nameEN": "road",
+          "nameGA": "bóthar",
+          "namePluralEN": "roads",
+          "namePluralGA": "bóithre",
+          "count": 5
+        },
+        {
+          "id": "CUAN",
+          "nameEN": "harbour",
+          "nameGA": "cuan",
+          "namePluralEN": "harbours",
+          "namePluralGA": "cuanta",
+          "count": 7
+        },
+        {
+          "id": "D",
+          "nameEN": "locality",
+          "nameGA": "dúiche",
+          "namePluralEN": "localities",
+          "namePluralGA": "dúichí",
+          "count": 7
+        },
+        {
+          "id": "CBA",
+          "nameEN": "municipal district",
+          "nameGA": "ceantar bardasach",
+          "namePluralEN": "municipal districts",
+          "namePluralGA": "ceantair bhardasacha",
+          "count": 8
+        },
+        {
+          "id": "GS",
+          "nameEN": "man-made feature",
+          "nameGA": "gné shaorga",
+          "namePluralEN": "man-made features",
+          "namePluralGA": "gnéithe saorga",
+          "count": 13
+        },
+        {
+          "id": "GNE",
+          "nameEN": "feature",
+          "nameGA": "gné",
+          "namePluralEN": "features",
+          "namePluralGA": "gnéithe",
+          "count": 15
+        },
+        {
+          "id": "BA",
+          "nameEN": "bay",
+          "nameGA": "bá",
+          "namePluralEN": "bays",
+          "namePluralGA": "bánna",
+          "count": 19
+        },
+        {
+          "id": "CN",
+          "nameEN": "hill or hills",
+          "nameGA": "cnoc nó cnoic",
+          "namePluralEN": "hills",
+          "namePluralGA": "cnoic",
+          "count": 21
+        },
+        {
+          "id": "BAR",
+          "nameEN": "barony",
+          "nameGA": "barúntacht",
+          "namePluralEN": "baronies",
+          "namePluralGA": "barúntachtaí",
+          "count": 24
+        },
+        {
+          "id": "RINN",
+          "nameEN": "point",
+          "nameGA": "rinn",
+          "namePluralEN": "points",
+          "namePluralGA": "reanna",
+          "count": 24
+        },
+        {
+          "id": "SC",
+          "nameEN": "monument",
+          "nameGA": "séadchomhartha",
+          "namePluralEN": "monuments",
+          "namePluralGA": "séadchomharthaí",
+          "count": 26
+        },
+        {
+          "id": "CT",
+          "nameEN": "promontory",
+          "nameGA": "ceann tíre",
+          "namePluralEN": "promontories",
+          "namePluralGA": "cinn tíre",
+          "count": 28
+        },
+        {
+          "id": "CRG",
+          "nameEN": "rock or rocks",
+          "nameGA": "carraig nó carraigeacha",
+          "namePluralEN": "rocks",
+          "namePluralGA": "carraigeacha",
+          "count": 30
+        },
+        {
+          "id": "FB",
+          "nameEN": "sub-townland",
+          "nameGA": "fo-bhaile",
+          "namePluralEN": "sub-townlands",
+          "namePluralGA": "fo-bhailte",
+          "count": 45
+        },
+        {
+          "id": "SL",
+          "nameEN": "mountain or mountain range",
+          "nameGA": "sliabh nó sliabhraon",
+          "namePluralEN": "mountains and mountain ranges",
+          "namePluralGA": "sléibhte agus sliabhraonta",
+          "count": 47
+        },
+        {
+          "id": "MNG",
+          "nameEN": "minor feature",
+          "nameGA": "mionghné",
+          "namePluralEN": "minor features",
+          "namePluralGA": "mionghnéithe",
+          "count": 51
+        },
+        {
+          "id": "B",
+          "nameEN": "town",
+          "nameGA": "baile",
+          "namePluralEN": "towns",
+          "namePluralGA": "bailte",
+          "count": 89
+        },
+        {
+          "id": "ABH",
+          "nameEN": "river",
+          "nameGA": "abhainn",
+          "namePluralEN": "rivers",
+          "namePluralGA": "aibhneacha",
+          "count": 91
+        },
+        {
+          "id": "ID",
+          "nameEN": "population centre",
+          "nameGA": "ionad daonra",
+          "namePluralEN": "population centres",
+          "namePluralGA": "ionaid daonra",
+          "count": 191
+        },
+        {
+          "id": "SR",
+          "nameEN": "street",
+          "nameGA": "sráid",
+          "namePluralEN": "streets",
+          "namePluralGA": "sráideanna",
+          "count": 4802
+        },
+        {
+          "id": "PRC",
+          "nameEN": "public park, sports field",
+          "nameGA": "páirc phoiblí, páirc spóirt",
+          "namePluralEN": "public parks, sports fields",
+          "namePluralGA": "páirceanna poiblí, páirceanna spóirt",
+          "count": 1
+        },
+        {
+          "id": "POR",
+          "nameEN": "bog",
+          "nameGA": "portach",
+          "namePluralEN": "bogs",
+          "namePluralGA": "portaigh",
+          "count": 1
+        },
+        {
+          "id": "COS",
+          "nameEN": "footpath",
+          "nameGA": "cosán",
+          "namePluralEN": "footpaths",
+          "namePluralGA": "cosáin",
+          "count": 1
+        },
+        {
+          "id": "GL",
+          "nameEN": "valley",
+          "nameGA": "gleann",
+          "namePluralEN": "valleys",
+          "namePluralGA": "gleannta",
+          "count": 5
+        },
+        {
+          "id": "COILL",
+          "nameEN": "wood",
+          "nameGA": "coill",
+          "namePluralEN": "woods",
+          "namePluralGA": "coillte",
+          "count": 14
+        },
+        {
+          "id": "REILIG",
+          "nameEN": "graveyard, cemetery, burial ground",
+          "nameGA": "reilig",
+          "namePluralEN": "graveyards, cemeteries, burial grounds",
+          "namePluralGA": "reiligí",
+          "count": 15
+        },
+        {
+          "id": "TEACH",
+          "nameEN": "house",
+          "nameGA": "teach",
+          "namePluralEN": "houses",
+          "namePluralGA": "tithe",
+          "count": 21
+        },
+        {
+          "id": "L",
+          "nameEN": "lake or lakes",
+          "nameGA": "loch nó locha",
+          "namePluralEN": "lakes",
+          "namePluralGA": "locha",
+          "count": 22
+        },
+        {
+          "id": "DR",
+          "nameEN": "bridge",
+          "nameGA": "droichead",
+          "namePluralEN": "bridges",
+          "namePluralGA": "droichid",
+          "count": 22
+        },
+        {
+          "id": "CB",
+          "nameEN": "crossroads",
+          "nameGA": "crosbhóthar",
+          "namePluralEN": "crossroads",
+          "namePluralGA": "crosbhóithre",
+          "count": 32
+        },
+        {
+          "id": "OIL",
+          "nameEN": "island or archipelago",
+          "nameGA": "oileán nó oileánra",
+          "namePluralEN": "islands and archipelagos",
+          "namePluralGA": "oileáin agus oileánraí",
+          "count": 93
+        },
+        {
+          "id": "PAR",
+          "nameEN": "civil parish",
+          "nameGA": "paróiste dlí",
+          "namePluralEN": "civil parishes",
+          "namePluralGA": "paróistí dlí",
+          "count": 253
+        },
+        {
+          "id": "TR",
+          "nameEN": "electoral division",
+          "nameGA": "toghroinn",
+          "namePluralEN": "electoral divisions",
+          "namePluralGA": "toghranna",
+          "count": 413
+        },
+        {
+          "id": "BF",
+          "nameEN": "townland",
+          "nameGA": "baile fearainn",
+          "namePluralEN": "townlands",
+          "namePluralGA": "bailte fearainn",
+          "count": 5449
+        },
+        {
+          "id": "DROIM",
+          "nameEN": "ridge",
+          "nameGA": "droim",
+          "namePluralEN": "ridges",
+          "namePluralGA": "dromanna",
+          "count": 1
+        },
+        {
+          "id": "GORT",
+          "nameEN": "field",
+          "nameGA": "gort",
+          "namePluralEN": "fields",
+          "namePluralGA": "goirt",
+          "count": 2
+        },
+        {
+          "id": "IMFH",
+          "nameEN": "enclosure",
+          "nameGA": "imfhálú",
+          "namePluralEN": "enclosures",
+          "namePluralGA": "imfháluithe",
+          "count": 6
+        },
+        {
+          "id": "SRB",
+          "nameEN": "village",
+          "nameGA": "sráidbhaile",
+          "namePluralEN": "villages",
+          "namePluralGA": "sráidbhailte",
+          "count": 6
+        },
+        {
+          "id": "CAIS",
+          "nameEN": "castle",
+          "nameGA": "caisleán",
+          "namePluralEN": "castles",
+          "namePluralGA": "caisleáin",
+          "count": 8
+        },
+        {
+          "id": "LE",
+          "nameEN": "ecclesiastical site",
+          "nameGA": "láthair eaglasta",
+          "namePluralEN": "ecclesiastical sites",
+          "namePluralGA": "láithreacha eaglasta",
+          "count": 12
+        },
+        {
+          "id": "TRA",
+          "nameEN": "strand",
+          "nameGA": "trá",
+          "namePluralEN": "strands",
+          "namePluralGA": "tránna",
+          "count": 12
+        },
+        {
+          "id": "AILL",
+          "nameEN": "cliff or cliffs",
+          "nameGA": "aill nó aillte",
+          "namePluralEN": "cliffs",
+          "namePluralGA": "aillte",
+          "count": 16
+        },
+        {
+          "id": "GOIL",
+          "nameEN": "creek",
+          "nameGA": "góilín",
+          "namePluralEN": "creeks",
+          "namePluralGA": "góilíní",
+          "count": 168
+        },
+        {
+          "id": "GR",
+          "nameEN": "hamlet",
+          "nameGA": "gráig",
+          "namePluralEN": "hamlets",
+          "namePluralGA": "gráigeanna",
+          "count": 1
+        },
+        {
+          "id": "MALA",
+          "nameEN": "brow, slope, hillside",
+          "nameGA": "mala",
+          "namePluralEN": "brows, slopes, hillsides",
+          "namePluralGA": "malaí",
+          "count": 1
+        },
+        {
+          "id": "AC",
+          "nameEN": "junction, interchange",
+          "nameGA": "acomhal",
+          "namePluralEN": "junctions, interchanges",
+          "namePluralGA": "acomhail",
+          "count": 1
+        },
+        {
+          "id": "ATH",
+          "nameEN": "ford",
+          "nameGA": "áth",
+          "namePluralEN": "fords",
+          "namePluralGA": "áthanna",
+          "count": 1
+        },
+        {
+          "id": "CARN",
+          "nameEN": "cairn",
+          "nameGA": "carn",
+          "namePluralEN": "cairns",
+          "namePluralGA": "cairn",
+          "count": 1
+        },
+        {
+          "id": "COM",
+          "nameEN": "coomb",
+          "nameGA": "com",
+          "namePluralEN": "coombs",
+          "namePluralGA": "comanna",
+          "count": 1
+        },
+        {
+          "id": "UAIMH",
+          "nameEN": "cave(s), souterrain(s)",
+          "nameGA": "uaimh nó uaimheanna",
+          "namePluralEN": "caves, souterrains",
+          "namePluralGA": "uaimheanna",
+          "count": 1
+        },
+        {
+          "id": "SCEIR",
+          "nameEN": "reef",
+          "nameGA": "sceir",
+          "namePluralEN": "reefs",
+          "namePluralGA": "sceireacha",
+          "count": 1
+        },
+        {
+          "id": "POLL",
+          "nameEN": "hole",
+          "nameGA": "poll",
+          "namePluralEN": "holes",
+          "namePluralGA": "poill",
+          "count": 2
+        },
+        {
+          "id": "GALLAN",
+          "nameEN": "standing stone or standing stones",
+          "nameGA": "gallán nó galláin",
+          "namePluralEN": "standing stones",
+          "namePluralGA": "galláin",
+          "count": 5
+        },
+        {
+          "id": "TOB",
+          "nameEN": "well",
+          "nameGA": "tobar",
+          "namePluralEN": "wells",
+          "namePluralGA": "toibreacha",
+          "count": 15
+        }
+      ],
+      "geography": {
+        "accurate": true,
+        "source": "osi",
+        "coordinates": [
+          {
+            "latitude": 51.729799719868204,
+            "longitude": -9.157338117780046
+          }
+        ]
+      },
+      "gridReferences": [
+        {
+          "square": "W",
+          "easting": 20087,
+          "northing": 53617
+        }
+      ],
+      "images": [],
+      "links": [
+        {
+          "type": "Osi",
+          "target": "40000"
+        }
+      ],
+      "bornHere": [
+        {
+          "id": 114,
+          "title": "Ó SÉAGHDHA, Pádraig (1864–1955)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=114"
+        },
+        {
+          "id": 1052,
+          "title": "CALLANAN, Jeremiah Joseph (1795–1829)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1052"
+        },
+        {
+          "id": 1701,
+          "title": "Ó GUAILLÍ, Éamon (1912–1983)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1701"
+        }
+      ],
+      "folklore": [
+        {
+          "type": "Dúchas",
+          "uriEN": "https://www.duchas.ie/en/places?LogainmID=100010",
+          "uriGA": "https://www.duchas.ie/ga/aiteanna?LogainmID=100010"
+        },
+        {
+          "type": "Dúchas: CbegPhoto",
+          "uriEN": "https://www.duchas.ie/en/cbeg?LogainmID=100010",
+          "uriGA": "https://www.duchas.ie/ga/cbeg?LogainmID=100010"
+        },
+        {
+          "type": "Dúchas: CbePart",
+          "uriEN": "https://www.duchas.ie/en/cbe/volumes?LogainmID=100010",
+          "uriGA": "https://www.duchas.ie/ga/cbe/imleabhair?LogainmID=100010"
+        }
+      ],
+      "sameAs": [
+        {
+          "uri": "http://id.worldcat.org/fast/1330537"
+        }
+      ]
+    },
+    {
+      "id": 100011,
+      "dateCreated": "2007-07-27T10:34:28.687",
+      "dateModified": "2021-04-08T13:04:01.743",
+      "permalink": "https://www.logainm.ie/100011.aspx",
+      "featured": [],
+      "cluster": {
+        "focusID": 100011,
+        "members": [
+          {
+            "placeID": 100011,
+            "category": {
+              "id": "CON",
+              "nameEN": "county",
+              "nameGA": "contae"
+            }
+          },
+          {
+            "placeID": 58666,
+            "category": {
+              "id": "BF",
+              "nameEN": "townland",
+              "nameGA": "baile fearainn"
+            }
+          },
+          {
+            "placeID": 129737,
+            "category": {
+              "id": "CTH",
+              "nameEN": "city",
+              "nameGA": "cathair"
+            }
+          }
+        ]
+      },
+      "placenames": [
+        {
+          "id": 808802,
+          "language": "ga",
+          "wording": "Doire",
+          "genitive": "Dhoire",
+          "main": true,
+          "acceptability": {
+            "id": 9,
+            "textEN": "validated name",
+            "textGA": "ainm deimhnithe"
+          },
+          "audio": {
+            "fileName": "100011g.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/100011g.mp3"
+          }
+        },
+        {
+          "id": 808801,
+          "language": "en",
+          "wording": "Derry",
+          "main": true,
+          "audio": {
+            "fileName": "100011b.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/100011b.mp3"
+          }
+        }
+      ],
+      "glossary": [
+        {
+          "id": 66,
+          "headword": "doire",
+          "translation": "(oak-)wood,  grove, thicket"
+        }
+      ],
+      "categories": [
+        {
+          "id": "CON",
+          "nameEN": "county",
+          "nameGA": "contae",
+          "namePluralEN": "counties",
+          "namePluralGA": "contaetha"
+        }
+      ],
+      "includedIn": [],
+      "includes": [
+        {
+          "id": "TRA",
+          "nameEN": "strand",
+          "nameGA": "trá",
+          "namePluralEN": "strands",
+          "namePluralGA": "tránna",
+          "count": 1
+        },
+        {
+          "id": "GNE",
+          "nameEN": "feature",
+          "nameGA": "gné",
+          "namePluralEN": "features",
+          "namePluralGA": "gnéithe",
+          "count": 1
+        },
+        {
+          "id": "IN",
+          "nameEN": "estuary",
+          "nameGA": "inbhear",
+          "namePluralEN": "estuaries",
+          "namePluralGA": "inbhir",
+          "count": 1
+        },
+        {
+          "id": "OITIR",
+          "nameEN": "(sand) bank",
+          "nameGA": "oitir (ghainimh)",
+          "namePluralEN": "(sand) banks",
+          "namePluralGA": "oitreacha (gainimh)",
+          "count": 1
+        },
+        {
+          "id": "DR",
+          "nameEN": "bridge",
+          "nameGA": "droichead",
+          "namePluralEN": "bridges",
+          "namePluralGA": "droichid",
+          "count": 2
+        },
+        {
+          "id": "SC",
+          "nameEN": "monument",
+          "nameGA": "séadchomhartha",
+          "namePluralEN": "monuments",
+          "namePluralGA": "séadchomharthaí",
+          "count": 2
+        },
+        {
+          "id": "GS",
+          "nameEN": "man-made feature",
+          "nameGA": "gné shaorga",
+          "namePluralEN": "man-made features",
+          "namePluralGA": "gnéithe saorga",
+          "count": 3
+        },
+        {
+          "id": "L",
+          "nameEN": "lake or lakes",
+          "nameGA": "loch nó locha",
+          "namePluralEN": "lakes",
+          "namePluralGA": "locha",
+          "count": 3
+        },
+        {
+          "id": "D",
+          "nameEN": "locality",
+          "nameGA": "dúiche",
+          "namePluralEN": "localities",
+          "namePluralGA": "dúichí",
+          "count": 6
+        },
+        {
+          "id": "BAR",
+          "nameEN": "barony",
+          "nameGA": "barúntacht",
+          "namePluralEN": "baronies",
+          "namePluralGA": "barúntachtaí",
+          "count": 6
+        },
+        {
+          "id": "ABH",
+          "nameEN": "river",
+          "nameGA": "abhainn",
+          "namePluralEN": "rivers",
+          "namePluralGA": "aibhneacha",
+          "count": 8
+        },
+        {
+          "id": "SR",
+          "nameEN": "street",
+          "nameGA": "sráid",
+          "namePluralEN": "streets",
+          "namePluralGA": "sráideanna",
+          "count": 8
+        },
+        {
+          "id": "SL",
+          "nameEN": "mountain or mountain range",
+          "nameGA": "sliabh nó sliabhraon",
+          "namePluralEN": "mountains and mountain ranges",
+          "namePluralGA": "sléibhte agus sliabhraonta",
+          "count": 8
+        },
+        {
+          "id": "B",
+          "nameEN": "town",
+          "nameGA": "baile",
+          "namePluralEN": "towns",
+          "namePluralGA": "bailte",
+          "count": 12
+        },
+        {
+          "id": "SRB",
+          "nameEN": "village",
+          "nameGA": "sráidbhaile",
+          "namePluralEN": "villages",
+          "namePluralGA": "sráidbhailte",
+          "count": 21
+        },
+        {
+          "id": "ID",
+          "nameEN": "population centre",
+          "nameGA": "ionad daonra",
+          "namePluralEN": "population centres",
+          "namePluralGA": "ionaid daonra",
+          "count": 84
+        },
+        {
+          "id": "PAR",
+          "nameEN": "civil parish",
+          "nameGA": "paróiste dlí",
+          "namePluralEN": "civil parishes",
+          "namePluralGA": "paróistí dlí",
+          "count": 46
+        },
+        {
+          "id": "BF",
+          "nameEN": "townland",
+          "nameGA": "baile fearainn",
+          "namePluralEN": "townlands",
+          "namePluralGA": "bailte fearainn",
+          "count": 1272
+        },
+        {
+          "id": "BEAR",
+          "nameEN": "pass",
+          "nameGA": "bearnas",
+          "namePluralEN": "passes",
+          "namePluralGA": "bearnais",
+          "count": 1
+        },
+        {
+          "id": "CTH",
+          "nameEN": "city",
+          "nameGA": "cathair",
+          "namePluralEN": "cities",
+          "namePluralGA": "cathracha",
+          "count": 1
+        },
+        {
+          "id": "CT",
+          "nameEN": "promontory",
+          "nameGA": "ceann tíre",
+          "namePluralEN": "promontories",
+          "namePluralGA": "cinn tíre",
+          "count": 1
+        },
+        {
+          "id": "GL",
+          "nameEN": "valley",
+          "nameGA": "gleann",
+          "namePluralEN": "valleys",
+          "namePluralGA": "gleannta",
+          "count": 2
+        },
+        {
+          "id": "CN",
+          "nameEN": "hill or hills",
+          "nameGA": "cnoc nó cnoic",
+          "namePluralEN": "hills",
+          "namePluralGA": "cnoic",
+          "count": 5
+        },
+        {
+          "id": "EAS",
+          "nameEN": "waterfall",
+          "nameGA": "eas",
+          "namePluralEN": "waterfalls",
+          "namePluralGA": "easanna",
+          "count": 1
+        },
+        {
+          "id": "IMFH",
+          "nameEN": "enclosure",
+          "nameGA": "imfhálú",
+          "namePluralEN": "enclosures",
+          "namePluralGA": "imfháluithe",
+          "count": 1
+        },
+        {
+          "id": "LE",
+          "nameEN": "ecclesiastical site",
+          "nameGA": "láthair eaglasta",
+          "namePluralEN": "ecclesiastical sites",
+          "namePluralGA": "láithreacha eaglasta",
+          "count": 1
+        },
+        {
+          "id": "OIL",
+          "nameEN": "island or archipelago",
+          "nameGA": "oileán nó oileánra",
+          "namePluralEN": "islands and archipelagos",
+          "namePluralGA": "oileáin agus oileánraí",
+          "count": 1
+        },
+        {
+          "id": "TOB",
+          "nameEN": "well",
+          "nameGA": "tobar",
+          "namePluralEN": "wells",
+          "namePluralGA": "toibreacha",
+          "count": 1
+        },
+        {
+          "id": "MNG",
+          "nameEN": "minor feature",
+          "nameGA": "mionghné",
+          "namePluralEN": "minor features",
+          "namePluralGA": "mionghnéithe",
+          "count": 2
+        },
+        {
+          "id": "GR",
+          "nameEN": "hamlet",
+          "nameGA": "gráig",
+          "namePluralEN": "hamlets",
+          "namePluralGA": "gráigeanna",
+          "count": 2
+        },
+        {
+          "id": "FB",
+          "nameEN": "sub-townland",
+          "nameGA": "fo-bhaile",
+          "namePluralEN": "sub-townlands",
+          "namePluralGA": "fo-bhailte",
+          "count": 3
+        }
+      ],
+      "geography": {
+        "accurate": false,
+        "source": "extrapolation",
+        "coordinates": [
+          {
+            "latitude": 54.952597326786,
+            "longitude": -6.889463567598459
+          }
+        ]
+      },
+      "gridReferences": [
+        {
+          "square": "C",
+          "easting": 71200,
+          "northing": 12234
+        }
+      ],
+      "northernIreland": {
+        "extent": "all"
+      },
+      "images": [],
+      "links": [],
+      "bornHere": [],
+      "folklore": [
+        {
+          "type": "Dúchas",
+          "uriEN": "https://www.duchas.ie/en/places?LogainmID=100011",
+          "uriGA": "https://www.duchas.ie/ga/aiteanna?LogainmID=100011"
+        },
+        {
+          "type": "Dúchas: CbePart",
+          "uriEN": "https://www.duchas.ie/en/cbe/volumes?LogainmID=100011",
+          "uriGA": "https://www.duchas.ie/ga/cbe/imleabhair?LogainmID=100011"
+        }
+      ],
+      "sameAs": [
+        {
+          "uri": "http://id.worldcat.org/fast/1332824"
+        }
+      ]
+    },
+    {
+      "id": 100012,
+      "dateCreated": "2007-07-27T10:34:28.687",
+      "dateModified": "2019-10-08T09:06:18.933",
+      "permalink": "https://www.logainm.ie/100012.aspx",
+      "featured": [],
+      "cluster": {
+        "focusID": 100012,
+        "members": [
+          {
+            "placeID": 100012,
+            "category": {
+              "id": "CON",
+              "nameEN": "county",
+              "nameGA": "contae"
+            }
+          },
+          {
+            "placeID": 65765,
+            "category": {
+              "id": "PAR",
+              "nameEN": "civil parish",
+              "nameGA": "paróiste dlí"
+            }
+          }
+        ]
+      },
+      "placenames": [
+        {
+          "id": 808804,
+          "language": "ga",
+          "wording": "An Dún",
+          "genitive": "an Dúin",
+          "main": true,
+          "acceptability": {
+            "id": 9,
+            "textEN": "validated name",
+            "textGA": "ainm deimhnithe"
+          },
+          "audio": {
+            "fileName": "100012g.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/100012g.mp3"
+          }
+        },
+        {
+          "id": 808803,
+          "language": "en",
+          "wording": "Down",
+          "main": true,
+          "audio": {
+            "fileName": "100012b.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/100012b.mp3"
+          }
+        }
+      ],
+      "glossary": [
+        {
+          "id": 72,
+          "headword": "dún",
+          "translation": "fort"
+        }
+      ],
+      "categories": [
+        {
+          "id": "CON",
+          "nameEN": "county",
+          "nameGA": "contae",
+          "namePluralEN": "counties",
+          "namePluralGA": "contaetha"
+        }
+      ],
+      "includedIn": [],
+      "includes": [
+        {
+          "id": "GORT",
+          "nameEN": "field",
+          "nameGA": "gort",
+          "namePluralEN": "fields",
+          "namePluralGA": "goirt",
+          "count": 1
+        },
+        {
+          "id": "CB",
+          "nameEN": "crossroads",
+          "nameGA": "crosbhóthar",
+          "namePluralEN": "crossroads",
+          "namePluralGA": "crosbhóithre",
+          "count": 1
+        },
+        {
+          "id": "AINMST",
+          "nameEN": "historical name",
+          "nameGA": "ainm stairiúil",
+          "namePluralEN": "historical names",
+          "namePluralGA": "ainmneacha stairiúla",
+          "count": 1
+        },
+        {
+          "id": "BEAR",
+          "nameEN": "pass",
+          "nameGA": "bearnas",
+          "namePluralEN": "passes",
+          "namePluralGA": "bearnais",
+          "count": 2
+        },
+        {
+          "id": "CT",
+          "nameEN": "promontory",
+          "nameGA": "ceann tíre",
+          "namePluralEN": "promontories",
+          "namePluralGA": "cinn tíre",
+          "count": 2
+        },
+        {
+          "id": "DEOISE",
+          "nameEN": "diocese",
+          "nameGA": "deoise",
+          "namePluralEN": "dioceses",
+          "namePluralGA": "deoisí",
+          "count": 2
+        },
+        {
+          "id": "GL",
+          "nameEN": "valley",
+          "nameGA": "gleann",
+          "namePluralEN": "valleys",
+          "namePluralGA": "gleannta",
+          "count": 2
+        },
+        {
+          "id": "IN",
+          "nameEN": "estuary",
+          "nameGA": "inbhear",
+          "namePluralEN": "estuaries",
+          "namePluralGA": "inbhir",
+          "count": 3
+        },
+        {
+          "id": "OIL",
+          "nameEN": "island or archipelago",
+          "nameGA": "oileán nó oileánra",
+          "namePluralEN": "islands and archipelagos",
+          "namePluralGA": "oileáin agus oileánraí",
+          "count": 3
+        },
+        {
+          "id": "D",
+          "nameEN": "locality",
+          "nameGA": "dúiche",
+          "namePluralEN": "localities",
+          "namePluralGA": "dúichí",
+          "count": 4
+        },
+        {
+          "id": "SR",
+          "nameEN": "street",
+          "nameGA": "sráid",
+          "namePluralEN": "streets",
+          "namePluralGA": "sráideanna",
+          "count": 8
+        },
+        {
+          "id": "ABH",
+          "nameEN": "river",
+          "nameGA": "abhainn",
+          "namePluralEN": "rivers",
+          "namePluralGA": "aibhneacha",
+          "count": 9
+        },
+        {
+          "id": "BAR",
+          "nameEN": "barony",
+          "nameGA": "barúntacht",
+          "namePluralEN": "baronies",
+          "namePluralGA": "barúntachtaí",
+          "count": 15
+        },
+        {
+          "id": "SL",
+          "nameEN": "mountain or mountain range",
+          "nameGA": "sliabh nó sliabhraon",
+          "namePluralEN": "mountains and mountain ranges",
+          "namePluralGA": "sléibhte agus sliabhraonta",
+          "count": 17
+        },
+        {
+          "id": "SRB",
+          "nameEN": "village",
+          "nameGA": "sráidbhaile",
+          "namePluralEN": "villages",
+          "namePluralGA": "sráidbhailte",
+          "count": 27
+        },
+        {
+          "id": "B",
+          "nameEN": "town",
+          "nameGA": "baile",
+          "namePluralEN": "towns",
+          "namePluralGA": "bailte",
+          "count": 27
+        },
+        {
+          "id": "ID",
+          "nameEN": "population centre",
+          "nameGA": "ionad daonra",
+          "namePluralEN": "population centres",
+          "namePluralGA": "ionaid daonra",
+          "count": 128
+        },
+        {
+          "id": "GNE",
+          "nameEN": "feature",
+          "nameGA": "gné",
+          "namePluralEN": "features",
+          "namePluralGA": "gnéithe",
+          "count": 2
+        },
+        {
+          "id": "BA",
+          "nameEN": "bay",
+          "nameGA": "bá",
+          "namePluralEN": "bays",
+          "namePluralGA": "bánna",
+          "count": 4
+        },
+        {
+          "id": "PAR",
+          "nameEN": "civil parish",
+          "nameGA": "paróiste dlí",
+          "namePluralEN": "civil parishes",
+          "namePluralGA": "paróistí dlí",
+          "count": 71
+        },
+        {
+          "id": "BF",
+          "nameEN": "townland",
+          "nameGA": "baile fearainn",
+          "namePluralEN": "townlands",
+          "namePluralGA": "bailte fearainn",
+          "count": 1336
+        },
+        {
+          "id": "GR",
+          "nameEN": "hamlet",
+          "nameGA": "gráig",
+          "namePluralEN": "hamlets",
+          "namePluralGA": "gráigeanna",
+          "count": 2
+        },
+        {
+          "id": "L",
+          "nameEN": "lake or lakes",
+          "nameGA": "loch nó locha",
+          "namePluralEN": "lakes",
+          "namePluralGA": "locha",
+          "count": 3
+        },
+        {
+          "id": "CN",
+          "nameEN": "hill or hills",
+          "nameGA": "cnoc nó cnoic",
+          "namePluralEN": "hills",
+          "namePluralGA": "cnoic",
+          "count": 6
+        },
+        {
+          "id": "CRG",
+          "nameEN": "rock or rocks",
+          "nameGA": "carraig nó carraigeacha",
+          "namePluralEN": "rocks",
+          "namePluralGA": "carraigeacha",
+          "count": 8
+        },
+        {
+          "id": "CUAN",
+          "nameEN": "harbour",
+          "nameGA": "cuan",
+          "namePluralEN": "harbours",
+          "namePluralGA": "cuanta",
+          "count": 1
+        },
+        {
+          "id": "CAIS",
+          "nameEN": "castle",
+          "nameGA": "caisleán",
+          "namePluralEN": "castles",
+          "namePluralGA": "caisleáin",
+          "count": 1
+        },
+        {
+          "id": "MNG",
+          "nameEN": "minor feature",
+          "nameGA": "mionghné",
+          "namePluralEN": "minor features",
+          "namePluralGA": "mionghnéithe",
+          "count": 1
+        },
+        {
+          "id": "GS",
+          "nameEN": "man-made feature",
+          "nameGA": "gné shaorga",
+          "namePluralEN": "man-made features",
+          "namePluralGA": "gnéithe saorga",
+          "count": 1
+        },
+        {
+          "id": "FB",
+          "nameEN": "sub-townland",
+          "nameGA": "fo-bhaile",
+          "namePluralEN": "sub-townlands",
+          "namePluralGA": "fo-bhailte",
+          "count": 1
+        },
+        {
+          "id": "TEACH",
+          "nameEN": "house",
+          "nameGA": "teach",
+          "namePluralEN": "houses",
+          "namePluralGA": "tithe",
+          "count": 1
+        },
+        {
+          "id": "SC",
+          "nameEN": "monument",
+          "nameGA": "séadchomhartha",
+          "namePluralEN": "monuments",
+          "namePluralGA": "séadchomharthaí",
+          "count": 1
+        },
+        {
+          "id": "SCEIR",
+          "nameEN": "reef",
+          "nameGA": "sceir",
+          "namePluralEN": "reefs",
+          "namePluralGA": "sceireacha",
+          "count": 1
+        },
+        {
+          "id": "IMFH",
+          "nameEN": "enclosure",
+          "nameGA": "imfhálú",
+          "namePluralEN": "enclosures",
+          "namePluralGA": "imfháluithe",
+          "count": 2
+        },
+        {
+          "id": "LE",
+          "nameEN": "ecclesiastical site",
+          "nameGA": "láthair eaglasta",
+          "namePluralEN": "ecclesiastical sites",
+          "namePluralGA": "láithreacha eaglasta",
+          "count": 3
+        },
+        {
+          "id": "RINN",
+          "nameEN": "point",
+          "nameGA": "rinn",
+          "namePluralEN": "points",
+          "namePluralGA": "reanna",
+          "count": 6
+        }
+      ],
+      "geography": {
+        "accurate": false,
+        "source": "extrapolation",
+        "coordinates": [
+          {
+            "latitude": 54.3979546629299,
+            "longitude": -5.9063943106688
+          }
+        ]
+      },
+      "gridReferences": [
+        {
+          "square": "J",
+          "easting": 36020,
+          "northing": 51946
+        }
+      ],
+      "northernIreland": {
+        "extent": "all"
+      },
+      "images": [],
+      "links": [
+        {
+          "type": "PlacenamesNi",
+          "target": "http://www.placenamesni.org/resultdetails.php?entry=35300"
+        }
+      ],
+      "bornHere": [],
+      "folklore": [
+        {
+          "type": "Dúchas",
+          "uriEN": "https://www.duchas.ie/en/places?LogainmID=100012",
+          "uriGA": "https://www.duchas.ie/ga/aiteanna?LogainmID=100012"
+        },
+        {
+          "type": "Dúchas: CbeItem",
+          "uriEN": "https://www.duchas.ie/en/cbe/items?LogainmID=100012",
+          "uriGA": "https://www.duchas.ie/ga/cbe/mireanna?LogainmID=100012"
+        },
+        {
+          "type": "Dúchas: CbePart",
+          "uriEN": "https://www.duchas.ie/en/cbe/volumes?LogainmID=100012",
+          "uriGA": "https://www.duchas.ie/ga/cbe/imleabhair?LogainmID=100012"
+        }
+      ],
+      "sameAs": [
+        {
+          "uri": "http://id.worldcat.org/fast/1331320"
+        }
+      ]
+    },
+    {
+      "id": 100013,
+      "dateCreated": "2007-07-27T10:34:28.687",
+      "dateModified": "2025-01-10T10:17:51.137",
+      "permalink": "https://www.logainm.ie/100013.aspx",
+      "featured": [],
+      "cluster": {
+        "focusID": 100013,
+        "members": [
+          {
+            "placeID": 100013,
+            "category": {
+              "id": "CON",
+              "nameEN": "county",
+              "nameGA": "contae"
+            }
+          },
+          {
+            "placeID": 784,
+            "category": {
+              "id": "PAR",
+              "nameEN": "civil parish",
+              "nameGA": "paróiste dlí"
+            }
+          },
+          {
+            "placeID": 14030,
+            "category": {
+              "id": "BF",
+              "nameEN": "townland",
+              "nameGA": "baile fearainn"
+            }
+          },
+          {
+            "placeID": 1372456,
+            "category": {
+              "id": "TR",
+              "nameEN": "electoral division",
+              "nameGA": "toghroinn"
+            }
+          },
+          {
+            "placeID": 1414072,
+            "category": {
+              "id": "B",
+              "nameEN": "town",
+              "nameGA": "baile"
+            }
+          }
+        ]
+      },
+      "placenames": [
+        {
+          "id": 808806,
+          "language": "ga",
+          "wording": "Dún na nGall",
+          "genitive": "Dhún na nGall",
+          "main": true,
+          "acceptability": {
+            "id": 9,
+            "textEN": "validated name",
+            "textGA": "ainm deimhnithe"
+          },
+          "audio": {
+            "fileName": "100013g.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/100013g.mp3"
+          }
+        },
+        {
+          "id": 808805,
+          "language": "en",
+          "wording": "Donegal",
+          "main": true,
+          "audio": {
+            "fileName": "100013b.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/100013b.mp3"
+          }
+        }
+      ],
+      "glossary": [
+        {
+          "id": 72,
+          "headword": "dún",
+          "translation": "fort"
+        },
+        {
+          "id": 80,
+          "headword": "gall",
+          "translation": "foreigner; standing stone"
+        }
+      ],
+      "categories": [
+        {
+          "id": "CON",
+          "nameEN": "county",
+          "nameGA": "contae",
+          "namePluralEN": "counties",
+          "namePluralGA": "contaetha"
+        }
+      ],
+      "includedIn": [],
+      "includes": [
+        {
+          "id": "TAN",
+          "nameEN": "shoal",
+          "nameGA": "tanalach",
+          "namePluralEN": "shoals",
+          "namePluralGA": "tanalacha",
+          "count": 1
+        },
+        {
+          "id": "PRC",
+          "nameEN": "public park, sports field",
+          "nameGA": "páirc phoiblí, páirc spóirt",
+          "namePluralEN": "public parks, sports fields",
+          "namePluralGA": "páirceanna poiblí, páirceanna spóirt",
+          "count": 1
+        },
+        {
+          "id": "COS",
+          "nameEN": "footpath",
+          "nameGA": "cosán",
+          "namePluralEN": "footpaths",
+          "namePluralGA": "cosáin",
+          "count": 2
+        },
+        {
+          "id": "CAIS",
+          "nameEN": "castle",
+          "nameGA": "caisleán",
+          "namePluralEN": "castles",
+          "namePluralGA": "caisleáin",
+          "count": 3
+        },
+        {
+          "id": "AINMST",
+          "nameEN": "historical name",
+          "nameGA": "ainm stairiúil",
+          "namePluralEN": "historical names",
+          "namePluralGA": "ainmneacha stairiúla",
+          "count": 3
+        },
+        {
+          "id": "CE",
+          "nameEN": "quay, pier, wharf",
+          "nameGA": "cé",
+          "namePluralEN": "quays, piers, wharves",
+          "namePluralGA": "céanna",
+          "count": 5
+        },
+        {
+          "id": "CBA",
+          "nameEN": "municipal district",
+          "nameGA": "ceantar bardasach",
+          "namePluralEN": "municipal districts",
+          "namePluralGA": "ceantair bhardasacha",
+          "count": 5
+        },
+        {
+          "id": "SCEIR",
+          "nameEN": "reef",
+          "nameGA": "sceir",
+          "namePluralEN": "reefs",
+          "namePluralGA": "sceireacha",
+          "count": 5
+        },
+        {
+          "id": "IN",
+          "nameEN": "estuary",
+          "nameGA": "inbhear",
+          "namePluralEN": "estuaries",
+          "namePluralGA": "inbhir",
+          "count": 6
+        },
+        {
+          "id": "BAR",
+          "nameEN": "barony",
+          "nameGA": "barúntacht",
+          "namePluralEN": "baronies",
+          "namePluralGA": "barúntachtaí",
+          "count": 8
+        },
+        {
+          "id": "LE",
+          "nameEN": "ecclesiastical site",
+          "nameGA": "láthair eaglasta",
+          "namePluralEN": "ecclesiastical sites",
+          "namePluralGA": "láithreacha eaglasta",
+          "count": 9
+        },
+        {
+          "id": "POLL",
+          "nameEN": "hole",
+          "nameGA": "poll",
+          "namePluralEN": "holes",
+          "namePluralGA": "poill",
+          "count": 9
+        },
+        {
+          "id": "CAOL",
+          "nameEN": "channel, sound",
+          "nameGA": "caol, sunda",
+          "namePluralEN": "channels, sounds",
+          "namePluralGA": "caoil, sundaí",
+          "count": 10
+        },
+        {
+          "id": "TEACH",
+          "nameEN": "house",
+          "nameGA": "teach",
+          "namePluralEN": "houses",
+          "namePluralGA": "tithe",
+          "count": 12
+        },
+        {
+          "id": "GL",
+          "nameEN": "valley",
+          "nameGA": "gleann",
+          "namePluralEN": "valleys",
+          "namePluralGA": "gleannta",
+          "count": 15
+        },
+        {
+          "id": "D",
+          "nameEN": "locality",
+          "nameGA": "dúiche",
+          "namePluralEN": "localities",
+          "namePluralGA": "dúichí",
+          "count": 17
+        },
+        {
+          "id": "SC",
+          "nameEN": "monument",
+          "nameGA": "séadchomhartha",
+          "namePluralEN": "monuments",
+          "namePluralGA": "séadchomharthaí",
+          "count": 21
+        },
+        {
+          "id": "CT",
+          "nameEN": "promontory",
+          "nameGA": "ceann tíre",
+          "namePluralEN": "promontories",
+          "namePluralGA": "cinn tíre",
+          "count": 28
+        },
+        {
+          "id": "DR",
+          "nameEN": "bridge",
+          "nameGA": "droichead",
+          "namePluralEN": "bridges",
+          "namePluralGA": "droichid",
+          "count": 53
+        },
+        {
+          "id": "B",
+          "nameEN": "town",
+          "nameGA": "baile",
+          "namePluralEN": "towns",
+          "namePluralGA": "bailte",
+          "count": 55
+        },
+        {
+          "id": "TRA",
+          "nameEN": "strand",
+          "nameGA": "trá",
+          "namePluralEN": "strands",
+          "namePluralGA": "tránna",
+          "count": 66
+        },
+        {
+          "id": "BA",
+          "nameEN": "bay",
+          "nameGA": "bá",
+          "namePluralEN": "bays",
+          "namePluralGA": "bánna",
+          "count": 72
+        },
+        {
+          "id": "ID",
+          "nameEN": "population centre",
+          "nameGA": "ionad daonra",
+          "namePluralEN": "population centres",
+          "namePluralGA": "ionaid daonra",
+          "count": 94
+        },
+        {
+          "id": "SL",
+          "nameEN": "mountain or mountain range",
+          "nameGA": "sliabh nó sliabhraon",
+          "namePluralEN": "mountains and mountain ranges",
+          "namePluralGA": "sléibhte agus sliabhraonta",
+          "count": 97
+        },
+        {
+          "id": "ABH",
+          "nameEN": "river",
+          "nameGA": "abhainn",
+          "namePluralEN": "rivers",
+          "namePluralGA": "aibhneacha",
+          "count": 126
+        },
+        {
+          "id": "CRG",
+          "nameEN": "rock or rocks",
+          "nameGA": "carraig nó carraigeacha",
+          "namePluralEN": "rocks",
+          "namePluralGA": "carraigeacha",
+          "count": 179
+        },
+        {
+          "id": "OIL",
+          "nameEN": "island or archipelago",
+          "nameGA": "oileán nó oileánra",
+          "namePluralEN": "islands and archipelagos",
+          "namePluralGA": "oileáin agus oileánraí",
+          "count": 214
+        },
+        {
+          "id": "SR",
+          "nameEN": "street",
+          "nameGA": "sráid",
+          "namePluralEN": "streets",
+          "namePluralGA": "sráideanna",
+          "count": 443
+        },
+        {
+          "id": "L",
+          "nameEN": "lake or lakes",
+          "nameGA": "loch nó locha",
+          "namePluralEN": "lakes",
+          "namePluralGA": "locha",
+          "count": 518
+        },
+        {
+          "id": "MNG",
+          "nameEN": "minor feature",
+          "nameGA": "mionghné",
+          "namePluralEN": "minor features",
+          "namePluralGA": "mionghnéithe",
+          "count": 700
+        },
+        {
+          "id": "CAL",
+          "nameEN": "port",
+          "nameGA": "calafort",
+          "namePluralEN": "ports",
+          "namePluralGA": "calafoirt",
+          "count": 3
+        },
+        {
+          "id": "BOTHAR",
+          "nameEN": "road",
+          "nameGA": "bóthar",
+          "namePluralEN": "roads",
+          "namePluralGA": "bóithre",
+          "count": 8
+        },
+        {
+          "id": "PAR",
+          "nameEN": "civil parish",
+          "nameGA": "paróiste dlí",
+          "namePluralEN": "civil parishes",
+          "namePluralGA": "paróistí dlí",
+          "count": 52
+        },
+        {
+          "id": "TR",
+          "nameEN": "electoral division",
+          "nameGA": "toghroinn",
+          "namePluralEN": "electoral divisions",
+          "namePluralGA": "toghranna",
+          "count": 149
+        },
+        {
+          "id": "CN",
+          "nameEN": "hill or hills",
+          "nameGA": "cnoc nó cnoic",
+          "namePluralEN": "hills",
+          "namePluralGA": "cnoic",
+          "count": 222
+        },
+        {
+          "id": "BF",
+          "nameEN": "townland",
+          "nameGA": "baile fearainn",
+          "namePluralEN": "townlands",
+          "namePluralGA": "bailte fearainn",
+          "count": 2723
+        },
+        {
+          "id": "GALLAN",
+          "nameEN": "standing stone or standing stones",
+          "nameGA": "gallán nó galláin",
+          "namePluralEN": "standing stones",
+          "namePluralGA": "galláin",
+          "count": 2
+        },
+        {
+          "id": "POR",
+          "nameEN": "bog",
+          "nameGA": "portach",
+          "namePluralEN": "bogs",
+          "namePluralGA": "portaigh",
+          "count": 3
+        },
+        {
+          "id": "CUAN",
+          "nameEN": "harbour",
+          "nameGA": "cuan",
+          "namePluralEN": "harbours",
+          "namePluralGA": "cuanta",
+          "count": 5
+        },
+        {
+          "id": "GS",
+          "nameEN": "man-made feature",
+          "nameGA": "gné shaorga",
+          "namePluralEN": "man-made features",
+          "namePluralGA": "gnéithe saorga",
+          "count": 6
+        },
+        {
+          "id": "COILL",
+          "nameEN": "wood",
+          "nameGA": "coill",
+          "namePluralEN": "woods",
+          "namePluralGA": "coillte",
+          "count": 8
+        },
+        {
+          "id": "GOIL",
+          "nameEN": "creek",
+          "nameGA": "góilín",
+          "namePluralEN": "creeks",
+          "namePluralGA": "góilíní",
+          "count": 11
+        },
+        {
+          "id": "BEAR",
+          "nameEN": "pass",
+          "nameGA": "bearnas",
+          "namePluralEN": "passes",
+          "namePluralGA": "bearnais",
+          "count": 16
+        },
+        {
+          "id": "TOB",
+          "nameEN": "well",
+          "nameGA": "tobar",
+          "namePluralEN": "wells",
+          "namePluralGA": "toibreacha",
+          "count": 22
+        },
+        {
+          "id": "SRUTHAN",
+          "nameEN": "stream",
+          "nameGA": "sruthán",
+          "namePluralEN": "streams",
+          "namePluralGA": "srutháin",
+          "count": 41
+        },
+        {
+          "id": "RINN",
+          "nameEN": "point",
+          "nameGA": "rinn",
+          "namePluralEN": "points",
+          "namePluralGA": "reanna",
+          "count": 73
+        },
+        {
+          "id": "FB",
+          "nameEN": "sub-townland",
+          "nameGA": "fo-bhaile",
+          "namePluralEN": "sub-townlands",
+          "namePluralGA": "fo-bhailte",
+          "count": 240
+        },
+        {
+          "id": "OITIR",
+          "nameEN": "(sand) bank",
+          "nameGA": "oitir (ghainimh)",
+          "namePluralEN": "(sand) banks",
+          "namePluralGA": "oitreacha (gainimh)",
+          "count": 1
+        },
+        {
+          "id": "DUMHACH",
+          "nameEN": "sandhill or sandhills",
+          "nameGA": "dumhach nó dumhcha",
+          "namePluralEN": "sandhills",
+          "namePluralGA": "dumhcha",
+          "count": 1
+        },
+        {
+          "id": "ATH",
+          "nameEN": "ford",
+          "nameGA": "áth",
+          "namePluralEN": "fords",
+          "namePluralGA": "áthanna",
+          "count": 1
+        },
+        {
+          "id": "SRB",
+          "nameEN": "village",
+          "nameGA": "sráidbhaile",
+          "namePluralEN": "villages",
+          "namePluralGA": "sráidbhailte",
+          "count": 1
+        },
+        {
+          "id": "CALADH",
+          "nameEN": "landing-place",
+          "nameGA": "caladh",
+          "namePluralEN": "landing-places",
+          "namePluralGA": "calaí",
+          "count": 2
+        },
+        {
+          "id": "LOG",
+          "nameEN": "hollow",
+          "nameGA": "log",
+          "namePluralEN": "hollows",
+          "namePluralGA": "loig",
+          "count": 2
+        },
+        {
+          "id": "GEADAN",
+          "nameEN": "patch of ground",
+          "nameGA": "geadán talún",
+          "namePluralEN": "patches of ground",
+          "namePluralGA": "geadáin talún",
+          "count": 2
+        },
+        {
+          "id": "GORT",
+          "nameEN": "field",
+          "nameGA": "gort",
+          "namePluralEN": "fields",
+          "namePluralGA": "goirt",
+          "count": 3
+        },
+        {
+          "id": "CARN",
+          "nameEN": "cairn",
+          "nameGA": "carn",
+          "namePluralEN": "cairns",
+          "namePluralGA": "cairn",
+          "count": 3
+        },
+        {
+          "id": "CB",
+          "nameEN": "crossroads",
+          "nameGA": "crosbhóthar",
+          "namePluralEN": "crossroads",
+          "namePluralGA": "crosbhóithre",
+          "count": 4
+        },
+        {
+          "id": "MALA",
+          "nameEN": "brow, slope, hillside",
+          "nameGA": "mala",
+          "namePluralEN": "brows, slopes, hillsides",
+          "namePluralGA": "malaí",
+          "count": 4
+        },
+        {
+          "id": "RIASC",
+          "nameEN": "marsh",
+          "nameGA": "riasc",
+          "namePluralEN": "marshes",
+          "namePluralGA": "riasca",
+          "count": 4
+        },
+        {
+          "id": "UAIMH",
+          "nameEN": "cave(s), souterrain(s)",
+          "nameGA": "uaimh nó uaimheanna",
+          "namePluralEN": "caves, souterrains",
+          "namePluralGA": "uaimheanna",
+          "count": 5
+        },
+        {
+          "id": "TUAMA",
+          "nameEN": "tomb",
+          "nameGA": "tuama",
+          "namePluralEN": "tombs",
+          "namePluralGA": "tuamaí",
+          "count": 6
+        },
+        {
+          "id": "REILIG",
+          "nameEN": "graveyard, cemetery, burial ground",
+          "nameGA": "reilig",
+          "namePluralEN": "graveyards, cemeteries, burial grounds",
+          "namePluralGA": "reiligí",
+          "count": 6
+        },
+        {
+          "id": "GR",
+          "nameEN": "hamlet",
+          "nameGA": "gráig",
+          "namePluralEN": "hamlets",
+          "namePluralGA": "gráigeanna",
+          "count": 6
+        },
+        {
+          "id": "IMFH",
+          "nameEN": "enclosure",
+          "nameGA": "imfhálú",
+          "namePluralEN": "enclosures",
+          "namePluralGA": "imfháluithe",
+          "count": 7
+        },
+        {
+          "id": "EAS",
+          "nameEN": "waterfall",
+          "nameGA": "eas",
+          "namePluralEN": "waterfalls",
+          "namePluralGA": "easanna",
+          "count": 9
+        },
+        {
+          "id": "AILL",
+          "nameEN": "cliff or cliffs",
+          "nameGA": "aill nó aillte",
+          "namePluralEN": "cliffs",
+          "namePluralGA": "aillte",
+          "count": 12
+        }
+      ],
+      "geography": {
+        "accurate": true,
+        "source": "osi",
+        "coordinates": [
+          {
+            "latitude": 54.97200643944868,
+            "longitude": -7.982302945137205
+          }
+        ]
+      },
+      "gridReferences": [
+        {
+          "square": "C",
+          "easting": 1181,
+          "northing": 13830
+        }
+      ],
+      "images": [],
+      "links": [
+        {
+          "type": "Osi",
+          "target": "50000"
+        }
+      ],
+      "bornHere": [
+        {
+          "id": 1409,
+          "title": "Ó CLÉIRIGH, Lughaidh (c.1580–c.1630)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1409"
+        }
+      ],
+      "folklore": [
+        {
+          "type": "Dúchas",
+          "uriEN": "https://www.duchas.ie/en/places?LogainmID=100013",
+          "uriGA": "https://www.duchas.ie/ga/aiteanna?LogainmID=100013"
+        },
+        {
+          "type": "Dúchas: CbeItem",
+          "uriEN": "https://www.duchas.ie/en/cbe/items?LogainmID=100013",
+          "uriGA": "https://www.duchas.ie/ga/cbe/mireanna?LogainmID=100013"
+        },
+        {
+          "type": "Dúchas: CbePart",
+          "uriEN": "https://www.duchas.ie/en/cbe/volumes?LogainmID=100013",
+          "uriGA": "https://www.duchas.ie/ga/cbe/imleabhair?LogainmID=100013"
+        }
+      ],
+      "sameAs": [
+        {
+          "uri": "http://id.worldcat.org/fast/1330711"
+        }
+      ]
+    },
+    {
+      "id": 100014,
+      "dateCreated": "2007-07-27T10:34:28.7",
+      "dateModified": "2020-09-07T10:58:26.157",
+      "permalink": "https://www.logainm.ie/100014.aspx",
+      "featured": [],
+      "placenames": [
+        {
+          "id": 808808,
+          "language": "ga",
+          "wording": "Fear Manach",
+          "genitive": "Fhear Manach",
+          "main": true,
+          "acceptability": {
+            "id": 9,
+            "textEN": "validated name",
+            "textGA": "ainm deimhnithe"
+          },
+          "audio": {
+            "fileName": "100014g.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/100014g.mp3"
+          }
+        },
+        {
+          "id": 808807,
+          "language": "en",
+          "wording": "Fermanagh",
+          "main": true,
+          "audio": {
+            "fileName": "100014b.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/100014b.mp3"
+          }
+        }
+      ],
+      "glossary": [],
+      "categories": [
+        {
+          "id": "CON",
+          "nameEN": "county",
+          "nameGA": "contae",
+          "namePluralEN": "counties",
+          "namePluralGA": "contaetha"
+        }
+      ],
+      "includedIn": [],
+      "includes": [
+        {
+          "id": "CAN",
+          "nameEN": "canal",
+          "nameGA": "canáil",
+          "namePluralEN": "canals",
+          "namePluralGA": "canálacha",
+          "count": 1
+        },
+        {
+          "id": "UAIMH",
+          "nameEN": "cave(s), souterrain(s)",
+          "nameGA": "uaimh nó uaimheanna",
+          "namePluralEN": "caves, souterrains",
+          "namePluralGA": "uaimheanna",
+          "count": 4
+        },
+        {
+          "id": "OIL",
+          "nameEN": "island or archipelago",
+          "nameGA": "oileán nó oileánra",
+          "namePluralEN": "islands and archipelagos",
+          "namePluralGA": "oileáin agus oileánraí",
+          "count": 5
+        },
+        {
+          "id": "SL",
+          "nameEN": "mountain or mountain range",
+          "nameGA": "sliabh nó sliabhraon",
+          "namePluralEN": "mountains and mountain ranges",
+          "namePluralGA": "sléibhte agus sliabhraonta",
+          "count": 6
+        },
+        {
+          "id": "BAR",
+          "nameEN": "barony",
+          "nameGA": "barúntacht",
+          "namePluralEN": "baronies",
+          "namePluralGA": "barúntachtaí",
+          "count": 8
+        },
+        {
+          "id": "ABH",
+          "nameEN": "river",
+          "nameGA": "abhainn",
+          "namePluralEN": "rivers",
+          "namePluralGA": "aibhneacha",
+          "count": 11
+        },
+        {
+          "id": "L",
+          "nameEN": "lake or lakes",
+          "nameGA": "loch nó locha",
+          "namePluralEN": "lakes",
+          "namePluralGA": "locha",
+          "count": 12
+        },
+        {
+          "id": "ID",
+          "nameEN": "population centre",
+          "nameGA": "ionad daonra",
+          "namePluralEN": "population centres",
+          "namePluralGA": "ionaid daonra",
+          "count": 55
+        },
+        {
+          "id": "PAR",
+          "nameEN": "civil parish",
+          "nameGA": "paróiste dlí",
+          "namePluralEN": "civil parishes",
+          "namePluralGA": "paróistí dlí",
+          "count": 23
+        },
+        {
+          "id": "BF",
+          "nameEN": "townland",
+          "nameGA": "baile fearainn",
+          "namePluralEN": "townlands",
+          "namePluralGA": "bailte fearainn",
+          "count": 2260
+        },
+        {
+          "id": "BOTHAR",
+          "nameEN": "road",
+          "nameGA": "bóthar",
+          "namePluralEN": "roads",
+          "namePluralGA": "bóithre",
+          "count": 1
+        },
+        {
+          "id": "D",
+          "nameEN": "locality",
+          "nameGA": "dúiche",
+          "namePluralEN": "localities",
+          "namePluralGA": "dúichí",
+          "count": 1
+        },
+        {
+          "id": "LE",
+          "nameEN": "ecclesiastical site",
+          "nameGA": "láthair eaglasta",
+          "namePluralEN": "ecclesiastical sites",
+          "namePluralGA": "láithreacha eaglasta",
+          "count": 1
+        },
+        {
+          "id": "SR",
+          "nameEN": "street",
+          "nameGA": "sráid",
+          "namePluralEN": "streets",
+          "namePluralGA": "sráideanna",
+          "count": 2
+        },
+        {
+          "id": "B",
+          "nameEN": "town",
+          "nameGA": "baile",
+          "namePluralEN": "towns",
+          "namePluralGA": "bailte",
+          "count": 3
+        },
+        {
+          "id": "SRB",
+          "nameEN": "village",
+          "nameGA": "sráidbhaile",
+          "namePluralEN": "villages",
+          "namePluralGA": "sráidbhailte",
+          "count": 12
+        },
+        {
+          "id": "SRUTHAN",
+          "nameEN": "stream",
+          "nameGA": "sruthán",
+          "namePluralEN": "streams",
+          "namePluralGA": "srutháin",
+          "count": 1
+        },
+        {
+          "id": "TOB",
+          "nameEN": "well",
+          "nameGA": "tobar",
+          "namePluralEN": "wells",
+          "namePluralGA": "toibreacha",
+          "count": 1
+        },
+        {
+          "id": "CAIS",
+          "nameEN": "castle",
+          "nameGA": "caisleán",
+          "namePluralEN": "castles",
+          "namePluralGA": "caisleáin",
+          "count": 1
+        },
+        {
+          "id": "CN",
+          "nameEN": "hill or hills",
+          "nameGA": "cnoc nó cnoic",
+          "namePluralEN": "hills",
+          "namePluralGA": "cnoic",
+          "count": 1
+        },
+        {
+          "id": "GL",
+          "nameEN": "valley",
+          "nameGA": "gleann",
+          "namePluralEN": "valleys",
+          "namePluralGA": "gleannta",
+          "count": 1
+        },
+        {
+          "id": "FB",
+          "nameEN": "sub-townland",
+          "nameGA": "fo-bhaile",
+          "namePluralEN": "sub-townlands",
+          "namePluralGA": "fo-bhailte",
+          "count": 1
+        },
+        {
+          "id": "MNG",
+          "nameEN": "minor feature",
+          "nameGA": "mionghné",
+          "namePluralEN": "minor features",
+          "namePluralGA": "mionghnéithe",
+          "count": 2
+        },
+        {
+          "id": "POLL",
+          "nameEN": "hole",
+          "nameGA": "poll",
+          "namePluralEN": "holes",
+          "namePluralGA": "poill",
+          "count": 2
+        }
+      ],
+      "geography": {
+        "accurate": false,
+        "source": "extrapolation",
+        "coordinates": [
+          {
+            "latitude": 54.3422462155959,
+            "longitude": -7.64179611764251
+          }
+        ]
+      },
+      "gridReferences": [
+        {
+          "square": "H",
+          "easting": 23345,
+          "northing": 43784
+        }
+      ],
+      "northernIreland": {
+        "extent": "all"
+      },
+      "images": [
+        {
+          "fileName": "100014.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/100014.jpg"
+        }
+      ],
+      "links": [
+        {
+          "type": "PlacenamesNi",
+          "target": "http://www.placenamesni.org/resultdetails.php?entry=17260"
+        }
+      ],
+      "bornHere": [],
+      "folklore": [
+        {
+          "type": "Dúchas",
+          "uriEN": "https://www.duchas.ie/en/places?LogainmID=100014",
+          "uriGA": "https://www.duchas.ie/ga/aiteanna?LogainmID=100014"
+        },
+        {
+          "type": "Dúchas: CbeItem",
+          "uriEN": "https://www.duchas.ie/en/cbe/items?LogainmID=100014",
+          "uriGA": "https://www.duchas.ie/ga/cbe/mireanna?LogainmID=100014"
+        },
+        {
+          "type": "Dúchas: CbePart",
+          "uriEN": "https://www.duchas.ie/en/cbe/volumes?LogainmID=100014",
+          "uriGA": "https://www.duchas.ie/ga/cbe/imleabhair?LogainmID=100014"
+        }
+      ],
+      "sameAs": [
+        {
+          "uri": "http://id.worldcat.org/fast/1222456"
+        }
+      ]
+    },
+    {
+      "id": 100015,
+      "dateCreated": "2007-07-27T10:34:28.7",
+      "dateModified": "2025-01-10T10:17:51.2",
+      "permalink": "https://www.logainm.ie/100015.aspx",
+      "featured": [],
+      "cluster": {
+        "focusID": 100015,
+        "members": [
+          {
+            "placeID": 100015,
+            "category": {
+              "id": "CON",
+              "nameEN": "county",
+              "nameGA": "contae"
+            }
+          },
+          {
+            "placeID": 69,
+            "category": {
+              "id": "BAR",
+              "nameEN": "barony",
+              "nameGA": "barúntacht"
+            }
+          },
+          {
+            "placeID": 1372979,
+            "category": {
+              "id": "TR",
+              "nameEN": "electoral division",
+              "nameGA": "toghroinn"
+            }
+          },
+          {
+            "placeID": 1384607,
+            "category": {
+              "id": "CTH",
+              "nameEN": "city",
+              "nameGA": "cathair"
+            }
+          }
+        ]
+      },
+      "placenames": [
+        {
+          "id": 808810,
+          "language": "ga",
+          "wording": "Gaillimh",
+          "genitive": "na Gaillimhe",
+          "main": true,
+          "acceptability": {
+            "id": 9,
+            "textEN": "validated name",
+            "textGA": "ainm deimhnithe"
+          }
+        },
+        {
+          "id": 808809,
+          "language": "en",
+          "wording": "Galway",
+          "main": true
+        }
+      ],
+      "glossary": [],
+      "categories": [
+        {
+          "id": "CON",
+          "nameEN": "county",
+          "nameGA": "contae",
+          "namePluralEN": "counties",
+          "namePluralGA": "contaetha"
+        }
+      ],
+      "includedIn": [],
+      "includes": [
+        {
+          "id": "DEOISE",
+          "nameEN": "diocese",
+          "nameGA": "deoise",
+          "namePluralEN": "dioceses",
+          "namePluralGA": "deoisí",
+          "count": 1
+        },
+        {
+          "id": "CTH",
+          "nameEN": "city",
+          "nameGA": "cathair",
+          "namePluralEN": "cities",
+          "namePluralGA": "cathracha",
+          "count": 1
+        },
+        {
+          "id": "CAN",
+          "nameEN": "canal",
+          "nameGA": "canáil",
+          "namePluralEN": "canals",
+          "namePluralGA": "canálacha",
+          "count": 2
+        },
+        {
+          "id": "AINMST",
+          "nameEN": "historical name",
+          "nameGA": "ainm stairiúil",
+          "namePluralEN": "historical names",
+          "namePluralGA": "ainmneacha stairiúla",
+          "count": 2
+        },
+        {
+          "id": "IN",
+          "nameEN": "estuary",
+          "nameGA": "inbhear",
+          "namePluralEN": "estuaries",
+          "namePluralGA": "inbhir",
+          "count": 2
+        },
+        {
+          "id": "GORT",
+          "nameEN": "field",
+          "nameGA": "gort",
+          "namePluralEN": "fields",
+          "namePluralGA": "goirt",
+          "count": 3
+        },
+        {
+          "id": "COS",
+          "nameEN": "footpath",
+          "nameGA": "cosán",
+          "namePluralEN": "footpaths",
+          "namePluralGA": "cosáin",
+          "count": 3
+        },
+        {
+          "id": "CBA",
+          "nameEN": "municipal district",
+          "nameGA": "ceantar bardasach",
+          "namePluralEN": "municipal districts",
+          "namePluralGA": "ceantair bhardasacha",
+          "count": 5
+        },
+        {
+          "id": "CT",
+          "nameEN": "promontory",
+          "nameGA": "ceann tíre",
+          "namePluralEN": "promontories",
+          "namePluralGA": "cinn tíre",
+          "count": 8
+        },
+        {
+          "id": "D",
+          "nameEN": "locality",
+          "nameGA": "dúiche",
+          "namePluralEN": "localities",
+          "namePluralGA": "dúichí",
+          "count": 12
+        },
+        {
+          "id": "CUAN",
+          "nameEN": "harbour",
+          "nameGA": "cuan",
+          "namePluralEN": "harbours",
+          "namePluralGA": "cuanta",
+          "count": 13
+        },
+        {
+          "id": "BAR",
+          "nameEN": "barony",
+          "nameGA": "barúntacht",
+          "namePluralEN": "baronies",
+          "namePluralGA": "barúntachtaí",
+          "count": 19
+        },
+        {
+          "id": "SC",
+          "nameEN": "monument",
+          "nameGA": "séadchomhartha",
+          "namePluralEN": "monuments",
+          "namePluralGA": "séadchomharthaí",
+          "count": 27
+        },
+        {
+          "id": "B",
+          "nameEN": "town",
+          "nameGA": "baile",
+          "namePluralEN": "towns",
+          "namePluralGA": "bailte",
+          "count": 34
+        },
+        {
+          "id": "BA",
+          "nameEN": "bay",
+          "nameGA": "bá",
+          "namePluralEN": "bays",
+          "namePluralGA": "bánna",
+          "count": 36
+        },
+        {
+          "id": "SL",
+          "nameEN": "mountain or mountain range",
+          "nameGA": "sliabh nó sliabhraon",
+          "namePluralEN": "mountains and mountain ranges",
+          "namePluralGA": "sléibhte agus sliabhraonta",
+          "count": 50
+        },
+        {
+          "id": "ABH",
+          "nameEN": "river",
+          "nameGA": "abhainn",
+          "namePluralEN": "rivers",
+          "namePluralGA": "aibhneacha",
+          "count": 101
+        },
+        {
+          "id": "ID",
+          "nameEN": "population centre",
+          "nameGA": "ionad daonra",
+          "namePluralEN": "population centres",
+          "namePluralGA": "ionaid daonra",
+          "count": 115
+        },
+        {
+          "id": "CRG",
+          "nameEN": "rock or rocks",
+          "nameGA": "carraig nó carraigeacha",
+          "namePluralEN": "rocks",
+          "namePluralGA": "carraigeacha",
+          "count": 344
+        },
+        {
+          "id": "MNG",
+          "nameEN": "minor feature",
+          "nameGA": "mionghné",
+          "namePluralEN": "minor features",
+          "namePluralGA": "mionghnéithe",
+          "count": 353
+        },
+        {
+          "id": "OIL",
+          "nameEN": "island or archipelago",
+          "nameGA": "oileán nó oileánra",
+          "namePluralEN": "islands and archipelagos",
+          "namePluralGA": "oileáin agus oileánraí",
+          "count": 521
+        },
+        {
+          "id": "L",
+          "nameEN": "lake or lakes",
+          "nameGA": "loch nó locha",
+          "namePluralEN": "lakes",
+          "namePluralGA": "locha",
+          "count": 698
+        },
+        {
+          "id": "SR",
+          "nameEN": "street",
+          "nameGA": "sráid",
+          "namePluralEN": "streets",
+          "namePluralGA": "sráideanna",
+          "count": 1464
+        },
+        {
+          "id": "ARASAN",
+          "nameEN": "apartment",
+          "nameGA": "árasán",
+          "namePluralEN": "apartments",
+          "namePluralGA": "árasáin",
+          "count": 2
+        },
+        {
+          "id": "TEACH",
+          "nameEN": "house",
+          "nameGA": "teach",
+          "namePluralEN": "houses",
+          "namePluralGA": "tithe",
+          "count": 8
+        },
+        {
+          "id": "CAOL",
+          "nameEN": "channel, sound",
+          "nameGA": "caol, sunda",
+          "namePluralEN": "channels, sounds",
+          "namePluralGA": "caoil, sundaí",
+          "count": 9
+        },
+        {
+          "id": "CE",
+          "nameEN": "quay, pier, wharf",
+          "nameGA": "cé",
+          "namePluralEN": "quays, piers, wharves",
+          "namePluralGA": "céanna",
+          "count": 11
+        },
+        {
+          "id": "REILIG",
+          "nameEN": "graveyard, cemetery, burial ground",
+          "nameGA": "reilig",
+          "namePluralEN": "graveyards, cemeteries, burial grounds",
+          "namePluralGA": "reiligí",
+          "count": 18
+        },
+        {
+          "id": "CAIS",
+          "nameEN": "castle",
+          "nameGA": "caisleán",
+          "namePluralEN": "castles",
+          "namePluralGA": "caisleáin",
+          "count": 19
+        },
+        {
+          "id": "TRA",
+          "nameEN": "strand",
+          "nameGA": "trá",
+          "namePluralEN": "strands",
+          "namePluralGA": "tránna",
+          "count": 38
+        },
+        {
+          "id": "GS",
+          "nameEN": "man-made feature",
+          "nameGA": "gné shaorga",
+          "namePluralEN": "man-made features",
+          "namePluralGA": "gnéithe saorga",
+          "count": 42
+        },
+        {
+          "id": "DR",
+          "nameEN": "bridge",
+          "nameGA": "droichead",
+          "namePluralEN": "bridges",
+          "namePluralGA": "droichid",
+          "count": 44
+        },
+        {
+          "id": "CN",
+          "nameEN": "hill or hills",
+          "nameGA": "cnoc nó cnoic",
+          "namePluralEN": "hills",
+          "namePluralGA": "cnoic",
+          "count": 88
+        },
+        {
+          "id": "PAR",
+          "nameEN": "civil parish",
+          "nameGA": "paróiste dlí",
+          "namePluralEN": "civil parishes",
+          "namePluralGA": "paróistí dlí",
+          "count": 116
+        },
+        {
+          "id": "TR",
+          "nameEN": "electoral division",
+          "nameGA": "toghroinn",
+          "namePluralEN": "electoral divisions",
+          "namePluralGA": "toghranna",
+          "count": 238
+        },
+        {
+          "id": "BF",
+          "nameEN": "townland",
+          "nameGA": "baile fearainn",
+          "namePluralEN": "townlands",
+          "namePluralGA": "bailte fearainn",
+          "count": 4382
+        },
+        {
+          "id": "SCEIR",
+          "nameEN": "reef",
+          "nameGA": "sceir",
+          "namePluralEN": "reefs",
+          "namePluralGA": "sceireacha",
+          "count": 1
+        },
+        {
+          "id": "RSCRS",
+          "nameEN": "racecourse",
+          "nameGA": "ráschúrsa",
+          "namePluralEN": "racecourses",
+          "namePluralGA": "ráschúrsaí",
+          "count": 1
+        },
+        {
+          "id": "UAIMH",
+          "nameEN": "cave(s), souterrain(s)",
+          "nameGA": "uaimh nó uaimheanna",
+          "namePluralEN": "caves, souterrains",
+          "namePluralGA": "uaimheanna",
+          "count": 2
+        },
+        {
+          "id": "PRC",
+          "nameEN": "public park, sports field",
+          "nameGA": "páirc phoiblí, páirc spóirt",
+          "namePluralEN": "public parks, sports fields",
+          "namePluralGA": "páirceanna poiblí, páirceanna spóirt",
+          "count": 2
+        },
+        {
+          "id": "GNE",
+          "nameEN": "feature",
+          "nameGA": "gné",
+          "namePluralEN": "features",
+          "namePluralGA": "gnéithe",
+          "count": 2
+        },
+        {
+          "id": "BOTHAR",
+          "nameEN": "road",
+          "nameGA": "bóthar",
+          "namePluralEN": "roads",
+          "namePluralGA": "bóithre",
+          "count": 6
+        },
+        {
+          "id": "POR",
+          "nameEN": "bog",
+          "nameGA": "portach",
+          "namePluralEN": "bogs",
+          "namePluralGA": "portaigh",
+          "count": 10
+        },
+        {
+          "id": "COILL",
+          "nameEN": "wood",
+          "nameGA": "coill",
+          "namePluralEN": "woods",
+          "namePluralGA": "coillte",
+          "count": 16
+        },
+        {
+          "id": "AILL",
+          "nameEN": "cliff or cliffs",
+          "nameGA": "aill nó aillte",
+          "namePluralEN": "cliffs",
+          "namePluralGA": "aillte",
+          "count": 18
+        },
+        {
+          "id": "SRB",
+          "nameEN": "village",
+          "nameGA": "sráidbhaile",
+          "namePluralEN": "villages",
+          "namePluralGA": "sráidbhailte",
+          "count": 27
+        },
+        {
+          "id": "SRUTHAN",
+          "nameEN": "stream",
+          "nameGA": "sruthán",
+          "namePluralEN": "streams",
+          "namePluralGA": "srutháin",
+          "count": 31
+        },
+        {
+          "id": "RINN",
+          "nameEN": "point",
+          "nameGA": "rinn",
+          "namePluralEN": "points",
+          "namePluralGA": "reanna",
+          "count": 58
+        },
+        {
+          "id": "RIASC",
+          "nameEN": "marsh",
+          "nameGA": "riasc",
+          "namePluralEN": "marshes",
+          "namePluralGA": "riasca",
+          "count": 1
+        },
+        {
+          "id": "TAN",
+          "nameEN": "shoal",
+          "nameGA": "tanalach",
+          "namePluralEN": "shoals",
+          "namePluralGA": "tanalacha",
+          "count": 1
+        },
+        {
+          "id": "ATH",
+          "nameEN": "ford",
+          "nameGA": "áth",
+          "namePluralEN": "fords",
+          "namePluralGA": "áthanna",
+          "count": 1
+        },
+        {
+          "id": "CALADH",
+          "nameEN": "landing-place",
+          "nameGA": "caladh",
+          "namePluralEN": "landing-places",
+          "namePluralGA": "calaí",
+          "count": 1
+        },
+        {
+          "id": "BOGACH",
+          "nameEN": "soft, boggy ground",
+          "nameGA": "bogach",
+          "namePluralEN": "soft, boggy grounds",
+          "namePluralGA": "bogaigh",
+          "count": 1
+        },
+        {
+          "id": "GALLAN",
+          "nameEN": "standing stone or standing stones",
+          "nameGA": "gallán nó galláin",
+          "namePluralEN": "standing stones",
+          "namePluralGA": "galláin",
+          "count": 1
+        },
+        {
+          "id": "GOIL",
+          "nameEN": "creek",
+          "nameGA": "góilín",
+          "namePluralEN": "creeks",
+          "namePluralGA": "góilíní",
+          "count": 1
+        },
+        {
+          "id": "CARN",
+          "nameEN": "cairn",
+          "nameGA": "carn",
+          "namePluralEN": "cairns",
+          "namePluralGA": "cairn",
+          "count": 2
+        },
+        {
+          "id": "TUAMA",
+          "nameEN": "tomb",
+          "nameGA": "tuama",
+          "namePluralEN": "tombs",
+          "namePluralGA": "tuamaí",
+          "count": 2
+        },
+        {
+          "id": "BEAR",
+          "nameEN": "pass",
+          "nameGA": "bearnas",
+          "namePluralEN": "passes",
+          "namePluralGA": "bearnais",
+          "count": 3
+        },
+        {
+          "id": "MÓIN",
+          "nameEN": "moor",
+          "nameGA": "móin",
+          "namePluralEN": "moors",
+          "namePluralGA": "móinte",
+          "count": 3
+        },
+        {
+          "id": "LOG",
+          "nameEN": "hollow",
+          "nameGA": "log",
+          "namePluralEN": "hollows",
+          "namePluralGA": "loig",
+          "count": 4
+        },
+        {
+          "id": "POLL",
+          "nameEN": "hole",
+          "nameGA": "poll",
+          "namePluralEN": "holes",
+          "namePluralGA": "poill",
+          "count": 4
+        },
+        {
+          "id": "GR",
+          "nameEN": "hamlet",
+          "nameGA": "gráig",
+          "namePluralEN": "hamlets",
+          "namePluralGA": "gráigeanna",
+          "count": 6
+        },
+        {
+          "id": "GL",
+          "nameEN": "valley",
+          "nameGA": "gleann",
+          "namePluralEN": "valleys",
+          "namePluralGA": "gleannta",
+          "count": 6
+        },
+        {
+          "id": "TUR",
+          "nameEN": "turlough",
+          "nameGA": "turlach",
+          "namePluralEN": "turloughs",
+          "namePluralGA": "turlaigh",
+          "count": 8
+        },
+        {
+          "id": "CB",
+          "nameEN": "crossroads",
+          "nameGA": "crosbhóthar",
+          "namePluralEN": "crossroads",
+          "namePluralGA": "crosbhóithre",
+          "count": 9
+        },
+        {
+          "id": "LE",
+          "nameEN": "ecclesiastical site",
+          "nameGA": "láthair eaglasta",
+          "namePluralEN": "ecclesiastical sites",
+          "namePluralGA": "láithreacha eaglasta",
+          "count": 18
+        },
+        {
+          "id": "IMFH",
+          "nameEN": "enclosure",
+          "nameGA": "imfhálú",
+          "namePluralEN": "enclosures",
+          "namePluralGA": "imfháluithe",
+          "count": 24
+        },
+        {
+          "id": "TOB",
+          "nameEN": "well",
+          "nameGA": "tobar",
+          "namePluralEN": "wells",
+          "namePluralGA": "toibreacha",
+          "count": 25
+        },
+        {
+          "id": "FB",
+          "nameEN": "sub-townland",
+          "nameGA": "fo-bhaile",
+          "namePluralEN": "sub-townlands",
+          "namePluralGA": "fo-bhailte",
+          "count": 105
+        }
+      ],
+      "geography": {
+        "accurate": true,
+        "source": "osi",
+        "coordinates": [
+          {
+            "latitude": 53.3644720663754,
+            "longitude": -9.450279819384416
+          }
+        ]
+      },
+      "gridReferences": [
+        {
+          "square": "M",
+          "easting": 3502,
+          "northing": 35872
+        }
+      ],
+      "images": [
+        {
+          "fileName": "14.06.30/100015_1,1384607_1,69_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/14.06.30%2F100015_1%2C1384607_1%2C69_1.jpg"
+        },
+        {
+          "fileName": "14.06.30/100015_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/14.06.30%2F100015_1.jpg"
+        },
+        {
+          "fileName": "14.06.30/100015_2,1384607_2,69_2.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/14.06.30%2F100015_2%2C1384607_2%2C69_2.jpg"
+        },
+        {
+          "fileName": "14.06.30/100015_2.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/14.06.30%2F100015_2.jpg"
+        },
+        {
+          "fileName": "14.06.30/100015_3,1384607_3,69_3.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/14.06.30%2F100015_3%2C1384607_3%2C69_3.jpg"
+        },
+        {
+          "fileName": "14.06.30/100015_3.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/14.06.30%2F100015_3.jpg"
+        }
+      ],
+      "links": [
+        {
+          "type": "Osi",
+          "target": "60000"
+        }
+      ],
+      "bornHere": [
+        {
+          "id": 515,
+          "title": "Ó FOTHARTA, Domhnall (c.1834–1919)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=515"
+        },
+        {
+          "id": 1057,
+          "title": "CONEYS, Thomas de Vere (c.1804–1851)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1057"
+        },
+        {
+          "id": 1424,
+          "title": "Ó DOMHNALLÁIN, Fearganainm (c.1560–1609)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1424"
+        },
+        {
+          "id": 1751,
+          "title": "Ó RAGHALLAIGH, Pádraic (1924–1999)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1751"
+        },
+        {
+          "id": 1906,
+          "title": "Ó hANNAINN, Seán (1867–1931)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1906"
+        }
+      ],
+      "folklore": [
+        {
+          "type": "Dúchas",
+          "uriEN": "https://www.duchas.ie/en/places?LogainmID=100015",
+          "uriGA": "https://www.duchas.ie/ga/aiteanna?LogainmID=100015"
+        },
+        {
+          "type": "Dúchas: CbegPhoto",
+          "uriEN": "https://www.duchas.ie/en/cbeg?LogainmID=100015",
+          "uriGA": "https://www.duchas.ie/ga/cbeg?LogainmID=100015"
+        },
+        {
+          "type": "Dúchas: CbePart",
+          "uriEN": "https://www.duchas.ie/en/cbe/volumes?LogainmID=100015",
+          "uriGA": "https://www.duchas.ie/ga/cbe/imleabhair?LogainmID=100015"
+        }
+      ],
+      "sameAs": [
+        {
+          "uri": "http://id.worldcat.org/fast/1331748"
+        }
+      ]
+    },
+    {
+      "id": 100016,
+      "dateCreated": "2007-07-27T10:34:28.7",
+      "dateModified": "2025-01-10T10:17:52.663",
+      "permalink": "https://www.logainm.ie/100016.aspx",
+      "featured": [],
+      "placenames": [
+        {
+          "id": 808812,
+          "language": "ga",
+          "wording": "An Iarmhí",
+          "genitive": "na hIarmhí",
+          "main": true,
+          "acceptability": {
+            "id": 9,
+            "textEN": "validated name",
+            "textGA": "ainm deimhnithe"
+          },
+          "audio": {
+            "fileName": "100016g.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/100016g.mp3"
+          }
+        },
+        {
+          "id": 808811,
+          "language": "en",
+          "wording": "Westmeath",
+          "main": true,
+          "audio": {
+            "fileName": "100016b.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/100016b.mp3"
+          }
+        }
+      ],
+      "glossary": [],
+      "categories": [
+        {
+          "id": "CON",
+          "nameEN": "county",
+          "nameGA": "contae",
+          "namePluralEN": "counties",
+          "namePluralGA": "contaetha"
+        }
+      ],
+      "includedIn": [],
+      "includes": [
+        {
+          "id": "CBA",
+          "nameEN": "municipal district",
+          "nameGA": "ceantar bardasach",
+          "namePluralEN": "municipal districts",
+          "namePluralGA": "ceantair bhardasacha",
+          "count": 2
+        },
+        {
+          "id": "SC",
+          "nameEN": "monument",
+          "nameGA": "séadchomhartha",
+          "namePluralEN": "monuments",
+          "namePluralGA": "séadchomharthaí",
+          "count": 3
+        },
+        {
+          "id": "AINMST",
+          "nameEN": "historical name",
+          "nameGA": "ainm stairiúil",
+          "namePluralEN": "historical names",
+          "namePluralGA": "ainmneacha stairiúla",
+          "count": 5
+        },
+        {
+          "id": "CN",
+          "nameEN": "hill or hills",
+          "nameGA": "cnoc nó cnoic",
+          "namePluralEN": "hills",
+          "namePluralGA": "cnoic",
+          "count": 6
+        },
+        {
+          "id": "OIL",
+          "nameEN": "island or archipelago",
+          "nameGA": "oileán nó oileánra",
+          "namePluralEN": "islands and archipelagos",
+          "namePluralGA": "oileáin agus oileánraí",
+          "count": 9
+        },
+        {
+          "id": "ABH",
+          "nameEN": "river",
+          "nameGA": "abhainn",
+          "namePluralEN": "rivers",
+          "namePluralGA": "aibhneacha",
+          "count": 12
+        },
+        {
+          "id": "BAR",
+          "nameEN": "barony",
+          "nameGA": "barúntacht",
+          "namePluralEN": "baronies",
+          "namePluralGA": "barúntachtaí",
+          "count": 13
+        },
+        {
+          "id": "L",
+          "nameEN": "lake or lakes",
+          "nameGA": "loch nó locha",
+          "namePluralEN": "lakes",
+          "namePluralGA": "locha",
+          "count": 24
+        },
+        {
+          "id": "ID",
+          "nameEN": "population centre",
+          "nameGA": "ionad daonra",
+          "namePluralEN": "population centres",
+          "namePluralGA": "ionaid daonra",
+          "count": 45
+        },
+        {
+          "id": "B",
+          "nameEN": "town",
+          "nameGA": "baile",
+          "namePluralEN": "towns",
+          "namePluralGA": "bailte",
+          "count": 17
+        },
+        {
+          "id": "PAR",
+          "nameEN": "civil parish",
+          "nameGA": "paróiste dlí",
+          "namePluralEN": "civil parishes",
+          "namePluralGA": "paróistí dlí",
+          "count": 64
+        },
+        {
+          "id": "TR",
+          "nameEN": "electoral division",
+          "nameGA": "toghroinn",
+          "namePluralEN": "electoral divisions",
+          "namePluralGA": "toghranna",
+          "count": 106
+        },
+        {
+          "id": "BF",
+          "nameEN": "townland",
+          "nameGA": "baile fearainn",
+          "namePluralEN": "townlands",
+          "namePluralGA": "bailte fearainn",
+          "count": 1346
+        },
+        {
+          "id": "BA",
+          "nameEN": "bay",
+          "nameGA": "bá",
+          "namePluralEN": "bays",
+          "namePluralGA": "bánna",
+          "count": 1
+        },
+        {
+          "id": "D",
+          "nameEN": "locality",
+          "nameGA": "dúiche",
+          "namePluralEN": "localities",
+          "namePluralGA": "dúichí",
+          "count": 1
+        },
+        {
+          "id": "RINN",
+          "nameEN": "point",
+          "nameGA": "rinn",
+          "namePluralEN": "points",
+          "namePluralGA": "reanna",
+          "count": 1
+        },
+        {
+          "id": "SRB",
+          "nameEN": "village",
+          "nameGA": "sráidbhaile",
+          "namePluralEN": "villages",
+          "namePluralGA": "sráidbhailte",
+          "count": 2
+        },
+        {
+          "id": "MNG",
+          "nameEN": "minor feature",
+          "nameGA": "mionghné",
+          "namePluralEN": "minor features",
+          "namePluralGA": "mionghnéithe",
+          "count": 2
+        },
+        {
+          "id": "POR",
+          "nameEN": "bog",
+          "nameGA": "portach",
+          "namePluralEN": "bogs",
+          "namePluralGA": "portaigh",
+          "count": 3
+        },
+        {
+          "id": "DR",
+          "nameEN": "bridge",
+          "nameGA": "droichead",
+          "namePluralEN": "bridges",
+          "namePluralGA": "droichid",
+          "count": 7
+        },
+        {
+          "id": "SR",
+          "nameEN": "street",
+          "nameGA": "sráid",
+          "namePluralEN": "streets",
+          "namePluralGA": "sráideanna",
+          "count": 481
+        },
+        {
+          "id": "DROIM",
+          "nameEN": "ridge",
+          "nameGA": "droim",
+          "namePluralEN": "ridges",
+          "namePluralGA": "dromanna",
+          "count": 1
+        },
+        {
+          "id": "GS",
+          "nameEN": "man-made feature",
+          "nameGA": "gné shaorga",
+          "namePluralEN": "man-made features",
+          "namePluralGA": "gnéithe saorga",
+          "count": 1
+        },
+        {
+          "id": "REILIG",
+          "nameEN": "graveyard, cemetery, burial ground",
+          "nameGA": "reilig",
+          "namePluralEN": "graveyards, cemeteries, burial grounds",
+          "namePluralGA": "reiligí",
+          "count": 1
+        },
+        {
+          "id": "GORT",
+          "nameEN": "field",
+          "nameGA": "gort",
+          "namePluralEN": "fields",
+          "namePluralGA": "goirt",
+          "count": 1
+        },
+        {
+          "id": "CRG",
+          "nameEN": "rock or rocks",
+          "nameGA": "carraig nó carraigeacha",
+          "namePluralEN": "rocks",
+          "namePluralGA": "carraigeacha",
+          "count": 1
+        },
+        {
+          "id": "COILL",
+          "nameEN": "wood",
+          "nameGA": "coill",
+          "namePluralEN": "woods",
+          "namePluralGA": "coillte",
+          "count": 1
+        },
+        {
+          "id": "CB",
+          "nameEN": "crossroads",
+          "nameGA": "crosbhóthar",
+          "namePluralEN": "crossroads",
+          "namePluralGA": "crosbhóithre",
+          "count": 1
+        },
+        {
+          "id": "CAIS",
+          "nameEN": "castle",
+          "nameGA": "caisleán",
+          "namePluralEN": "castles",
+          "namePluralGA": "caisleáin",
+          "count": 2
+        },
+        {
+          "id": "IMFH",
+          "nameEN": "enclosure",
+          "nameGA": "imfhálú",
+          "namePluralEN": "enclosures",
+          "namePluralGA": "imfháluithe",
+          "count": 2
+        },
+        {
+          "id": "PRC",
+          "nameEN": "public park, sports field",
+          "nameGA": "páirc phoiblí, páirc spóirt",
+          "namePluralEN": "public parks, sports fields",
+          "namePluralGA": "páirceanna poiblí, páirceanna spóirt",
+          "count": 2
+        },
+        {
+          "id": "LE",
+          "nameEN": "ecclesiastical site",
+          "nameGA": "láthair eaglasta",
+          "namePluralEN": "ecclesiastical sites",
+          "namePluralGA": "láithreacha eaglasta",
+          "count": 5
+        },
+        {
+          "id": "TEACH",
+          "nameEN": "house",
+          "nameGA": "teach",
+          "namePluralEN": "houses",
+          "namePluralGA": "tithe",
+          "count": 7
+        },
+        {
+          "id": "FB",
+          "nameEN": "sub-townland",
+          "nameGA": "fo-bhaile",
+          "namePluralEN": "sub-townlands",
+          "namePluralGA": "fo-bhailte",
+          "count": 9
+        }
+      ],
+      "geography": {
+        "accurate": true,
+        "source": "osi",
+        "coordinates": [
+          {
+            "latitude": 53.536287371975114,
+            "longitude": -7.417233254913264
+          }
+        ]
+      },
+      "gridReferences": [
+        {
+          "square": "N",
+          "easting": 38688,
+          "northing": 54173
+        }
+      ],
+      "images": [],
+      "links": [
+        {
+          "type": "Osi",
+          "target": "230000"
+        }
+      ],
+      "bornHere": [
+        {
+          "id": 69,
+          "title": "Ó DUBHTHAIGH, Risteard (1860–1934)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=69"
+        },
+        {
+          "id": 1069,
+          "title": "D’ALTON, John (1792–1867)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1069"
+        }
+      ],
+      "folklore": [
+        {
+          "type": "Dúchas",
+          "uriEN": "https://www.duchas.ie/en/places?LogainmID=100016",
+          "uriGA": "https://www.duchas.ie/ga/aiteanna?LogainmID=100016"
+        },
+        {
+          "type": "Dúchas: CbePart",
+          "uriEN": "https://www.duchas.ie/en/cbe/volumes?LogainmID=100016",
+          "uriGA": "https://www.duchas.ie/ga/cbe/imleabhair?LogainmID=100016"
+        },
+        {
+          "type": "Dúchas: CbesStory",
+          "uriEN": "https://www.duchas.ie/en/cbes/stories?LogainmID=100016",
+          "uriGA": "https://www.duchas.ie/ga/cbes/scealta?LogainmID=100016"
+        }
+      ],
+      "sameAs": [
+        {
+          "uri": "http://id.worldcat.org/fast/1226712"
+        }
+      ]
+    },
+    {
+      "id": 100017,
+      "dateCreated": "2007-07-27T10:34:28.7",
+      "dateModified": "2025-01-10T10:17:51.727",
+      "permalink": "https://www.logainm.ie/100017.aspx",
+      "featured": [],
+      "placenames": [
+        {
+          "id": 808814,
+          "language": "ga",
+          "wording": "Laois",
+          "genitive": "Laoise",
+          "main": true,
+          "acceptability": {
+            "id": 9,
+            "textEN": "validated name",
+            "textGA": "ainm deimhnithe"
+          },
+          "audio": {
+            "fileName": "100017g.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/100017g.mp3"
+          }
+        },
+        {
+          "id": 808813,
+          "language": "en",
+          "wording": "Laois",
+          "main": true,
+          "audio": {
+            "fileName": "100017b.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/100017b.mp3"
+          }
+        },
+        {
+          "id": 1026590,
+          "language": "en",
+          "wording": "Leix",
+          "main": true,
+          "acceptability": {
+            "id": 3,
+            "textEN": "historical name",
+            "textGA": "ainm stairiúil"
+          }
+        }
+      ],
+      "glossary": [],
+      "categories": [
+        {
+          "id": "CON",
+          "nameEN": "county",
+          "nameGA": "contae",
+          "namePluralEN": "counties",
+          "namePluralGA": "contaetha"
+        }
+      ],
+      "includedIn": [],
+      "includes": [
+        {
+          "id": "COS",
+          "nameEN": "footpath",
+          "nameGA": "cosán",
+          "namePluralEN": "footpaths",
+          "namePluralGA": "cosáin",
+          "count": 1
+        },
+        {
+          "id": "CBA",
+          "nameEN": "municipal district",
+          "nameGA": "ceantar bardasach",
+          "namePluralEN": "municipal districts",
+          "namePluralGA": "ceantair bhardasacha",
+          "count": 3
+        },
+        {
+          "id": "SC",
+          "nameEN": "monument",
+          "nameGA": "séadchomhartha",
+          "namePluralEN": "monuments",
+          "namePluralGA": "séadchomharthaí",
+          "count": 4
+        },
+        {
+          "id": "BAR",
+          "nameEN": "barony",
+          "nameGA": "barúntacht",
+          "namePluralEN": "baronies",
+          "namePluralGA": "barúntachtaí",
+          "count": 11
+        },
+        {
+          "id": "SL",
+          "nameEN": "mountain or mountain range",
+          "nameGA": "sliabh nó sliabhraon",
+          "namePluralEN": "mountains and mountain ranges",
+          "namePluralGA": "sléibhte agus sliabhraonta",
+          "count": 13
+        },
+        {
+          "id": "ABH",
+          "nameEN": "river",
+          "nameGA": "abhainn",
+          "namePluralEN": "rivers",
+          "namePluralGA": "aibhneacha",
+          "count": 27
+        },
+        {
+          "id": "ID",
+          "nameEN": "population centre",
+          "nameGA": "ionad daonra",
+          "namePluralEN": "population centres",
+          "namePluralGA": "ionaid daonra",
+          "count": 33
+        },
+        {
+          "id": "SR",
+          "nameEN": "street",
+          "nameGA": "sráid",
+          "namePluralEN": "streets",
+          "namePluralGA": "sráideanna",
+          "count": 364
+        },
+        {
+          "id": "SRUTHAN",
+          "nameEN": "stream",
+          "nameGA": "sruthán",
+          "namePluralEN": "streams",
+          "namePluralGA": "srutháin",
+          "count": 3
+        },
+        {
+          "id": "D",
+          "nameEN": "locality",
+          "nameGA": "dúiche",
+          "namePluralEN": "localities",
+          "namePluralGA": "dúichí",
+          "count": 3
+        },
+        {
+          "id": "CN",
+          "nameEN": "hill or hills",
+          "nameGA": "cnoc nó cnoic",
+          "namePluralEN": "hills",
+          "namePluralGA": "cnoic",
+          "count": 12
+        },
+        {
+          "id": "B",
+          "nameEN": "town",
+          "nameGA": "baile",
+          "namePluralEN": "towns",
+          "namePluralGA": "bailte",
+          "count": 16
+        },
+        {
+          "id": "PAR",
+          "nameEN": "civil parish",
+          "nameGA": "paróiste dlí",
+          "namePluralEN": "civil parishes",
+          "namePluralGA": "paróistí dlí",
+          "count": 53
+        },
+        {
+          "id": "TR",
+          "nameEN": "electoral division",
+          "nameGA": "toghroinn",
+          "namePluralEN": "electoral divisions",
+          "namePluralGA": "toghranna",
+          "count": 98
+        },
+        {
+          "id": "SRB",
+          "nameEN": "village",
+          "nameGA": "sráidbhaile",
+          "namePluralEN": "villages",
+          "namePluralGA": "sráidbhailte",
+          "count": 1
+        },
+        {
+          "id": "GR",
+          "nameEN": "hamlet",
+          "nameGA": "gráig",
+          "namePluralEN": "hamlets",
+          "namePluralGA": "gráigeanna",
+          "count": 1
+        },
+        {
+          "id": "GNE",
+          "nameEN": "feature",
+          "nameGA": "gné",
+          "namePluralEN": "features",
+          "namePluralGA": "gnéithe",
+          "count": 1
+        },
+        {
+          "id": "L",
+          "nameEN": "lake or lakes",
+          "nameGA": "loch nó locha",
+          "namePluralEN": "lakes",
+          "namePluralGA": "locha",
+          "count": 2
+        },
+        {
+          "id": "BEAR",
+          "nameEN": "pass",
+          "nameGA": "bearnas",
+          "namePluralEN": "passes",
+          "namePluralGA": "bearnais",
+          "count": 3
+        },
+        {
+          "id": "BOTHAR",
+          "nameEN": "road",
+          "nameGA": "bóthar",
+          "namePluralEN": "roads",
+          "namePluralGA": "bóithre",
+          "count": 3
+        },
+        {
+          "id": "POR",
+          "nameEN": "bog",
+          "nameGA": "portach",
+          "namePluralEN": "bogs",
+          "namePluralGA": "portaigh",
+          "count": 4
+        },
+        {
+          "id": "BF",
+          "nameEN": "townland",
+          "nameGA": "baile fearainn",
+          "namePluralEN": "townlands",
+          "namePluralGA": "bailte fearainn",
+          "count": 1110
+        },
+        {
+          "id": "CAIS",
+          "nameEN": "castle",
+          "nameGA": "caisleán",
+          "namePluralEN": "castles",
+          "namePluralGA": "caisleáin",
+          "count": 1
+        },
+        {
+          "id": "AINMST",
+          "nameEN": "historical name",
+          "nameGA": "ainm stairiúil",
+          "namePluralEN": "historical names",
+          "namePluralGA": "ainmneacha stairiúla",
+          "count": 1
+        },
+        {
+          "id": "CRG",
+          "nameEN": "rock or rocks",
+          "nameGA": "carraig nó carraigeacha",
+          "namePluralEN": "rocks",
+          "namePluralGA": "carraigeacha",
+          "count": 1
+        },
+        {
+          "id": "REILIG",
+          "nameEN": "graveyard, cemetery, burial ground",
+          "nameGA": "reilig",
+          "namePluralEN": "graveyards, cemeteries, burial grounds",
+          "namePluralGA": "reiligí",
+          "count": 1
+        },
+        {
+          "id": "EAS",
+          "nameEN": "waterfall",
+          "nameGA": "eas",
+          "namePluralEN": "waterfalls",
+          "namePluralGA": "easanna",
+          "count": 1
+        },
+        {
+          "id": "IMFH",
+          "nameEN": "enclosure",
+          "nameGA": "imfhálú",
+          "namePluralEN": "enclosures",
+          "namePluralGA": "imfháluithe",
+          "count": 1
+        },
+        {
+          "id": "CB",
+          "nameEN": "crossroads",
+          "nameGA": "crosbhóthar",
+          "namePluralEN": "crossroads",
+          "namePluralGA": "crosbhóithre",
+          "count": 2
+        },
+        {
+          "id": "TOB",
+          "nameEN": "well",
+          "nameGA": "tobar",
+          "namePluralEN": "wells",
+          "namePluralGA": "toibreacha",
+          "count": 2
+        },
+        {
+          "id": "TEACH",
+          "nameEN": "house",
+          "nameGA": "teach",
+          "namePluralEN": "houses",
+          "namePluralGA": "tithe",
+          "count": 3
+        },
+        {
+          "id": "LE",
+          "nameEN": "ecclesiastical site",
+          "nameGA": "láthair eaglasta",
+          "namePluralEN": "ecclesiastical sites",
+          "namePluralGA": "láithreacha eaglasta",
+          "count": 3
+        },
+        {
+          "id": "DR",
+          "nameEN": "bridge",
+          "nameGA": "droichead",
+          "namePluralEN": "bridges",
+          "namePluralGA": "droichid",
+          "count": 5
+        },
+        {
+          "id": "COILL",
+          "nameEN": "wood",
+          "nameGA": "coill",
+          "namePluralEN": "woods",
+          "namePluralGA": "coillte",
+          "count": 10
+        },
+        {
+          "id": "FB",
+          "nameEN": "sub-townland",
+          "nameGA": "fo-bhaile",
+          "namePluralEN": "sub-townlands",
+          "namePluralGA": "fo-bhailte",
+          "count": 14
+        }
+      ],
+      "geography": {
+        "accurate": true,
+        "source": "osi",
+        "coordinates": [
+          {
+            "latitude": 52.972273232471224,
+            "longitude": -7.316646172416013
+          }
+        ]
+      },
+      "gridReferences": [
+        {
+          "square": "S",
+          "easting": 45958,
+          "northing": 91462
+        }
+      ],
+      "images": [
+        {
+          "fileName": "100017.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/100017.jpg"
+        },
+        {
+          "fileName": "14.06.30/100031,100017_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/14.06.30%2F100031%2C100017_1.jpg"
+        },
+        {
+          "fileName": "14.06.30/100031,100017_2.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/14.06.30%2F100031%2C100017_2.jpg"
+        },
+        {
+          "fileName": "AN107021_1.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/AN107021_1.JPG"
+        },
+        {
+          "fileName": "AN107021_2.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/AN107021_2.JPG"
+        },
+        {
+          "fileName": "AN107021_3.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/AN107021_3.JPG"
+        },
+        {
+          "fileName": "AN107021_4.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/AN107021_4.JPG"
+        },
+        {
+          "fileName": "AN107021_5.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/AN107021_5.JPG"
+        },
+        {
+          "fileName": "AN107021_6.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/AN107021_6.JPG"
+        }
+      ],
+      "links": [
+        {
+          "type": "Osi",
+          "target": "100000"
+        }
+      ],
+      "bornHere": [
+        {
+          "id": 607,
+          "title": "CURRAN, May (c.1880–1905)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=607"
+        },
+        {
+          "id": 1309,
+          "title": "DOWLING, Thady (1544–1628)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1309"
+        }
+      ],
+      "folklore": [
+        {
+          "type": "Dúchas",
+          "uriEN": "https://www.duchas.ie/en/places?LogainmID=100017",
+          "uriGA": "https://www.duchas.ie/ga/aiteanna?LogainmID=100017"
+        },
+        {
+          "type": "Dúchas: CbePart",
+          "uriEN": "https://www.duchas.ie/en/cbe/volumes?LogainmID=100017",
+          "uriGA": "https://www.duchas.ie/ga/cbe/imleabhair?LogainmID=100017"
+        }
+      ],
+      "sameAs": [
+        {
+          "uri": "http://id.worldcat.org/fast/1225049"
+        }
+      ]
+    },
+    {
+      "id": 100018,
+      "dateCreated": "2007-07-27T10:34:28.717",
+      "dateModified": "2025-01-10T10:17:52.05",
+      "permalink": "https://www.logainm.ie/100018.aspx",
+      "featured": [],
+      "cluster": {
+        "focusID": 100018,
+        "members": [
+          {
+            "placeID": 100018,
+            "category": {
+              "id": "CON",
+              "nameEN": "county",
+              "nameGA": "contae"
+            }
+          },
+          {
+            "placeID": 135,
+            "category": {
+              "id": "BAR",
+              "nameEN": "barony",
+              "nameGA": "barúntacht"
+            }
+          },
+          {
+            "placeID": 29336,
+            "category": {
+              "id": "B",
+              "nameEN": "town",
+              "nameGA": "baile"
+            }
+          },
+          {
+            "placeID": 1373603,
+            "category": {
+              "id": "TR",
+              "nameEN": "electoral division",
+              "nameGA": "toghroinn"
+            }
+          }
+        ]
+      },
+      "placenames": [
+        {
+          "id": 808816,
+          "language": "ga",
+          "wording": "Liatroim",
+          "genitive": "Liatroma",
+          "main": true,
+          "acceptability": {
+            "id": 9,
+            "textEN": "validated name",
+            "textGA": "ainm deimhnithe"
+          }
+        },
+        {
+          "id": 808815,
+          "language": "en",
+          "wording": "Leitrim",
+          "main": true
+        }
+      ],
+      "glossary": [],
+      "categories": [
+        {
+          "id": "CON",
+          "nameEN": "county",
+          "nameGA": "contae",
+          "namePluralEN": "counties",
+          "namePluralGA": "contaetha"
+        }
+      ],
+      "includedIn": [],
+      "includes": [
+        {
+          "id": "D",
+          "nameEN": "locality",
+          "nameGA": "dúiche",
+          "namePluralEN": "localities",
+          "namePluralGA": "dúichí",
+          "count": 1
+        },
+        {
+          "id": "AINMST",
+          "nameEN": "historical name",
+          "nameGA": "ainm stairiúil",
+          "namePluralEN": "historical names",
+          "namePluralGA": "ainmneacha stairiúla",
+          "count": 1
+        },
+        {
+          "id": "CRG",
+          "nameEN": "rock or rocks",
+          "nameGA": "carraig nó carraigeacha",
+          "namePluralEN": "rocks",
+          "namePluralGA": "carraigeacha",
+          "count": 2
+        },
+        {
+          "id": "CAN",
+          "nameEN": "canal",
+          "nameGA": "canáil",
+          "namePluralEN": "canals",
+          "namePluralGA": "canálacha",
+          "count": 2
+        },
+        {
+          "id": "GS",
+          "nameEN": "man-made feature",
+          "nameGA": "gné shaorga",
+          "namePluralEN": "man-made features",
+          "namePluralGA": "gnéithe saorga",
+          "count": 2
+        },
+        {
+          "id": "SC",
+          "nameEN": "monument",
+          "nameGA": "séadchomhartha",
+          "namePluralEN": "monuments",
+          "namePluralGA": "séadchomharthaí",
+          "count": 2
+        },
+        {
+          "id": "CBA",
+          "nameEN": "municipal district",
+          "nameGA": "ceantar bardasach",
+          "namePluralEN": "municipal districts",
+          "namePluralGA": "ceantair bhardasacha",
+          "count": 3
+        },
+        {
+          "id": "BOTHAR",
+          "nameEN": "road",
+          "nameGA": "bóthar",
+          "namePluralEN": "roads",
+          "namePluralGA": "bóithre",
+          "count": 3
+        },
+        {
+          "id": "MNG",
+          "nameEN": "minor feature",
+          "nameGA": "mionghné",
+          "namePluralEN": "minor features",
+          "namePluralGA": "mionghnéithe",
+          "count": 4
+        },
+        {
+          "id": "BAR",
+          "nameEN": "barony",
+          "nameGA": "barúntacht",
+          "namePluralEN": "baronies",
+          "namePluralGA": "barúntachtaí",
+          "count": 5
+        },
+        {
+          "id": "DR",
+          "nameEN": "bridge",
+          "nameGA": "droichead",
+          "namePluralEN": "bridges",
+          "namePluralGA": "droichid",
+          "count": 9
+        },
+        {
+          "id": "SL",
+          "nameEN": "mountain or mountain range",
+          "nameGA": "sliabh nó sliabhraon",
+          "namePluralEN": "mountains and mountain ranges",
+          "namePluralGA": "sléibhte agus sliabhraonta",
+          "count": 10
+        },
+        {
+          "id": "ABH",
+          "nameEN": "river",
+          "nameGA": "abhainn",
+          "namePluralEN": "rivers",
+          "namePluralGA": "aibhneacha",
+          "count": 22
+        },
+        {
+          "id": "L",
+          "nameEN": "lake or lakes",
+          "nameGA": "loch nó locha",
+          "namePluralEN": "lakes",
+          "namePluralGA": "locha",
+          "count": 49
+        },
+        {
+          "id": "ID",
+          "nameEN": "population centre",
+          "nameGA": "ionad daonra",
+          "namePluralEN": "population centres",
+          "namePluralGA": "ionaid daonra",
+          "count": 53
+        },
+        {
+          "id": "SR",
+          "nameEN": "street",
+          "nameGA": "sráid",
+          "namePluralEN": "streets",
+          "namePluralGA": "sráideanna",
+          "count": 59
+        },
+        {
+          "id": "TR",
+          "nameEN": "electoral division",
+          "nameGA": "toghroinn",
+          "namePluralEN": "electoral divisions",
+          "namePluralGA": "toghranna",
+          "count": 78
+        },
+        {
+          "id": "GL",
+          "nameEN": "valley",
+          "nameGA": "gleann",
+          "namePluralEN": "valleys",
+          "namePluralGA": "gleannta",
+          "count": 2
+        },
+        {
+          "id": "PAR",
+          "nameEN": "civil parish",
+          "nameGA": "paróiste dlí",
+          "namePluralEN": "civil parishes",
+          "namePluralGA": "paróistí dlí",
+          "count": 17
+        },
+        {
+          "id": "BF",
+          "nameEN": "townland",
+          "nameGA": "baile fearainn",
+          "namePluralEN": "townlands",
+          "namePluralGA": "bailte fearainn",
+          "count": 1497
+        },
+        {
+          "id": "CAL",
+          "nameEN": "port",
+          "nameGA": "calafort",
+          "namePluralEN": "ports",
+          "namePluralGA": "calafoirt",
+          "count": 1
+        },
+        {
+          "id": "POR",
+          "nameEN": "bog",
+          "nameGA": "portach",
+          "namePluralEN": "bogs",
+          "namePluralGA": "portaigh",
+          "count": 2
+        },
+        {
+          "id": "CAIS",
+          "nameEN": "castle",
+          "nameGA": "caisleán",
+          "namePluralEN": "castles",
+          "namePluralGA": "caisleáin",
+          "count": 3
+        },
+        {
+          "id": "LE",
+          "nameEN": "ecclesiastical site",
+          "nameGA": "láthair eaglasta",
+          "namePluralEN": "ecclesiastical sites",
+          "namePluralGA": "láithreacha eaglasta",
+          "count": 8
+        },
+        {
+          "id": "B",
+          "nameEN": "town",
+          "nameGA": "baile",
+          "namePluralEN": "towns",
+          "namePluralGA": "bailte",
+          "count": 13
+        },
+        {
+          "id": "OIL",
+          "nameEN": "island or archipelago",
+          "nameGA": "oileán nó oileánra",
+          "namePluralEN": "islands and archipelagos",
+          "namePluralGA": "oileáin agus oileánraí",
+          "count": 18
+        },
+        {
+          "id": "GEADAN",
+          "nameEN": "patch of ground",
+          "nameGA": "geadán talún",
+          "namePluralEN": "patches of ground",
+          "namePluralGA": "geadáin talún",
+          "count": 1
+        },
+        {
+          "id": "CN",
+          "nameEN": "hill or hills",
+          "nameGA": "cnoc nó cnoic",
+          "namePluralEN": "hills",
+          "namePluralGA": "cnoic",
+          "count": 1
+        },
+        {
+          "id": "TUAMA",
+          "nameEN": "tomb",
+          "nameGA": "tuama",
+          "namePluralEN": "tombs",
+          "namePluralGA": "tuamaí",
+          "count": 1
+        },
+        {
+          "id": "COILL",
+          "nameEN": "wood",
+          "nameGA": "coill",
+          "namePluralEN": "woods",
+          "namePluralGA": "coillte",
+          "count": 2
+        },
+        {
+          "id": "REILIG",
+          "nameEN": "graveyard, cemetery, burial ground",
+          "nameGA": "reilig",
+          "namePluralEN": "graveyards, cemeteries, burial grounds",
+          "namePluralGA": "reiligí",
+          "count": 4
+        },
+        {
+          "id": "FB",
+          "nameEN": "sub-townland",
+          "nameGA": "fo-bhaile",
+          "namePluralEN": "sub-townlands",
+          "namePluralGA": "fo-bhailte",
+          "count": 8
+        },
+        {
+          "id": "TOB",
+          "nameEN": "well",
+          "nameGA": "tobar",
+          "namePluralEN": "wells",
+          "namePluralGA": "toibreacha",
+          "count": 8
+        }
+      ],
+      "geography": {
+        "accurate": true,
+        "source": "osi",
+        "coordinates": [
+          {
+            "latitude": 54.1595429328057,
+            "longitude": -8.035560310977008
+          }
+        ]
+      },
+      "gridReferences": [
+        {
+          "square": "G",
+          "easting": 97725,
+          "northing": 23387
+        }
+      ],
+      "images": [],
+      "links": [
+        {
+          "type": "Osi",
+          "target": "110000"
+        }
+      ],
+      "bornHere": [],
+      "folklore": [
+        {
+          "type": "Dúchas",
+          "uriEN": "https://www.duchas.ie/en/places?LogainmID=100018",
+          "uriGA": "https://www.duchas.ie/ga/aiteanna?LogainmID=100018"
+        },
+        {
+          "type": "Dúchas: CbePart",
+          "uriEN": "https://www.duchas.ie/en/cbe/volumes?LogainmID=100018",
+          "uriGA": "https://www.duchas.ie/ga/cbe/imleabhair?LogainmID=100018"
+        }
+      ],
+      "sameAs": [
+        {
+          "uri": "http://id.worldcat.org/fast/1331946"
+        }
+      ]
+    },
+    {
+      "id": 100019,
+      "dateCreated": "2007-07-27T10:34:28.717",
+      "dateModified": "2025-01-10T10:17:52.693",
+      "permalink": "https://www.logainm.ie/100019.aspx",
+      "featured": [],
+      "cluster": {
+        "focusID": 100019,
+        "members": [
+          {
+            "placeID": 100019,
+            "category": {
+              "id": "CON",
+              "nameEN": "county",
+              "nameGA": "contae"
+            }
+          },
+          {
+            "placeID": 52128,
+            "category": {
+              "id": "B",
+              "nameEN": "town",
+              "nameGA": "baile"
+            }
+          },
+          {
+            "placeID": 1375054,
+            "category": {
+              "id": "TR",
+              "nameEN": "electoral division",
+              "nameGA": "toghroinn"
+            }
+          },
+          {
+            "placeID": 1375055,
+            "category": {
+              "id": "TR",
+              "nameEN": "electoral division",
+              "nameGA": "toghroinn"
+            }
+          },
+          {
+            "placeID": 1375056,
+            "category": {
+              "id": "TR",
+              "nameEN": "electoral division",
+              "nameGA": "toghroinn"
+            }
+          },
+          {
+            "placeID": 1375057,
+            "category": {
+              "id": "TR",
+              "nameEN": "electoral division",
+              "nameGA": "toghroinn"
+            }
+          }
+        ]
+      },
+      "placenames": [
+        {
+          "id": 808818,
+          "language": "ga",
+          "wording": "Loch Garman",
+          "genitive": "Loch Garman",
+          "main": true,
+          "acceptability": {
+            "id": 9,
+            "textEN": "validated name",
+            "textGA": "ainm deimhnithe"
+          },
+          "audio": {
+            "fileName": "100019g.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/100019g.mp3"
+          }
+        },
+        {
+          "id": 1046566,
+          "language": "ga",
+          "wording": "An Contae Riabhach",
+          "genitive": "an Chontae Riabhaigh",
+          "main": true,
+          "acceptability": {
+            "id": 3,
+            "textEN": "historical name",
+            "textGA": "ainm stairiúil"
+          }
+        },
+        {
+          "id": 808817,
+          "language": "en",
+          "wording": "Wexford",
+          "main": true,
+          "audio": {
+            "fileName": "100019b.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/100019b.mp3"
+          }
+        }
+      ],
+      "glossary": [
+        {
+          "id": 107,
+          "headword": "loch",
+          "translation": "lake; inlet"
+        }
+      ],
+      "categories": [
+        {
+          "id": "CON",
+          "nameEN": "county",
+          "nameGA": "contae",
+          "namePluralEN": "counties",
+          "namePluralGA": "contaetha"
+        }
+      ],
+      "includedIn": [],
+      "includes": [
+        {
+          "id": "CBU",
+          "nameEN": "borough district",
+          "nameGA": "ceantar buirge",
+          "namePluralEN": "borough districts",
+          "namePluralGA": "ceantair bhuirge",
+          "count": 1
+        },
+        {
+          "id": "CAN",
+          "nameEN": "canal",
+          "nameGA": "canáil",
+          "namePluralEN": "canals",
+          "namePluralGA": "canálacha",
+          "count": 1
+        },
+        {
+          "id": "OITIR",
+          "nameEN": "(sand) bank",
+          "nameGA": "oitir (ghainimh)",
+          "namePluralEN": "(sand) banks",
+          "namePluralGA": "oitreacha (gainimh)",
+          "count": 2
+        },
+        {
+          "id": "L",
+          "nameEN": "lake or lakes",
+          "nameGA": "loch nó locha",
+          "namePluralEN": "lakes",
+          "namePluralGA": "locha",
+          "count": 3
+        },
+        {
+          "id": "GS",
+          "nameEN": "man-made feature",
+          "nameGA": "gné shaorga",
+          "namePluralEN": "man-made features",
+          "namePluralGA": "gnéithe saorga",
+          "count": 3
+        },
+        {
+          "id": "IN",
+          "nameEN": "estuary",
+          "nameGA": "inbhear",
+          "namePluralEN": "estuaries",
+          "namePluralGA": "inbhir",
+          "count": 3
+        },
+        {
+          "id": "PRC",
+          "nameEN": "public park, sports field",
+          "nameGA": "páirc phoiblí, páirc spóirt",
+          "namePluralEN": "public parks, sports fields",
+          "namePluralGA": "páirceanna poiblí, páirceanna spóirt",
+          "count": 3
+        },
+        {
+          "id": "CBA",
+          "nameEN": "municipal district",
+          "nameGA": "ceantar bardasach",
+          "namePluralEN": "municipal districts",
+          "namePluralGA": "ceantair bhardasacha",
+          "count": 4
+        },
+        {
+          "id": "D",
+          "nameEN": "locality",
+          "nameGA": "dúiche",
+          "namePluralEN": "localities",
+          "namePluralGA": "dúichí",
+          "count": 4
+        },
+        {
+          "id": "DR",
+          "nameEN": "bridge",
+          "nameGA": "droichead",
+          "namePluralEN": "bridges",
+          "namePluralGA": "droichid",
+          "count": 5
+        },
+        {
+          "id": "SC",
+          "nameEN": "monument",
+          "nameGA": "séadchomhartha",
+          "namePluralEN": "monuments",
+          "namePluralGA": "séadchomharthaí",
+          "count": 5
+        },
+        {
+          "id": "CRG",
+          "nameEN": "rock or rocks",
+          "nameGA": "carraig nó carraigeacha",
+          "namePluralEN": "rocks",
+          "namePluralGA": "carraigeacha",
+          "count": 6
+        },
+        {
+          "id": "COILL",
+          "nameEN": "wood",
+          "nameGA": "coill",
+          "namePluralEN": "woods",
+          "namePluralGA": "coillte",
+          "count": 7
+        },
+        {
+          "id": "CN",
+          "nameEN": "hill or hills",
+          "nameGA": "cnoc nó cnoic",
+          "namePluralEN": "hills",
+          "namePluralGA": "cnoic",
+          "count": 7
+        },
+        {
+          "id": "BA",
+          "nameEN": "bay",
+          "nameGA": "bá",
+          "namePluralEN": "bays",
+          "namePluralGA": "bánna",
+          "count": 8
+        },
+        {
+          "id": "OIL",
+          "nameEN": "island or archipelago",
+          "nameGA": "oileán nó oileánra",
+          "namePluralEN": "islands and archipelagos",
+          "namePluralGA": "oileáin agus oileánraí",
+          "count": 8
+        },
+        {
+          "id": "TEACH",
+          "nameEN": "house",
+          "nameGA": "teach",
+          "namePluralEN": "houses",
+          "namePluralGA": "tithe",
+          "count": 9
+        },
+        {
+          "id": "BAR",
+          "nameEN": "barony",
+          "nameGA": "barúntacht",
+          "namePluralEN": "baronies",
+          "namePluralGA": "barúntachtaí",
+          "count": 11
+        },
+        {
+          "id": "CAIS",
+          "nameEN": "castle",
+          "nameGA": "caisleán",
+          "namePluralEN": "castles",
+          "namePluralGA": "caisleáin",
+          "count": 12
+        },
+        {
+          "id": "MNG",
+          "nameEN": "minor feature",
+          "nameGA": "mionghné",
+          "namePluralEN": "minor features",
+          "namePluralGA": "mionghnéithe",
+          "count": 14
+        },
+        {
+          "id": "CT",
+          "nameEN": "promontory",
+          "nameGA": "ceann tíre",
+          "namePluralEN": "promontories",
+          "namePluralGA": "cinn tíre",
+          "count": 15
+        },
+        {
+          "id": "SL",
+          "nameEN": "mountain or mountain range",
+          "nameGA": "sliabh nó sliabhraon",
+          "namePluralEN": "mountains and mountain ranges",
+          "namePluralGA": "sléibhte agus sliabhraonta",
+          "count": 16
+        },
+        {
+          "id": "LE",
+          "nameEN": "ecclesiastical site",
+          "nameGA": "láthair eaglasta",
+          "namePluralEN": "ecclesiastical sites",
+          "namePluralGA": "láithreacha eaglasta",
+          "count": 19
+        },
+        {
+          "id": "ABH",
+          "nameEN": "river",
+          "nameGA": "abhainn",
+          "namePluralEN": "rivers",
+          "namePluralGA": "aibhneacha",
+          "count": 29
+        },
+        {
+          "id": "B",
+          "nameEN": "town",
+          "nameGA": "baile",
+          "namePluralEN": "towns",
+          "namePluralGA": "bailte",
+          "count": 33
+        },
+        {
+          "id": "ID",
+          "nameEN": "population centre",
+          "nameGA": "ionad daonra",
+          "namePluralEN": "population centres",
+          "namePluralGA": "ionaid daonra",
+          "count": 67
+        },
+        {
+          "id": "PAR",
+          "nameEN": "civil parish",
+          "nameGA": "paróiste dlí",
+          "namePluralEN": "civil parishes",
+          "namePluralGA": "paróistí dlí",
+          "count": 145
+        },
+        {
+          "id": "BF",
+          "nameEN": "townland",
+          "nameGA": "baile fearainn",
+          "namePluralEN": "townlands",
+          "namePluralGA": "bailte fearainn",
+          "count": 2304
+        },
+        {
+          "id": "AINMST",
+          "nameEN": "historical name",
+          "nameGA": "ainm stairiúil",
+          "namePluralEN": "historical names",
+          "namePluralGA": "ainmneacha stairiúla",
+          "count": 1
+        },
+        {
+          "id": "TR",
+          "nameEN": "electoral division",
+          "nameGA": "toghroinn",
+          "namePluralEN": "electoral divisions",
+          "namePluralGA": "toghranna",
+          "count": 124
+        },
+        {
+          "id": "SR",
+          "nameEN": "street",
+          "nameGA": "sráid",
+          "namePluralEN": "streets",
+          "namePluralGA": "sráideanna",
+          "count": 792
+        },
+        {
+          "id": "GR",
+          "nameEN": "hamlet",
+          "nameGA": "gráig",
+          "namePluralEN": "hamlets",
+          "namePluralGA": "gráigeanna",
+          "count": 1
+        },
+        {
+          "id": "GORT",
+          "nameEN": "field",
+          "nameGA": "gort",
+          "namePluralEN": "fields",
+          "namePluralGA": "goirt",
+          "count": 2
+        },
+        {
+          "id": "BEAR",
+          "nameEN": "pass",
+          "nameGA": "bearnas",
+          "namePluralEN": "passes",
+          "namePluralGA": "bearnais",
+          "count": 2
+        },
+        {
+          "id": "TOB",
+          "nameEN": "well",
+          "nameGA": "tobar",
+          "namePluralEN": "wells",
+          "namePluralGA": "toibreacha",
+          "count": 2
+        },
+        {
+          "id": "SLABA",
+          "nameEN": "slob",
+          "nameGA": "slaba",
+          "namePluralEN": "slobs",
+          "namePluralGA": "slabaí",
+          "count": 3
+        },
+        {
+          "id": "GNE",
+          "nameEN": "feature",
+          "nameGA": "gné",
+          "namePluralEN": "features",
+          "namePluralGA": "gnéithe",
+          "count": 3
+        },
+        {
+          "id": "CB",
+          "nameEN": "crossroads",
+          "nameGA": "crosbhóthar",
+          "namePluralEN": "crossroads",
+          "namePluralGA": "crosbhóithre",
+          "count": 5
+        },
+        {
+          "id": "TRA",
+          "nameEN": "strand",
+          "nameGA": "trá",
+          "namePluralEN": "strands",
+          "namePluralGA": "tránna",
+          "count": 12
+        },
+        {
+          "id": "RIASC",
+          "nameEN": "marsh",
+          "nameGA": "riasc",
+          "namePluralEN": "marshes",
+          "namePluralGA": "riasca",
+          "count": 1
+        },
+        {
+          "id": "CARN",
+          "nameEN": "cairn",
+          "nameGA": "carn",
+          "namePluralEN": "cairns",
+          "namePluralGA": "cairn",
+          "count": 1
+        },
+        {
+          "id": "CAL",
+          "nameEN": "port",
+          "nameGA": "calafort",
+          "namePluralEN": "ports",
+          "namePluralGA": "calafoirt",
+          "count": 1
+        },
+        {
+          "id": "CE",
+          "nameEN": "quay, pier, wharf",
+          "nameGA": "cé",
+          "namePluralEN": "quays, piers, wharves",
+          "namePluralGA": "céanna",
+          "count": 1
+        },
+        {
+          "id": "AILL",
+          "nameEN": "cliff or cliffs",
+          "nameGA": "aill nó aillte",
+          "namePluralEN": "cliffs",
+          "namePluralGA": "aillte",
+          "count": 1
+        },
+        {
+          "id": "BOTHAR",
+          "nameEN": "road",
+          "nameGA": "bóthar",
+          "namePluralEN": "roads",
+          "namePluralGA": "bóithre",
+          "count": 2
+        },
+        {
+          "id": "CUAN",
+          "nameEN": "harbour",
+          "nameGA": "cuan",
+          "namePluralEN": "harbours",
+          "namePluralGA": "cuanta",
+          "count": 2
+        },
+        {
+          "id": "REILIG",
+          "nameEN": "graveyard, cemetery, burial ground",
+          "nameGA": "reilig",
+          "namePluralEN": "graveyards, cemeteries, burial grounds",
+          "namePluralGA": "reiligí",
+          "count": 2
+        },
+        {
+          "id": "SRB",
+          "nameEN": "village",
+          "nameGA": "sráidbhaile",
+          "namePluralEN": "villages",
+          "namePluralGA": "sráidbhailte",
+          "count": 3
+        },
+        {
+          "id": "FB",
+          "nameEN": "sub-townland",
+          "nameGA": "fo-bhaile",
+          "namePluralEN": "sub-townlands",
+          "namePluralGA": "fo-bhailte",
+          "count": 9
+        }
+      ],
+      "geography": {
+        "accurate": true,
+        "source": "osi",
+        "coordinates": [
+          {
+            "latitude": 52.35543694939258,
+            "longitude": -6.621476054865695
+          }
+        ]
+      },
+      "gridReferences": [
+        {
+          "square": "S",
+          "easting": 93973,
+          "northing": 23494
+        }
+      ],
+      "images": [],
+      "links": [
+        {
+          "type": "Osi",
+          "target": "240000"
+        }
+      ],
+      "bornHere": [
+        {
+          "id": 1891,
+          "title": "Ó DÚSHLÁINE, Séamas (1904–2000)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1891"
+        }
+      ],
+      "folklore": [
+        {
+          "type": "Dúchas",
+          "uriEN": "https://www.duchas.ie/en/places?LogainmID=100019",
+          "uriGA": "https://www.duchas.ie/ga/aiteanna?LogainmID=100019"
+        },
+        {
+          "type": "Dúchas: CbePart",
+          "uriEN": "https://www.duchas.ie/en/cbe/volumes?LogainmID=100019",
+          "uriGA": "https://www.duchas.ie/ga/cbe/imleabhair?LogainmID=100019"
+        }
+      ],
+      "sameAs": [
+        {
+          "uri": "http://id.worldcat.org/fast/1331747"
+        }
+      ]
+    }
+  ]
+}

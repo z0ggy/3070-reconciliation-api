@@ -1,0 +1,3043 @@
+{
+  "totalCount": 9,
+  "totalPages": 1,
+  "currentPage": 1,
+  "countPerPage": 10,
+  "results": [
+    {
+      "id": 118005,
+      "dateCreated": "2007-10-12T12:47:53.967",
+      "dateModified": "2021-05-26T11:41:07.337",
+      "permalink": "https://www.logainm.ie/118005.aspx",
+      "featured": [
+        "2013-10-21T00:00:00",
+        "2015-05-16T00:00:00",
+        "2016-11-04T00:00:00",
+        "2021-11-05T00:00:00",
+        "2025-10-29T00:00:00"
+      ],
+      "placenames": [
+        {
+          "id": 910970,
+          "language": "ga",
+          "wording": "Béal Feirste",
+          "genitive": "Bhéal Feirste",
+          "main": true,
+          "acceptability": {
+            "id": 9,
+            "textEN": "validated name",
+            "textGA": "ainm deimhnithe"
+          },
+          "audio": {
+            "fileName": "118005g.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/118005g.mp3"
+          }
+        },
+        {
+          "id": 905039,
+          "language": "en",
+          "wording": "Belfast",
+          "main": true,
+          "audio": {
+            "fileName": "118005b.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/118005b.mp3"
+          }
+        }
+      ],
+      "glossary": [
+        {
+          "id": 18,
+          "headword": "béal",
+          "translation": "opening, approach, mouth"
+        }
+      ],
+      "categories": [
+        {
+          "id": "CTH",
+          "nameEN": "city",
+          "nameGA": "cathair",
+          "namePluralEN": "cities",
+          "namePluralGA": "cathracha"
+        }
+      ],
+      "includedIn": [
+        {
+          "id": 100000,
+          "nameEN": "Antrim",
+          "nameGA": "Aontroim",
+          "category": {
+            "id": "CON",
+            "nameEN": "county",
+            "nameGA": "contae"
+          }
+        }
+      ],
+      "includes": [
+        {
+          "id": "D",
+          "nameEN": "locality",
+          "nameGA": "dúiche",
+          "namePluralEN": "localities",
+          "namePluralGA": "dúichí",
+          "count": 1
+        },
+        {
+          "id": "ID",
+          "nameEN": "population centre",
+          "nameGA": "ionad daonra",
+          "namePluralEN": "population centres",
+          "namePluralGA": "ionaid daonra",
+          "count": 2
+        },
+        {
+          "id": "SR",
+          "nameEN": "street",
+          "nameGA": "sráid",
+          "namePluralEN": "streets",
+          "namePluralGA": "sráideanna",
+          "count": 4
+        }
+      ],
+      "geography": {
+        "accurate": false,
+        "source": "grid",
+        "coordinates": [
+          {
+            "latitude": 54.6050979441491,
+            "longitude": -5.910542616111791
+          }
+        ]
+      },
+      "gridReferences": [
+        {
+          "square": "J",
+          "easting": 35066,
+          "northing": 74992
+        }
+      ],
+      "postOffice": {
+        "extent": "all"
+      },
+      "images": [
+        {
+          "fileName": "131b/pan135732_1.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/131b%2Fpan135732_1.JPG"
+        },
+        {
+          "fileName": "131b/pan135732_10.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/131b%2Fpan135732_10.JPG"
+        },
+        {
+          "fileName": "131b/pan135732_2.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/131b%2Fpan135732_2.JPG"
+        },
+        {
+          "fileName": "131b/pan135732_3.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/131b%2Fpan135732_3.JPG"
+        },
+        {
+          "fileName": "131b/pan135732_4.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/131b%2Fpan135732_4.JPG"
+        },
+        {
+          "fileName": "131b/pan135732_5.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/131b%2Fpan135732_5.JPG"
+        },
+        {
+          "fileName": "131b/pan135732_6.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/131b%2Fpan135732_6.JPG"
+        },
+        {
+          "fileName": "131b/pan135732_7.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/131b%2Fpan135732_7.JPG"
+        },
+        {
+          "fileName": "131b/pan135732_8.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/131b%2Fpan135732_8.JPG"
+        },
+        {
+          "fileName": "131b/pan135732_9.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/131b%2Fpan135732_9.JPG"
+        },
+        {
+          "fileName": "Box65/AN118005.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/Box65%2FAN118005.JPG"
+        }
+      ],
+      "links": [
+        {
+          "type": "PlacenamesNi",
+          "target": "http://www.placenamesni.org/resultdetails.php?entry=17101"
+        },
+        {
+          "type": "WikipediaEn",
+          "target": "http://en.wikipedia.org/wiki/Belfast"
+        },
+        {
+          "type": "WikipediaGa",
+          "target": "http://ga.wikipedia.org/wiki/B%C3%A9al_Feirste"
+        }
+      ],
+      "bornHere": [
+        {
+          "id": 214,
+          "title": "Ó MONACHÁIN, Ailbhe (1889–1967)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=214"
+        },
+        {
+          "id": 272,
+          "title": "MAC FHIR LÉINN, Eoin (1870–1950)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=272"
+        },
+        {
+          "id": 281,
+          "title": "MAC ÁDHAIMH, Roibeard (1808–1895)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=281"
+        },
+        {
+          "id": 410,
+          "title": "BIGGER, Francis Joseph (1863–1926)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=410"
+        },
+        {
+          "id": 427,
+          "title": "HANNAY, James Owen (1865–1950)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=427"
+        },
+        {
+          "id": 431,
+          "title": "LYND, Robert (1879–1949)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=431"
+        },
+        {
+          "id": 687,
+          "title": "Ó BAOILL, Seán (1908–1979)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=687"
+        },
+        {
+          "id": 844,
+          "title": "MAC ARTHUR, Sir William Porter",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=844"
+        },
+        {
+          "id": 1312,
+          "title": "FERGUSON, Samuel (1810–1886)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1312"
+        },
+        {
+          "id": 1556,
+          "title": "LEHANE, Con (1912–1983)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1556"
+        },
+        {
+          "id": 1560,
+          "title": "MAC AN BHEATHA, Proinsias (1910–1990)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1560"
+        },
+        {
+          "id": 1565,
+          "title": "NIC CIONNAITH, Siobhán (1922–1986)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1565"
+        },
+        {
+          "id": 1572,
+          "title": "NIC DHONNCHADHA, Lil (1891–1984)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1572"
+        },
+        {
+          "id": 1584,
+          "title": "MAC RAOIS, Breandán (1918–1989)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1584"
+        },
+        {
+          "id": 1657,
+          "title": "Ó CUINNEAGÁIN, Gearóid (1910–1991)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1657"
+        },
+        {
+          "id": 1820,
+          "title": "ADAMS, George Brendan (1917–1981)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1820"
+        },
+        {
+          "id": 1844,
+          "title": "MAC CANA, Somhairle (1901–1975)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1844"
+        },
+        {
+          "id": 1877,
+          "title": "Ó COIRBHIN, Aodh (1899–1975)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1877"
+        },
+        {
+          "id": 1894,
+          "title": "UÍ FHLANNAGÁIN, Deirdre (1932–1984)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1894"
+        },
+        {
+          "id": 2184,
+          "title": "MAC CANA, Proinsias (1926–2004)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=2184"
+        },
+        {
+          "id": 3059,
+          "title": "UÍ MHAOILEOIN, Caitlín (1940–2012)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=3059"
+        },
+        {
+          "id": 5036,
+          "title": "MAC PÓILÍN, Aodán (1948–2016)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=5036"
+        }
+      ],
+      "folklore": [
+        {
+          "type": "Dúchas",
+          "uriEN": "https://www.duchas.ie/en/places?LogainmID=118005",
+          "uriGA": "https://www.duchas.ie/ga/aiteanna?LogainmID=118005"
+        },
+        {
+          "type": "Dúchas: CbegPhoto",
+          "uriEN": "https://www.duchas.ie/en/cbeg?LogainmID=118005",
+          "uriGA": "https://www.duchas.ie/ga/cbeg?LogainmID=118005"
+        },
+        {
+          "type": "Dúchas: CbePart",
+          "uriEN": "https://www.duchas.ie/en/cbe/volumes?LogainmID=118005",
+          "uriGA": "https://www.duchas.ie/ga/cbe/imleabhair?LogainmID=118005"
+        },
+        {
+          "type": "Dúchas: CbesStory",
+          "uriEN": "https://www.duchas.ie/en/cbes/stories?LogainmID=118005",
+          "uriGA": "https://www.duchas.ie/ga/cbes/scealta?LogainmID=118005"
+        }
+      ],
+      "sameAs": [
+        {
+          "uri": "http://dbpedia.org/resource/Belfast"
+        },
+        {
+          "uri": "http://id.worldcat.org/fast/1205832"
+        },
+        {
+          "uri": "http://id.worldcat.org/fast/1348313"
+        },
+        {
+          "uri": "http://id.worldcat.org/fast/1348314"
+        },
+        {
+          "uri": "http://id.worldcat.org/fast/1348315"
+        },
+        {
+          "uri": "http://linkedgeodata.org/triplify/node1418701024"
+        }
+      ]
+    },
+    {
+      "id": 129737,
+      "dateCreated": "2008-03-14T12:26:03.513",
+      "dateModified": "2025-05-28T13:31:49.087",
+      "permalink": "https://www.logainm.ie/129737.aspx",
+      "featured": [
+        "2016-11-28T00:00:00",
+        "2018-01-31T00:00:00",
+        "2022-01-30T00:00:00"
+      ],
+      "cluster": {
+        "focusID": 100011,
+        "members": [
+          {
+            "placeID": 100011,
+            "category": {
+              "id": "CON",
+              "nameEN": "county",
+              "nameGA": "contae"
+            }
+          },
+          {
+            "placeID": 58666,
+            "category": {
+              "id": "BF",
+              "nameEN": "townland",
+              "nameGA": "baile fearainn"
+            }
+          },
+          {
+            "placeID": 129737,
+            "category": {
+              "id": "CTH",
+              "nameEN": "city",
+              "nameGA": "cathair"
+            }
+          }
+        ]
+      },
+      "placenames": [
+        {
+          "id": 910361,
+          "language": "ga",
+          "wording": "Doire",
+          "genitive": "Dhoire",
+          "main": true,
+          "acceptability": {
+            "id": 9,
+            "textEN": "validated name",
+            "textGA": "ainm deimhnithe"
+          },
+          "audio": {
+            "fileName": "129737g.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/129737g.mp3"
+          }
+        },
+        {
+          "id": 910360,
+          "language": "en",
+          "wording": "Derry",
+          "main": true,
+          "audio": {
+            "fileName": "129737b.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/129737b.mp3"
+          }
+        }
+      ],
+      "glossary": [
+        {
+          "id": 66,
+          "headword": "doire",
+          "translation": "(oak-)wood,  grove, thicket"
+        }
+      ],
+      "categories": [
+        {
+          "id": "CTH",
+          "nameEN": "city",
+          "nameGA": "cathair",
+          "namePluralEN": "cities",
+          "namePluralGA": "cathracha"
+        }
+      ],
+      "includedIn": [
+        {
+          "id": 100011,
+          "nameEN": "Derry",
+          "nameGA": "Doire",
+          "category": {
+            "id": "CON",
+            "nameEN": "county",
+            "nameGA": "contae"
+          }
+        },
+        {
+          "id": 57453,
+          "nameEN": "North-West Liberties of Derry",
+          "nameGA": "Líbeartaí Thiar Thuaidh Dhoire",
+          "category": {
+            "id": "BAR",
+            "nameEN": "barony",
+            "nameGA": "barúntacht"
+          }
+        },
+        {
+          "id": 57465,
+          "nameEN": "Templemore",
+          "nameGA": "An Teampall Mór",
+          "category": {
+            "id": "PAR",
+            "nameEN": "civil parish",
+            "nameGA": "paróiste dlí"
+          }
+        }
+      ],
+      "includes": [
+        {
+          "id": "MNG",
+          "nameEN": "minor feature",
+          "nameGA": "mionghné",
+          "namePluralEN": "minor features",
+          "namePluralGA": "mionghnéithe",
+          "count": 1
+        },
+        {
+          "id": "SR",
+          "nameEN": "street",
+          "nameGA": "sráid",
+          "namePluralEN": "streets",
+          "namePluralGA": "sráideanna",
+          "count": 4
+        }
+      ],
+      "geography": {
+        "accurate": false,
+        "source": "grid",
+        "coordinates": [
+          {
+            "latitude": 54.9895277827077,
+            "longitude": -7.3125429788813205
+          }
+        ]
+      },
+      "gridReferences": [
+        {
+          "square": "C",
+          "easting": 44054,
+          "northing": 15997
+        }
+      ],
+      "postOffice": {
+        "extent": "all"
+      },
+      "images": [
+        {
+          "fileName": "box 101/PAN129737_1.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/box%20101%2FPAN129737_1.JPG"
+        },
+        {
+          "fileName": "box 101/PAN129737_2.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/box%20101%2FPAN129737_2.JPG"
+        },
+        {
+          "fileName": "box 101/PAN129737_3.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/box%20101%2FPAN129737_3.JPG"
+        },
+        {
+          "fileName": "box 101/PAN129737_4.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/box%20101%2FPAN129737_4.JPG"
+        },
+        {
+          "fileName": "box 101/PAN129737_5.JPG",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/box%20101%2FPAN129737_5.JPG"
+        }
+      ],
+      "links": [
+        {
+          "type": "PlacenamesNi",
+          "target": "http://www.placenamesni.org/resultdetails.php?entry=19387"
+        },
+        {
+          "type": "WikipediaEn",
+          "target": "http://en.wikipedia.org/wiki/Derry"
+        },
+        {
+          "type": "WikipediaGa",
+          "target": "http://ga.wikipedia.org/wiki/Doire"
+        }
+      ],
+      "bornHere": [
+        {
+          "id": 123,
+          "title": "BEST, Richard Irvine (1872–1959)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=123"
+        },
+        {
+          "id": 1163,
+          "title": "WALSH, Edward (1805–1850)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1163"
+        },
+        {
+          "id": 1899,
+          "title": "Ó FRIGHIL, Réamonn (1907–1979)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1899"
+        },
+        {
+          "id": 1926,
+          "title": "Ó SIADHAIL, Seán (1950–2006)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1926"
+        }
+      ],
+      "folklore": [],
+      "sameAs": [
+        {
+          "uri": "http://dbpedia.org/resource/Derry"
+        },
+        {
+          "uri": "http://id.worldcat.org/fast/1202836"
+        },
+        {
+          "uri": "http://id.worldcat.org/fast/1348319"
+        },
+        {
+          "uri": "http://linkedgeodata.org/triplify/node267762522"
+        }
+      ]
+    },
+    {
+      "id": 1167042,
+      "dateCreated": "2008-03-28T11:03:56.39",
+      "dateModified": "2025-05-28T13:36:52.927",
+      "permalink": "https://www.logainm.ie/1167042.aspx",
+      "featured": [
+        "2013-07-15T00:00:00",
+        "2016-09-02T00:00:00",
+        "2019-08-28T00:00:00",
+        "2022-03-25T00:00:00"
+      ],
+      "cluster": {
+        "focusID": 100022,
+        "members": [
+          {
+            "placeID": 100022,
+            "category": {
+              "id": "CON",
+              "nameEN": "county",
+              "nameGA": "contae"
+            }
+          },
+          {
+            "placeID": 1167042,
+            "category": {
+              "id": "CTH",
+              "nameEN": "city",
+              "nameGA": "cathair"
+            }
+          }
+        ]
+      },
+      "placenames": [
+        {
+          "id": 916467,
+          "language": "ga",
+          "wording": "Luimneach",
+          "genitive": "Luimnigh",
+          "main": true,
+          "acceptability": {
+            "id": 9,
+            "textEN": "validated name",
+            "textGA": "ainm deimhnithe"
+          },
+          "audio": {
+            "fileName": "1167042g.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/1167042g.mp3"
+          }
+        },
+        {
+          "id": 916468,
+          "language": "en",
+          "wording": "Limerick",
+          "main": true,
+          "audio": {
+            "fileName": "1167042b.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/1167042b.mp3"
+          }
+        }
+      ],
+      "glossary": [],
+      "categories": [
+        {
+          "id": "CTH",
+          "nameEN": "city",
+          "nameGA": "cathair",
+          "namePluralEN": "cities",
+          "namePluralGA": "cathracha"
+        }
+      ],
+      "includedIn": [
+        {
+          "id": 100022,
+          "nameEN": "Limerick",
+          "nameGA": "Luimneach",
+          "category": {
+            "id": "CON",
+            "nameEN": "county",
+            "nameGA": "contae"
+          }
+        }
+      ],
+      "includes": [
+        {
+          "id": "SC",
+          "nameEN": "monument",
+          "nameGA": "séadchomhartha",
+          "namePluralEN": "monuments",
+          "namePluralGA": "séadchomharthaí",
+          "count": 1
+        },
+        {
+          "id": "TEACH",
+          "nameEN": "house",
+          "nameGA": "teach",
+          "namePluralEN": "houses",
+          "namePluralGA": "tithe",
+          "count": 1
+        },
+        {
+          "id": "DR",
+          "nameEN": "bridge",
+          "nameGA": "droichead",
+          "namePluralEN": "bridges",
+          "namePluralGA": "droichid",
+          "count": 2
+        },
+        {
+          "id": "GS",
+          "nameEN": "man-made feature",
+          "nameGA": "gné shaorga",
+          "namePluralEN": "man-made features",
+          "namePluralGA": "gnéithe saorga",
+          "count": 3
+        },
+        {
+          "id": "BF",
+          "nameEN": "townland",
+          "nameGA": "baile fearainn",
+          "namePluralEN": "townlands",
+          "namePluralGA": "bailte fearainn",
+          "count": 7
+        },
+        {
+          "id": "SR",
+          "nameEN": "street",
+          "nameGA": "sráid",
+          "namePluralEN": "streets",
+          "namePluralGA": "sráideanna",
+          "count": 954
+        },
+        {
+          "id": "BOTHAR",
+          "nameEN": "road",
+          "nameGA": "bóthar",
+          "namePluralEN": "roads",
+          "namePluralGA": "bóithre",
+          "count": 1
+        },
+        {
+          "id": "EAS",
+          "nameEN": "waterfall",
+          "nameGA": "eas",
+          "namePluralEN": "waterfalls",
+          "namePluralGA": "easanna",
+          "count": 1
+        }
+      ],
+      "geography": {
+        "accurate": true,
+        "source": "osi",
+        "coordinates": [
+          {
+            "latitude": 52.657924391006695,
+            "longitude": -8.612467106737286
+          }
+        ]
+      },
+      "gridReferences": [
+        {
+          "square": "R",
+          "easting": 58604,
+          "northing": 56436
+        }
+      ],
+      "postOffice": {
+        "extent": "all"
+      },
+      "images": [
+        {
+          "fileName": "1167042.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/1167042.jpg"
+        },
+        {
+          "fileName": "13.01.23.100022/1167042,1413558_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/13.01.23.100022%2F1167042%2C1413558_1.jpg"
+        },
+        {
+          "fileName": "13.01.23.100022/1167042_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/13.01.23.100022%2F1167042_1.jpg"
+        },
+        {
+          "fileName": "13.01.23.100022/1167042_2.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/13.01.23.100022%2F1167042_2.jpg"
+        },
+        {
+          "fileName": "13.01.23.100022/1167042_3.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/13.01.23.100022%2F1167042_3.jpg"
+        },
+        {
+          "fileName": "13.01.23.100022/1167042_4.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/13.01.23.100022%2F1167042_4.jpg"
+        },
+        {
+          "fileName": "13.01.23.100022/1167042_5.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/13.01.23.100022%2F1167042_5.jpg"
+        },
+        {
+          "fileName": "13.01.23.100022/1167042_6.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/13.01.23.100022%2F1167042_6.jpg"
+        },
+        {
+          "fileName": "14.06.30/1167042.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/14.06.30%2F1167042.jpg"
+        },
+        {
+          "fileName": "14.06.30/1167042_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/14.06.30%2F1167042_1.jpg"
+        },
+        {
+          "fileName": "14.06.30/1167042_1_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/14.06.30%2F1167042_1_1.jpg"
+        },
+        {
+          "fileName": "14.06.30/1167042_2.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/14.06.30%2F1167042_2.jpg"
+        },
+        {
+          "fileName": "14.06.30/1167042_2_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/14.06.30%2F1167042_2_1.jpg"
+        },
+        {
+          "fileName": "14.06.30/1167042_3.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/14.06.30%2F1167042_3.jpg"
+        },
+        {
+          "fileName": "14.06.30/1167042_3_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/14.06.30%2F1167042_3_1.jpg"
+        },
+        {
+          "fileName": "14.06.30/1167042_4.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/14.06.30%2F1167042_4.jpg"
+        },
+        {
+          "fileName": "14.06.30/1167042_4_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/14.06.30%2F1167042_4_1.jpg"
+        },
+        {
+          "fileName": "po1167042_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/po1167042_1.jpg"
+        },
+        {
+          "fileName": "po1167042_2.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/po1167042_2.jpg"
+        },
+        {
+          "fileName": "po1167042_3.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/po1167042_3.jpg"
+        },
+        {
+          "fileName": "po1167042_4.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/po1167042_4.jpg"
+        },
+        {
+          "fileName": "po1167042_5.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/po1167042_5.jpg"
+        }
+      ],
+      "links": [
+        {
+          "type": "Osi",
+          "target": "35003"
+        },
+        {
+          "type": "WikipediaEn",
+          "target": "http://en.wikipedia.org/wiki/Limerick"
+        },
+        {
+          "type": "WikipediaGa",
+          "target": "http://ga.wikipedia.org/wiki/Luimneach"
+        }
+      ],
+      "bornHere": [
+        {
+          "id": 36,
+          "title": "MOLONEY, William J. (1885–1968)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=36"
+        },
+        {
+          "id": 137,
+          "title": "DE HÓIR, Éamonn (1920–1975)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=137"
+        },
+        {
+          "id": 344,
+          "title": "Ó hÓGÁIN, Pádraig Seosamh (1868–1931)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=344"
+        },
+        {
+          "id": 1120,
+          "title": "MAC UILEAGÓID, Risteárd (1756–1818)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1120"
+        },
+        {
+          "id": 1301,
+          "title": "CREAGH, Richard (1523–1586)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1301"
+        }
+      ],
+      "folklore": [
+        {
+          "type": "Dúchas",
+          "uriEN": "https://www.duchas.ie/en/places?LogainmID=1167042",
+          "uriGA": "https://www.duchas.ie/ga/aiteanna?LogainmID=1167042"
+        },
+        {
+          "type": "Dúchas: CbegPhoto",
+          "uriEN": "https://www.duchas.ie/en/cbeg?LogainmID=1167042",
+          "uriGA": "https://www.duchas.ie/ga/cbeg?LogainmID=1167042"
+        }
+      ],
+      "sameAs": [
+        {
+          "uri": "http://dbpedia.org/resource/Limerick"
+        },
+        {
+          "uri": "http://id.worldcat.org/fast/1314152"
+        },
+        {
+          "uri": "http://id.worldcat.org/fast/1346104"
+        },
+        {
+          "uri": "http://linkedgeodata.org/triplify/node428339453"
+        }
+      ]
+    },
+    {
+      "id": 1375542,
+      "dateCreated": "2008-07-11T10:21:49.42",
+      "dateModified": "2025-08-18T14:46:25.417",
+      "permalink": "https://www.logainm.ie/1375542.aspx",
+      "featured": [
+        "2011-08-16T00:00:00",
+        "2011-09-19T00:00:00",
+        "2012-07-19T00:00:00",
+        "2013-09-23T00:00:00",
+        "2015-07-19T00:00:00",
+        "2019-12-31T00:00:00",
+        "2020-03-12T00:00:00",
+        "2021-12-03T00:00:00"
+      ],
+      "cluster": {
+        "focusID": 100002,
+        "members": [
+          {
+            "placeID": 100002,
+            "category": {
+              "id": "CON",
+              "nameEN": "county",
+              "nameGA": "contae"
+            }
+          },
+          {
+            "placeID": 67,
+            "category": {
+              "id": "BAR",
+              "nameEN": "barony",
+              "nameGA": "barúntacht"
+            }
+          },
+          {
+            "placeID": 1375542,
+            "category": {
+              "id": "CTH",
+              "nameEN": "city",
+              "nameGA": "cathair"
+            }
+          }
+        ]
+      },
+      "placenames": [
+        {
+          "id": 928875,
+          "language": "ga",
+          "wording": "Baile Átha Cliath",
+          "genitive": "Bhaile Átha Cliath",
+          "main": true,
+          "audio": {
+            "fileName": "67g_x.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/67g_x.mp3"
+          }
+        },
+        {
+          "id": 928876,
+          "language": "en",
+          "wording": "Dublin",
+          "main": true,
+          "audio": {
+            "fileName": "67b_x.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/67b_x.mp3"
+          }
+        }
+      ],
+      "glossary": [
+        {
+          "id": 12,
+          "headword": "áth",
+          "translation": "ford"
+        },
+        {
+          "id": 14,
+          "headword": "baile",
+          "translation": "townland, town, homestead"
+        },
+        {
+          "id": 164,
+          "headword": "cliath",
+          "translation": "hurdle, wattle"
+        }
+      ],
+      "categories": [
+        {
+          "id": "CTH",
+          "nameEN": "city",
+          "nameGA": "cathair",
+          "namePluralEN": "cities",
+          "namePluralGA": "cathracha"
+        }
+      ],
+      "includedIn": [
+        {
+          "id": 100002,
+          "nameEN": "Dublin",
+          "nameGA": "Baile Átha Cliath",
+          "category": {
+            "id": "CON",
+            "nameEN": "county",
+            "nameGA": "contae"
+          }
+        }
+      ],
+      "includes": [
+        {
+          "id": "GNE",
+          "nameEN": "feature",
+          "nameGA": "gné",
+          "namePluralEN": "features",
+          "namePluralGA": "gnéithe",
+          "count": 1
+        },
+        {
+          "id": "D",
+          "nameEN": "locality",
+          "nameGA": "dúiche",
+          "namePluralEN": "localities",
+          "namePluralGA": "dúichí",
+          "count": 1
+        },
+        {
+          "id": "AC",
+          "nameEN": "junction, interchange",
+          "nameGA": "acomhal",
+          "namePluralEN": "junctions, interchanges",
+          "namePluralGA": "acomhail",
+          "count": 1
+        },
+        {
+          "id": "ABH",
+          "nameEN": "river",
+          "nameGA": "abhainn",
+          "namePluralEN": "rivers",
+          "namePluralGA": "aibhneacha",
+          "count": 2
+        },
+        {
+          "id": "CN",
+          "nameEN": "hill or hills",
+          "nameGA": "cnoc nó cnoic",
+          "namePluralEN": "hills",
+          "namePluralGA": "cnoic",
+          "count": 2
+        },
+        {
+          "id": "COS",
+          "nameEN": "footpath",
+          "nameGA": "cosán",
+          "namePluralEN": "footpaths",
+          "namePluralGA": "cosáin",
+          "count": 2
+        },
+        {
+          "id": "DR",
+          "nameEN": "bridge",
+          "nameGA": "droichead",
+          "namePluralEN": "bridges",
+          "namePluralGA": "droichid",
+          "count": 2
+        },
+        {
+          "id": "TRA",
+          "nameEN": "strand",
+          "nameGA": "trá",
+          "namePluralEN": "strands",
+          "namePluralGA": "tránna",
+          "count": 2
+        },
+        {
+          "id": "GORT",
+          "nameEN": "field",
+          "nameGA": "gort",
+          "namePluralEN": "fields",
+          "namePluralGA": "goirt",
+          "count": 2
+        },
+        {
+          "id": "ID",
+          "nameEN": "population centre",
+          "nameGA": "ionad daonra",
+          "namePluralEN": "population centres",
+          "namePluralGA": "ionaid daonra",
+          "count": 3
+        },
+        {
+          "id": "GS",
+          "nameEN": "man-made feature",
+          "nameGA": "gné shaorga",
+          "namePluralEN": "man-made features",
+          "namePluralGA": "gnéithe saorga",
+          "count": 5
+        },
+        {
+          "id": "ARASAN",
+          "nameEN": "apartment",
+          "nameGA": "árasán",
+          "namePluralEN": "apartments",
+          "namePluralGA": "árasáin",
+          "count": 6
+        },
+        {
+          "id": "SC",
+          "nameEN": "monument",
+          "nameGA": "séadchomhartha",
+          "namePluralEN": "monuments",
+          "namePluralGA": "séadchomharthaí",
+          "count": 6
+        },
+        {
+          "id": "BOTHAR",
+          "nameEN": "road",
+          "nameGA": "bóthar",
+          "namePluralEN": "roads",
+          "namePluralGA": "bóithre",
+          "count": 7
+        },
+        {
+          "id": "BF",
+          "nameEN": "townland",
+          "nameGA": "baile fearainn",
+          "namePluralEN": "townlands",
+          "namePluralGA": "bailte fearainn",
+          "count": 13
+        },
+        {
+          "id": "LE",
+          "nameEN": "ecclesiastical site",
+          "nameGA": "láthair eaglasta",
+          "namePluralEN": "ecclesiastical sites",
+          "namePluralGA": "láithreacha eaglasta",
+          "count": 16
+        },
+        {
+          "id": "TEACH",
+          "nameEN": "house",
+          "nameGA": "teach",
+          "namePluralEN": "houses",
+          "namePluralGA": "tithe",
+          "count": 30
+        },
+        {
+          "id": "PRC",
+          "nameEN": "public park, sports field",
+          "nameGA": "páirc phoiblí, páirc spóirt",
+          "namePluralEN": "public parks, sports fields",
+          "namePluralGA": "páirceanna poiblí, páirceanna spóirt",
+          "count": 37
+        },
+        {
+          "id": "TR",
+          "nameEN": "electoral division",
+          "nameGA": "toghroinn",
+          "namePluralEN": "electoral divisions",
+          "namePluralGA": "toghranna",
+          "count": 166
+        },
+        {
+          "id": "SR",
+          "nameEN": "street",
+          "nameGA": "sráid",
+          "namePluralEN": "streets",
+          "namePluralGA": "sráideanna",
+          "count": 5127
+        }
+      ],
+      "geography": {
+        "accurate": true,
+        "source": "osi",
+        "coordinates": [
+          {
+            "latitude": 53.35318936480309,
+            "longitude": -6.226852550239674
+          }
+        ]
+      },
+      "gridReferences": [
+        {
+          "square": "O",
+          "easting": 18118,
+          "northing": 35103
+        }
+      ],
+      "postOffice": {
+        "extent": "all"
+      },
+      "images": [
+        {
+          "fileName": "1375542_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/1375542_1.jpg"
+        },
+        {
+          "fileName": "1375542_2.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/1375542_2.jpg"
+        },
+        {
+          "fileName": "2017-Eanair-1/1375542_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/2017-Eanair-1%2F1375542_1.jpg"
+        },
+        {
+          "fileName": "2017-Eanair-1/1375542_2.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/2017-Eanair-1%2F1375542_2.jpg"
+        },
+        {
+          "fileName": "po67aguspo100002_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/po67aguspo100002_1.jpg"
+        },
+        {
+          "fileName": "po67aguspo100002_2.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/po67aguspo100002_2.jpg"
+        },
+        {
+          "fileName": "po67aguspo100002_3.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/po67aguspo100002_3.jpg"
+        },
+        {
+          "fileName": "po67aguspo100002_4.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/po67aguspo100002_4.jpg"
+        },
+        {
+          "fileName": "po67aguspo100002_5.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/po67aguspo100002_5.jpg"
+        },
+        {
+          "fileName": "po67aguspo100002_6.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/po67aguspo100002_6.jpg"
+        },
+        {
+          "fileName": "po67aguspo100002_7.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/po67aguspo100002_7.jpg"
+        }
+      ],
+      "links": [
+        {
+          "type": "Osi",
+          "target": "265011"
+        },
+        {
+          "type": "WikipediaEn",
+          "target": "http://en.wikipedia.org/wiki/Dublin"
+        },
+        {
+          "type": "WikipediaGa",
+          "target": "http://ga.wikipedia.org/wiki/Baile_%C3%81tha_Cliath"
+        }
+      ],
+      "bornHere": [
+        {
+          "id": 18,
+          "title": "DOBBS, Margaret (1871–1962)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=18"
+        },
+        {
+          "id": 94,
+          "title": "NÍ MHUIRÍOSA, Máirín (1906–1982)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=94"
+        },
+        {
+          "id": 155,
+          "title": "MAC GIOLLA BHRÍDE (1868–1942)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=155"
+        },
+        {
+          "id": 160,
+          "title": "NIC NIOCAILL, Eibhlín (1884–1909)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=160"
+        },
+        {
+          "id": 298,
+          "title": "STOKES, Whitley (1830–1909)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=298"
+        },
+        {
+          "id": 348,
+          "title": "Ó MAICÍN, Peadar (1878–1916)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=348"
+        },
+        {
+          "id": 415,
+          "title": "COFFEY, Diarmuid (1888–1964)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=415"
+        },
+        {
+          "id": 423,
+          "title": "DILLON, Myles (1900–1972)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=423"
+        },
+        {
+          "id": 488,
+          "title": "Ó CATHASAIGH, Séamus (c.1864–1919)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=488"
+        },
+        {
+          "id": 527,
+          "title": "Ó LOCHLAINN, Colm (1892–1972)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=527"
+        },
+        {
+          "id": 662,
+          "title": "MacALISTER, Robert Alexander Stewart (1870–1950)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=662"
+        },
+        {
+          "id": 670,
+          "title": "PASKER, Seán (1903–1965)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=670"
+        },
+        {
+          "id": 697,
+          "title": "Ó CEALLAIGH, Proinsias (1909–1976)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=697"
+        },
+        {
+          "id": 733,
+          "title": "NÍ DHÚNLAING, Searlot (1881–1953)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=733"
+        },
+        {
+          "id": 745,
+          "title": "Ó hUALLACHÁIN, Colmán (1922–1979)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=745"
+        },
+        {
+          "id": 773,
+          "title": "Ó NUALLÁIN, Tomás (1872–1913)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=773"
+        },
+        {
+          "id": 794,
+          "title": "NÍ SHÚILLEABHÁIN, Proinsias (1867–1944)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=794"
+        },
+        {
+          "id": 828,
+          "title": "FAY, Willie (1872–1947)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=828"
+        },
+        {
+          "id": 1079,
+          "title": "GRAVES, Charles (1812–1899)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1079"
+        },
+        {
+          "id": 1161,
+          "title": "WAKEMAN, William Frederick (1822–1900)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1161"
+        },
+        {
+          "id": 1162,
+          "title": "WALKER, Joseph Cooper (1761–1810)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1162"
+        },
+        {
+          "id": 1302,
+          "title": "CURRY, John (c.1710–1780)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1302"
+        },
+        {
+          "id": 1520,
+          "title": "BRIOSCÚ, Aodhagán (1920–2003)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1520"
+        },
+        {
+          "id": 1539,
+          "title": "DE PAOR, Liam (1926–1998)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1539"
+        },
+        {
+          "id": 1601,
+          "title": "QUIN, Ernest Gordon (1910–1986)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1601"
+        },
+        {
+          "id": 1613,
+          "title": "VICTORY, Gerard (1921–1995)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1613"
+        },
+        {
+          "id": 1623,
+          "title": "NÍ BHRIAIN, Eibhlín (1925–1986)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1623"
+        },
+        {
+          "id": 1631,
+          "title": "Ó CATHASAIGH, Séamas (1919–2001)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1631"
+        },
+        {
+          "id": 1640,
+          "title": "Ó CLÉIRIGH, Conn R. (1927–1995)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1640"
+        },
+        {
+          "id": 1658,
+          "title": "Ó CUÍV, Brian (1916–1999)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1658"
+        },
+        {
+          "id": 1677,
+          "title": "Ó DUINNÍN, Eoghan (1913–2003)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1677"
+        },
+        {
+          "id": 1688,
+          "title": "Ó FEARGHAIL, Aodh (1916–1997)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1688"
+        },
+        {
+          "id": 1724,
+          "title": "Ó hÓGARTAIGH, Seosamh (1925–2002)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1724"
+        },
+        {
+          "id": 2133,
+          "title": "BAIRÉAD, Ciarán (1905–1976)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=2133"
+        },
+        {
+          "id": 2160,
+          "title": "NÍ MHUIRGHEASA, Máire (1915–1975)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=2160"
+        },
+        {
+          "id": 2168,
+          "title": "USSHER, James (1581–1656)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=2168"
+        },
+        {
+          "id": 3020,
+          "title": "Ó LAOGHAIRE, Colm (1919–2007)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=3020"
+        },
+        {
+          "id": 3044,
+          "title": "Ó hANLUAIN, Eoghan (1938–2012)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=3044"
+        },
+        {
+          "id": 3045,
+          "title": "Ó BRÉARTÚIN, Mícheál (1930–2011)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=3045"
+        },
+        {
+          "id": 3079,
+          "title": "SEALY, Douglas (1929–2013)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=3079"
+        },
+        {
+          "id": 5003,
+          "title": "DRURY, Paul (1957–2015)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=5003"
+        },
+        {
+          "id": 5007,
+          "title": "Ó MARCAIGH, Caoimhín (1933–2014)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=5007"
+        },
+        {
+          "id": 5008,
+          "title": "Ó MEARA, Muiris (1972–2014)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=5008"
+        },
+        {
+          "id": 5013,
+          "title": "Ó CUILL, Dónall (1933–2013)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=5013"
+        },
+        {
+          "id": 5038,
+          "title": "Ó DOMHNAILL, Aodh (1947–2018)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=5038"
+        },
+        {
+          "id": 5047,
+          "title": "CAIRD, Dónall (1925–2017)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=5047"
+        }
+      ],
+      "folklore": [
+        {
+          "type": "Dúchas",
+          "uriEN": "https://www.duchas.ie/en/places?LogainmID=1375542",
+          "uriGA": "https://www.duchas.ie/ga/aiteanna?LogainmID=1375542"
+        },
+        {
+          "type": "Dúchas: CbegPhoto",
+          "uriEN": "https://www.duchas.ie/en/cbeg?LogainmID=1375542",
+          "uriGA": "https://www.duchas.ie/ga/cbeg?LogainmID=1375542"
+        },
+        {
+          "type": "Dúchas: CbeItem",
+          "uriEN": "https://www.duchas.ie/en/cbe/items?LogainmID=1375542",
+          "uriGA": "https://www.duchas.ie/ga/cbe/mireanna?LogainmID=1375542"
+        },
+        {
+          "type": "Dúchas: CbePart",
+          "uriEN": "https://www.duchas.ie/en/cbe/volumes?LogainmID=1375542",
+          "uriGA": "https://www.duchas.ie/ga/cbe/imleabhair?LogainmID=1375542"
+        }
+      ],
+      "sameAs": [
+        {
+          "uri": "http://dbpedia.org/resource/Dublin"
+        },
+        {
+          "uri": "http://id.worldcat.org/fast/1205505"
+        },
+        {
+          "uri": "http://id.worldcat.org/fast/1346094"
+        },
+        {
+          "uri": "http://id.worldcat.org/fast/1346095"
+        },
+        {
+          "uri": "http://linkedgeodata.org/triplify/node1415971522"
+        }
+      ]
+    },
+    {
+      "id": 1383828,
+      "dateCreated": "2008-08-01T14:32:33.107",
+      "dateModified": "2025-05-28T13:37:16.847",
+      "permalink": "https://www.logainm.ie/1383828.aspx",
+      "featured": [
+        "2013-03-26T00:00:00",
+        "2013-04-11T00:00:00",
+        "2013-08-27T00:00:00",
+        "2016-10-02T00:00:00",
+        "2017-05-23T00:00:00"
+      ],
+      "cluster": {
+        "focusID": 100026,
+        "members": [
+          {
+            "placeID": 100026,
+            "category": {
+              "id": "CON",
+              "nameEN": "county",
+              "nameGA": "contae"
+            }
+          },
+          {
+            "placeID": 1383828,
+            "category": {
+              "id": "CTH",
+              "nameEN": "city",
+              "nameGA": "cathair"
+            }
+          }
+        ]
+      },
+      "placenames": [
+        {
+          "id": 947160,
+          "language": "ga",
+          "wording": "Port Láirge",
+          "genitive": "Phort Láirge",
+          "main": true,
+          "acceptability": {
+            "id": 9,
+            "textEN": "validated name",
+            "textGA": "ainm deimhnithe"
+          }
+        },
+        {
+          "id": 947161,
+          "language": "en",
+          "wording": "Waterford",
+          "main": true
+        }
+      ],
+      "glossary": [
+        {
+          "id": 126,
+          "headword": "port",
+          "translation": "port, bank, fort"
+        }
+      ],
+      "categories": [
+        {
+          "id": "CTH",
+          "nameEN": "city",
+          "nameGA": "cathair",
+          "namePluralEN": "cities",
+          "namePluralGA": "cathracha"
+        }
+      ],
+      "includedIn": [
+        {
+          "id": 100026,
+          "nameEN": "Waterford",
+          "nameGA": "Port Láirge",
+          "category": {
+            "id": "CON",
+            "nameEN": "county",
+            "nameGA": "contae"
+          }
+        }
+      ],
+      "includes": [
+        {
+          "id": "GS",
+          "nameEN": "man-made feature",
+          "nameGA": "gné shaorga",
+          "namePluralEN": "man-made features",
+          "namePluralGA": "gnéithe saorga",
+          "count": 1
+        },
+        {
+          "id": "SR",
+          "nameEN": "street",
+          "nameGA": "sráid",
+          "namePluralEN": "streets",
+          "namePluralGA": "sráideanna",
+          "count": 855
+        }
+      ],
+      "geography": {
+        "accurate": true,
+        "source": "osi",
+        "coordinates": [
+          {
+            "latitude": 52.24907504274878,
+            "longitude": -7.108466435118262
+          }
+        ]
+      },
+      "gridReferences": [
+        {
+          "square": "S",
+          "easting": 60939,
+          "northing": 11138
+        }
+      ],
+      "postOffice": {
+        "extent": "all"
+      },
+      "images": [
+        {
+          "fileName": "1383828_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/1383828_1.jpg"
+        },
+        {
+          "fileName": "1383828_2.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/1383828_2.jpg"
+        },
+        {
+          "fileName": "1383828_3.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/1383828_3.jpg"
+        },
+        {
+          "fileName": "1383828_4.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/1383828_4.jpg"
+        },
+        {
+          "fileName": "1383828_5.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/1383828_5.jpg"
+        },
+        {
+          "fileName": "1383828_6.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/1383828_6.jpg"
+        },
+        {
+          "fileName": "2017-Eanair-1/1383828.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/2017-Eanair-1%2F1383828.jpg"
+        }
+      ],
+      "links": [
+        {
+          "type": "Osi",
+          "target": "35004"
+        },
+        {
+          "type": "WikipediaEn",
+          "target": "http://en.wikipedia.org/wiki/Waterford"
+        },
+        {
+          "type": "WikipediaGa",
+          "target": "http://ga.wikipedia.org/wiki/Port_L%C3%A1irge"
+        }
+      ],
+      "bornHere": [
+        {
+          "id": 700,
+          "title": "NÍ CHINNÉIDE, Síle (1900–1980)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=700"
+        },
+        {
+          "id": 949,
+          "title": "Ó FLOINN, Seán",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=949"
+        },
+        {
+          "id": 1153,
+          "title": "STOKES, Whitley (1763–1845)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1153"
+        },
+        {
+          "id": 1293,
+          "title": "BHAILÍS, Nicolás (c.1548–1585)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1293"
+        },
+        {
+          "id": 1391,
+          "title": "WADDING, Luke (1588–1657)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1391"
+        },
+        {
+          "id": 1600,
+          "title": "PENDER, Séamus (1906–1990)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1600"
+        },
+        {
+          "id": 2139,
+          "title": "JACOB, Rosamund (1888–1960)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=2139"
+        }
+      ],
+      "folklore": [
+        {
+          "type": "Dúchas",
+          "uriEN": "https://www.duchas.ie/en/places?LogainmID=1383828",
+          "uriGA": "https://www.duchas.ie/ga/aiteanna?LogainmID=1383828"
+        },
+        {
+          "type": "Dúchas: CbegPhoto",
+          "uriEN": "https://www.duchas.ie/en/cbeg?LogainmID=1383828",
+          "uriGA": "https://www.duchas.ie/ga/cbeg?LogainmID=1383828"
+        },
+        {
+          "type": "Dúchas: CbePart",
+          "uriEN": "https://www.duchas.ie/en/cbe/volumes?LogainmID=1383828",
+          "uriGA": "https://www.duchas.ie/ga/cbe/imleabhair?LogainmID=1383828"
+        },
+        {
+          "type": "Dúchas: CbesSchool",
+          "uriEN": "https://www.duchas.ie/en/cbes/schools?LogainmID=1383828",
+          "uriGA": "https://www.duchas.ie/ga/cbes/scoileanna?LogainmID=1383828"
+        },
+        {
+          "type": "Dúchas: CbesStory",
+          "uriEN": "https://www.duchas.ie/en/cbes/stories?LogainmID=1383828",
+          "uriGA": "https://www.duchas.ie/ga/cbes/scealta?LogainmID=1383828"
+        }
+      ],
+      "sameAs": [
+        {
+          "uri": "http://dbpedia.org/resource/Waterford"
+        },
+        {
+          "uri": "http://id.worldcat.org/fast/1236686"
+        },
+        {
+          "uri": "http://linkedgeodata.org/triplify/node52263292"
+        }
+      ]
+    },
+    {
+      "id": 1384607,
+      "dateCreated": "2008-08-04T16:33:55.31",
+      "dateModified": "2024-09-24T11:25:30.42",
+      "permalink": "https://www.logainm.ie/1384607.aspx",
+      "featured": [
+        "2011-07-25T00:00:00",
+        "2011-10-08T00:00:00",
+        "2013-09-16T00:00:00",
+        "2017-03-09T00:00:00",
+        "2019-10-22T00:00:00",
+        "2020-03-15T00:00:00",
+        "2021-12-05T00:00:00"
+      ],
+      "cluster": {
+        "focusID": 100015,
+        "members": [
+          {
+            "placeID": 100015,
+            "category": {
+              "id": "CON",
+              "nameEN": "county",
+              "nameGA": "contae"
+            }
+          },
+          {
+            "placeID": 69,
+            "category": {
+              "id": "BAR",
+              "nameEN": "barony",
+              "nameGA": "barúntacht"
+            }
+          },
+          {
+            "placeID": 1372979,
+            "category": {
+              "id": "TR",
+              "nameEN": "electoral division",
+              "nameGA": "toghroinn"
+            }
+          },
+          {
+            "placeID": 1384607,
+            "category": {
+              "id": "CTH",
+              "nameEN": "city",
+              "nameGA": "cathair"
+            }
+          }
+        ]
+      },
+      "placenames": [
+        {
+          "id": 948718,
+          "language": "ga",
+          "wording": "Gaillimh",
+          "genitive": "na Gaillimhe",
+          "main": true,
+          "audio": {
+            "fileName": "69g_x.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/69g_x.mp3"
+          }
+        },
+        {
+          "id": 948719,
+          "language": "en",
+          "wording": "Galway",
+          "main": true,
+          "audio": {
+            "fileName": "69b_x.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/69b_x.mp3"
+          }
+        }
+      ],
+      "glossary": [],
+      "categories": [
+        {
+          "id": "CTH",
+          "nameEN": "city",
+          "nameGA": "cathair",
+          "namePluralEN": "cities",
+          "namePluralGA": "cathracha"
+        }
+      ],
+      "includedIn": [
+        {
+          "id": 100015,
+          "nameEN": "Galway",
+          "nameGA": "Gaillimh",
+          "category": {
+            "id": "CON",
+            "nameEN": "county",
+            "nameGA": "contae"
+          }
+        }
+      ],
+      "includes": [
+        {
+          "id": "TRA",
+          "nameEN": "strand",
+          "nameGA": "trá",
+          "namePluralEN": "strands",
+          "namePluralGA": "tránna",
+          "count": 1
+        },
+        {
+          "id": "D",
+          "nameEN": "locality",
+          "nameGA": "dúiche",
+          "namePluralEN": "localities",
+          "namePluralGA": "dúichí",
+          "count": 1
+        },
+        {
+          "id": "CAIS",
+          "nameEN": "castle",
+          "nameGA": "caisleán",
+          "namePluralEN": "castles",
+          "namePluralGA": "caisleáin",
+          "count": 1
+        },
+        {
+          "id": "CN",
+          "nameEN": "hill or hills",
+          "nameGA": "cnoc nó cnoic",
+          "namePluralEN": "hills",
+          "namePluralGA": "cnoic",
+          "count": 1
+        },
+        {
+          "id": "CE",
+          "nameEN": "quay, pier, wharf",
+          "nameGA": "cé",
+          "namePluralEN": "quays, piers, wharves",
+          "namePluralGA": "céanna",
+          "count": 1
+        },
+        {
+          "id": "ARASAN",
+          "nameEN": "apartment",
+          "nameGA": "árasán",
+          "namePluralEN": "apartments",
+          "namePluralGA": "árasáin",
+          "count": 2
+        },
+        {
+          "id": "REILIG",
+          "nameEN": "graveyard, cemetery, burial ground",
+          "nameGA": "reilig",
+          "namePluralEN": "graveyards, cemeteries, burial grounds",
+          "namePluralGA": "reiligí",
+          "count": 2
+        },
+        {
+          "id": "TEACH",
+          "nameEN": "house",
+          "nameGA": "teach",
+          "namePluralEN": "houses",
+          "namePluralGA": "tithe",
+          "count": 3
+        },
+        {
+          "id": "ID",
+          "nameEN": "population centre",
+          "nameGA": "ionad daonra",
+          "namePluralEN": "population centres",
+          "namePluralGA": "ionaid daonra",
+          "count": 3
+        },
+        {
+          "id": "DR",
+          "nameEN": "bridge",
+          "nameGA": "droichead",
+          "namePluralEN": "bridges",
+          "namePluralGA": "droichid",
+          "count": 3
+        },
+        {
+          "id": "GS",
+          "nameEN": "man-made feature",
+          "nameGA": "gné shaorga",
+          "namePluralEN": "man-made features",
+          "namePluralGA": "gnéithe saorga",
+          "count": 4
+        },
+        {
+          "id": "OIL",
+          "nameEN": "island or archipelago",
+          "nameGA": "oileán nó oileánra",
+          "namePluralEN": "islands and archipelagos",
+          "namePluralGA": "oileáin agus oileánraí",
+          "count": 4
+        },
+        {
+          "id": "MNG",
+          "nameEN": "minor feature",
+          "nameGA": "mionghné",
+          "namePluralEN": "minor features",
+          "namePluralGA": "mionghnéithe",
+          "count": 8
+        },
+        {
+          "id": "BF",
+          "nameEN": "townland",
+          "nameGA": "baile fearainn",
+          "namePluralEN": "townlands",
+          "namePluralGA": "bailte fearainn",
+          "count": 11
+        },
+        {
+          "id": "TR",
+          "nameEN": "electoral division",
+          "nameGA": "toghroinn",
+          "namePluralEN": "electoral divisions",
+          "namePluralGA": "toghranna",
+          "count": 22
+        },
+        {
+          "id": "SR",
+          "nameEN": "street",
+          "nameGA": "sráid",
+          "namePluralEN": "streets",
+          "namePluralGA": "sráideanna",
+          "count": 1006
+        },
+        {
+          "id": "SRUTHAN",
+          "nameEN": "stream",
+          "nameGA": "sruthán",
+          "namePluralEN": "streams",
+          "namePluralGA": "srutháin",
+          "count": 1
+        }
+      ],
+      "geography": {
+        "accurate": true,
+        "source": "osi",
+        "coordinates": [
+          {
+            "latitude": 53.28279415866563,
+            "longitude": -9.044887345086691
+          }
+        ]
+      },
+      "gridReferences": [
+        {
+          "square": "M",
+          "easting": 30356,
+          "northing": 26311
+        }
+      ],
+      "postOffice": {
+        "extent": "all"
+      },
+      "images": [
+        {
+          "fileName": "100015_1,1384607_1,69_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/100015_1%2C1384607_1%2C69_1.jpg"
+        },
+        {
+          "fileName": "100015_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/100015_1.jpg"
+        },
+        {
+          "fileName": "100015_2,1384607_2,69_2.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/100015_2%2C1384607_2%2C69_2.jpg"
+        },
+        {
+          "fileName": "100015_3,1384607_3,69_3.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/100015_3%2C1384607_3%2C69_3.jpg"
+        },
+        {
+          "fileName": "po69aguspo100015_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/po69aguspo100015_1.jpg"
+        },
+        {
+          "fileName": "po69aguspo100015_2.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/po69aguspo100015_2.jpg"
+        }
+      ],
+      "links": [
+        {
+          "type": "Osi",
+          "target": "35005"
+        },
+        {
+          "type": "WikipediaEn",
+          "target": "http://en.wikipedia.org/wiki/Galway"
+        },
+        {
+          "type": "WikipediaGa",
+          "target": "http://ga.wikipedia.org/wiki/Gaillimh"
+        }
+      ],
+      "bornHere": [
+        {
+          "id": 186,
+          "title": "Ó CONAIRE, Pádraic (1882–1928)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=186"
+        },
+        {
+          "id": 1187,
+          "title": "Ó CONMHIDHE, Maitias (1766–1842)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1187"
+        },
+        {
+          "id": 1322,
+          "title": "LYNCH, John (c.1599–1677)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1322"
+        },
+        {
+          "id": 1516,
+          "title": "BREATHNACH, Séamus (1915–2000)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1516"
+        },
+        {
+          "id": 1558,
+          "title": "MAC AMHLAIGH, Dónall (1926–1989)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1558"
+        },
+        {
+          "id": 1605,
+          "title": "STEWART, James Jarlath (1933–1992)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1605"
+        },
+        {
+          "id": 1765,
+          "title": "Ó TNÚTHAIL, Máirtín (1910–1985)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1765"
+        },
+        {
+          "id": 3053,
+          "title": "DE BUITLÉAR, Éamon Óg (1930–2013)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=3053"
+        }
+      ],
+      "folklore": [
+        {
+          "type": "Dúchas",
+          "uriEN": "https://www.duchas.ie/en/places?LogainmID=1384607",
+          "uriGA": "https://www.duchas.ie/ga/aiteanna?LogainmID=1384607"
+        },
+        {
+          "type": "Dúchas: CbegPhoto",
+          "uriEN": "https://www.duchas.ie/en/cbeg?LogainmID=1384607",
+          "uriGA": "https://www.duchas.ie/ga/cbeg?LogainmID=1384607"
+        },
+        {
+          "type": "Dúchas: CbeItem",
+          "uriEN": "https://www.duchas.ie/en/cbe/items?LogainmID=1384607",
+          "uriGA": "https://www.duchas.ie/ga/cbe/mireanna?LogainmID=1384607"
+        },
+        {
+          "type": "Dúchas: CbePart",
+          "uriEN": "https://www.duchas.ie/en/cbe/volumes?LogainmID=1384607",
+          "uriGA": "https://www.duchas.ie/ga/cbe/imleabhair?LogainmID=1384607"
+        },
+        {
+          "type": "Dúchas: CbesSchool",
+          "uriEN": "https://www.duchas.ie/en/cbes/schools?LogainmID=1384607",
+          "uriGA": "https://www.duchas.ie/ga/cbes/scoileanna?LogainmID=1384607"
+        },
+        {
+          "type": "Dúchas: CbesStory",
+          "uriEN": "https://www.duchas.ie/en/cbes/stories?LogainmID=1384607",
+          "uriGA": "https://www.duchas.ie/ga/cbes/scealta?LogainmID=1384607"
+        }
+      ],
+      "sameAs": [
+        {
+          "uri": "http://dbpedia.org/resource/Galway"
+        },
+        {
+          "uri": "http://id.worldcat.org/fast/1215659"
+        },
+        {
+          "uri": "http://linkedgeodata.org/triplify/node582043319"
+        }
+      ]
+    },
+    {
+      "id": 1385574,
+      "dateCreated": "2008-08-11T11:29:52.14",
+      "dateModified": "2025-12-16T10:48:57.657",
+      "permalink": "https://www.logainm.ie/1385574.aspx",
+      "featured": [
+        "2011-02-11T00:00:00",
+        "2012-07-30T00:00:00",
+        "2012-10-08T00:00:00",
+        "2013-03-03T00:00:00",
+        "2013-07-29T00:00:00",
+        "2013-08-12T00:00:00",
+        "2013-09-30T00:00:00",
+        "2016-10-19T00:00:00",
+        "2019-01-25T00:00:00",
+        "2021-12-04T00:00:00"
+      ],
+      "cluster": {
+        "focusID": 100010,
+        "members": [
+          {
+            "placeID": 100010,
+            "category": {
+              "id": "CON",
+              "nameEN": "county",
+              "nameGA": "contae"
+            }
+          },
+          {
+            "placeID": 40,
+            "category": {
+              "id": "BAR",
+              "nameEN": "barony",
+              "nameGA": "barúntacht"
+            }
+          },
+          {
+            "placeID": 1385574,
+            "category": {
+              "id": "CTH",
+              "nameEN": "city",
+              "nameGA": "cathair"
+            }
+          }
+        ]
+      },
+      "placenames": [
+        {
+          "id": 950758,
+          "language": "ga",
+          "wording": "Corcaigh",
+          "genitive": "Chorcaí",
+          "main": true,
+          "audio": {
+            "fileName": "40g_x.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/40g_x.mp3"
+          }
+        },
+        {
+          "id": 950759,
+          "language": "en",
+          "wording": "Cork",
+          "main": true,
+          "audio": {
+            "fileName": "40b_x.mp3",
+            "uri": "https://fionstorage.blob.core.windows.net/topoaudio/40b_x.mp3"
+          }
+        }
+      ],
+      "glossary": [],
+      "categories": [
+        {
+          "id": "CTH",
+          "nameEN": "city",
+          "nameGA": "cathair",
+          "namePluralEN": "cities",
+          "namePluralGA": "cathracha"
+        }
+      ],
+      "includedIn": [
+        {
+          "id": 100010,
+          "nameEN": "Cork",
+          "nameGA": "Corcaigh",
+          "category": {
+            "id": "CON",
+            "nameEN": "county",
+            "nameGA": "contae"
+          }
+        }
+      ],
+      "includes": [
+        {
+          "id": "OIL",
+          "nameEN": "island or archipelago",
+          "nameGA": "oileán nó oileánra",
+          "namePluralEN": "islands and archipelagos",
+          "namePluralGA": "oileáin agus oileánraí",
+          "count": 1
+        },
+        {
+          "id": "POR",
+          "nameEN": "bog",
+          "nameGA": "portach",
+          "namePluralEN": "bogs",
+          "namePluralGA": "portaigh",
+          "count": 1
+        },
+        {
+          "id": "ABH",
+          "nameEN": "river",
+          "nameGA": "abhainn",
+          "namePluralEN": "rivers",
+          "namePluralGA": "aibhneacha",
+          "count": 1
+        },
+        {
+          "id": "CB",
+          "nameEN": "crossroads",
+          "nameGA": "crosbhóthar",
+          "namePluralEN": "crossroads",
+          "namePluralGA": "crosbhóithre",
+          "count": 1
+        },
+        {
+          "id": "GS",
+          "nameEN": "man-made feature",
+          "nameGA": "gné shaorga",
+          "namePluralEN": "man-made features",
+          "namePluralGA": "gnéithe saorga",
+          "count": 1
+        },
+        {
+          "id": "CRG",
+          "nameEN": "rock or rocks",
+          "nameGA": "carraig nó carraigeacha",
+          "namePluralEN": "rocks",
+          "namePluralGA": "carraigeacha",
+          "count": 1
+        },
+        {
+          "id": "PRC",
+          "nameEN": "public park, sports field",
+          "nameGA": "páirc phoiblí, páirc spóirt",
+          "namePluralEN": "public parks, sports fields",
+          "namePluralGA": "páirceanna poiblí, páirceanna spóirt",
+          "count": 1
+        },
+        {
+          "id": "DR",
+          "nameEN": "bridge",
+          "nameGA": "droichead",
+          "namePluralEN": "bridges",
+          "namePluralGA": "droichid",
+          "count": 2
+        },
+        {
+          "id": "GNE",
+          "nameEN": "feature",
+          "nameGA": "gné",
+          "namePluralEN": "features",
+          "namePluralGA": "gnéithe",
+          "count": 2
+        },
+        {
+          "id": "GL",
+          "nameEN": "valley",
+          "nameGA": "gleann",
+          "namePluralEN": "valleys",
+          "namePluralGA": "gleannta",
+          "count": 2
+        },
+        {
+          "id": "TEACH",
+          "nameEN": "house",
+          "nameGA": "teach",
+          "namePluralEN": "houses",
+          "namePluralGA": "tithe",
+          "count": 2
+        },
+        {
+          "id": "SC",
+          "nameEN": "monument",
+          "nameGA": "séadchomhartha",
+          "namePluralEN": "monuments",
+          "namePluralGA": "séadchomharthaí",
+          "count": 3
+        },
+        {
+          "id": "REILIG",
+          "nameEN": "graveyard, cemetery, burial ground",
+          "nameGA": "reilig",
+          "namePluralEN": "graveyards, cemeteries, burial grounds",
+          "namePluralGA": "reiligí",
+          "count": 5
+        },
+        {
+          "id": "BF",
+          "nameEN": "townland",
+          "nameGA": "baile fearainn",
+          "namePluralEN": "townlands",
+          "namePluralGA": "bailte fearainn",
+          "count": 13
+        },
+        {
+          "id": "TR",
+          "nameEN": "electoral division",
+          "nameGA": "toghroinn",
+          "namePluralEN": "electoral divisions",
+          "namePluralGA": "toghranna",
+          "count": 91
+        },
+        {
+          "id": "SR",
+          "nameEN": "street",
+          "nameGA": "sráid",
+          "namePluralEN": "streets",
+          "namePluralGA": "sráideanna",
+          "count": 3216
+        },
+        {
+          "id": "L",
+          "nameEN": "lake or lakes",
+          "nameGA": "loch nó locha",
+          "namePluralEN": "lakes",
+          "namePluralGA": "locha",
+          "count": 1
+        },
+        {
+          "id": "ID",
+          "nameEN": "population centre",
+          "nameGA": "ionad daonra",
+          "namePluralEN": "population centres",
+          "namePluralGA": "ionaid daonra",
+          "count": 2
+        }
+      ],
+      "geography": {
+        "accurate": true,
+        "source": "osi",
+        "coordinates": [
+          {
+            "latitude": 51.89560886675822,
+            "longitude": -8.475232431459434
+          }
+        ]
+      },
+      "gridReferences": [
+        {
+          "square": "W",
+          "easting": 67335,
+          "northing": 71539
+        }
+      ],
+      "postOffice": {
+        "extent": "all"
+      },
+      "images": [
+        {
+          "fileName": "1385574_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/1385574_1.jpg"
+        },
+        {
+          "fileName": "1385574_2.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/1385574_2.jpg"
+        },
+        {
+          "fileName": "1385574_3.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/1385574_3.jpg"
+        },
+        {
+          "fileName": "1385574_4.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/1385574_4.jpg"
+        },
+        {
+          "fileName": "1385574_5.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/1385574_5.jpg"
+        }
+      ],
+      "links": [
+        {
+          "type": "Osi",
+          "target": "35002"
+        },
+        {
+          "type": "WikipediaEn",
+          "target": "http://en.wikipedia.org/wiki/Cork_(city)"
+        },
+        {
+          "type": "WikipediaGa",
+          "target": "http://ga.wikipedia.org/wiki/Corcaigh"
+        }
+      ],
+      "bornHere": [
+        {
+          "id": 39,
+          "title": "PLÉIMIONN, Donnchadh (1867–1900)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=39"
+        },
+        {
+          "id": 74,
+          "title": "Ó FLOINN, Séamus (1881–1962)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=74"
+        },
+        {
+          "id": 224,
+          "title": "Ó TUAMA, Seán (1912–1980)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=224"
+        },
+        {
+          "id": 283,
+          "title": "MCSWINEY, Paul (1859–1889)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=283"
+        },
+        {
+          "id": 447,
+          "title": "MAC GIOLLA PHÁDRAIG, Seosamh Ieróm (1877–1910)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=447"
+        },
+        {
+          "id": 660,
+          "title": "MAC SUIBHNE, Traolach (1879–1920)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=660"
+        },
+        {
+          "id": 695,
+          "title": "Ó CEALLACHÁIN, Domhnall (1891–1962)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=695"
+        },
+        {
+          "id": 753,
+          "title": "Ó LAOGHAIRE, Pilib (1909–1976)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=753"
+        },
+        {
+          "id": 853,
+          "title": "MAC FHIRBHISIGH, Tadhg",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=853"
+        },
+        {
+          "id": 1093,
+          "title": "KING, Robert (1815–1900)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1093"
+        },
+        {
+          "id": 1167,
+          "title": "WINDELE, John (1801–1865)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1167"
+        },
+        {
+          "id": 1522,
+          "title": "BUDHLAEIR, Liam (1923–1995)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1522"
+        },
+        {
+          "id": 1532,
+          "title": "DE BARRA, Pádraig (c.1938–1995)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1532"
+        },
+        {
+          "id": 1559,
+          "title": "MAC AMHLAOIBH, Séamus (1912–1995)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1559"
+        },
+        {
+          "id": 1591,
+          "title": "MCADOO, Henry Robert (1916–1998)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1591"
+        },
+        {
+          "id": 1611,
+          "title": "TÓIBÍN, Tomás (1920–2002)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1611"
+        },
+        {
+          "id": 1628,
+          "title": "Ó CAITHNIA, Liam Pilib (1925–2001)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1628"
+        },
+        {
+          "id": 3004,
+          "title": "DE NÓGLA, Éadbhard (c.1710–c.1792)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=3004"
+        },
+        {
+          "id": 3013,
+          "title": "Ó BUACHALLA, Breandán (1936–2010)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=3013"
+        },
+        {
+          "id": 3058,
+          "title": "WELCH, Robert Anthony (1947–2013)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=3058"
+        },
+        {
+          "id": 5053,
+          "title": "Ó MUIRTHILE, Liam (1950–2018)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=5053"
+        }
+      ],
+      "folklore": [
+        {
+          "type": "Dúchas",
+          "uriEN": "https://www.duchas.ie/en/places?LogainmID=1385574",
+          "uriGA": "https://www.duchas.ie/ga/aiteanna?LogainmID=1385574"
+        },
+        {
+          "type": "Dúchas: CbegPhoto",
+          "uriEN": "https://www.duchas.ie/en/cbeg?LogainmID=1385574",
+          "uriGA": "https://www.duchas.ie/ga/cbeg?LogainmID=1385574"
+        }
+      ],
+      "sameAs": [
+        {
+          "uri": "http://dbpedia.org/resource/Cork_(city)"
+        },
+        {
+          "uri": "http://id.worldcat.org/fast/1204697"
+        },
+        {
+          "uri": "http://id.worldcat.org/fast/1346090"
+        },
+        {
+          "uri": "http://linkedgeodata.org/triplify/node1422314245"
+        }
+      ]
+    },
+    {
+      "id": 1399926,
+      "dateCreated": "2008-09-09T14:51:14.747",
+      "dateModified": "2021-08-24T11:57:49.81",
+      "permalink": "https://www.logainm.ie/1399926.aspx",
+      "featured": [
+        "2011-09-05T00:00:00",
+        "2013-08-09T00:00:00",
+        "2016-10-12T00:00:00"
+      ],
+      "cluster": {
+        "focusID": 100006,
+        "members": [
+          {
+            "placeID": 100006,
+            "category": {
+              "id": "CON",
+              "nameEN": "county",
+              "nameGA": "contae"
+            }
+          },
+          {
+            "placeID": 286,
+            "category": {
+              "id": "BAR",
+              "nameEN": "barony",
+              "nameGA": "barúntacht"
+            }
+          },
+          {
+            "placeID": 1373407,
+            "category": {
+              "id": "TR",
+              "nameEN": "electoral division",
+              "nameGA": "toghroinn"
+            }
+          },
+          {
+            "placeID": 1373408,
+            "category": {
+              "id": "TR",
+              "nameEN": "electoral division",
+              "nameGA": "toghroinn"
+            }
+          },
+          {
+            "placeID": 1373419,
+            "category": {
+              "id": "TR",
+              "nameEN": "electoral division",
+              "nameGA": "toghroinn"
+            }
+          },
+          {
+            "placeID": 1399926,
+            "category": {
+              "id": "CTH",
+              "nameEN": "city",
+              "nameGA": "cathair"
+            }
+          }
+        ]
+      },
+      "placenames": [
+        {
+          "id": 975189,
+          "language": "ga",
+          "wording": "Cill Chainnigh",
+          "genitive": "Chill Chainnigh",
+          "main": true
+        },
+        {
+          "id": 975190,
+          "language": "en",
+          "wording": "Kilkenny",
+          "main": true
+        }
+      ],
+      "glossary": [
+        {
+          "id": 38,
+          "headword": "cill",
+          "translation": "church"
+        }
+      ],
+      "categories": [
+        {
+          "id": "CTH",
+          "nameEN": "city",
+          "nameGA": "cathair",
+          "namePluralEN": "cities",
+          "namePluralGA": "cathracha"
+        }
+      ],
+      "includedIn": [
+        {
+          "id": 100006,
+          "nameEN": "Kilkenny",
+          "nameGA": "Cill Chainnigh",
+          "category": {
+            "id": "CON",
+            "nameEN": "county",
+            "nameGA": "contae"
+          }
+        }
+      ],
+      "includes": [
+        {
+          "id": "MNG",
+          "nameEN": "minor feature",
+          "nameGA": "mionghné",
+          "namePluralEN": "minor features",
+          "namePluralGA": "mionghnéithe",
+          "count": 1
+        },
+        {
+          "id": "TEACH",
+          "nameEN": "house",
+          "nameGA": "teach",
+          "namePluralEN": "houses",
+          "namePluralGA": "tithe",
+          "count": 1
+        },
+        {
+          "id": "TOB",
+          "nameEN": "well",
+          "nameGA": "tobar",
+          "namePluralEN": "wells",
+          "namePluralGA": "toibreacha",
+          "count": 1
+        },
+        {
+          "id": "PRC",
+          "nameEN": "public park, sports field",
+          "nameGA": "páirc phoiblí, páirc spóirt",
+          "namePluralEN": "public parks, sports fields",
+          "namePluralGA": "páirceanna poiblí, páirceanna spóirt",
+          "count": 1
+        },
+        {
+          "id": "CAIS",
+          "nameEN": "castle",
+          "nameGA": "caisleán",
+          "namePluralEN": "castles",
+          "namePluralGA": "caisleáin",
+          "count": 3
+        },
+        {
+          "id": "GS",
+          "nameEN": "man-made feature",
+          "nameGA": "gné shaorga",
+          "namePluralEN": "man-made features",
+          "namePluralGA": "gnéithe saorga",
+          "count": 3
+        },
+        {
+          "id": "LE",
+          "nameEN": "ecclesiastical site",
+          "nameGA": "láthair eaglasta",
+          "namePluralEN": "ecclesiastical sites",
+          "namePluralGA": "láithreacha eaglasta",
+          "count": 6
+        },
+        {
+          "id": "SR",
+          "nameEN": "street",
+          "nameGA": "sráid",
+          "namePluralEN": "streets",
+          "namePluralGA": "sráideanna",
+          "count": 672
+        }
+      ],
+      "geography": {
+        "accurate": true,
+        "source": "osi",
+        "coordinates": [
+          {
+            "latitude": 52.65628237936787,
+            "longitude": -7.24895780339065
+          }
+        ]
+      },
+      "gridReferences": [
+        {
+          "square": "S",
+          "easting": 50873,
+          "northing": 56342
+        }
+      ],
+      "postOffice": {
+        "extent": "all"
+      },
+      "images": [
+        {
+          "fileName": "1399926_1.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/1399926_1.jpg"
+        },
+        {
+          "fileName": "1399926_2.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/1399926_2.jpg"
+        },
+        {
+          "fileName": "1399926_3.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/1399926_3.jpg"
+        },
+        {
+          "fileName": "1399926_4.jpg",
+          "labelEN": "",
+          "labelGA": "",
+          "uri": "https://fionstorage.blob.core.windows.net/topoimages/1399926_4.jpg"
+        }
+      ],
+      "links": [
+        {
+          "type": "Osi",
+          "target": "7009"
+        },
+        {
+          "type": "WikipediaEn",
+          "target": "http://en.wikipedia.org/wiki/Kilkenny"
+        },
+        {
+          "type": "WikipediaGa",
+          "target": "http://ga.wikipedia.org/wiki/Cill_Chainnigh"
+        }
+      ],
+      "bornHere": [
+        {
+          "id": 1080,
+          "title": "GRAVES, James (1815–1886)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1080"
+        },
+        {
+          "id": 1148,
+          "title": "PRIM, John George Augustus (1821–1875)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1148"
+        },
+        {
+          "id": 1291,
+          "title": "ARCHDEKIN, Richard (1619–1693)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1291"
+        },
+        {
+          "id": 1383,
+          "title": "ROTHE, David (1573–1650)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1383"
+        },
+        {
+          "id": 1672,
+          "title": "Ó DUBHSHLÁINE, Tomás (1924–1999)",
+          "uri": "https://www.ainm.ie/Bio.aspx?ID=1672"
+        }
+      ],
+      "folklore": [
+        {
+          "type": "Dúchas",
+          "uriEN": "https://www.duchas.ie/en/places?LogainmID=1399926",
+          "uriGA": "https://www.duchas.ie/ga/aiteanna?LogainmID=1399926"
+        },
+        {
+          "type": "Dúchas: CbegPhoto",
+          "uriEN": "https://www.duchas.ie/en/cbeg?LogainmID=1399926",
+          "uriGA": "https://www.duchas.ie/ga/cbeg?LogainmID=1399926"
+        },
+        {
+          "type": "Dúchas: CbeItem",
+          "uriEN": "https://www.duchas.ie/en/cbe/items?LogainmID=1399926",
+          "uriGA": "https://www.duchas.ie/ga/cbe/mireanna?LogainmID=1399926"
+        },
+        {
+          "type": "Dúchas: CbesSchool",
+          "uriEN": "https://www.duchas.ie/en/cbes/schools?LogainmID=1399926",
+          "uriGA": "https://www.duchas.ie/ga/cbes/scoileanna?LogainmID=1399926"
+        },
+        {
+          "type": "Dúchas: CbesStory",
+          "uriEN": "https://www.duchas.ie/en/cbes/stories?LogainmID=1399926",
+          "uriGA": "https://www.duchas.ie/ga/cbes/scealta?LogainmID=1399926"
+        }
+      ],
+      "sameAs": [
+        {
+          "uri": "http://dbpedia.org/resource/Kilkenny"
+        },
+        {
+          "uri": "http://id.worldcat.org/fast/1226509"
+        }
+      ]
+    },
+    {
+      "id": 1421794,
+      "dateCreated": "2019-09-25T13:37:00.767",
+      "dateModified": "2019-09-25T13:50:23.987",
+      "permalink": "https://www.logainm.ie/1421794.aspx",
+      "featured": [],
+      "placenames": [
+        {
+          "id": 1030806,
+          "language": "ga",
+          "wording": "Buirg Bhaile Átha Cliath",
+          "genitive": "Bhuirg Bhaile Átha Cliath",
+          "main": true
+        },
+        {
+          "id": 1030807,
+          "language": "en",
+          "wording": "Dublin Borough",
+          "main": true
+        }
+      ],
+      "glossary": [],
+      "categories": [
+        {
+          "id": "CTH",
+          "nameEN": "city",
+          "nameGA": "cathair",
+          "namePluralEN": "cities",
+          "namePluralGA": "cathracha"
+        }
+      ],
+      "includedIn": [
+        {
+          "id": 100002,
+          "nameEN": "Dublin",
+          "nameGA": "Baile Átha Cliath",
+          "category": {
+            "id": "CON",
+            "nameEN": "county",
+            "nameGA": "contae"
+          }
+        }
+      ],
+      "includes": [],
+      "geography": {
+        "accurate": true,
+        "coordinates": [
+          {
+            "latitude": 0,
+            "longitude": 0
+          }
+        ]
+      },
+      "images": [],
+      "links": [],
+      "bornHere": [],
+      "folklore": [],
+      "sameAs": []
+    }
+  ]
+}

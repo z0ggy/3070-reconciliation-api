@@ -1,0 +1,96 @@
+{
+  "totalCount": 11,
+  "totalPages": 1,
+  "currentPage": 1,
+  "countPerPage": 1000,
+  "results": [
+    {
+      "id": "B",
+      "nameEN": "town",
+      "nameGA": "baile",
+      "namePluralEN": "towns",
+      "namePluralGA": "bailte",
+      "count": 790
+    },
+    {
+      "id": "BAR",
+      "nameEN": "barony",
+      "nameGA": "barúntacht",
+      "namePluralEN": "baronies",
+      "namePluralGA": "barúntachtaí",
+      "count": 345
+    },
+    {
+      "id": "BF",
+      "nameEN": "townland",
+      "nameGA": "baile fearainn",
+      "namePluralEN": "townlands",
+      "namePluralGA": "bailte fearainn",
+      "count": 61062
+    },
+    {
+      "id": "CBA",
+      "nameEN": "municipal district",
+      "nameGA": "ceantar bardasach",
+      "namePluralEN": "municipal districts",
+      "namePluralGA": "ceantair bhardasacha",
+      "count": 94
+    },
+    {
+      "id": "CBU",
+      "nameEN": "borough district",
+      "nameGA": "ceantar buirge",
+      "namePluralEN": "borough districts",
+      "namePluralGA": "ceantair bhuirge",
+      "count": 4
+    },
+    {
+      "id": "CCA",
+      "nameEN": "metropolitan district",
+      "nameGA": "ceantar cathrach, ceantar uirbeach",
+      "namePluralEN": "metropolitan districts",
+      "namePluralGA": "ceantair chathracha, ceantair uirbeacha",
+      "count": 2
+    },
+    {
+      "id": "CON",
+      "nameEN": "county",
+      "nameGA": "contae",
+      "namePluralEN": "counties",
+      "namePluralGA": "contaetha",
+      "count": 32
+    },
+    {
+      "id": "CR",
+      "nameEN": "administrative county",
+      "nameGA": "contae riaracháin",
+      "namePluralEN": "administrative counties",
+      "namePluralGA": "contaetha riaracháin",
+      "count": 5
+    },
+    {
+      "id": "CTH",
+      "nameEN": "city",
+      "nameGA": "cathair",
+      "namePluralEN": "cities",
+      "namePluralGA": "cathracha",
+      "count": 9
+    },
+    {
+      "id": "PAR",
+      "nameEN": "civil parish",
+      "nameGA": "paróiste dlí",
+      "namePluralEN": "civil parishes",
+      "namePluralGA": "paróistí dlí",
+      "count": 2558
+    },
+    {
+      "id": "TR",
+      "nameEN": "electoral division",
+      "nameGA": "toghroinn",
+      "namePluralEN": "electoral divisions",
+      "namePluralGA": "toghranna",
+      "count": 3473
+    }
+  ]
+}
