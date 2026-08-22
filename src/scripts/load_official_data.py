@@ -2,6 +2,8 @@ import json
 import sys
 from pathlib import Path
 
+from src.config import BASE_DIR
+
 """
 Replace the manually created prototype dataset with official Irish source data.
 References:
@@ -9,8 +11,8 @@ References:
 """
 
 
-BASE_DIR: Path = Path(__file__).resolve().parents[1]
-
+# BASE_DIR: Path = Path(__file__).resolve().parents[1]
+print(f"BASEDIR: {BASE_DIR}")
 sys.path.insert(0, str(BASE_DIR))
 
 LOGAINM_DIR: Path = BASE_DIR / "data" / "official" / "logainm"
