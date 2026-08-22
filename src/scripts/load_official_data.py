@@ -64,9 +64,20 @@ def load_logainm_counties() -> list[dict[str, object]]:
     return records
 
 
+def load_logainm_cities() -> list[dict[str, object]]:
+    path: Path = LOGAINM_DIR / "cities.json"
+
+    with path.open(encoding="utf-8") as file:
+        data: LogainmType = cast(LogainmType, json.load(file))
+
+    return data["results"]
+
+
 def main() -> None:
     counties = load_logainm_counties()
+    cities = load_logainm_cities()
     print(f" COUNTY-REC: {counties}")
+    print(f" CITIES-REC: {cities}")
 
 
 if __name__ == "__main__":
