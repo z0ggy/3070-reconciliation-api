@@ -254,6 +254,15 @@ def load_local_authorities() -> pd.DataFrame:
     return loc_auth
 
 
+def keep_existed_id(eng_name_value: str):
+    """Align new generated DLR ID with existed DLR ID."""
+    if eng_name_value == "DUN LAOGHAIRE-RATHDOWN COUNTY COUNCIL":
+        internal_id = "IE-LA-DLR"
+    else:
+        internal_id = f"IE-LA-{generate_postfix_id(eng_name_value)}"
+    return internal_id
+
+
 def transform_local_authorities(
     local_authorities: pd.DataFrame,
 ) -> list[PlaceImport]:
@@ -268,10 +277,7 @@ def transform_local_authorities(
         irish_name_value = cast(str, row["GLE_NAME_VALUE"]).strip()
 
         # Overwrite DLR to match existing ID
-        if eng_name_value == "DUN LAOGHAIRE-RATHDOWN COUNTY COUNCIL":
-            internal_id = "IE-LA-DLR"
-        else:
-            internal_id = f"IE-LA-{generate_postfix_id(eng_name_value)}"
+        internal_id = keep_existed_id(eng_name_value)
 
         aliases: list[str | None] = []
 
