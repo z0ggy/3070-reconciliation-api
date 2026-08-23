@@ -17,6 +17,7 @@ References:
     - https://www.pythontutorials.net/blog/how-to-use-to-find-files-recursively/
     - https://runebook.dev/en/docs/python/library/typing/typing.NotRequired
     - https://stackoverflow.com/questions/51710082/what-does-unicodedata-normalize-do-in-python
+    - https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iterrows.html
 """
 
 sys.path.insert(0, str(BASE_DIR))
@@ -227,6 +228,7 @@ def transform_counties(records: list[LogainmRecord]) -> list[PlaceImport]:
 # Tailte Éireann official Irish dataset (local_authorities)
 # ---------------------------------------------------------
 def load_local_authorities() -> pd.DataFrame:
+    """Load local_authorities.csv as DataFrame"""
     df: pd.DataFrame = pd.read_csv(
         TAILTE_FILE,
         encoding="utf-8-sig",
@@ -252,15 +254,41 @@ def load_local_authorities() -> pd.DataFrame:
     return loc_auth
 
 
+def transform_local_authorities(
+    local_authorities: pd.DataFrame,
+) -> list[PlaceImport]:
+    """
+    Build local authority places from the Tailte DataFrame.
+    The Irish name is uses as an alias.
+    """
+    places: list[PlaceImport] = []
+
+    for _, row in local_authorities.iterrows():
+        eng_name_value = cast(str, row["ENG_NAME_VALUE"]).strip()
+
+        places.append(
+            PlaceImport(
+                id="TEST-ID",
+                official_name=eng_name_value,
+                entity_type=("local_authority"),
+                country="IRELAND",
+                aliases=["TEST-ALIASES"],
+            )
+        )
+
+    return places
+
+
 def main() -> None:
     counties: list[LogainmRecord] = load_logainm_counties()
     cities: list[LogainmRecord] = load_logainm_cities()
     places: list[PlaceImport] = transform_counties(counties)
     local_authorities = load_local_authorities()
+    local_authorities_1 = transform_local_authorities(local_authorities)
     # print(f" COUNTY-REC: {counties}")
     # print(f" CITIES-REC: {cities}")
     # print(f"PLACES-REC: {places}")
-    print(f"AUTHORITIES-REC: {local_authorities}")
+    print(f"AUTHORITIES-TRANSFORM: {local_authorities_1}")
 
 
 if __name__ == "__main__":
