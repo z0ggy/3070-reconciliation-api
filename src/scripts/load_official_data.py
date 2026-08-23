@@ -265,14 +265,21 @@ def transform_local_authorities(
 
     for _, row in local_authorities.iterrows():
         eng_name_value = cast(str, row["ENG_NAME_VALUE"]).strip()
+        irish_name_value = cast(str, row["GLE_NAME_VALUE"]).strip()
+
+        internal_id = f"IE-LA-{generate_postfix_id(eng_name_value)}"
+
+        aliases: list[str | None] = []
+
+        aliases.append(irish_name_value)
 
         places.append(
             PlaceImport(
-                id="TEST-ID",
+                id=internal_id,
                 official_name=eng_name_value,
                 entity_type=("local_authority"),
                 country="IRELAND",
-                aliases=["TEST-ALIASES"],
+                aliases=clear_aliases(aliases),
             )
         )
 
@@ -289,6 +296,8 @@ def main() -> None:
     # print(f" CITIES-REC: {cities}")
     # print(f"PLACES-REC: {places}")
     print(f"AUTHORITIES-TRANSFORM: {local_authorities_1}")
+    for auth in local_authorities_1:
+        print(auth.id)
 
 
 if __name__ == "__main__":
