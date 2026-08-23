@@ -267,7 +267,11 @@ def transform_local_authorities(
         eng_name_value = cast(str, row["ENG_NAME_VALUE"]).strip()
         irish_name_value = cast(str, row["GLE_NAME_VALUE"]).strip()
 
-        internal_id = f"IE-LA-{generate_postfix_id(eng_name_value)}"
+        # Overwrite DLR to match existing ID
+        if eng_name_value == "DUN LAOGHAIRE-RATHDOWN COUNTY COUNCIL":
+            internal_id = "IE-LA-DLR"
+        else:
+            internal_id = f"IE-LA-{generate_postfix_id(eng_name_value)}"
 
         aliases: list[str | None] = []
 
