@@ -8,10 +8,14 @@ dependencies = [
     "fastapi[standard]",
     "uvicorn[standard]",
     "pytest>=9.0.3",
+    "pandas>=3.0.5",
 ]
 
 [dependency-groups]
-dev = ["icecream>=2.2.0"]
+dev = [
+    "icecream>=2.2.0",
+    "pandas-stubs>=3.0.5.260730",
+]
 
 [tool.pytest.ini_options]
 pythonpath = ["."]

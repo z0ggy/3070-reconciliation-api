@@ -1,9 +1,11 @@
 import json
 import sys
+import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 from typing import NotRequired, cast
 
+import pandas as pd
 from typing_extensions import TypedDict
 
 from src.config import BASE_DIR
@@ -14,11 +16,13 @@ Module can be run with: uv run -m src.scripts.load_official_data
 References:
     - https://www.pythontutorials.net/blog/how-to-use-to-find-files-recursively/
     - https://runebook.dev/en/docs/python/library/typing/typing.NotRequired
+    - https://stackoverflow.com/questions/51710082/what-does-unicodedata-normalize-do-in-python
 """
 
 sys.path.insert(0, str(BASE_DIR))
 
 LOGAINM_DIR: Path = BASE_DIR / "data" / "official" / "logainm"
+TAILTE_FILE: Path = BASE_DIR / "data" / "official" / "tailte" / "local_authorities.csv"
 
 
 # ---------------------------------------------------------
@@ -63,6 +67,7 @@ class LogainmType(TypedDict):
 class PlaceImport:
     """Database schema, place with aliases."""
 
+    id: str
     official_name: str
     entity_type: str
     country: str
@@ -110,6 +115,33 @@ def load_logainm_cities() -> list[LogainmRecord]:
         data: LogainmType = cast(LogainmType, json.load(file))
 
     return data["results"]
+
+
+def generate_postfix_id(value: str) -> str:
+    """Convert a place name to uppercase part for an id."""
+
+    # Strip accents for eg. "Dún" and "Dun" are the same id part.
+    value = unicodedata.normalize("NFKD", value)
+    value = value.encode("ascii", "ignore").decode("ascii")
+    value = value.upper()
+
+    cleaned: list[str] = []
+
+    # Non letters and digits replace with a separator.
+    for char in value:
+        if char.isalnum():
+            cleaned.append(char)
+        else:
+            cleaned.append("-")
+
+    postfix: str = "".join(cleaned)
+
+    # Replace leftover double dashes
+    while "--" in postfix:
+        postfix = postfix.replace("--", "-")
+
+    # Remove edge dashes
+    return postfix.strip("-")
 
 
 def get_main_placename(
@@ -172,6 +204,7 @@ def transform_counties(records: list[LogainmRecord]) -> list[PlaceImport]:
         # Append PlaceImport
         places.append(
             PlaceImport(
+                id=(f"IE-COUNTY-{generate_postfix_id(english_name)}"),
                 official_name=(f"County {english_name}"),
                 entity_type="county",
                 country="IRELAND",
@@ -190,13 +223,44 @@ def transform_counties(records: list[LogainmRecord]) -> list[PlaceImport]:
     return places
 
 
+# ---------------------------------------------------------
+# Tailte Éireann official Irish dataset (local_authorities)
+# ---------------------------------------------------------
+def load_local_authorities() -> pd.DataFrame:
+    df: pd.DataFrame = pd.read_csv(
+        TAILTE_FILE,
+        encoding="utf-8-sig",
+    )
+    for column in df.columns:
+        print(column)
+    loc_auth = (
+        df[
+            [
+                "BDY_ID",
+                "ENG_NAME_VALUE",
+                "GLE_NAME_VALUE",
+                "BDY_TYPE_VALUE",
+            ]
+        ]
+        .drop_duplicates(subset=["BDY_ID"])
+        .copy()
+    )
+
+    if len(loc_auth) != 31:
+        raise RuntimeError(f"Expected 31 local authorities: {len(loc_auth)}.")
+
+    return loc_auth
+
+
 def main() -> None:
     counties: list[LogainmRecord] = load_logainm_counties()
     cities: list[LogainmRecord] = load_logainm_cities()
     places: list[PlaceImport] = transform_counties(counties)
+    local_authorities = load_local_authorities()
     # print(f" COUNTY-REC: {counties}")
     # print(f" CITIES-REC: {cities}")
-    print(f"PLACES-REC: {places}")
+    # print(f"PLACES-REC: {places}")
+    print(f"AUTHORITIES-REC: {local_authorities}")
 
 
 if __name__ == "__main__":
