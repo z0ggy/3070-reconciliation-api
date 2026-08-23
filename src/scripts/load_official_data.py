@@ -281,7 +281,9 @@ def transform_local_authorities(
 
         aliases: list[str | None] = []
 
-        aliases.append(irish_name_value)
+        # Omit duplicated aliases
+        if irish_name_value != "Comhairle Contae Thiobraid Árannraid Árann":
+            aliases.append(irish_name_value)
 
         places.append(
             PlaceImport(
@@ -307,7 +309,7 @@ def main() -> None:
     # print(f"PLACES-REC: {places}")
     print(f"AUTHORITIES-TRANSFORM: {local_authorities_1}")
     for auth in local_authorities_1:
-        print(auth.id)
+        print(auth.aliases)
 
 
 if __name__ == "__main__":
