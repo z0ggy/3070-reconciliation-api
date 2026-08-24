@@ -25,6 +25,16 @@ sys.path.insert(0, str(BASE_DIR))
 LOGAINM_DIR: Path = BASE_DIR / "data" / "official" / "logainm"
 TAILTE_FILE: Path = BASE_DIR / "data" / "official" / "tailte" / "local_authorities.csv"
 
+# Logainm CTH(cities) contains nine records.
+# Use only ROI  6 city records.
+CITY_LOGAINM_IDS: set[int] = {
+    1167042,  # Limerick
+    1375542,  # Dublin
+    1383828,  # Waterford
+    1384607,  # Galway
+    1385574,  # Cork
+    1399926,  # Kilkenny
+}
 
 # ---------------------------------------------------------
 # Logainm official Irish dataset (counties, cities)
@@ -224,6 +234,52 @@ def transform_counties(records: list[LogainmRecord]) -> list[PlaceImport]:
     return places
 
 
+def transform_cities(
+    records: list[LogainmRecord],
+) -> list[PlaceImport]:
+    """Build city places from from load_logainm_cities()."""
+    places: list[PlaceImport] = []
+
+    for record in records:
+        logainm_id = int(record["id"])
+
+        if logainm_id not in CITY_LOGAINM_IDS:
+            continue
+
+        english_name = get_main_placename(
+            record,
+            "en",
+        )
+
+        irish_name = get_main_placename(
+            record,
+            "ga",
+        )
+
+        if not english_name:
+            continue
+
+        places.append(
+            PlaceImport(
+                id=(f"IE-CITY-{generate_postfix_id(english_name)}"),
+                official_name=(f"{english_name} City"),
+                entity_type="city",
+                country="IRELAND",
+                aliases=clear_aliases(
+                    [
+                        english_name,
+                        irish_name,
+                    ]
+                ),
+            )
+        )
+
+    if len(places) != 6:
+        raise RuntimeError(f"Expected 6 ROI cities: {len(places)}.")
+
+    return places
+
+
 # ---------------------------------------------------------
 # Tailte Éireann official Irish dataset (local_authorities)
 # ---------------------------------------------------------
@@ -301,14 +357,17 @@ def transform_local_authorities(
 def main() -> None:
     counties: list[LogainmRecord] = load_logainm_counties()
     cities: list[LogainmRecord] = load_logainm_cities()
-    places: list[PlaceImport] = transform_counties(counties)
-    local_authorities = load_local_authorities()
-    local_authorities_1 = transform_local_authorities(local_authorities)
+    transformed_counties: list[PlaceImport] = transform_counties(counties)
+    transformed_cities: list[PlaceImport] = transform_cities(cities)
+    local_authorities_df = load_local_authorities()
+    local_authorities = transform_local_authorities(local_authorities_df)
     # print(f" COUNTY-REC: {counties}")
     # print(f" CITIES-REC: {cities}")
-    # print(f"PLACES-REC: {places}")
-    print(f"AUTHORITIES-TRANSFORM: {local_authorities_1}")
-    for auth in local_authorities_1:
+    print(f"AUTHORITIES-TRANSFORM: {local_authorities}")
+    places = transformed_counties + transformed_cities + local_authorities
+    print(f"PLACES-REC: {places}")
+
+    for auth in local_authorities:
         print(auth.aliases)
 
 
