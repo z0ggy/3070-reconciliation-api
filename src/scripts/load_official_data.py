@@ -1,4 +1,5 @@
 import json
+import sqlite3
 import sys
 import unicodedata
 from dataclasses import dataclass
@@ -8,7 +9,7 @@ from typing import NotRequired, cast
 import pandas as pd
 from typing_extensions import TypedDict
 
-from src.config import BASE_DIR
+from src.config import BASE_DIR, GEO_DB_PATH
 
 """
 Replace the manually created prototype dataset with official Irish source data.
@@ -354,6 +355,136 @@ def transform_local_authorities(
     return places
 
 
+# --------------------------------------------------------
+# SQLite
+# ---------------------------------------------------------
+
+
+def is_alias(
+    connection: sqlite3.Connection,
+    place_id: str,
+    alias: str,
+) -> bool:
+    """Check if a place has already alias."""
+    row = connection.execute(
+        """
+        SELECT 1
+        FROM aliases
+        WHERE place_id = ?
+          AND alias = ?
+        LIMIT 1
+        """,
+        (
+            place_id,
+            alias,
+        ),
+    ).fetchone()
+
+    return row is not None
+
+
+def insert_alias(
+    connection: sqlite3.Connection,
+    place_id: str,
+    alias: str,
+) -> bool:
+    """Insert alias if is not already presents."""
+    if is_alias(
+        connection,
+        place_id,
+        alias,
+    ):
+        return False
+
+    _ = connection.execute(
+        """
+        INSERT INTO aliases (
+            place_id,
+            alias
+        )
+        VALUES (?, ?)
+        """,
+        (
+            place_id,
+            alias,
+        ),
+    )
+
+    return True
+
+
+def insert_place(
+    connection: sqlite3.Connection,
+    place: PlaceImport,
+) -> None:
+    """
+    Insert/update the place with its aliases.
+    """
+
+    # Check if place already exists in the database.
+    # The existing official name is kept as an alias.
+    existed_place = connection.execute(
+        """
+        SELECT official_name
+        FROM places
+        WHERE id = ?
+        """,
+        (place.id,),
+    ).fetchone()
+
+    # Store the existed official name before updating the record.
+    old_official_name = existed_place[0] if existed_place else None
+
+    # Insert place if no existing ID
+    # excluded overwrite the value with the new one if ID exist.
+    _ = connection.execute(
+        """
+        INSERT INTO places (
+            id,
+            official_name,
+            entity_type,
+            country
+        )
+        VALUES (?, ?, ?, ?)
+
+        ON CONFLICT(id) DO UPDATE SET
+            official_name =
+                excluded.official_name,
+            entity_type =
+                excluded.entity_type,
+            country =
+                excluded.country
+        """,
+        (
+            place.id,
+            place.official_name,
+            place.entity_type,
+            place.country,
+        ),
+    )
+
+    # Add the previous name as an alias.
+    if old_official_name and old_official_name != place.official_name:
+        _ = insert_alias(
+            connection,
+            place.id,
+            old_official_name,
+        )
+
+    # Skip alias when is identical to the official name.
+    for alias in place.aliases:
+        if alias == place.official_name:
+            continue
+
+        _ = insert_alias(
+            connection,
+            place.id,
+            alias,
+        )
+
+    print(f"Imported: {place.id}")
+
+
 def main() -> None:
     counties: list[LogainmRecord] = load_logainm_counties()
     cities: list[LogainmRecord] = load_logainm_cities()
@@ -363,12 +494,22 @@ def main() -> None:
     local_authorities = transform_local_authorities(local_authorities_df)
     # print(f" COUNTY-REC: {counties}")
     # print(f" CITIES-REC: {cities}")
-    print(f"AUTHORITIES-TRANSFORM: {local_authorities}")
+    # print(f"AUTHORITIES-TRANSFORM: {local_authorities}")
     places = transformed_counties + transformed_cities + local_authorities
-    print(f"PLACES-REC: {places}")
+    # print(f"PLACES-REC: {places}")
 
-    for auth in local_authorities:
-        print(auth.aliases)
+    # for auth in local_authorities:
+    #     print(auth.aliases)
+    with sqlite3.connect(GEO_DB_PATH) as connection:
+        _ = connection.execute("PRAGMA foreign_keys = ON")
+
+        for place in places:
+            insert_place(
+                connection,
+                place,
+            )
+
+        connection.commit()
 
 
 if __name__ == "__main__":
