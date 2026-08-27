@@ -1,9 +1,11 @@
 from fastapi import FastAPI
 
 from src.match import detect_ambiguity, match_data
+from src.service_manifest import ReconciliationMetadata, get_service_metadata
 from src.type_detection import EntityType
 
 """
+FastAPI runner: uv run uvicorn src.main:app --reload
 References:
     - https://pypi.org/project/fastapi/
     - https://fastapi.tiangolo.com/
@@ -39,3 +41,8 @@ def reconcile(
         "ambiguous": detect_ambiguity(candidates),
         "candidates": candidates,
     }
+
+
+@app.get("/openrefine/reconcile")
+def openrefine_service_metadata() -> ReconciliationMetadata:
+    return get_service_metadata()
