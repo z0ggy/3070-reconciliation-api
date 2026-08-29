@@ -1,4 +1,4 @@
-from typing import Literal, TypeAlias
+from typing import Literal
 
 """
 References:
@@ -6,7 +6,7 @@ References:
     - https://www.w3schools.com/python/ref_set_issubset.asp
 """
 
-EntityType: TypeAlias = Literal["city", "county", "local_authority"]
+type EntityType = Literal["city", "county", "local_authority"]
 
 
 def type_detection(normalised_query: str) -> EntityType | None:
