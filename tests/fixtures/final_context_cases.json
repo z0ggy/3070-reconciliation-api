@@ -1,0 +1,93 @@
+[
+  {
+    "case_id": "city-context-dublin",
+    "query": "Dublin City",
+    "entity_type": null,
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city"
+  },
+  {
+    "case_id": "county-context-dublin",
+    "query": "County Dublin",
+    "entity_type": null,
+    "expected_id": "IE-COUNTY-DUBLIN",
+    "expected_type": "county"
+  },
+  {
+    "case_id": "city-context-cork",
+    "query": "Cork City",
+    "entity_type": null,
+    "expected_id": "IE-CITY-CORK",
+    "expected_type": "city"
+  },
+  {
+    "case_id": "county-context-cork",
+    "query": "County Cork",
+    "entity_type": null,
+    "expected_id": "IE-COUNTY-CORK",
+    "expected_type": "county"
+  },
+  {
+    "case_id": "city-context-galway",
+    "query": "Galway City",
+    "entity_type": null,
+    "expected_id": "IE-CITY-GALWAY",
+    "expected_type": "city"
+  },
+  {
+    "case_id": "county-context-galway",
+    "query": "County Galway",
+    "entity_type": null,
+    "expected_id": "IE-COUNTY-GALWAY",
+    "expected_type": "county"
+  },
+  {
+    "case_id": "explicit-city-dublin",
+    "query": "Dublin",
+    "entity_type": "city",
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city"
+  },
+  {
+    "case_id": "explicit-county-dublin",
+    "query": "Dublin",
+    "entity_type": "county",
+    "expected_id": "IE-COUNTY-DUBLIN",
+    "expected_type": "county"
+  },
+  {
+    "case_id": "explicit-county-overrides-city-text",
+    "query": "Dublin City",
+    "entity_type": "county",
+    "expected_id": "IE-COUNTY-DUBLIN",
+    "expected_type": "county"
+  },
+  {
+    "case_id": "explicit-city-overrides-county-text",
+    "query": "County Dublin",
+    "entity_type": "city",
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city"
+  },
+  {
+    "case_id": "cork-county-council",
+    "query": "Cork County Council",
+    "entity_type": null,
+    "expected_id": "IE-LA-CORK-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "case_id": "galway-county-council",
+    "query": "Galway County Council",
+    "entity_type": null,
+    "expected_id": "IE-LA-GALWAY-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "case_id": "dlr-county-council",
+    "query": "DLR County Council",
+    "entity_type": null,
+    "expected_id": "IE-LA-DLR",
+    "expected_type": "local_authority"
+  }
+]

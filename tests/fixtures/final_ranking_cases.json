@@ -1,0 +1,51 @@
+[
+  {
+    "case_id": "exact-dublin-city",
+    "query": "Dublin City",
+    "entity_type": null,
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city"
+  },
+  {
+    "case_id": "exact-county-dublin",
+    "query": "County Dublin",
+    "entity_type": null,
+    "expected_id": "IE-COUNTY-DUBLIN",
+    "expected_type": "county"
+  },
+  {
+    "case_id": "dublin-explicit-city",
+    "query": "Dublin",
+    "entity_type": "city",
+    "expected_id": "IE-CITY-DUBLIN",
+    "expected_type": "city"
+  },
+  {
+    "case_id": "dublin-explicit-county",
+    "query": "Dublin",
+    "entity_type": "county",
+    "expected_id": "IE-COUNTY-DUBLIN",
+    "expected_type": "county"
+  },
+  {
+    "case_id": "county-abbreviation",
+    "query": "Co. Dublin",
+    "entity_type": null,
+    "expected_id": "IE-COUNTY-DUBLIN",
+    "expected_type": "county"
+  },
+  {
+    "case_id": "dlr-abbreviation",
+    "query": "DLR",
+    "entity_type": null,
+    "expected_id": "IE-LA-DLR",
+    "expected_type": "local_authority"
+  },
+  {
+    "case_id": "cork-county-council",
+    "query": "Cork County Council",
+    "entity_type": null,
+    "expected_id": "IE-LA-CORK-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  }
+]

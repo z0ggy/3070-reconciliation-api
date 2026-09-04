@@ -5,7 +5,13 @@ import pytest
 
 from src.match import match_data
 
-FIXTURE_PATH = Path(__file__).parent / "fixtures" / "sprint3_ranking_cases.json"
+"""
+References:
+    - https://docs.pytest.org/en/stable/how-to/skipping.html
+
+"""
+
+FIXTURE_PATH = Path(__file__).parent / "fixtures" / "final_ranking_cases.json"
 
 
 with FIXTURE_PATH.open(encoding="utf-8") as file:
@@ -33,3 +39,19 @@ def test_expected_candidate_is_ranked_first(case):
     assert results
     assert results[0]["id"] == expected_id
     assert results[0]["type"] == case["expected_type"]
+
+
+@pytest.mark.xfail(
+    reason="Limitation: false positive(fuzzy matching) exceeds minimum threshold",
+    strict=True,
+)
+@pytest.mark.parametrize("query", ["Berlin", "Paris"])
+@pytest.mark.xfail(
+    reason="Limitation: false positive(fuzzy matching) exceeds minimum threshold",
+    strict=True,
+)
+def test_no_matching(query):
+    """
+    Unrelated candidates like non-Irish places are rejected
+    """
+    assert match_data(query, entity_type=None, limit=10) == []

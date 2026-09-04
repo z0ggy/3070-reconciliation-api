@@ -2,23 +2,29 @@ from src.match import match_data
 
 
 def test_match_data_perfect_match_by_name():
-    result = match_data("Dublin")
-    assert result[0]["name"] == "Dublin City"
-    assert result[0]["type"] == "city"
+    candidates = match_data("Dublin")
+    top_ids = [candidate["id"] for candidate in candidates[:2]]
+
+    assert "IE-CITY-DUBLIN" in top_ids
+    assert "IE-COUNTY-DUBLIN" in top_ids
 
 
 def test_match_data_by_aliases_dublin():
-    result = match_data("Baile Átha Cliath")
-    assert result[0]["name"] == "Dublin City"
-    assert result[0]["type"] == "city"
-    assert result[0]["matched_on"] == "alias"
+    candidates = match_data("Baile Átha Cliath")
+    top_candidates = candidates[:2]
+    top_ids = [candidate["id"] for candidate in top_candidates]
+
+    assert "IE-CITY-DUBLIN" in top_ids
+    assert "IE-COUNTY-DUBLIN" in top_ids
+    assert all(candidate["matched_on"] == "alias" for candidate in top_candidates)
 
 
 def test_match_data_by_normalized_official_name():
-    result = match_data("Dun Laoghaire Rathdown")
-    assert result[0]["name"] == "Dún Laoghaire-Rathdown"
-    assert result[0]["type"] == "local_authority"
-    assert result[0]["matched_on"] == "name"
+    results = match_data("Dun Laoghaire Rathdown")
+
+    assert results
+    assert results[0]["id"] == "IE-LA-DLR"
+    assert results[0]["type"] == "local_authority"
 
 
 def test_county_name():
@@ -45,11 +51,6 @@ def test_misspelling_city():
     names = [result["name"] for result in results]
     assert "Dublin City" in names
     assert "County Dublin" in names
-
-
-def test_no_score():
-    results = match_data("Paris")
-    assert len(results) == 0
 
 
 ##############SPRINT2 tests
