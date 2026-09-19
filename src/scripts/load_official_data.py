@@ -24,7 +24,7 @@ References:
 sys.path.insert(0, str(BASE_DIR))
 
 LOGAINM_DIR: Path = BASE_DIR / "data" / "official" / "logainm"
-TAILTE_FILE: Path = BASE_DIR / "data" / "official" / "tailte" / "local_authorities.csv"
+TAILTE_FILE: Path = BASE_DIR / "data" / "official" / "tailte" / "Local_Authorities.csv"
 
 # Logainm CTH(cities) contains nine records.
 # Use only ROI  6 city records.
