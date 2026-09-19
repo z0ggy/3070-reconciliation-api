@@ -1,5 +1,73 @@
-## run server
-uv run uvicorn src.main:app --reload
+# Reconciliation API for messy Irish geographic location
+
+## Installation
+### There are two installation methods by UV(recommended) and PIP 
+
+#### Setup UV package manager (recommended)
+
+##### uv installation
+- https://docs.astral.sh/uv/ - Fast Python package manager
+- unix run: 
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+- Windows run: 
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+- Version checker: 
+```bash
+uv --version
+```
+##### project dependencies
+- from the project root run: 
+```bash
+uv sync
+```
+
+##### run uv project
+```bash
+ uv run uvicorn src.main:app --reload
+```
+
+##### run uv test
+```bash
+uv run pytest
+```
+
+#### Setup with PIP (in case if no UV available)
+
+- Unix
+```bash
+python3.14 -m venv .venv
+source .venv/bin/activate
+```
+
+- Windows
+
+```powershell
+py -3.14 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+##### project dependencies
+```bash
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+
+## run project
+##### run python project
+```bash
+ uvicorn src.main:app --reload
+```
+
+##### run pytest test
+```bash
+pytest
+```
 
 ## server url
 http://127.0.0.1:8000
