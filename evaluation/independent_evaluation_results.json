@@ -1,0 +1,2503 @@
+[
+  {
+    "query": "Carlow",
+    "expected_id": "IE-LA-CARLOW-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-CARLOW",
+        "name": "County Carlow",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Carlow"
+      },
+      {
+        "id": "IE-LA-CARLOW-COUNTY-COUNCIL",
+        "name": "CARLOW COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "CARLOW COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-WICKLOW",
+        "name": "County Wicklow",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.615,
+        "matched_on": "alias",
+        "matched_value": "Wicklow"
+      },
+      {
+        "id": "IE-COUNTY-CLARE",
+        "name": "County Clare",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.545,
+        "matched_on": "alias",
+        "matched_value": "Clare"
+      },
+      {
+        "id": "IE-COUNTY-GALWAY",
+        "name": "County Galway",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "Galway"
+      },
+      {
+        "id": "IE-CITY-GALWAY",
+        "name": "Galway City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "Galway"
+      },
+      {
+        "id": "IE-COUNTY-KERRY",
+        "name": "County Kerry",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.462,
+        "matched_on": "alias",
+        "matched_value": "Ciarraí"
+      }
+    ]
+  },
+  {
+    "query": "Cavan",
+    "expected_id": "IE-LA-CAVAN-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-CAVAN",
+        "name": "County Cavan",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Cavan"
+      },
+      {
+        "id": "IE-LA-CAVAN-COUNTY-COUNCIL",
+        "name": "CAVAN COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "CAVAN COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-KERRY",
+        "name": "County Kerry",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "Ciarraí"
+      },
+      {
+        "id": "IE-COUNTY-WEXFORD",
+        "name": "County Wexford",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "Loch Garman"
+      },
+      {
+        "id": "IE-COUNTY-MONAGHAN",
+        "name": "County Monaghan",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.462,
+        "matched_on": "alias",
+        "matched_value": "Monaghan"
+      }
+    ]
+  },
+  {
+    "query": "Clare",
+    "expected_id": "IE-LA-CLARE-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-CLARE",
+        "name": "County Clare",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Clare"
+      },
+      {
+        "id": "IE-LA-CLARE-COUNTY-COUNCIL",
+        "name": "CLARE COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "CLARE COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-KILDARE",
+        "name": "County Kildare",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.667,
+        "matched_on": "alias",
+        "matched_value": "Kildare"
+      },
+      {
+        "id": "IE-COUNTY-CARLOW",
+        "name": "County Carlow",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.545,
+        "matched_on": "alias",
+        "matched_value": "Carlow"
+      },
+      {
+        "id": "IE-COUNTY-KERRY",
+        "name": "County Kerry",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "Ciarraí"
+      },
+      {
+        "id": "IE-COUNTY-WATERFORD",
+        "name": "County Waterford",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "Port Láirge"
+      },
+      {
+        "id": "IE-LA-DLR",
+        "name": "DUN LAOGHAIRE-RATHDOWN COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "DLR"
+      },
+      {
+        "id": "IE-CITY-WATERFORD",
+        "name": "Waterford City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "Port Láirge"
+      },
+      {
+        "id": "IE-COUNTY-LEITRIM",
+        "name": "County Leitrim",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.462,
+        "matched_on": "alias",
+        "matched_value": "Liatroim"
+      }
+    ]
+  },
+  {
+    "query": "Cork City",
+    "expected_id": "IE-LA-CORK-CITY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-CITY-CORK",
+        "name": "Cork City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "name",
+        "matched_value": "Cork City"
+      },
+      {
+        "id": "IE-LA-CORK-CITY-COUNCIL",
+        "name": "CORK CITY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.86,
+        "matched_on": "name",
+        "matched_value": "CORK CITY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-CORK",
+        "name": "County Cork",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.86,
+        "matched_on": "alias",
+        "matched_value": "Cork"
+      },
+      {
+        "id": "IE-CITY-LIMERICK",
+        "name": "Limerick City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.686,
+        "matched_on": "name",
+        "matched_value": "Limerick City"
+      },
+      {
+        "id": "IE-CITY-WATERFORD",
+        "name": "Waterford City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.659,
+        "matched_on": "name",
+        "matched_value": "Waterford City"
+      },
+      {
+        "id": "IE-CITY-KILKENNY",
+        "name": "Kilkenny City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.595,
+        "matched_on": "name",
+        "matched_value": "Kilkenny City"
+      },
+      {
+        "id": "IE-CITY-DUBLIN",
+        "name": "Dublin City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.55,
+        "matched_on": "name",
+        "matched_value": "Dublin City"
+      },
+      {
+        "id": "IE-CITY-GALWAY",
+        "name": "Galway City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.55,
+        "matched_on": "name",
+        "matched_value": "Galway City"
+      },
+      {
+        "id": "IE-LA-CORK-COUNTY-COUNCIL",
+        "name": "CORK COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.531,
+        "matched_on": "name",
+        "matched_value": "CORK COUNTY COUNCIL"
+      }
+    ]
+  },
+  {
+    "query": "Cork County",
+    "expected_id": "IE-LA-CORK-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 3,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-CORK",
+        "name": "County Cork",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Cork County"
+      },
+      {
+        "id": "IE-CITY-CORK",
+        "name": "Cork City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.86,
+        "matched_on": "alias",
+        "matched_value": "Cork"
+      },
+      {
+        "id": "IE-LA-CORK-COUNTY-COUNCIL",
+        "name": "CORK COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.86,
+        "matched_on": "name",
+        "matched_value": "CORK COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-DUBLIN",
+        "name": "County Dublin",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.633,
+        "matched_on": "alias",
+        "matched_value": "Dublin County"
+      },
+      {
+        "id": "IE-COUNTY-GALWAY",
+        "name": "County Galway",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.633,
+        "matched_on": "alias",
+        "matched_value": "Galway County"
+      },
+      {
+        "id": "IE-LA-CORK-CITY-COUNCIL",
+        "name": "CORK CITY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.603,
+        "matched_on": "name",
+        "matched_value": "CORK CITY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-MAYO",
+        "name": "County Mayo",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.595,
+        "matched_on": "name",
+        "matched_value": "County Mayo"
+      },
+      {
+        "id": "IE-COUNTY-CAVAN",
+        "name": "County Cavan",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.572,
+        "matched_on": "name",
+        "matched_value": "County Cavan"
+      },
+      {
+        "id": "IE-COUNTY-CLARE",
+        "name": "County Clare",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.572,
+        "matched_on": "name",
+        "matched_value": "County Clare"
+      },
+      {
+        "id": "IE-COUNTY-KERRY",
+        "name": "County Kerry",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.572,
+        "matched_on": "name",
+        "matched_value": "County Kerry"
+      },
+      {
+        "id": "IE-COUNTY-LAOIS",
+        "name": "County Laois",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.572,
+        "matched_on": "name",
+        "matched_value": "County Laois"
+      },
+      {
+        "id": "IE-COUNTY-LOUTH",
+        "name": "County Louth",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.572,
+        "matched_on": "name",
+        "matched_value": "County Louth"
+      },
+      {
+        "id": "IE-COUNTY-MEATH",
+        "name": "County Meath",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.572,
+        "matched_on": "name",
+        "matched_value": "County Meath"
+      },
+      {
+        "id": "IE-COUNTY-SLIGO",
+        "name": "County Sligo",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.572,
+        "matched_on": "name",
+        "matched_value": "County Sligo"
+      },
+      {
+        "id": "IE-COUNTY-CARLOW",
+        "name": "County Carlow",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.55,
+        "matched_on": "name",
+        "matched_value": "County Carlow"
+      },
+      {
+        "id": "IE-COUNTY-OFFALY",
+        "name": "County Offaly",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.55,
+        "matched_on": "name",
+        "matched_value": "County Offaly"
+      },
+      {
+        "id": "IE-LA-CLARE-COUNTY-COUNCIL",
+        "name": "CLARE COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.541,
+        "matched_on": "name",
+        "matched_value": "CLARE COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-DONEGAL",
+        "name": "County Donegal",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.53,
+        "matched_on": "name",
+        "matched_value": "County Donegal"
+      },
+      {
+        "id": "IE-COUNTY-KILDARE",
+        "name": "County Kildare",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.53,
+        "matched_on": "name",
+        "matched_value": "County Kildare"
+      },
+      {
+        "id": "IE-COUNTY-LEITRIM",
+        "name": "County Leitrim",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.53,
+        "matched_on": "name",
+        "matched_value": "County Leitrim"
+      },
+      {
+        "id": "IE-COUNTY-WEXFORD",
+        "name": "County Wexford",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.53,
+        "matched_on": "name",
+        "matched_value": "County Wexford"
+      },
+      {
+        "id": "IE-COUNTY-WICKLOW",
+        "name": "County Wicklow",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.53,
+        "matched_on": "name",
+        "matched_value": "County Wicklow"
+      },
+      {
+        "id": "IE-COUNTY-ROSCOMMON",
+        "name": "County Roscommon",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.526,
+        "matched_on": "alias",
+        "matched_value": "Ros Comáin"
+      },
+      {
+        "id": "IE-LA-CARLOW-COUNTY-COUNCIL",
+        "name": "CARLOW COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.522,
+        "matched_on": "name",
+        "matched_value": "CARLOW COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-KILKENNY",
+        "name": "County Kilkenny",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.512,
+        "matched_on": "name",
+        "matched_value": "County Kilkenny"
+      },
+      {
+        "id": "IE-COUNTY-LIMERICK",
+        "name": "County Limerick",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.512,
+        "matched_on": "name",
+        "matched_value": "County Limerick"
+      },
+      {
+        "id": "IE-COUNTY-LONGFORD",
+        "name": "County Longford",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.512,
+        "matched_on": "name",
+        "matched_value": "County Longford"
+      },
+      {
+        "id": "IE-COUNTY-MONAGHAN",
+        "name": "County Monaghan",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.512,
+        "matched_on": "name",
+        "matched_value": "County Monaghan"
+      },
+      {
+        "id": "IE-LA-DLR",
+        "name": "DUN LAOGHAIRE-RATHDOWN COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.512,
+        "matched_on": "alias",
+        "matched_value": "DLR County Council"
+      },
+      {
+        "id": "IE-LA-WEXFORD-COUNTY-COUNCIL",
+        "name": "WEXFORD COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.505,
+        "matched_on": "name",
+        "matched_value": "WEXFORD COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-LA-WICKLOW-COUNTY-COUNCIL",
+        "name": "WICKLOW COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.505,
+        "matched_on": "name",
+        "matched_value": "WICKLOW COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-TIPPERARY",
+        "name": "County Tipperary",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.494,
+        "matched_on": "name",
+        "matched_value": "County Tipperary"
+      },
+      {
+        "id": "IE-COUNTY-WATERFORD",
+        "name": "County Waterford",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.494,
+        "matched_on": "name",
+        "matched_value": "County Waterford"
+      },
+      {
+        "id": "IE-COUNTY-WESTMEATH",
+        "name": "County Westmeath",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.494,
+        "matched_on": "name",
+        "matched_value": "County Westmeath"
+      },
+      {
+        "id": "IE-LA-LOUTH-COUNTY-COUNCIL",
+        "name": "LOUTH COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.493,
+        "matched_on": "alias",
+        "matched_value": "Comhairle Contae Lú"
+      },
+      {
+        "id": "IE-LA-MAYO-COUNTY-COUNCIL",
+        "name": "MAYO COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.493,
+        "matched_on": "name",
+        "matched_value": "MAYO COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-LA-LONGFORD-COUNTY-COUNCIL",
+        "name": "LONGFORD COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.489,
+        "matched_on": "name",
+        "matched_value": "LONGFORD COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-LA-CAVAN-COUNTY-COUNCIL",
+        "name": "CAVAN COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.476,
+        "matched_on": "name",
+        "matched_value": "CAVAN COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-LA-KERRY-COUNTY-COUNCIL",
+        "name": "KERRY COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.476,
+        "matched_on": "name",
+        "matched_value": "KERRY COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-LA-LAOIS-COUNTY-COUNCIL",
+        "name": "LAOIS COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.476,
+        "matched_on": "name",
+        "matched_value": "LAOIS COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-LA-SLIGO-COUNTY-COUNCIL",
+        "name": "SLIGO COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.476,
+        "matched_on": "name",
+        "matched_value": "SLIGO COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-LA-ROSCOMMON-COUNTY-COUNCIL",
+        "name": "ROSCOMMON COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.474,
+        "matched_on": "name",
+        "matched_value": "ROSCOMMON COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-CITY-LIMERICK",
+        "name": "Limerick City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.46,
+        "matched_on": "name",
+        "matched_value": "Limerick City"
+      },
+      {
+        "id": "IE-LA-OFFALY-COUNTY-COUNCIL",
+        "name": "OFFALY COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.46,
+        "matched_on": "name",
+        "matched_value": "OFFALY COUNTY COUNCIL"
+      }
+    ]
+  },
+  {
+    "query": "DLR",
+    "expected_id": "IE-LA-DLR",
+    "expected_type": "local_authority",
+    "expected_rank": 1,
+    "top1_success": true,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-LA-DLR",
+        "name": "DUN LAOGHAIRE-RATHDOWN COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "DLR"
+      },
+      {
+        "id": "IE-COUNTY-CLARE",
+        "name": "County Clare",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "Clare"
+      }
+    ]
+  },
+  {
+    "query": "Donegal",
+    "expected_id": "IE-LA-DONEGAL-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-DONEGAL",
+        "name": "County Donegal",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Donegal"
+      },
+      {
+        "id": "IE-LA-DONEGAL-COUNTY-COUNCIL",
+        "name": "DONEGAL COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "DONEGAL COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-MONAGHAN",
+        "name": "County Monaghan",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.533,
+        "matched_on": "alias",
+        "matched_value": "Monaghan"
+      },
+      {
+        "id": "IE-COUNTY-GALWAY",
+        "name": "County Galway",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "name",
+        "matched_value": "County Galway"
+      },
+      {
+        "id": "IE-COUNTY-OFFALY",
+        "name": "County Offaly",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.462,
+        "matched_on": "alias",
+        "matched_value": "Offaly"
+      },
+      {
+        "id": "IE-CITY-GALWAY",
+        "name": "Galway City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.462,
+        "matched_on": "alias",
+        "matched_value": "Galway"
+      }
+    ]
+  },
+  {
+    "query": "Dublin City",
+    "expected_id": "IE-LA-DUBLIN-CITY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 3,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-CITY-DUBLIN",
+        "name": "Dublin City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "name",
+        "matched_value": "Dublin City"
+      },
+      {
+        "id": "IE-COUNTY-DUBLIN",
+        "name": "County Dublin",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.86,
+        "matched_on": "alias",
+        "matched_value": "Dublin"
+      },
+      {
+        "id": "IE-LA-DUBLIN-CITY-COUNCIL",
+        "name": "DUBLIN CITY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.86,
+        "matched_on": "name",
+        "matched_value": "DUBLIN CITY COUNCIL"
+      },
+      {
+        "id": "IE-CITY-KILKENNY",
+        "name": "Kilkenny City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.633,
+        "matched_on": "name",
+        "matched_value": "Kilkenny City"
+      },
+      {
+        "id": "IE-CITY-LIMERICK",
+        "name": "Limerick City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.633,
+        "matched_on": "name",
+        "matched_value": "Limerick City"
+      },
+      {
+        "id": "IE-CITY-GALWAY",
+        "name": "Galway City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.595,
+        "matched_on": "name",
+        "matched_value": "Galway City"
+      },
+      {
+        "id": "IE-CITY-CORK",
+        "name": "Cork City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.55,
+        "matched_on": "name",
+        "matched_value": "Cork City"
+      },
+      {
+        "id": "IE-CITY-WATERFORD",
+        "name": "Waterford City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.53,
+        "matched_on": "name",
+        "matched_value": "Waterford City"
+      },
+      {
+        "id": "IE-LA-SOUTH-DUBLIN-COUNTY-COUNCIL",
+        "name": "SOUTH DUBLIN COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.486,
+        "matched_on": "name",
+        "matched_value": "SOUTH DUBLIN COUNTY COUNCIL"
+      }
+    ]
+  },
+  {
+    "query": "Fingal",
+    "expected_id": "IE-LA-FINGAL-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 1,
+    "top1_success": true,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-LA-FINGAL-COUNTY-COUNCIL",
+        "name": "FINGAL COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "FINGAL COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-DONEGAL",
+        "name": "County Donegal",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.615,
+        "matched_on": "alias",
+        "matched_value": "Donegal"
+      },
+      {
+        "id": "IE-COUNTY-GALWAY",
+        "name": "County Galway",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "Galway"
+      },
+      {
+        "id": "IE-COUNTY-OFFALY",
+        "name": "County Offaly",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "Offaly"
+      },
+      {
+        "id": "IE-CITY-GALWAY",
+        "name": "Galway City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "Galway"
+      }
+    ]
+  },
+  {
+    "query": "Galway City",
+    "expected_id": "IE-LA-GALWAY-CITY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 3,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-CITY-GALWAY",
+        "name": "Galway City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "name",
+        "matched_value": "Galway City"
+      },
+      {
+        "id": "IE-COUNTY-GALWAY",
+        "name": "County Galway",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.86,
+        "matched_on": "alias",
+        "matched_value": "Galway"
+      },
+      {
+        "id": "IE-LA-GALWAY-CITY-COUNCIL",
+        "name": "GALWAY CITY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.86,
+        "matched_on": "name",
+        "matched_value": "GALWAY CITY COUNCIL"
+      },
+      {
+        "id": "IE-CITY-KILKENNY",
+        "name": "Kilkenny City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.633,
+        "matched_on": "name",
+        "matched_value": "Kilkenny City"
+      },
+      {
+        "id": "IE-CITY-WATERFORD",
+        "name": "Waterford City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.61,
+        "matched_on": "name",
+        "matched_value": "Waterford City"
+      },
+      {
+        "id": "IE-CITY-DUBLIN",
+        "name": "Dublin City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.595,
+        "matched_on": "name",
+        "matched_value": "Dublin City"
+      },
+      {
+        "id": "IE-LA-GALWAY-COUNTY-COUNCIL",
+        "name": "GALWAY COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.585,
+        "matched_on": "name",
+        "matched_value": "GALWAY COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-CITY-CORK",
+        "name": "Cork City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.55,
+        "matched_on": "name",
+        "matched_value": "Cork City"
+      },
+      {
+        "id": "IE-CITY-LIMERICK",
+        "name": "Limerick City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.55,
+        "matched_on": "name",
+        "matched_value": "Limerick City"
+      },
+      {
+        "id": "IE-COUNTY-DUBLIN",
+        "name": "County Dublin",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.46,
+        "matched_on": "alias",
+        "matched_value": "Baile Átha Cliath"
+      }
+    ]
+  },
+  {
+    "query": "Galway County",
+    "expected_id": "IE-LA-GALWAY-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 3,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-GALWAY",
+        "name": "County Galway",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Galway County"
+      },
+      {
+        "id": "IE-CITY-GALWAY",
+        "name": "Galway City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.86,
+        "matched_on": "alias",
+        "matched_value": "Galway"
+      },
+      {
+        "id": "IE-LA-GALWAY-COUNTY-COUNCIL",
+        "name": "GALWAY COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.86,
+        "matched_on": "name",
+        "matched_value": "GALWAY COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-DUBLIN",
+        "name": "County Dublin",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.665,
+        "matched_on": "alias",
+        "matched_value": "Dublin County"
+      },
+      {
+        "id": "IE-LA-GALWAY-CITY-COUNCIL",
+        "name": "GALWAY CITY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.647,
+        "matched_on": "name",
+        "matched_value": "GALWAY CITY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-CORK",
+        "name": "County Cork",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.633,
+        "matched_on": "alias",
+        "matched_value": "Cork County"
+      },
+      {
+        "id": "IE-COUNTY-MAYO",
+        "name": "County Mayo",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.55,
+        "matched_on": "name",
+        "matched_value": "County Mayo"
+      },
+      {
+        "id": "IE-LA-CARLOW-COUNTY-COUNCIL",
+        "name": "CARLOW COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.548,
+        "matched_on": "name",
+        "matched_value": "CARLOW COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-LA-FINGAL-COUNTY-COUNCIL",
+        "name": "FINGAL COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.548,
+        "matched_on": "name",
+        "matched_value": "FINGAL COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-LA-OFFALY-COUNTY-COUNCIL",
+        "name": "OFFALY COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.548,
+        "matched_on": "name",
+        "matched_value": "OFFALY COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-LA-DONEGAL-COUNTY-COUNCIL",
+        "name": "DONEGAL COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.531,
+        "matched_on": "name",
+        "matched_value": "DONEGAL COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-CAVAN",
+        "name": "County Cavan",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.53,
+        "matched_on": "name",
+        "matched_value": "County Cavan"
+      },
+      {
+        "id": "IE-COUNTY-CLARE",
+        "name": "County Clare",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.53,
+        "matched_on": "name",
+        "matched_value": "County Clare"
+      },
+      {
+        "id": "IE-COUNTY-KERRY",
+        "name": "County Kerry",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.53,
+        "matched_on": "name",
+        "matched_value": "County Kerry"
+      },
+      {
+        "id": "IE-COUNTY-LAOIS",
+        "name": "County Laois",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.53,
+        "matched_on": "name",
+        "matched_value": "County Laois"
+      },
+      {
+        "id": "IE-COUNTY-LOUTH",
+        "name": "County Louth",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.53,
+        "matched_on": "name",
+        "matched_value": "County Louth"
+      },
+      {
+        "id": "IE-COUNTY-MEATH",
+        "name": "County Meath",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.53,
+        "matched_on": "name",
+        "matched_value": "County Meath"
+      },
+      {
+        "id": "IE-COUNTY-SLIGO",
+        "name": "County Sligo",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.53,
+        "matched_on": "name",
+        "matched_value": "County Sligo"
+      },
+      {
+        "id": "IE-LA-MAYO-COUNTY-COUNCIL",
+        "name": "MAYO COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.522,
+        "matched_on": "name",
+        "matched_value": "MAYO COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-CARLOW",
+        "name": "County Carlow",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.512,
+        "matched_on": "name",
+        "matched_value": "County Carlow"
+      },
+      {
+        "id": "IE-COUNTY-OFFALY",
+        "name": "County Offaly",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.512,
+        "matched_on": "name",
+        "matched_value": "County Offaly"
+      },
+      {
+        "id": "IE-LA-CAVAN-COUNTY-COUNCIL",
+        "name": "CAVAN COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.505,
+        "matched_on": "name",
+        "matched_value": "CAVAN COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-DONEGAL",
+        "name": "County Donegal",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.494,
+        "matched_on": "name",
+        "matched_value": "County Donegal"
+      },
+      {
+        "id": "IE-COUNTY-KILDARE",
+        "name": "County Kildare",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.494,
+        "matched_on": "name",
+        "matched_value": "County Kildare"
+      },
+      {
+        "id": "IE-COUNTY-LEITRIM",
+        "name": "County Leitrim",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.494,
+        "matched_on": "name",
+        "matched_value": "County Leitrim"
+      },
+      {
+        "id": "IE-COUNTY-WEXFORD",
+        "name": "County Wexford",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.494,
+        "matched_on": "name",
+        "matched_value": "County Wexford"
+      },
+      {
+        "id": "IE-COUNTY-WICKLOW",
+        "name": "County Wicklow",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.494,
+        "matched_on": "name",
+        "matched_value": "County Wicklow"
+      },
+      {
+        "id": "IE-COUNTY-KILKENNY",
+        "name": "County Kilkenny",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.479,
+        "matched_on": "name",
+        "matched_value": "County Kilkenny"
+      },
+      {
+        "id": "IE-COUNTY-LIMERICK",
+        "name": "County Limerick",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.479,
+        "matched_on": "name",
+        "matched_value": "County Limerick"
+      },
+      {
+        "id": "IE-COUNTY-LONGFORD",
+        "name": "County Longford",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.479,
+        "matched_on": "name",
+        "matched_value": "County Longford"
+      },
+      {
+        "id": "IE-COUNTY-MONAGHAN",
+        "name": "County Monaghan",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.479,
+        "matched_on": "name",
+        "matched_value": "County Monaghan"
+      },
+      {
+        "id": "IE-LA-DLR",
+        "name": "DUN LAOGHAIRE-RATHDOWN COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.476,
+        "matched_on": "alias",
+        "matched_value": "DLR County Council"
+      },
+      {
+        "id": "IE-LA-WICKLOW-COUNTY-COUNCIL",
+        "name": "WICKLOW COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.474,
+        "matched_on": "name",
+        "matched_value": "WICKLOW COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-ROSCOMMON",
+        "name": "County Roscommon",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.464,
+        "matched_on": "name",
+        "matched_value": "County Roscommon"
+      },
+      {
+        "id": "IE-COUNTY-TIPPERARY",
+        "name": "County Tipperary",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.464,
+        "matched_on": "name",
+        "matched_value": "County Tipperary"
+      },
+      {
+        "id": "IE-COUNTY-WATERFORD",
+        "name": "County Waterford",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.464,
+        "matched_on": "name",
+        "matched_value": "County Waterford"
+      },
+      {
+        "id": "IE-COUNTY-WESTMEATH",
+        "name": "County Westmeath",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.464,
+        "matched_on": "name",
+        "matched_value": "County Westmeath"
+      },
+      {
+        "id": "IE-LA-KILKENNY-COUNTY-COUNCIL",
+        "name": "KILKENNY COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.46,
+        "matched_on": "name",
+        "matched_value": "KILKENNY COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-LA-MONAGHAN-COUNTY-COUNCIL",
+        "name": "MONAGHAN COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.46,
+        "matched_on": "name",
+        "matched_value": "MONAGHAN COUNTY COUNCIL"
+      }
+    ]
+  },
+  {
+    "query": "Kerry",
+    "expected_id": "IE-LA-KERRY-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-KERRY",
+        "name": "County Kerry",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Kerry"
+      },
+      {
+        "id": "IE-LA-KERRY-COUNTY-COUNCIL",
+        "name": "KERRY COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "KERRY COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-TIPPERARY",
+        "name": "County Tipperary",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.571,
+        "matched_on": "alias",
+        "matched_value": "Tipperary"
+      },
+      {
+        "id": "IE-COUNTY-KILKENNY",
+        "name": "County Kilkenny",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.462,
+        "matched_on": "alias",
+        "matched_value": "Kilkenny"
+      },
+      {
+        "id": "IE-CITY-KILKENNY",
+        "name": "Kilkenny City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.462,
+        "matched_on": "alias",
+        "matched_value": "Kilkenny"
+      }
+    ]
+  },
+  {
+    "query": "Kildare",
+    "expected_id": "IE-LA-KILDARE-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-KILDARE",
+        "name": "County Kildare",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Kildare"
+      },
+      {
+        "id": "IE-LA-KILDARE-COUNTY-COUNCIL",
+        "name": "KILDARE COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "KILDARE COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-CLARE",
+        "name": "County Clare",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.667,
+        "matched_on": "alias",
+        "matched_value": "Clare"
+      },
+      {
+        "id": "IE-COUNTY-KILKENNY",
+        "name": "County Kilkenny",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.533,
+        "matched_on": "alias",
+        "matched_value": "Kilkenny"
+      },
+      {
+        "id": "IE-CITY-KILKENNY",
+        "name": "Kilkenny City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.533,
+        "matched_on": "alias",
+        "matched_value": "Kilkenny"
+      }
+    ]
+  },
+  {
+    "query": "Kilkenny",
+    "expected_id": "IE-LA-KILKENNY-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 3,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-KILKENNY",
+        "name": "County Kilkenny",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Kilkenny"
+      },
+      {
+        "id": "IE-CITY-KILKENNY",
+        "name": "Kilkenny City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Kilkenny"
+      },
+      {
+        "id": "IE-LA-KILKENNY-COUNTY-COUNCIL",
+        "name": "KILKENNY COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "KILKENNY COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-KILDARE",
+        "name": "County Kildare",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.533,
+        "matched_on": "alias",
+        "matched_value": "Kildare"
+      },
+      {
+        "id": "IE-COUNTY-KERRY",
+        "name": "County Kerry",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.462,
+        "matched_on": "alias",
+        "matched_value": "Kerry"
+      }
+    ]
+  },
+  {
+    "query": "Laois",
+    "expected_id": "IE-LA-LAOIS-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-LAOIS",
+        "name": "County Laois",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Laois"
+      },
+      {
+        "id": "IE-LA-LAOIS-COUNTY-COUNCIL",
+        "name": "LAOIS COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "LAOIS COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-LEITRIM",
+        "name": "County Leitrim",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.615,
+        "matched_on": "alias",
+        "matched_value": "Liatroim"
+      }
+    ]
+  },
+  {
+    "query": "Leitrim",
+    "expected_id": "IE-LA-LEITRIM-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-LEITRIM",
+        "name": "County Leitrim",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Leitrim"
+      },
+      {
+        "id": "IE-LA-LEITRIM-COUNTY-COUNCIL",
+        "name": "LEITRIM COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "LEITRIM COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-LIMERICK",
+        "name": "County Limerick",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.533,
+        "matched_on": "alias",
+        "matched_value": "Limerick"
+      },
+      {
+        "id": "IE-CITY-LIMERICK",
+        "name": "Limerick City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.533,
+        "matched_on": "alias",
+        "matched_value": "Limerick"
+      }
+    ]
+  },
+  {
+    "query": "Limerick",
+    "expected_id": "IE-LA-LIMERICK-CITY-AND-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 3,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-LIMERICK",
+        "name": "County Limerick",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Limerick"
+      },
+      {
+        "id": "IE-CITY-LIMERICK",
+        "name": "Limerick City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Limerick"
+      },
+      {
+        "id": "IE-LA-LIMERICK-CITY-AND-COUNTY-COUNCIL",
+        "name": "LIMERICK CITY AND COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "LIMERICK CITY AND COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-SLIGO",
+        "name": "County Sligo",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "Sligeach"
+      }
+    ]
+  },
+  {
+    "query": "Longford",
+    "expected_id": "IE-LA-LONGFORD-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-LONGFORD",
+        "name": "County Longford",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Longford"
+      },
+      {
+        "id": "IE-LA-LONGFORD-COUNTY-COUNCIL",
+        "name": "LONGFORD COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "LONGFORD COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-WEXFORD",
+        "name": "County Wexford",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.545,
+        "matched_on": "name",
+        "matched_value": "County Wexford"
+      },
+      {
+        "id": "IE-COUNTY-WATERFORD",
+        "name": "County Waterford",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "name",
+        "matched_value": "County Waterford"
+      },
+      {
+        "id": "IE-CITY-WATERFORD",
+        "name": "Waterford City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.471,
+        "matched_on": "alias",
+        "matched_value": "Waterford"
+      }
+    ]
+  },
+  {
+    "query": "Louth",
+    "expected_id": "IE-LA-LOUTH-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-LOUTH",
+        "name": "County Louth",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Louth"
+      },
+      {
+        "id": "IE-LA-LOUTH-COUNTY-COUNCIL",
+        "name": "LOUTH COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "LOUTH COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-MEATH",
+        "name": "County Meath",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.471,
+        "matched_on": "name",
+        "matched_value": "County Meath"
+      }
+    ]
+  },
+  {
+    "query": "Mayo",
+    "expected_id": "IE-LA-MAYO-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-MAYO",
+        "name": "County Mayo",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Mayo"
+      },
+      {
+        "id": "IE-LA-MAYO-COUNTY-COUNCIL",
+        "name": "MAYO COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "MAYO COUNTY COUNCIL"
+      }
+    ]
+  },
+  {
+    "query": "Meath",
+    "expected_id": "IE-LA-MEATH-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 3,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-MEATH",
+        "name": "County Meath",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Meath"
+      },
+      {
+        "id": "IE-COUNTY-WESTMEATH",
+        "name": "County Westmeath",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "County Westmeath"
+      },
+      {
+        "id": "IE-LA-MEATH-COUNTY-COUNCIL",
+        "name": "MEATH COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "MEATH COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-LA-WESTMEATH-COUNTY-COUNCIL",
+        "name": "WESTMEATH COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "WESTMEATH COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-LIMERICK",
+        "name": "County Limerick",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.571,
+        "matched_on": "alias",
+        "matched_value": "Luimneach"
+      },
+      {
+        "id": "IE-CITY-LIMERICK",
+        "name": "Limerick City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.571,
+        "matched_on": "alias",
+        "matched_value": "Luimneach"
+      },
+      {
+        "id": "IE-COUNTY-MONAGHAN",
+        "name": "County Monaghan",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.533,
+        "matched_on": "alias",
+        "matched_value": "Muineachán"
+      },
+      {
+        "id": "IE-COUNTY-CARLOW",
+        "name": "County Carlow",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "Ceatharlach"
+      },
+      {
+        "id": "IE-COUNTY-SLIGO",
+        "name": "County Sligo",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.462,
+        "matched_on": "alias",
+        "matched_value": "Sligeach"
+      }
+    ]
+  },
+  {
+    "query": "Monaghan",
+    "expected_id": "IE-LA-MONAGHAN-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-MONAGHAN",
+        "name": "County Monaghan",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Monaghan"
+      },
+      {
+        "id": "IE-LA-MONAGHAN-COUNTY-COUNCIL",
+        "name": "MONAGHAN COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "MONAGHAN COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-CAVAN",
+        "name": "County Cavan",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.588,
+        "matched_on": "alias",
+        "matched_value": "An Cabhán"
+      },
+      {
+        "id": "IE-CITY-CORK",
+        "name": "Cork City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "Corcaigh"
+      },
+      {
+        "id": "IE-COUNTY-CORK",
+        "name": "County Cork",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "Corcaigh"
+      },
+      {
+        "id": "IE-COUNTY-MAYO",
+        "name": "County Mayo",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "Maigh Eo"
+      },
+      {
+        "id": "IE-COUNTY-LIMERICK",
+        "name": "County Limerick",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.471,
+        "matched_on": "alias",
+        "matched_value": "Luimneach"
+      },
+      {
+        "id": "IE-CITY-LIMERICK",
+        "name": "Limerick City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.471,
+        "matched_on": "alias",
+        "matched_value": "Luimneach"
+      },
+      {
+        "id": "IE-COUNTY-MEATH",
+        "name": "County Meath",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.462,
+        "matched_on": "alias",
+        "matched_value": "Meath"
+      }
+    ]
+  },
+  {
+    "query": "Offaly",
+    "expected_id": "IE-LA-OFFALY-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-OFFALY",
+        "name": "County Offaly",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Offaly"
+      },
+      {
+        "id": "IE-LA-OFFALY-COUNTY-COUNCIL",
+        "name": "OFFALY COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "OFFALY COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-GALWAY",
+        "name": "County Galway",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "Galway"
+      },
+      {
+        "id": "IE-CITY-GALWAY",
+        "name": "Galway City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "alias",
+        "matched_value": "Galway"
+      },
+      {
+        "id": "IE-COUNTY-DONEGAL",
+        "name": "County Donegal",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.462,
+        "matched_on": "alias",
+        "matched_value": "Donegal"
+      }
+    ]
+  },
+  {
+    "query": "Roscommon",
+    "expected_id": "IE-LA-ROSCOMMON-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-ROSCOMMON",
+        "name": "County Roscommon",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Roscommon"
+      },
+      {
+        "id": "IE-LA-ROSCOMMON-COUNTY-COUNCIL",
+        "name": "ROSCOMMON COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "ROSCOMMON COUNTY COUNCIL"
+      }
+    ]
+  },
+  {
+    "query": "Sligo",
+    "expected_id": "IE-LA-SLIGO-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-SLIGO",
+        "name": "County Sligo",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Sligo"
+      },
+      {
+        "id": "IE-LA-SLIGO-COUNTY-COUNCIL",
+        "name": "SLIGO COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "SLIGO COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-LEITRIM",
+        "name": "County Leitrim",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.462,
+        "matched_on": "alias",
+        "matched_value": "Liatroim"
+      },
+      {
+        "id": "IE-COUNTY-LONGFORD",
+        "name": "County Longford",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.462,
+        "matched_on": "alias",
+        "matched_value": "Longford"
+      },
+      {
+        "id": "IE-COUNTY-MAYO",
+        "name": "County Mayo",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.462,
+        "matched_on": "alias",
+        "matched_value": "Maigh Eo"
+      }
+    ]
+  },
+  {
+    "query": "South Dublin",
+    "expected_id": "IE-LA-SOUTH-DUBLIN-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 3,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-DUBLIN",
+        "name": "County Dublin",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "alias",
+        "matched_value": "Dublin"
+      },
+      {
+        "id": "IE-CITY-DUBLIN",
+        "name": "Dublin City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "alias",
+        "matched_value": "Dublin"
+      },
+      {
+        "id": "IE-LA-SOUTH-DUBLIN-COUNTY-COUNCIL",
+        "name": "SOUTH DUBLIN COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "SOUTH DUBLIN COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-LAOIS",
+        "name": "County Laois",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "name",
+        "matched_value": "County Laois"
+      },
+      {
+        "id": "IE-COUNTY-SLIGO",
+        "name": "County Sligo",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.5,
+        "matched_on": "name",
+        "matched_value": "County Sligo"
+      },
+      {
+        "id": "IE-COUNTY-LOUTH",
+        "name": "County Louth",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.471,
+        "matched_on": "alias",
+        "matched_value": "Louth"
+      },
+      {
+        "id": "IE-COUNTY-DONEGAL",
+        "name": "County Donegal",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.462,
+        "matched_on": "name",
+        "matched_value": "County Donegal"
+      },
+      {
+        "id": "IE-COUNTY-LEITRIM",
+        "name": "County Leitrim",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.462,
+        "matched_on": "name",
+        "matched_value": "County Leitrim"
+      }
+    ]
+  },
+  {
+    "query": "Tipperary",
+    "expected_id": "IE-LA-TIPPERARY-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-TIPPERARY",
+        "name": "County Tipperary",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Tipperary"
+      },
+      {
+        "id": "IE-LA-TIPPERARY-COUNTY-COUNCIL",
+        "name": "TIPPERARY COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "TIPPERARY COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-KERRY",
+        "name": "County Kerry",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.571,
+        "matched_on": "alias",
+        "matched_value": "Kerry"
+      }
+    ]
+  },
+  {
+    "query": "Waterford",
+    "expected_id": "IE-LA-WATERFORD-CITY-AND-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 3,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-WATERFORD",
+        "name": "County Waterford",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Waterford"
+      },
+      {
+        "id": "IE-CITY-WATERFORD",
+        "name": "Waterford City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Waterford"
+      },
+      {
+        "id": "IE-LA-WATERFORD-CITY-AND-COUNTY-COUNCIL",
+        "name": "WATERFORD CITY AND COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "WATERFORD CITY AND COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-WEXFORD",
+        "name": "County Wexford",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.75,
+        "matched_on": "alias",
+        "matched_value": "Wexford"
+      },
+      {
+        "id": "IE-COUNTY-LEITRIM",
+        "name": "County Leitrim",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.471,
+        "matched_on": "alias",
+        "matched_value": "Liatroim"
+      },
+      {
+        "id": "IE-COUNTY-LONGFORD",
+        "name": "County Longford",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.471,
+        "matched_on": "alias",
+        "matched_value": "Longford"
+      }
+    ]
+  },
+  {
+    "query": "Westmeath",
+    "expected_id": "IE-LA-WESTMEATH-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 3,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-WESTMEATH",
+        "name": "County Westmeath",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Westmeath"
+      },
+      {
+        "id": "IE-COUNTY-MEATH",
+        "name": "County Meath",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "alias",
+        "matched_value": "Meath"
+      },
+      {
+        "id": "IE-LA-WESTMEATH-COUNTY-COUNCIL",
+        "name": "WESTMEATH COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "WESTMEATH COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-SLIGO",
+        "name": "County Sligo",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.471,
+        "matched_on": "alias",
+        "matched_value": "Sligeach"
+      }
+    ]
+  },
+  {
+    "query": "Wexford",
+    "expected_id": "IE-LA-WEXFORD-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-WEXFORD",
+        "name": "County Wexford",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Wexford"
+      },
+      {
+        "id": "IE-LA-WEXFORD-COUNTY-COUNCIL",
+        "name": "WEXFORD COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "WEXFORD COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-WATERFORD",
+        "name": "County Waterford",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.75,
+        "matched_on": "alias",
+        "matched_value": "Waterford"
+      },
+      {
+        "id": "IE-CITY-WATERFORD",
+        "name": "Waterford City",
+        "type": "city",
+        "country": "IRELAND",
+        "score": 0.75,
+        "matched_on": "alias",
+        "matched_value": "Waterford"
+      },
+      {
+        "id": "IE-COUNTY-LONGFORD",
+        "name": "County Longford",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.533,
+        "matched_on": "alias",
+        "matched_value": "Longford"
+      }
+    ]
+  },
+  {
+    "query": "Wicklow",
+    "expected_id": "IE-LA-WICKLOW-COUNTY-COUNCIL",
+    "expected_type": "local_authority",
+    "expected_rank": 2,
+    "top1_success": false,
+    "top3_success": true,
+    "no_match_success": null,
+    "returned_candidates": [
+      {
+        "id": "IE-COUNTY-WICKLOW",
+        "name": "County Wicklow",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 1.0,
+        "matched_on": "alias",
+        "matched_value": "Wicklow"
+      },
+      {
+        "id": "IE-LA-WICKLOW-COUNTY-COUNCIL",
+        "name": "WICKLOW COUNTY COUNCIL",
+        "type": "local_authority",
+        "country": "IRELAND",
+        "score": 0.9,
+        "matched_on": "name",
+        "matched_value": "WICKLOW COUNTY COUNCIL"
+      },
+      {
+        "id": "IE-COUNTY-CARLOW",
+        "name": "County Carlow",
+        "type": "county",
+        "country": "IRELAND",
+        "score": 0.615,
+        "matched_on": "alias",
+        "matched_value": "Carlow"
+      }
+    ]
+  }
+]

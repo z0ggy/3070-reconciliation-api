@@ -1,0 +1,9 @@
+place_name,Query type 
+Dublinn,fuzzy matching
+Cnty Cork,misspelt type cue (Cnty) instead of County
+Co. Dublin,normalisation of county abbreviation
+Baile Átha Cliath,Irish language alias
+Dún Laoghaire,alias matching
+Galway City,type inferred from query text
+Cork,ambiguity no additional context
+Berlin,false-positive limitation from fuzzy threshold

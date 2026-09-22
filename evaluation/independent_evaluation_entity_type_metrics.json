@@ -1,0 +1,14 @@
+{
+  "total_cases": 31,
+  "positive_cases": 31,
+  "no_match_cases": 0,
+  "top1_correct": 31,
+  "top1_accuracy": 1.0,
+  "top3_correct": 31,
+  "top3_accuracy": 1.0,
+  "mrr": 1.0,
+  "correct_no_match": 0,
+  "no_match_accuracy": 0.0,
+  "false_positive_count": 0,
+  "false_positive_rate": 0.0
+}

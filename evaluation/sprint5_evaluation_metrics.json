@@ -2,13 +2,13 @@
   "total_cases": 45,
   "positive_cases": 35,
   "no_match_cases": 10,
-  "top1_correct": 32,
-  "top1_accuracy": 0.9142857142857143,
+  "top1_correct": 31,
+  "top1_accuracy": 0.8857142857142857,
   "top3_correct": 35,
   "top3_accuracy": 1.0,
-  "mrr": 0.9571428571428572,
-  "correct_no_match": 8,
-  "no_match_accuracy": 0.8,
-  "false_positive_count": 2,
-  "false_positive_rate": 0.2
+  "mrr": 0.9428571428571428,
+  "correct_no_match": 4,
+  "no_match_accuracy": 0.4,
+  "false_positive_count": 6,
+  "false_positive_rate": 0.6
 }

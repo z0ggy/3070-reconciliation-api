@@ -1,5 +1,10 @@
 # Reconciliation API for messy Irish geographic location
 
+## Requirements
+- [Recommended ] UV package manager https://docs.astral.sh/uv/getting-started/installation/
+- [If no UV available] Python 3.14 and above: https://www.python.org/downloads/
+- OpenRefine client: https://openrefine.org/download
+
 ## Installation
 ### There are two installation methods by UV(recommended) and PIP 
 
@@ -57,6 +62,12 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
+## Database
+Database is build in the project (but if you want to rebuild it run as follows):
+```bash
+uv run -m src.scripts.init_db 
+uv run -m src.scripts.load_official_data
+```
 
 ## run project
 ##### run python project
@@ -75,39 +86,22 @@ http://127.0.0.1:8000
 ## example query url 
 http://127.0.0.1:8000/reconcile?q=Dublin
 http://127.0.0.1:8000/reconcile?q=Co.%20Dublin
+http://127.0.0.1:8000/reconcile?q=Dublin&entity_type=county
 
+## Reconciliation with OpenRefine client
+- start API server if not started already:  uv run uvicorn src.main:app --reload
+Start OpenRefine:
+- start OpenRefine client
+- Create project -> upload openrefine.csv from project root -> next
+- Make sure in the window “Parse data as”: -> Columns are separated by -> commas (CSV) is
+checked
+- Create project (right upper corner)
+- Click on the column and choose -> 'reconcile' -> start reconciling
+- Chose “Irish Geographic Reconciliation Service” checkbox -> next
+- Can choose checkbox “Reconcile against no particular type” or County, City, Local
+Authority
+Screenshots are provided in the screenshots folder in the root.
 
+Service URL
+- http://127.0.0.1:8000/openrefine/reconcile
 
-
-### tests/fixtures/sprint3_ranking_cases.json
-the fixture provides stable repeatable ranking tests for sprint 2 and 3 scoring algorithm.
-
-
-### initialise database
-uv run -m src.scripts.init_db
-
-## structure
-├── README.md
-├── evidence # help save project progression milestones
-│   ├── sprint2_matching_results.json # saved sprint 2 candidate rankings
-│   └── sprint2_test_results.txt # pytest output after sprint 2
-├── pyproject.toml # project configuration
-├── src
-│   ├── config.py # setting 
-│   ├── data
-│   │   └── geo_data.json
-│   ├── data_loader.py
-│   ├── main.py # main file Fast Api routing
-│   ├── match.py # link dataset, normaliser, similarity score, and matcher
-│   ├── matcher.py # filter candidates and ranked result
-│   ├── place_normaliser.py # normalise 
-│   └── similarity_score.py # calculate similarity score
-├── tests
-│   ├── fixtures
-│   │   └── sprint3_ranking_cases.json # evaluation fixture
-│   ├── test_data
-│   │   └── test_data.py
-│   ├── test_matcher.py
-│   ├── test_matching_data.py
-│   ├── test_normaliser.py
-│   └── test_similarity_score.py

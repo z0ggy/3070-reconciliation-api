@@ -1,0 +1,157 @@
+[
+  {
+    "query": "Carlow",
+    "expected_id": "IE-LA-CARLOW-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Cavan",
+    "expected_id": "IE-LA-CAVAN-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Clare",
+    "expected_id": "IE-LA-CLARE-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Cork City",
+    "expected_id": "IE-LA-CORK-CITY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Cork County",
+    "expected_id": "IE-LA-CORK-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "DLR",
+    "expected_id": "IE-LA-DLR",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Donegal",
+    "expected_id": "IE-LA-DONEGAL-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Dublin City",
+    "expected_id": "IE-LA-DUBLIN-CITY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Fingal",
+    "expected_id": "IE-LA-FINGAL-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Galway City",
+    "expected_id": "IE-LA-GALWAY-CITY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Galway County",
+    "expected_id": "IE-LA-GALWAY-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Kerry",
+    "expected_id": "IE-LA-KERRY-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Kildare",
+    "expected_id": "IE-LA-KILDARE-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Kilkenny",
+    "expected_id": "IE-LA-KILKENNY-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Laois",
+    "expected_id": "IE-LA-LAOIS-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Leitrim",
+    "expected_id": "IE-LA-LEITRIM-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Limerick",
+    "expected_id": "IE-LA-LIMERICK-CITY-AND-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Longford",
+    "expected_id": "IE-LA-LONGFORD-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Louth",
+    "expected_id": "IE-LA-LOUTH-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Mayo",
+    "expected_id": "IE-LA-MAYO-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Meath",
+    "expected_id": "IE-LA-MEATH-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Monaghan",
+    "expected_id": "IE-LA-MONAGHAN-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Offaly",
+    "expected_id": "IE-LA-OFFALY-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Roscommon",
+    "expected_id": "IE-LA-ROSCOMMON-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Sligo",
+    "expected_id": "IE-LA-SLIGO-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "South Dublin",
+    "expected_id": "IE-LA-SOUTH-DUBLIN-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Tipperary",
+    "expected_id": "IE-LA-TIPPERARY-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Waterford",
+    "expected_id": "IE-LA-WATERFORD-CITY-AND-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Westmeath",
+    "expected_id": "IE-LA-WESTMEATH-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Wexford",
+    "expected_id": "IE-LA-WEXFORD-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  },
+  {
+    "query": "Wicklow",
+    "expected_id": "IE-LA-WICKLOW-COUNTY-COUNCIL",
+    "expected_type": "local_authority"
+  }
+]
