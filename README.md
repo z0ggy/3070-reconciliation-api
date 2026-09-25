@@ -1,4 +1,4 @@
-# Reconciliation API for messy Irish geographic location
+# Reconciliation API for messy Irish geographic locations
 
 ## Requirements
 - [Recommended ] UV package manager https://docs.astral.sh/uv/getting-started/installation/
@@ -104,4 +104,3 @@ Screenshots are provided in the screenshots folder in the root.
 
 Service URL
 - http://127.0.0.1:8000/openrefine/reconcile
-
