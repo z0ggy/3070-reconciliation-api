@@ -26,7 +26,7 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 uv --version
 ```
 ##### project dependencies
-- from the project root run: 
+- from the project root (3070-reconciliation-api) run: 
 ```bash
 uv sync
 ```
