@@ -75,11 +75,7 @@ uv run -m src.scripts.load_official_data
  uvicorn src.main:app --reload
 ```
 
-##### run pytest test
-```bash
-uv run pytest
-```
-or if no UV installed
+##### run pytest test no UV installed
 ```bash
 pytest
 ```
