@@ -77,6 +77,10 @@ uv run -m src.scripts.load_official_data
 
 ##### run pytest test
 ```bash
+uv run pytest
+```
+or if no UV installed
+```bash
 pytest
 ```
 
